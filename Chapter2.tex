@@ -479,46 +479,53 @@ El presente epígrafe constituye la transición esencial entre la planificación
 \subsection{Arquitectura utilizada}
 \label{subsec:arquitectura}
 
-Godot Engine utiliza una arquitectura jerárquica fundamentada en el concepto de nodos como unidades básicas de construcción. Cada elemento funcional del videojuego es representado como un nodo que hereda de la clase base \texttt{Node} \cite{GodotDocs2023}. Esta filosofía arquitectónica de composición sobre herencia permite construir funcionalidades sofisticadas mediante la agregación de componentes simples y bien definidos, evitando las jerarquías rígidas de clases.
+Godot Engine utiliza una arquitectura jerárquica fundamentada en el concepto de nodos como unidades básicas de construcción. Cada elemento funcional del videojuego es representado como un nodo que hereda de la clase base \texttt{Node} \cite{GodotDocs2023}. Esta filosofía arquitectónica de composición sobre herencia permite construir funcionalidades sofisticadas mediante la agregación de componentes simples y bien definidos. El videojuego \textit{Go Goals! Digital} combina cuatro patrones arquitectónicos complementarios que estructuran el código en niveles de responsabilidad claramente diferenciados.
 
-El \texttt{SceneTree} constituye la estructura de datos fundamental que gestiona todos los nodos activos durante la ejecución. Funciona como un árbol de procesamiento que organiza: 1) el orden de ejecución de los métodos del ciclo de vida; 2) la jerarquía de transformaciones espaciales; y 3) el sistema de señales que permite la comunicación desacoplada entre nodos \cite{GodotDocs2023}.
+El primer patrón es el \textbf{Singleton mediante Autoloads}. Godot facilita este patrón a través de los Autoloads: nodos que se registran globalmente y son accesibles desde cualquier escena del proyecto sin necesidad de referencias directas. El proyecto emplea tres Autoloads fundamentales: \texttt{GameData} (\texttt{res://autoloads/GameData.gd}), que mantiene la configuración de la partida (cantidad de jugadores) y actúa como capa de acceso al banco de preguntas en \texttt{questions.json}; \texttt{AudioManager}, que centraliza la reproducción de música y efectos de sonido liberando a los nodos de juego de instanciar \texttt{AudioStreamPlayer} locales; y \texttt{RecordsManager}, que gestiona la persistencia de puntuaciones y logros entre sesiones \cite{GodotDocs2023}.
+
+El segundo patrón es el \textbf{Bus de Eventos (Event Bus)}. El archivo \texttt{GameEvents} (\texttt{res://scripts/Core/Events.gd}) define un conjunto de se\~nales globales que actúan como canal de comunicación entre todos los componentes del sistema. Las se\~nales principales incluyen \texttt{dice\_rolled}, \texttt{player\_moving}, \texttt{quiz\_started}, \texttt{quiz\_requested(ods\_id)} y \texttt{game\_won}. Esta arquitectura desacopla totalmente la lógica del \textit{Modelo} de la capa de \textit{Vista}: el \texttt{GameManager} emite la se\~nal \texttt{quiz\_requested(ods\_id)}, y la UI la recibe de forma independiente para mostrar el panel de preguntas, sin que exista ningún conocimiento mutuo directo entre ambos componentes \cite{GodotDocs2023}.
+
+El tercer patrón es la \textbf{M\'aquina de Estados (State Machine)}. El archivo \texttt{GameState} (\texttt{res://scripts/Core/GameState.gd}) gestiona de forma explícita las fases del juego mediante una enumeración: \texttt{MENU}, \texttt{PLAYING}, \texttt{PAUSED} y \texttt{GAME\_OVER}. Además, centraliza en RAM el estado activo de la partida: cuál jugador tiene el turno (\texttt{active\_player\_index}), la cantidad de turnos de cada jugador y sus posiciones actuales en el tablero.
+
+El cuarto patrón es \textbf{MVC orientado a componentes}. El \texttt{GameManager} (\texttt{res://scripts/Managers/GameManager.gd}) actúa como \textit{Controlador} principal, orquestando la inicialización del tablero, el lanzamiento del dado, el cálculo de rutas y la verificación de condiciones de victoria \cite{Pressman2021}. Las entidades en \texttt{res://scripts/Entities/} --- \texttt{Board.gd}, \texttt{Player.gd} y \texttt{Tile.gd} --- actúan como los objetos del \textit{Modelo} y \textit{Vista}, encapsulando sus propiedades pero dejando la orquestación al \texttt{GameManager}.
 
 \begin{figure}[!htbp]
   \centering
   % \includegraphics[width=0.7\textwidth]{Images/figura_scene_tree}
   \framebox[0.7\textwidth]{\rule{0pt}{5cm} \textit{[Figura: SceneTree del videojuego Go Goals! Digital (elaboración propia)]}}
-  \caption{SceneTree del videojuego \textit{Go Goals! Digital} en Godot Engine (elaboración propia)\label{fig:scene_tree}}
+  \caption{SceneTree y Autoloads del videojuego \textit{Go Goals! Digital} en Godot Engine (elaboración propia)\label{fig:scene_tree}}
 \end{figure}
 
-\subsubsection{Capas arquitectónicas de la solución}
+\subsubsection{Estructura de directorios del proyecto}
 \label{subsubsec:capas}
 
-La arquitectura técnica del videojuego educativo se estructura en cinco capas principales:
+La organización del código fuente sigue una estructura jerárquica por responsabilidad funcional, coherente con los principios de alta cohesión y bajo acoplamiento \cite{Pressman2021}:
 
 \begin{itemize}
-    \item \textbf{Capa de Presentación}: gestiona todos los elementos visuales e interfaces de usuario, incluyendo el tablero, los paneles de preguntas y las pantallas de menú.
-    \item \textbf{Capa de Lógica de Juego}: implementa las reglas fundamentales, incluyendo el sistema de turnos, el generador pseudoaleatorio para el dado y la lógica de movimiento por el tablero hexagonal.
-    \item \textbf{Capa de Gestión Educativa}: contiene la lógica pedagógica y de evaluación, responsable de seleccionar la pregunta adecuada, evaluar las respuestas y gestionar el progreso de aprendizaje por ODS.
-    \item \textbf{Capa de Datos}: gestiona el almacenamiento y acceso a los contenidos estáticos y dinámicos del juego, incluyendo el banco de preguntas en JSON y la configuración de partida.
-    \item \textbf{Capa de Persistencia}: maneja las interacciones con el sistema de archivos local, como el guardado y carga de partidas.
+    \item \textbf{autoloads/}: contiene los Singletons globales del proyecto (\texttt{GameData}, \texttt{AudioManager}, \texttt{RecordsManager}).
+    \item \textbf{scripts/Core/}: contiene los archivos de infraestructura del ciclo de vida del juego (\texttt{Events.gd} --- Bus de Eventos ---, \texttt{GameState.gd} --- M\'aquina de Estados).
+    \item \textbf{scripts/Data/}: contiene los archivos de configuración estática del tablero (\texttt{BoardConfig.gd}), donde se definen todas las casillas de escaleras, toboganes y preguntas con sus posiciones de origen y destino.
+    \item \textbf{scripts/Entities/}: contiene los objetos del dominio del juego (\texttt{Board.gd}, \texttt{Player.gd}, \texttt{Tile.gd}), que encapsulan propiedades pero no decisiones.
+    \item \textbf{scripts/Managers/}: contiene el \texttt{GameManager.gd}, controlador central que orquesta el ciclo de la partida.
+    \item \textbf{scripts/UI/}: contiene los scripts de la capa de presentación, incluyendo los paneles del tablero, el panel de preguntas, el menú de pausa y la pantalla de estadísticas.
 \end{itemize}
 
 \begin{figure}[!htbp]
   \centering
   % \includegraphics[width=0.75\textwidth]{Images/figura_arquitectura_capas}
-  \framebox[0.75\textwidth]{\rule{0pt}{5cm} \textit{[Figura: Diagrama de capas arquitectónicas de Go Goals! Digital (elaboración propia)]}}
-  \caption{Arquitectura en capas del videojuego educativo \textit{Go Goals! Digital} (elaboración propia)\label{fig:arquitectura_capas}}
+  \framebox[0.75\textwidth]{\rule{0pt}{5cm} \textit{[Figura: Diagrama de la arquitectura multi-patrón de Go Goals! Digital (elaboración propia)]}}
+  \caption{Arquitectura multi-patrón del videojuego educativo \textit{Go Goals! Digital} (elaboración propia)\label{fig:arquitectura_capas}}
 \end{figure}
+
+\subsubsection{Flujo de ejecución del ciclo de juego}
+\label{subsubsec:flujo_ejecucion}
+
+El ciclo principal de una partida sigue un flujo bien definido y orquestado por el \texttt{GameManager}. Primero, durante la \textbf{inicialización}, el \texttt{GameManager} lee la configuración del tablero desde \texttt{BoardConfig.gd} e inicializa las entidades \texttt{Board} y los jugadores (\texttt{Player}) con sus posiciones de salida. Segundo, al \textbf{lanzar el dado}, el jugador presiona el botón correspondiente, \texttt{GameManager} llama a \texttt{roll\_dice()} y emite la se\~nal global \texttt{dice\_rolled} a través de \texttt{GameEvents}. Tercero, en el \textbf{movimiento}, \texttt{GameManager} calcula el destino y aplica un \texttt{Tween} en \texttt{\_animate\_movement()} para desplazar visualmente la ficha casilla por casilla, reproduciendo sonidos a través de \texttt{AudioManager}. Cuarto, en la \textbf{resolución de casilla}, al terminar el movimiento (\texttt{\_on\_movement\_finished}), se evalúa la casilla mediante \texttt{\_check\_tile()}: si es una \textit{casilla normal}, el turno pasa al siguiente jugador actualizando \texttt{GameState}; si es una \textit{casilla especial}, se anima automáticamente el traslado al destino; si es \textit{casilla de quiz}, se emite la se\~nal \texttt{quiz\_requested(ods\_id)} y la UI muestra el panel modal con la pregunta leída desde \texttt{GameData}; si es la \textit{casilla final (63)}, se emite \texttt{game\_won} y se detiene la música \cite{GodotDocs2023}.
 
 \subsection{Prototipos de interfaces gráficas}
 \label{subsec:prototipos}
 
 En el presente epígrafe se presentan las principales interfaces gráficas del videojuego en su forma de prototipo, describiendo cada uno de sus elementos y las funcionalidades asociadas. El diseño de las interfaces gráficas prioriza la accesibilidad, comprensibilidad y atractivo visual para niños de ocho a diez años, manteniendo fidelidad a los colores e íconos oficiales de los diecisiete ODS.
-
-\subsubsection{Pantalla del tablero de juego}
-\label{subsubsec:tablero}
-
-La pantalla del tablero de juego constituye la interfaz principal del videojuego. Se compone del tablero hexagonal de 63 casillas, los indicadores de turno y posición de cada jugador, el botón de lanzamiento de dado, y el panel de estadísticas resumidas. Las casillas temáticas se visualizan con el color oficial y el ícono de cada ODS. Las escaleras se representan con elementos ascendentes en tonalidades brillantes (refuerzo positivo), mientras que las serpientes utilizan elementos descendentes en colores neutros (retroceso correctivo).
 
 \begin{figure}[!htbp]
   \centering
@@ -554,112 +561,124 @@ La pantalla de estadísticas se muestra al finalizar la partida y permite accede
 \subsection{Tarjetas CRC}
 \label{subsec:tarjetas_crc}
 
-Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica fundamental en el diseño ágil, particularmente relevante en la metodología Extreme Programming. Son una herramienta efectiva para la conceptualización y diseño de sistemas orientados a objetos, que facilita la identificación de las clases, sus responsabilidades y las colaboraciones necesarias entre ellas \cite{Sommerville2021}. A continuación se presentan las principales tarjetas CRC definidas para el videojuego \textit{Go Goals! Digital}:
+Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica fundamental en el diseño ágil, particularmente relevante en la metodología Extreme Programming. Son una herramienta efectiva para la conceptualización y diseño de sistemas orientados a objetos, que facilita la identificación de las clases, sus responsabilidades y las colaboraciones necesarias entre ellas \cite{Sommerville2021}. A continuación se presentan las principales tarjetas CRC de \textit{Go Goals! Digital}, correspondientes a las clases reales del proyecto:
 
 \begin{table}[!htbp]
 \centering
-\caption{Tarjeta CRC GameManager\label{tab:crc_gamemanager}}
+\caption{Tarjeta CRC GameData (Autoload)\label{tab:crc_gamedata}}
 \begin{tabular}{|p{0.25\textwidth}|p{0.35\textwidth}|p{0.3\textwidth}|}
 \hline
 \textbf{Clase} & \textbf{Responsabilidades} & \textbf{Colaboradores} \\
 \hline
-GameManager & - gestionar el ciclo del juego (inicio, turno, fin)\newline - mantener el estado global de la partida\newline - gestionar el guardado y carga & TurnManager\newline BoardManager\newline SaveSystem \\
+GameData & - mantener la configuración de la partida (número de jugadores)\newline - cargar y servir el banco de preguntas desde \texttt{questions.json}\newline - proveer preguntas aleatorias por ODS sin repetición & GameManager\newline BoardConfig \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[!htbp]
 \centering
-\caption{Tarjeta CRC TurnManager\label{tab:crc_turnmanager}}
+\caption{Tarjeta CRC GameEvents (Bus de Eventos)\label{tab:crc_gameevents}}
 \begin{tabular}{|p{0.25\textwidth}|p{0.35\textwidth}|p{0.3\textwidth}|}
 \hline
 \textbf{Clase} & \textbf{Responsabilidades} & \textbf{Colaboradores} \\
 \hline
-TurnManager & - determinar el jugador activo en cada turno\newline - pasar turno al siguiente jugador\newline - detectar turno de IA y ejecutarlo automáticamente & GameManager\newline Player\newline DiceController \\
+GameEvents & - definir las se\~nales globales del sistema: \texttt{dice\_rolled}, \texttt{player\_moving}, \texttt{quiz\_started}, \texttt{quiz\_requested(ods\_id)}, \texttt{game\_won}\newline - actuar como canal de comunicación desacoplado entre lógica y UI & GameManager\newline Scripts de UI \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[!htbp]
 \centering
-\caption{Tarjeta CRC DiceController\label{tab:crc_dice}}
+\caption{Tarjeta CRC GameState\label{tab:crc_gamestate}}
 \begin{tabular}{|p{0.25\textwidth}|p{0.35\textwidth}|p{0.3\textwidth}|}
 \hline
 \textbf{Clase} & \textbf{Responsabilidades} & \textbf{Colaboradores} \\
 \hline
-DiceController & - lanzar dado y generar resultado pseudoaleatorio (1--6)\newline - reproducir animación del dado\newline - emitir señal con el resultado & TurnManager\newline PieceController \\
+GameState & - gestionar la fase activa del juego mediante enumeración (MENU, PLAYING, PAUSED, GAME\_OVER)\newline - almacenar el estado de la partida en curso: jugador activo (\texttt{active\_player\_index}), posiciones y conteo de turnos & GameManager\newline Player \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[!htbp]
 \centering
-\caption{Tarjeta CRC PieceController\label{tab:crc_piece}}
+\caption{Tarjeta CRC GameManager (Controlador)\label{tab:crc_gamemanager}}
 \begin{tabular}{|p{0.25\textwidth}|p{0.35\textwidth}|p{0.3\textwidth}|}
 \hline
 \textbf{Clase} & \textbf{Responsabilidades} & \textbf{Colaboradores} \\
 \hline
-PieceController & - mover ficha de jugador casilla por casilla\newline - reproducir animación de movimiento\newline - detectar efecto de casilla destino (ODS, escalera, serpiente) & BoardManager\newline QuestionManager \\
+GameManager & - orquestar el ciclo completo de la partida (inicio, turno, resolución de casilla, fin)\newline - calcular rutas de movimiento e invocar animaciones\newline - verificar condiciones de victoria & GameState\newline GameEvents\newline BoardConfig\newline AudioManager \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[!htbp]
 \centering
-\caption{Tarjeta CRC BoardManager\label{tab:crc_board}}
+\caption{Tarjeta CRC BoardConfig\label{tab:crc_boardconfig}}
 \begin{tabular}{|p{0.25\textwidth}|p{0.35\textwidth}|p{0.3\textwidth}|}
 \hline
 \textbf{Clase} & \textbf{Responsabilidades} & \textbf{Colaboradores} \\
 \hline
-BoardManager & - registrar configuración de casillas (tipo, destino de escalera/serpiente)\newline - devolver tipo y destino de casilla dado su número & PieceController\newline GameManager \\
+BoardConfig & - definir la configuración estática del tablero: posiciones de escaleras, toboganes y casillas de pregunta por ODS\newline - proveer información de tipo y destino de cada casilla & GameManager\newline Board \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[!htbp]
 \centering
-\caption{Tarjeta CRC QuestionManager\label{tab:crc_question}}
+\caption{Tarjeta CRC Board (Entidad)\label{tab:crc_board}}
 \begin{tabular}{|p{0.25\textwidth}|p{0.35\textwidth}|p{0.3\textwidth}|}
 \hline
 \textbf{Clase} & \textbf{Responsabilidades} & \textbf{Colaboradores} \\
 \hline
-QuestionManager & - cargar banco de preguntas desde archivo JSON\newline - seleccionar pregunta aleatoria sin repetición por ODS\newline - evaluar respuesta del jugador\newline - emitir señal de resultado (correcto/incorrecto) & QuestionUI\newline StatsManager \\
+Board & - representar el estado visual y lógico del tablero de 63 casillas\newline - exponer métodos de acceso a posiciones específicas & GameManager\newline Tile\newline BoardConfig \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[!htbp]
 \centering
-\caption{Tarjeta CRC StatsManager\label{tab:crc_stats}}
+\caption{Tarjeta CRC Tile (Entidad)\label{tab:crc_tile}}
 \begin{tabular}{|p{0.25\textwidth}|p{0.35\textwidth}|p{0.3\textwidth}|}
 \hline
 \textbf{Clase} & \textbf{Responsabilidades} & \textbf{Colaboradores} \\
 \hline
-StatsManager & - registrar respuestas correctas e incorrectas por jugador y por ODS\newline - calcular porcentaje de aciertos\newline - proporcionar datos para la pantalla de estadísticas & Player\newline QuestionManager \\
+Tile & - mantener el tipo de casilla (normal, escalera, tobogán, quiz, meta)\newline - almacenar el destino de traslado en caso de casilla especial\newline - almacenar el identificador ODS en caso de casilla de pregunta & Board\newline GameManager \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[!htbp]
 \centering
-\caption{Tarjeta CRC Player\label{tab:crc_player}}
+\caption{Tarjeta CRC Player (Entidad)\label{tab:crc_player}}
 \begin{tabular}{|p{0.25\textwidth}|p{0.35\textwidth}|p{0.3\textwidth}|}
 \hline
 \textbf{Clase} & \textbf{Responsabilidades} & \textbf{Colaboradores} \\
 \hline
-Player & - mantener posición actual en el tablero\newline - gestionar estadísticas de respuestas individuales\newline - identificar al jugador (nombre, color de ficha) & TurnManager\newline StatsManager\newline PieceController \\
+Player & - mantener la posición actual y el historial de turnos del jugador\newline - almacenar nombre e identificador de color de ficha\newline - registrar estadísticas de respuestas & GameState\newline GameManager \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[!htbp]
 \centering
-\caption{Tarjeta CRC SaveSystem\label{tab:crc_save}}
+\caption{Tarjeta CRC AudioManager (Autoload)\label{tab:crc_audiomanager}}
 \begin{tabular}{|p{0.25\textwidth}|p{0.35\textwidth}|p{0.3\textwidth}|}
 \hline
 \textbf{Clase} & \textbf{Responsabilidades} & \textbf{Colaboradores} \\
 \hline
-SaveSystem & - serializar estado del juego a archivo JSON local\newline - deserializar archivo de guardado y restaurar estado & GameManager\newline Player\newline StatsManager \\
+AudioManager & - centralizar la reproducción de música de fondo y efectos de sonido\newline - controlar el volumen global\newline - liberar a los nodos de juego de gestionar \texttt{AudioStreamPlayer} locales & GameManager\newline Scripts de UI \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\centering
+\caption{Tarjeta CRC RecordsManager (Autoload)\label{tab:crc_recordsmanager}}
+\begin{tabular}{|p{0.25\textwidth}|p{0.35\textwidth}|p{0.3\textwidth}|}
+\hline
+\textbf{Clase} & \textbf{Responsabilidades} & \textbf{Colaboradores} \\
+\hline
+RecordsManager & - gestionar la persistencia de puntuaciones y logros entre sesiones\newline - leer y escribir en archivos de guardado locales\newline - proveer datos históricos para la pantalla de estadísticas & GameManager\newline Player \\
 \hline
 \end{tabular}
 \end{table}
@@ -683,7 +702,7 @@ Para el desarrollo en GDScript se aplicaron los siguientes estándares de nomenc
 \begin{itemize}
     \item \textbf{Clases}: PascalCase (ejemplo: \texttt{GameManager}, \texttt{QuestionManager}).
     \item \textbf{Variables y funciones}: snake\_case (ejemplo: \texttt{current\_player}, \texttt{roll\_dice()}).
-    \item \textbf{Constantes}: SCREAMING\_SNAKE\_CASE (ejemplo: \texttt{MAX\_PLAYERS}, \texttt{BOARD\_SIZE}).
+    \textbf{Constantes}: SCREAMING\_SNAKE\_CASE (ejemplo: \texttt{MAX\_PLAYERS}, \texttt{BOARD\_SIZE}).
     \item \textbf{Señales}: snake\_case prefijadas con el evento (ejemplo: \texttt{dice\_rolled}, \texttt{answer\_checked}).
     \item \textbf{Escenas}: PascalCase coincidiendo con el nombre de su script raíz (ejemplo: \texttt{GameBoard.tscn}).
 \end{itemize}
@@ -705,37 +724,36 @@ Cada clase implementada en GDScript incluye comentarios de documentación al ini
 \subsection{Patrones de diseño utilizados}
 \label{subsec:patrones}
 
-Los patrones de diseño son soluciones reutilizables a problemas recurrentes en el desarrollo de software. En el contexto del videojuego educativo \textit{Go Goals! Digital}, se aplicaron los patrones GRASP y GOF que mejor se adaptan a la naturaleza del proyecto en Godot Engine.
+Los patrones de diseño son soluciones reutilizables a problemas recurrentes en el desarrollo de software. \textit{Go Goals! Digital} aplica cuatro patrones principales que actuan de forma complementaria y se encuentran reflejados directamente en la estructura del código fuente.
 
-\subsubsection{Patrones GRASP}
-\label{subsubsec:grasp}
+\subsubsection{Patrón Singleton mediante Autoloads}
+\label{subsubsec:singleton}
 
-Los patrones GRASP (General Responsibility Assignment Software Patterns) proporcionan principios para la asignación de responsabilidades a clases en el diseño orientado a objetos \cite{Pressman2021}. Se implementaron los siguientes:
+Este patrón GOF garantiza que determinadas clases tengan una única instancia accesible globalmente durante toda la sesión de juego \cite{Pressman2021}. Godot implementa este patrón de forma nativa mediante el mecanismo de Autoloads. Los tres Autoloads del proyecto son: \texttt{GameData}, que actua como repositorio central de configuración y datos educativos; \texttt{AudioManager}, que centraliza toda la reproducción de audio evitando instancias dispersas de \texttt{AudioStreamPlayer}; y \texttt{RecordsManager}, que gestiona la persistencia de logros entre sesiones. Gracias a este patrón, cualquier nodo del árbol de escenas puede acceder a estos servicios sin crear dependencias directas ni referencias cruzadas entre escenas \cite{GodotDocs2023}.
 
-\begin{itemize}
-    \item \textbf{Experto en información}: la clase \texttt{BoardManager} es la única responsable de conocer la configuración de casillas (tipo, destino de escaleras y serpientes), ya que posee los datos necesarios para ello.
-    \item \textbf{Bajo acoplamiento}: el \texttt{QuestionManager} se comunica con la UI de preguntas mediante señales de Godot, evitando referencias directas entre nodos.
-    \item \textbf{Alta cohesión}: cada clase tiene una responsabilidad claramente delimitada; por ejemplo, \texttt{StatsManager} solo gestiona estadísticas y no contiene lógica de juego.
-    \item \textbf{Controlador}: la clase \texttt{GameManager} actúa como controlador central del flujo del juego, recibiendo eventos del dado, el tablero y las preguntas, y coordinando la respuesta del sistema.
-\end{itemize}
+\subsubsection{Patrón Bus de Eventos (Observer global)}
+\label{subsubsec:eventbus}
 
-\subsubsection{Patrones GOF}
-\label{subsubsec:gof}
-
-Los patrones GOF (Gang of Four) \cite{Pressman2021} se aplicaron para resolver problemas técnicos específicos del proyecto:
-
-\begin{itemize}
-    \item \textbf{Singleton (autoload)}: las clases \texttt{GameManager} y \texttt{StatsManager} se registran como autoloads en Godot, garantizando una única instancia accesible globalmente durante toda la sesión de juego.
-    \item \textbf{Observer (señales)}: el sistema de señales nativo de Godot se utiliza para implementar el patrón Observer entre el \texttt{DiceController} y el \texttt{TurnManager}, y entre el \texttt{QuestionManager} y el panel de preguntas.
-    \item \textbf{Strategy}: la lógica de selección de preguntas implementa el patrón Strategy, permitiendo intercambiar la estrategia de selección (aleatoria sin repetición, por dificultad, por ODS específico) sin modificar el \texttt{QuestionManager}.
-\end{itemize}
+El archivo \texttt{GameEvents} (\texttt{res://scripts/Core/Events.gd}) implementa una variante del patrón Observer a nivel de bus de eventos global \cite{Pressman2021}. En lugar de conectar directamente un emisor con sus suscriptores, \texttt{GameEvents} define se\~nales globales que cualquier componente puede emitir o escuchar de forma independiente. Las se\~nales principales del sistema son: \texttt{dice\_rolled} (el dado fue lanzado), \texttt{player\_moving} (la ficha está en movimiento), \texttt{quiz\_started} (se inició una ronda de pregunta), \texttt{quiz\_requested(ods\_id)} (se solicita la pregunta de un ODS específico) y \texttt{game\_won} (un jugador alcanzó la meta). Este patrón elimina el acoplamiento entre el \texttt{GameManager} y los componentes de UI: el controlador emite \texttt{quiz\_requested(ods\_id)} sin saber quién lo escucha, y la UI responde de forma independiente \cite{GodotDocs2023}.
 
 \begin{figure}[!htbp]
   \centering
   % \includegraphics[width=0.7\textwidth]{Images/figura_senales_godot}
-  \framebox[0.7\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Sistema de señales entre GameManager y QuestionManager (elaboración propia)]}}
-  \caption{Implementación del patrón Observer mediante señales de Godot (elaboración propia)\label{fig:senales_godot}}
+  \framebox[0.7\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Bus de Eventos (GameEvents) --- flujo de se\~nales entre GameManager y UI (elaboración propia)]}}
+  \caption{Patrón Bus de Eventos implementado mediante se\~nales globales en Godot (elaboración propia)\label{fig:senales_godot}}
 \end{figure}
+
+\subsubsection{Patrón Máquina de Estados}
+\label{subsubsec:state}
+
+El estado de la partida se gestiona de forma explícita y centralizada en \texttt{GameState.gd}, mediante una enumeración de fases: \texttt{MENU}, \texttt{PLAYING}, \texttt{PAUSED} y \texttt{GAME\_OVER} \cite{Pressman2021}. Esta separación del estado respecto a la lógica de actualización garantiza que ninguna transición de estado quede implícita o dispersa en el código. Además, \texttt{GameState} centraliza en memoria RAM el estado de la partida en curso: el índice del jugador activo (\texttt{active\_player\_index}), el historial de turnos y las posiciones actuales de todas las fichas, facilitando las operaciones de guardado y restauración. La aplicación de este patrón permite al \texttt{GameManager} delegar las decisiones de transición de fase a una entidad especializada, reduciendo la complejidad ciclomática del controlador.
+
+\subsubsection{Patrón MVC orientado a componentes (GRASP)}
+\label{subsubsec:mvc_grasp}
+
+La arquitectura del proyecto aplica los principios GRASP (General Responsibility Assignment Software Patterns) \cite{Pressman2021} en una estructura MVC adaptada al modelo de nodos de Godot. El \textbf{Controlador} es \texttt{GameManager.gd}, que centraliza la orquestación del ciclo de juego aplicando el principio GRASP de \textit{controlador de la fa\c{c}ade}. Los \textbf{Modelos} son las entidades en \texttt{scripts/Entities/}: \texttt{Board.gd}, \texttt{Player.gd} y \texttt{Tile.gd}, que encapsulan propiedades y aplican el principio de \textit{experto en información} (cada entidad conoce solo sus propios datos). La \textbf{Vista} es gestionada por los scripts en \texttt{scripts/UI/}, que escuchan eventos de \texttt{GameEvents} sin acoplarse al modelo.
+
+Es notable que la configuración del tablero se aisla en \texttt{BoardConfig.gd} (\texttt{scripts/Data/}), separando los datos estáticos de escaleras, toboganes y casillas de quiz del código lógico, lo que permite modificar la configuración del tablero sin alterar el controlador. Esta decisión de diseño aplica directamente el principio GRASP de \textit{bajo acoplamiento}, garantizando que el sistema sea fácilmente extensible ante futuras modificaciones del tablero o las reglas del juego \cite{Pressman2021}.
 
 \subsection{Tareas de ingeniería}
 \label{subsec:tareas_ingenieria}
