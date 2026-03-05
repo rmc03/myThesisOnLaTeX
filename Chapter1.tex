@@ -4,30 +4,91 @@
 El presente capítulo tiene como objetivo sistematizar los fundamentos teórico-metodológicos que sustentan el desarrollo de un videojuego educativo para la promoción de los Objetivos de Desarrollo Sostenible. Se aborda, en primer lugar, el marco conceptual de los videojuegos educativos y el aprendizaje basado en juegos; en segundo lugar, se analizan los antecedentes de la gamificación aplicada a la educación para el desarrollo sostenible; en tercer lugar, se describe y diagnostica el estado actual del juego de mesa ``Go Goals!'' como objeto de estudio; y finalmente, se justifican las tecnologías y herramientas seleccionadas para la implementación de la solución propuesta. El capítulo cierra con las conclusiones que fundamentan las decisiones adoptadas en la investigación.
 
 \section{Fundamentos teóricos de los videojuegos educativos}
+\label{sec:fundamentos_teoricos}
 
 El presente epígrafe sistematiza los principios teóricos y metodológicos que sustentan la incorporación de videojuegos educativos como recursos de aprendizaje significativo, especialmente cuando se diseñan a partir de dinámicas lúdicas tradicionales como los juegos de mesa y se orientan a la enseñanza de conceptos vinculados con la sostenibilidad. Su objetivo es establecer el marco conceptual que fundamenta la pertinencia pedagógica de la propuesta desarrollada en esta investigación.
 
 \subsection{Antecedentes del aprendizaje mediante el juego}
-La utilización del juego en la educación posee una sólida tradición teórica. El juego se reconoce como un medio natural para el desarrollo cognitivo, pues permite interactuar con reglas, roles y condiciones simbólicas que estimulan la construcción activa de estructuras mentales. Esta perspectiva se complementa con el enfoque sociocultural, según el cual el juego posibilita niveles superiores de desempeño cognitivo y social mediante la mediación y la interacción significativa. En el campo educativo contemporáneo, estos aportes han evolucionado hacia enfoques que consideran el juego no solo como actividad recreativa, sino como un entorno estructurado donde el aprendizaje ocurre de manera contextualizada, motivante y autónoma.
+\label{subsec:antecedentes_juego}
+
+La utilización del juego en la educación posee una sólida tradición teórica. El juego se reconoce como un medio natural para el desarrollo cognitivo, pues permite interactuar con reglas, roles y condiciones simbólicas que estimulan la construcción activa de estructuras mentales. Esta perspectiva se complementa con el enfoque sociocultural, según el cual el juego posibilita niveles superiores de desempeño cognitivo y social mediante la mediación y la interacción significativa. En el campo educativo contemporáneo, estos aportes han evolucionado hacia enfoques que consideran el juego no solo como actividad recreativa, sino como un entorno estructurado donde el aprendizaje ocurre de manera contextualizada, motivante y autónoma \cite{PlassFoundations2020}.
+
+\subsubsection{Conceptos fundamentales}
+\label{subsubsec:conceptos_fundamentales}
+
+Para la comprensión de la presente investigación se definen los conceptos fundamentales que enmarcan el objeto de estudio:
+
+\textbf{Videojuego}: Un videojuego es un sistema digital interactivo que integra mecánicas de juego (reglas y objetivos), narrativa (historia o contexto) y tecnología (gráficos, sonido, inteligencia artificial) para generar experiencias inmersivas \cite{Rogers2020}. Su diseño se fundamenta en principios como la interactividad, los objetivos estructurados y la retroalimentación, que guían el comportamiento del usuario \cite{JohnsonLee2021}. Además, la adaptabilidad, mediante dificultad ajustable o algoritmos de aprendizaje automático, permite personalizar la experiencia según el estilo de juego individual \cite{ChenSmith2022}.
+
+\textbf{Sostenibilidad}: principio rector que busca armonizar el progreso humano con la preservación del medio ambiente y la equidad social, asegurando que las acciones actuales no comprometan el bienestar de las generaciones futuras \cite{WCED1987}. Según el PNUD, la sostenibilidad implica ``un desarrollo que equilibra las dimensiones económica, social y ambiental, garantizando que los recursos naturales se utilicen de manera responsable'' \cite{PNUD2021}.
+
+\textbf{Objetivos de Desarrollo Sostenible (ODS)}: conjunto de 17 metas globales adoptadas por las Naciones Unidas en 2015 como parte de la Agenda 2030 para el Desarrollo Sostenible. Estos objetivos buscan abordar los desafíos más urgentes que enfrenta la humanidad, como la pobreza, la desigualdad, el cambio climático, la degradación ambiental y la justicia \cite{NacionesUnidas2015}.
+
+\textbf{Educación para el Desarrollo Sostenible (EDS)}: enfoque educativo integral que busca empoderar a las personas, comunidades y sociedades para tomar decisiones informadas y responsables que contribuyan a un futuro sostenible. Según la UNESCO \cite{UNESCO2020EDS}, la EDS es ``un proceso de aprendizaje que permite a las personas adquirir los conocimientos, las competencias, las actitudes y los valores necesarios para construir un futuro sostenible''.
+
+\textbf{Aprendizaje Basado en Juegos (ABJ)}: metodología educativa que utiliza juegos, ya sean digitales o analógicos, como herramientas pedagógicas para facilitar la adquisición de conocimientos, habilidades y actitudes. Según \citeauthor{PlassFoundations2020} \cite{PlassFoundations2020}, el ABJ ``se fundamenta en el diseño de entornos lúdicos que estimulan la motivación intrínseca, la exploración autónoma y la resolución de problemas en contextos complejos, replicando dinámicas del mundo real''.
 
 \subsection{Fundamentos del Aprendizaje Basado en Juegos (Game-Based Learning)}
-El Aprendizaje Basado en Juegos (GBL) se define como la integración sistemática de mecánicas, reglas y dinámicas propias de los juegos dentro del proceso de enseñanza. Los entornos lúdicos proporcionan condiciones particularmente fértiles para la adquisición de conocimientos y el desarrollo de habilidades cognitivas superiores, al permitir la interacción significativa con los contenidos, la toma de decisiones dentro de escenarios estructurados, la retroalimentación inmediata y el aprendizaje situado en contextos simulados. Estos elementos convierten a los juegos analógicos o digitales en plataformas eficaces para introducir conceptos complejos como los Objetivos de Desarrollo Sostenible, la acción climática o la gestión responsable de recursos.
+\label{subsec:gbl}
+
+El Aprendizaje Basado en Juegos (GBL, del inglés \textit{Game-Based Learning}) se define como la integración sistemática de mecánicas, reglas y dinámicas propias de los juegos dentro del proceso de enseñanza \cite{PlassHomer2020}. Los entornos lúdicos proporcionan condiciones particularmente fértiles para la adquisición de conocimientos y el desarrollo de habilidades cognitivas superiores, al permitir la interacción significativa con los contenidos, la toma de decisiones dentro de escenarios estructurados, la retroalimentación inmediata y el aprendizaje situado en contextos simulados. Estos elementos convierten a los juegos analógicos o digitales en plataformas eficaces para introducir conceptos complejos como los Objetivos de Desarrollo Sostenible, la acción climática o la gestión responsable de recursos.
+
+Estudios recientes demuestran que la aplicación del ABJ en entornos educativos formales mejora significativamente el rendimiento académico y la capacidad de transferir conocimientos a situaciones prácticas \cite[p.~15]{PlassFoundations2020}. Esta metodología integra elementos como la narrativa inmersiva, la retroalimentación adaptativa y la colaboración en tiempo real, mecanismos que incrementan la participación activa y la retención de conceptos \cite{Deterding2020}.
+
+\subsubsection{Evidencias empíricas del ABJ en sostenibilidad}
+\label{subsubsec:evidencias_abj}
+
+En el ámbito de la educación para el desarrollo sostenible, videojuegos como \textit{Eco} (simulación de ecosistemas) y \textit{Fate of the World} (políticas climáticas globales) demuestran cómo las herramientas digitales transforman información abstracta en experiencias concretas \cite{WuLee2020}. \textit{Eco} es un juego multijugador que simula la construcción de una civilización sostenible en un ecosistema virtual, donde los jugadores deben gestionar recursos naturales, negociar políticas colectivas y enfrentar consecuencias ambientales como la extinción de especies por sobreexplotación. \textit{Fate of the World} desafía a los jugadores a implementar políticas climáticas globales basadas en datos científicos, y ha demostrado mejorar la conciencia sobre la complejidad de la gobernanza ambiental \cite{FloodCradock2024}.
+
+Títulos como \textit{Cities: Skylines} (utilizado en aulas para enseñar planificación urbana sostenible) y \textit{Frostpunk} (que explora dilemas éticos en crisis climáticas) amplían el aprendizaje experiencial mediante mecánicas que vinculan acciones individuales con impactos sistémicos \cite{Hawlitschek2022}. Estas experiencias demuestran que los videojuegos educativos no solo entretienen, sino que desarrollan habilidades clave para los ODS: pensamiento crítico, colaboración y toma de decisiones basada en evidencia.
 
 \subsection{Gamificación como estrategia educativa}
-La gamificación constituye un enfoque complementario, centrado en la incorporación de elementos característicos de los juegos ---puntos, retroalimentación inmediata, progresión, niveles y desafíos--- dentro de situaciones originalmente no lúdicas. En el ámbito educativo, esta estrategia se asocia a incrementos en la motivación intrínseca, la participación activa del estudiantado, la claridad en las metas del aprendizaje y la percepción de logro y autonomía. El uso de mecánicas gamificadas resulta especialmente relevante en recursos formativos vinculados con la sostenibilidad, donde la motivación y el compromiso con la acción son tan importantes como el conocimiento conceptual.
+\label{subsec:gamificacion}
 
-\subsection{Enfoques metodológicos relevantes para el diseño educativo digital}
-El diseño y análisis de videojuegos con fines educativos requiere integrar modelos que articulen los aspectos pedagógicos, tecnológicos y disciplinares. Dos marcos metodológicos resultan especialmente relevantes. La Teoría del flujo explica cómo los entornos lúdicos mantienen la motivación cuando existe equilibrio entre el desafío y la habilidad del jugador; esta teoría orienta la organización del ritmo, la dificultad y la retroalimentación dentro del juego. El Modelo TPACK (Tecnológico-Pedagógico-Disciplinar) proporciona un marco para integrar contenido educativo, estrategias pedagógicas y decisiones tecnológicas, permitiendo evaluar la coherencia entre las mecánicas de juego, los objetivos formativos y los recursos digitales seleccionados.
+La gamificación constituye un enfoque complementario al ABJ, centrado en la incorporación de elementos característicos de los juegos ---puntos, retroalimentación inmediata, progresión, niveles y desafíos--- dentro de situaciones originalmente no lúdicas \cite{Deterding2020}. En el ámbito educativo, esta estrategia se asocia a incrementos en la motivación intrínseca, la participación activa del estudiantado, la claridad en las metas del aprendizaje y la percepción de logro y autonomía. El uso de mecánicas gamificadas resulta especialmente relevante en recursos formativos vinculados con la sostenibilidad, donde la motivación y el compromiso con la acción son tan importantes como el conocimiento conceptual.
 
+El Consejo Europeo \cite{EuropeanCouncil2022} ha reconocido el potencial de la educación digital gamificada como componente central de los planes de acción educativa, promoviendo su integración en todos los niveles formativos de los países miembros. Esta validación institucional a nivel internacional refuerza la pertinencia pedagógica de la presente investigación.
+
+\subsubsection{Teorías de aprendizaje aplicadas al diseño de videojuegos educativos}
+\label{subsubsec:teorias_aprendizaje}
+
+El diseño y análisis de videojuegos con fines educativos requiere integrar modelos que articulen los aspectos pedagógicos, tecnológicos y disciplinares. Dos marcos metodológicos resultan especialmente relevantes para el presente trabajo:
+
+La \textbf{Teoría del Flujo} explica cómo los entornos lúdicos mantienen la motivación cuando existe equilibrio entre el desafío y la habilidad del jugador. Esta teoría orienta la organización del ritmo, la dificultad y la retroalimentación dentro del juego educativo.
+
+El \textbf{Modelo TPACK} (Tecnológico-Pedagógico-Disciplinar) proporciona un marco para integrar contenido educativo, estrategias pedagógicas y decisiones tecnológicas, permitiendo evaluar la coherencia entre las mecánicas de juego, los objetivos formativos y los recursos digitales seleccionados.
+
+\begin{figure}[!htbp]
+  \centering
+  % \includegraphics[width=0.7\textwidth]{Images/figura_teorias_aprendizaje}
+  \framebox[0.7\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Relación entre Teoría del Flujo, TPACK y ABJ]}}
+  \caption{Relación entre los marcos teóricos empleados en el diseño del videojuego educativo (elaboración propia)\label{fig:teorias_aprendizaje}}
+\end{figure}
+
+%---------------------------------------------------------------------------
 \section{Gamificación en la educación para el desarrollo sostenible}
+\label{sec:gamif_ods}
 
 Los videojuegos educativos basados en adaptaciones de juegos de mesa constituyen una categoría especializada que combina la accesibilidad y las mecánicas probadas del formato analógico con las capacidades tecnológicas del medio digital. El presente epígrafe sistematiza los fundamentos teórico-metodológicos asociados a este tipo de desarrollo, específicamente la adaptación digital de juegos de mesa educativos como herramientas para promover los Objetivos de Desarrollo Sostenible, estableciendo los referentes que sustentan la investigación tanto en el contexto internacional como nacional.
 
-Desde una perspectiva histórica, los juegos de mesa han constituido herramientas pedagógicas por excelencia durante siglos, ofreciendo entornos estructurados donde los participantes desarrollan habilidades cognitivas, sociales y estratégicas de manera lúdica. La digitalización de estos juegos representa una evolución natural que mantiene la esencia pedagógica del formato original mientras amplifica sus posibilidades mediante la interactividad digital, la retroalimentación inmediata y la eliminación de barreras logísticas.
+\subsection{Antecedentes internacionales}
+\label{subsec:antecedentes_internacionales}
 
-En el ámbito internacional, las Naciones Unidas desarrollaron el juego de mesa Go Goals! como herramienta pedagógica oficial para introducir los diecisiete Objetivos de Desarrollo Sostenible a niños de 8 a 10 años. Este juego utiliza una estructura inspirada en el clásico Serpientes y Escaleras, adaptando sus mecánicas tradicionales para incorporar contenidos educativos específicos sobre sostenibilidad mediante un sistema de preguntas y respuestas que refuerzan el aprendizaje de cada objetivo.
+Desde una perspectiva histórica, los juegos de mesa han constituido herramientas pedagógicas por excelencia durante siglos, ofreciendo entornos estructurados donde los participantes desarrollan habilidades cognitivas, sociales y estratégicas de manera lúdica. La digitalización de estos juegos representa una evolución natural que mantiene la esencia pedagógica del formato original mientras amplifica sus posibilidades mediante la interactividad digital, la retroalimentación inmediata y la eliminación de barreras logísticas \cite{MartinezGimenes2023}.
 
-La estructura pedagógica de Go Goals! se fundamenta en principios de gamificación aplicados a contextos educativos. El juego emplea un tablero de 63 casillas hexagonales que representan el recorrido temporal desde el presente hasta el año 2030, horizonte establecido por la Agenda 2030. Esta metáfora visual del progreso temporal refuerza la comprensión de que la sostenibilidad es un proceso continuo que requiere acciones sostenidas en el tiempo. El tablero incorpora diecisiete casillas temáticas, una por cada ODS, donde los jugadores deben responder preguntas específicas para avanzar.
+En el ámbito internacional, las Naciones Unidas desarrollaron el juego de mesa \textit{Go Goals!} como herramienta pedagógica oficial para introducir los diecisiete Objetivos de Desarrollo Sostenible a niños de entre ocho y diez años \cite{GoGoals2020}. Este juego utiliza una estructura inspirada en el clásico Serpientes y Escaleras, adaptando sus mecánicas tradicionales para incorporar contenidos educativos específicos sobre sostenibilidad mediante un sistema de preguntas y respuestas que refuerzan el aprendizaje de cada objetivo.
+
+\subsubsection{El juego de mesa Go Goals! como referente pedagógico}
+\label{subsubsec:gogals_referente}
+
+La estructura pedagógica de \textit{Go Goals!} se fundamenta en principios de gamificación aplicados a contextos educativos \cite{GoGoals2020}. El juego emplea un tablero de 63 casillas hexagonales que representan el recorrido temporal desde el presente hasta el año 2030, horizonte establecido por la Agenda 2030. Esta metáfora visual del progreso temporal refuerza la comprensión de que la sostenibilidad es un proceso continuo que requiere acciones sostenidas en el tiempo. El tablero incorpora diecisiete casillas temáticas, una por cada ODS, donde los jugadores deben responder preguntas específicas para avanzar.
+
+\begin{figure}[!htbp]
+  \centering
+  % \includegraphics[width=0.7\textwidth]{Images/figura_gogals_tablero}
+  \framebox[0.7\textwidth]{\rule{0pt}{5cm} \textit{[Figura: Tablero del juego de mesa Go Goals! (Naciones Unidas, 2020)]}}
+  \caption{Tablero oficial del juego de mesa Go Goals! de las Naciones Unidas \cite{GoGoals2020}\label{fig:gogals_tablero}}
+\end{figure}
 
 \begin{table}[!htbp]
 \centering
@@ -45,14 +106,35 @@ La estructura pedagógica de Go Goals! se fundamenta en principios de gamificaci
 \end{tabular}
 \end{table}
 
-En el ámbito de la educación para el desarrollo sostenible, videojuegos como Eco (simulación de ecosistemas) y Fate of the World (políticas climáticas globales) demuestran cómo las herramientas digitales transforman información abstracta en experiencias concretas que fomentan la comprensión sistémica de las dimensiones económica, social y ambiental. A nivel nacional, aunque el desarrollo de videojuegos educativos orientados a los ODS se encuentra en fase incipiente, existen antecedentes valiosos en programas como Aula Digital y diversas iniciativas universitarias. Sin embargo, la adaptación digital específica de juegos de mesa reconocidos internacionalmente como Go Goals! representa un vacío identificado en la oferta actual de recursos educativos tecnológicos, especialmente en la Universidad de las Ciencias Informáticas.
+\subsection{Antecedentes nacionales}
+\label{subsec:antecedentes_nacionales}
 
+A nivel nacional, aunque el desarrollo de videojuegos educativos orientados a los ODS se encuentra en fase incipiente, existen antecedentes valiosos en programas como Aula Digital y diversas iniciativas universitarias. Según el Informe Nacional Voluntario de Cuba \cite{InformeVoluntarioCuba2021}, se han realizado esfuerzos para mejorar la formación docente y los recursos educativos; sin embargo, persisten desafíos en infraestructura educativa y acceso a tecnologías actualizadas.
+
+Cuba mantiene uno de los sistemas educativos más inclusivos de América Latina: según la UNESCO \cite{UNESCO2023}, el 99,7\% de su población adulta está alfabetizada, y la educación es gratuita en todos los niveles tal como lo establece la Constitución de la República \cite{CubaConstitucion2019}. No obstante, la escasez de materiales didácticos digitales y las limitaciones de conectividad afectan la implementación de recursos tecnológicos educativos en contextos de crisis económica \cite{BancoMundial2023, MesaLago2022}.
+
+\subsubsection{Brecha identificada en el contexto nacional}
+\label{subsubsec:brecha_nacional}
+
+La adaptación digital específica de juegos de mesa reconocidos internacionalmente como \textit{Go Goals!} representa un vacío identificado en la oferta actual de recursos educativos tecnológicos, especialmente en la Universidad de las Ciencias Informáticas. No se ha encontrado ningún videojuego desarrollado en Cuba que se centre exclusivamente en la enseñanza de los ODS mediante la mecánica de juego de mesa digital, añadiéndole a esto la pasión que sienten muchas personas por los videojuegos y la gran capacidad que poseen para el Aprendizaje Basado en Juegos.
+
+\begin{figure}[!htbp]
+  \centering
+  % \includegraphics[width=0.7\textwidth]{Images/figura_brecha_contexto}
+  \framebox[0.7\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Mapa de recursos educativos digitales sobre ODS en Cuba (elaboración propia)]}}
+  \caption{Estado actual de los recursos educativos digitales sobre ODS en Cuba (elaboración propia)\label{fig:brecha_nacional}}
+\end{figure}
+
+%---------------------------------------------------------------------------
 \section{Análisis del estado actual del juego de mesa Go Goals!}
+\label{sec:analisis_gogals}
 
-El presente epígrafe se dedica a la descripción y análisis exhaustivo del estado actual del objeto de estudio, el juego de mesa Go Goals! en su formato físico original, estableciendo claridad sobre las variables que se estudian y presentando los resultados del diagnóstico realizado previo al inicio de la investigación. Este análisis demuestra la pertinencia de la investigación y valida tanto la situación problemática como el problema científico planteado.
+El presente epígrafe se dedica a la descripción y análisis exhaustivo del estado actual del objeto de estudio: el juego de mesa \textit{Go Goals!} en su formato físico original. Este análisis demuestra la pertinencia de la investigación y valida tanto la situación problemática como el problema científico planteado.
 
 \subsection{Descripción del juego Go Goals! en su formato original}
-El juego de mesa Go Goals! constituye un recurso educativo oficial desarrollado por las Naciones Unidas con el propósito específico de introducir los diecisiete Objetivos de Desarrollo Sostenible a poblaciones infantiles de manera lúdica y accesible. Dirigido específicamente a niños de ocho a diez años, el juego busca promover el aprendizaje activo, la interacción social y la motivación por la acción sostenible mediante mecánicas de juego probadas que han demostrado efectividad pedagógica durante décadas. Su estructura se basa en el clásico juego Serpientes y Escaleras, adaptado para incorporar contenidos educativos específicos sobre cada uno de los ODS mediante un sistema integrado de preguntas y respuestas.
+\label{subsec:descripcion_gogals}
+
+El juego de mesa \textit{Go Goals!} constituye un recurso educativo oficial desarrollado por las Naciones Unidas con el propósito específico de introducir los diecisiete Objetivos de Desarrollo Sostenible a poblaciones infantiles de manera lúdica y accesible \cite{GoGoals2020}. Dirigido específicamente a niños de ocho a diez años, el juego busca promover el aprendizaje activo, la interacción social y la motivación por la acción sostenible mediante mecánicas de juego probadas durante décadas. Su estructura se basa en el clásico juego Serpientes y Escaleras, adaptado para incorporar contenidos educativos específicos sobre cada uno de los ODS mediante un sistema integrado de preguntas y respuestas.
 
 \begin{table}[!htbp]
 \centering
@@ -74,7 +156,14 @@ Instrucciones & Reglas completas en español, inglés y otros idiomas. \\
 \end{tabular}
 \end{table}
 
-\subsection{Diagnóstico: fortalezas y limitaciones}
+\subsubsection{Mecánica pedagógica del juego}
+\label{subsubsec:mecanica_pedagogica}
+
+La mecánica pedagógica de \textit{Go Goals!} combina el azar del movimiento por el tablero con la evaluación del conocimiento sobre los ODS. Cuando un jugador cae en una casilla temática, debe responder correctamente una pregunta para mantenerse en su posición o avanzar, mientras que una respuesta incorrecta puede provocar un retroceso mediante el efecto de las serpientes. Este diseño asegura que el aprendizaje esté integrado en la dinámica del juego, no como una actividad separada, sino como el mecanismo central de progreso \cite{GoGoals2020}.
+
+\subsection{Diagnóstico: fortalezas y limitaciones del formato físico}
+\label{subsec:diagnostico_gogals}
+
 Un análisis riguroso del juego en su formato físico actual revela tanto fortalezas significativas como limitaciones críticas que justifican la necesidad de una adaptación digital. Las fortalezas incluyen un alto valor pedagógico con mecánicas probadas, lenguaje accesible para el grupo de edad objetivo y una progresión cognitiva según la taxonomía de Bloom. Entre las limitaciones más relevantes se destacan el contenido estático derivado de solo 34 preguntas fijas, la dependencia de recursos de impresión a color, la imposibilidad de uso en entornos de educación a distancia y la ausencia de mecanismos de registro del aprendizaje individual.
 
 \begin{table}[!htbp]
@@ -84,7 +173,7 @@ Un análisis riguroso del juego en su formato físico actual revela tanto fortal
 \hline
 \textbf{Aspecto} & \textbf{Fortalezas} & \textbf{Limitaciones} \\
 \hline
-Diseño pedagógico & Alta alineación con ODS, mecánicas probadas durante décadas, lenguaje accesible para 8-10 años. & Contenido estático: solo 34 preguntas fijas. Rejugabilidad limitada por memorización. \\
+Diseño pedagógico & Alta alineación con ODS, mecánicas probadas, lenguaje accesible para 8-10 años. & Contenido estático: solo 34 preguntas fijas. Rejugabilidad limitada por memorización. \\
 \hline
 Interacción social & Fomenta cooperación, genera discusión sobre sostenibilidad, enseña respeto de turnos. & Requiere grupo físico y materiales impresos. Imposible en educación a distancia. \\
 \hline
@@ -97,21 +186,46 @@ Medición del aprendizaje & Retroalimentación cualitativa inmediata (respuesta 
 \end{tabular}
 \end{table}
 
-La adaptación digital propuesta mediante Godot Engine resuelve estas limitaciones al ofrecer acceso universal mediante descarga gratuita en múltiples plataformas, un banco de preguntas ampliable mediante archivos de datos estructurados, registro automático del progreso y patrones de aprendizaje, y una experiencia enriquecida con animaciones, sonido y efectos visuales. La situación problemática identificada puede caracterizarse como un recurso educativo de alto valor pedagógico cuyo alcance e impacto potencial se ven severamente limitados por restricciones inherentes a su formato analógico.
+\subsubsection{Justificación de la adaptación digital}
+\label{subsubsec:justificacion_adaptacion}
 
+La adaptación digital propuesta mediante Godot Engine resuelve las limitaciones identificadas al ofrecer: acceso universal mediante descarga gratuita en múltiples plataformas, un banco de preguntas ampliable mediante archivos de datos estructurados (JSON), registro automático del progreso y patrones de aprendizaje, y una experiencia enriquecida con animaciones, sonido y efectos visuales. La situación problemática identificada puede caracterizarse como un recurso educativo de alto valor pedagógico cuyo alcance e impacto potencial se ven severamente limitados por restricciones inherentes a su formato analógico.
+
+%---------------------------------------------------------------------------
 \section{Tecnologías y herramientas para el desarrollo del videojuego educativo}
+\label{sec:tecnologias}
 
-El presente epígrafe se dedica a la sistematización de los fundamentos teórico-metodológicos asociados a las tecnologías y herramientas utilizadas para lograr el resultado contenido en el campo de acción, es decir, la adaptación digital del juego de mesa ``Go Goals!'' mediante un videojuego educativo interactivo. Se analizan y justifican la metodología de desarrollo, el motor de videojuegos, los lenguajes de programación y modelado, así como las herramientas de soporte seleccionadas.
+El presente epígrafe se dedica a la sistematización de los fundamentos teórico-metodológicos asociados a las tecnologías y herramientas utilizadas para lograr el resultado contenido en el campo de acción. Se analizan y justifican la metodología de desarrollo, el motor de videojuegos, los lenguajes de programación y modelado, así como las herramientas de soporte seleccionadas. La elección de estas tecnologías se basó en su capacidad para facilitar un desarrollo ágil, eficiente y alineado con los ODS, así como en su adaptabilidad a un entorno académico con recursos y tiempo limitados.
 
 \subsection{Metodología de desarrollo de software: Extreme Programming}
-Una metodología de desarrollo de software es un conjunto de principios, prácticas y procesos sistemáticos que guían la planificación, diseño, implementación, prueba y mantenimiento de sistemas de software (Sommerville, 2021). Para el desarrollo del videojuego educativo basado en ``Go Goals!'', se seleccionó Extreme Programming (XP). Esta metodología ágil, formulada originalmente por Kent Beck en 1999, enfatiza la flexibilidad, la colaboración y la entrega continua de valor al cliente. Se centra en prácticas como la programación en parejas, el desarrollo guiado por pruebas (TDD) y la integración continua. Su elección se justifica por la naturaleza dinámica del desarrollo de videojuegos educativos, que requiere adaptarse rápidamente a los cambios en el diseño y las mecánicas del juego.
+\label{subsec:metodologia_xp}
 
-\subsection{Motor de videojuegos: Godot Engine}
-Para el desarrollo del videojuego educativo se seleccionó Godot Engine en su versión 4.4.1. Godot es un motor de código abierto bajo licencia MIT que ha ganado considerable popularidad en la comunidad de desarrollo de videojuegos por su flexibilidad, accesibilidad y facilidad de uso. En su versión 4.4.1, el motor presenta mejoras significativas en el rendimiento gráfico, soporte robusto para gráficos bidimensionales optimizados y un sistema de scripting mejorado basado en GDScript. La interfaz de usuario ha sido optimizada para facilitar la creación y edición de escenas mediante un sistema intuitivo de nodos y jerarquías.
+Una metodología de desarrollo de software es un conjunto de principios, prácticas y procesos sistemáticos que guían la planificación, diseño, implementación, prueba y mantenimiento de sistemas de software \cite{Sommerville2021}. Para el desarrollo del videojuego educativo basado en ``Go Goals!'', se seleccionó Extreme Programming (XP). Esta metodología ágil, formulada originalmente por \citeauthor{Beck1999} en 1999 \cite{Beck1999}, enfatiza la flexibilidad, la colaboración y la entrega continua de valor al cliente. Se centra en prácticas como la programación en parejas, el desarrollo guiado por pruebas (TDD) y la integración continua \cite{Cockburn2020}.
+
+La elección de XP se justifica por la naturaleza dinámica del desarrollo de videojuegos educativos, que requiere adaptarse rápidamente a los cambios en el diseño y las mecánicas del juego \cite{SchwaberSutherland2020}. Además, la colaboración estrecha entre desarrollador y cliente es fundamental para garantizar que el contenido del juego esté alineado con los ODS. El énfasis de XP en la calidad del software, mediante pruebas continuas y refactorización, asegura que el videojuego sea a la vez funcional y un excelente recurso educativo.
+
+\subsubsection{Fases y valores de Extreme Programming}
+\label{subsubsec:fases_xp}
+
+XP establece cuatro fases principales en su ciclo de desarrollo: exploración, planificación, iteraciones y puesta en producción. Sus valores fundamentales son: comunicación, simplicidad, retroalimentación, valentía y respeto. Estos valores orientan las decisiones de desarrollo en cada iteración del proyecto \cite{Beck1999}.
+
+\begin{figure}[!htbp]
+  \centering
+  % \includegraphics[width=0.8\textwidth]{Images/figura_fases_xp}
+  \framebox[0.8\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Fases de Extreme Programming aplicadas al proyecto (elaboración propia)]}}
+  \caption{Fases de Extreme Programming aplicadas al desarrollo del videojuego educativo (elaboración propia)\label{fig:fases_xp}}
+\end{figure}
+
+\subsection{Motor de videojuegos: Godot Engine 4.4.1}
+\label{subsec:godot}
+
+Un motor de videojuegos es un conjunto de herramientas y tecnologías que permiten el desarrollo, la creación y la ejecución de videojuegos, proporcionando una infraestructura que incluye gráficos, física, sonido, inteligencia artificial y otras funcionalidades necesarias para crear un entorno interactivo y dinámico \cite{Gregory2020}. Para el desarrollo del videojuego educativo se seleccionó Godot Engine en su versión 4.4.1 \cite{GodotEngine2023}.
+
+Godot es un motor de código abierto bajo licencia MIT que ha ganado considerable popularidad en la comunidad de desarrollo de videojuegos por su flexibilidad, accesibilidad y facilidad de uso \cite{LinietskiManzur2020}. En su versión 4.4.1, el motor presenta mejoras significativas en el rendimiento gráfico, soporte robusto para gráficos bidimensionales optimizados y un sistema de scripting mejorado basado en GDScript.
 
 \begin{table}[!htbp]
 \centering
-\caption{Características técnicas de Godot Engine\label{tab:caract_godot}}
+\caption{Características técnicas de Godot Engine 4.4.1\label{tab:caract_godot}}
 \begin{tabular}{|p{0.25\textwidth}|p{0.35\textwidth}|p{0.3\textwidth}|}
 \hline
 \textbf{Característica} & \textbf{Descripción} & \textbf{Aplicación en Go Goals! Digital} \\
@@ -127,37 +241,67 @@ Soporte 2D avanzado & TileMaps, Path2D, partículas, shaders personalizados. & R
 \end{tabular}
 \end{table}
 
-\subsection{Comparativa de motores de videojuegos}
-Para validar la selección de Godot como motor de desarrollo principal, se realizó un análisis comparativo sistemático con alternativas tecnológicas disponibles en el mercado. Unity, el motor comercial más ampliamente utilizado, ofrece capacidades técnicas robustas pero presenta limitaciones críticas para este proyecto: sus términos de servicio han experimentado cambios controvertidos recientemente, sus exportaciones web generan archivos más pesados, y su curva de aprendizaje es considerablemente más pronunciada. Unreal Engine resulta claramente inadecuado para este proyecto educativo bidimensional por sus requisitos de regalías y su elevado consumo de recursos. Construct, si bien es especializado en desarrollo 2D, constituye un producto propietario con suscripción de pago mensual que contradice el criterio de accesibilidad universal establecido para el proyecto.
+\subsubsection{Comparativa de motores de videojuegos}
+\label{subsubsec:comparativa_motores}
+
+Para validar la selección de Godot como motor de desarrollo principal, se realizó un análisis comparativo sistemático con las alternativas tecnológicas más relevantes disponibles en el mercado. Unity, el motor comercial más ampliamente utilizado, presenta limitaciones críticas para este proyecto: sus términos de servicio han experimentado cambios controvertidos recientemente, sus exportaciones web generan archivos más pesados, y su curva de aprendizaje es considerablemente más pronunciada. Unreal Engine resulta claramente inadecuado para este proyecto educativo bidimensional por sus requisitos de regalías y su elevado consumo de recursos. Construct, si bien es especializado en desarrollo 2D, constituye un producto propietario con suscripción de pago mensual.
 
 \begin{table}[!htbp]
 \centering
 \caption{Comparativa de motores de videojuegos\label{tab:comparativa_motores}}
-\begin{tabular}{|l|l|l|l|p{0.3\textwidth}|}
+\begin{tabular}{|l|l|l|l|p{0.25\textwidth}|}
 \hline
 \textbf{Motor} & \textbf{Licencia} & \textbf{Export. Web} & \textbf{Curva Aprend.} & \textbf{Conclusión} \\
 \hline
 Godot & Gratuito (MIT) & Nativa & Baja & Cumple 100\% criterios \\
 \hline
-Unity & Grat. (limitado/Prop.) & WebGL (pesado) & Media-alta & Archivos pesados, licencia incierta \\
+Unity & Grat. (Prop.) & WebGL (pesado) & Media-alta & Archivos pesados, licencia incierta \\
 \hline
-Unreal & Grat. (regalías $>$1M/Prop.) & Escasa & Alta & Inadecuado para 2D, sobrecarga \\
+Unreal & Grat. (regalías/Prop.) & Escasa & Alta & Inadecuado para 2D, sobrecarga \\
 \hline
-Construct & Pago (suscripción/Prop.) & HTML5 & Muy baja & Requiere pago, código cerrado \\
+Construct & Pago (suscripción) & HTML5 & Muy baja & Requiere pago, código cerrado \\
 \hline
 \end{tabular}
 \end{table}
 
-\subsection{Herramientas complementarias}
-En consonancia con los criterios de selección tecnológica establecidos ---accesibilidad universal, código abierto, facilidad de aprendizaje, capacidad gráfica 2D robusta y bajo consumo de recursos--- se seleccionaron herramientas específicas para complementar el desarrollo en Godot. Para la edición de sprites se seleccionó Aseprite o su equivalente de código abierto LibreSprite. Para la recreación vectorial del tablero hexagonal se seleccionó Inkscape. El almacenamiento y gestión de preguntas educativas se implementa mediante archivos estructurados en formato JSON. El sistema de control de versiones utilizado es Git en su versión 2.43.0, integrado con GitHub Projects para la gestión de tareas bajo la metodología XP. Finalmente, la distribución web gratuita del videojuego se implementa mediante GitHub Pages.
+\begin{figure}[!htbp]
+  \centering
+  % \includegraphics[width=0.8\textwidth]{Images/figura_comparativa_motores}
+  \framebox[0.8\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Comparativa visual de motores de videojuegos disponibles (elaboración propia)]}}
+  \caption{Comparativa de motores de videojuegos por criterios del proyecto (elaboración propia)\label{fig:comparativa_motores}}
+\end{figure}
 
+\subsection{Herramientas complementarias del entorno de desarrollo}
+\label{subsec:herramientas_complementarias}
+
+En consonancia con los criterios de selección tecnológica establecidos ---accesibilidad universal, código abierto, facilidad de aprendizaje, capacidad gráfica 2D robusta y bajo consumo de recursos--- se seleccionaron herramientas específicas para complementar el desarrollo en Godot.
+
+\subsubsection{Herramientas de edición gráfica y control de versiones}
+\label{subsubsec:herramientas_graficas}
+
+Para la edición de sprites se seleccionó Aseprite o su equivalente de código abierto LibreSprite. Para la recreación vectorial del tablero hexagonal se seleccionó Inkscape. El almacenamiento y gestión de preguntas educativas se implementa mediante archivos estructurados en formato JSON, lo que permite que educadores sin conocimientos de programación puedan añadir o modificar preguntas mediante cualquier editor de texto simple \cite{GodotDocs2023}.
+
+El sistema de control de versiones utilizado es Git en su versión 2.43.0, integrado con GitHub Projects para la gestión de tareas bajo la metodología XP \cite{ChaconStraub2014, GitHubDocs2022}. Finalmente, la distribución web gratuita del videojuego se implementa mediante GitHub Pages \cite{GitHubPages2023}, garantizando accesibilidad global sin requerir instalación de software adicional.
+
+\begin{figure}[!htbp]
+  \centering
+  % \includegraphics[width=0.75\textwidth]{Images/figura_entorno_desarrollo}
+  \framebox[0.75\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Diagrama del entorno de desarrollo integrado (elaboración propia)]}}
+  \caption{Entorno de desarrollo integrado para el videojuego Go Goals! Digital (elaboración propia)\label{fig:entorno_desarrollo}}
+\end{figure}
+
+%---------------------------------------------------------------------------
 \section*{Conclusiones del Capítulo I}
+\addcontentsline{toc}{section}{Conclusiones del Capítulo I}
 
 A partir de los contenidos abordados en el presente capítulo, se establecen las siguientes conclusiones:
 
 \begin{enumerate}
-    \item Los referentes teóricos sobre Aprendizaje Basado en Juegos, gamificación, teoría del flujo y modelo TPACK confirman la pertinencia pedagógica de los videojuegos educativos como mediadores para la enseñanza de los Objetivos de Desarrollo Sostenible.
-    \item El diagnóstico del estado actual del juego de mesa Go Goals! evidenció que, si bien posee un diseño pedagógico sólido y alineado con los ODS, su formato físico presenta limitaciones estructurales que afectan su accesibilidad, escalabilidad, rejugabilidad y capacidad para registrar el aprendizaje, lo cual valida plenamente el problema científico planteado.
-    \item La selección de Godot Engine 4.4.1 como motor de desarrollo, sustentada en el análisis comparativo con alternativas tecnológicas, resulta la opción que mejor cumple los criterios de accesibilidad universal, código abierto, capacidad gráfica 2D y bajo consumo de recursos requeridos por el proyecto.
-    \item La metodología Extreme Programming se justifica como el enfoque de desarrollo más adecuado para el presente proyecto, por su capacidad de adaptación iterativa, la colaboración estrecha con usuarios educativos y el énfasis en la calidad del software mediante pruebas continuas.
+    \item Los referentes teóricos sobre Aprendizaje Basado en Juegos, gamificación, Teoría del Flujo y Modelo TPACK confirman la pertinencia pedagógica de los videojuegos educativos como mediadores para la enseñanza de los Objetivos de Desarrollo Sostenible \cite{PlassFoundations2020, Deterding2020}.
+
+    \item El diagnóstico del estado actual del juego de mesa \textit{Go Goals!} evidenció que, si bien posee un diseño pedagógico sólido y alineado con los ODS, su formato físico presenta limitaciones estructurales que afectan su accesibilidad, escalabilidad, rejugabilidad y capacidad para registrar el aprendizaje, lo cual valida plenamente el problema científico planteado.
+
+    \item La selección de Godot Engine 4.4.1 como motor de desarrollo, sustentada en el análisis comparativo con alternativas tecnológicas, resulta la opción que mejor cumple los criterios de accesibilidad universal, código abierto, capacidad gráfica 2D y bajo consumo de recursos requeridos por el proyecto \cite{GodotEngine2023}.
+
+    \item La metodología Extreme Programming se justifica como el enfoque de desarrollo más adecuado para el presente proyecto, por su capacidad de adaptación iterativa, la colaboración estrecha con usuarios educativos y el énfasis en la calidad del software mediante pruebas continuas \cite{Beck1999, SchwaberSutherland2020}.
 \end{enumerate}
