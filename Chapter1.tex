@@ -192,59 +192,49 @@ Medición del aprendizaje & Retroalimentación cualitativa inmediata (respuesta 
 La adaptación digital propuesta mediante Godot Engine resuelve las limitaciones identificadas al ofrecer: acceso universal mediante descarga gratuita en múltiples plataformas, un banco de preguntas ampliable mediante archivos de datos estructurados (JSON), registro automático del progreso y patrones de aprendizaje, y una experiencia enriquecida con animaciones, sonido y efectos visuales. La situación problemática identificada puede caracterizarse como un recurso educativo de alto valor pedagógico cuyo alcance e impacto potencial se ven severamente limitados por restricciones inherentes a su formato analógico.
 
 %---------------------------------------------------------------------------
-\section{Tecnologías y herramientas para el desarrollo del videojuego educativo}
+\section{Metodologías y herramientas para el desarrollo de Go Goals! Digital}
 \label{sec:tecnologias}
 
 El presente epígrafe se dedica a la sistematización de los fundamentos teórico-metodológicos asociados a las tecnologías y herramientas utilizadas para lograr el resultado contenido en el campo de acción. Se analizan y justifican la metodología de desarrollo, el motor de videojuegos, los lenguajes de programación y modelado, así como las herramientas de soporte seleccionadas. La elección de estas tecnologías se basó en su capacidad para facilitar un desarrollo ágil, eficiente y alineado con los ODS, así como en su adaptabilidad a un entorno académico con recursos y tiempo limitados.
 
-\subsection{Metodología de desarrollo de software: Extreme Programming}
+\subsection{Metodología de desarrollo de software}
 \label{subsec:metodologia_xp}
 
-Una metodología de desarrollo de software es un conjunto de principios, prácticas y procesos sistemáticos que guían la planificación, diseño, implementación, prueba y mantenimiento de sistemas de software \cite{Sommerville2021}. Para el desarrollo del videojuego educativo basado en ``Go Goals!'', se seleccionó Extreme Programming (XP). Esta metodología ágil, formulada originalmente por \citeauthor{Beck1999} en 1999 \cite{Beck1999}, enfatiza la flexibilidad, la colaboración y la entrega continua de valor al cliente. Se centra en prácticas como la programación en parejas, el desarrollo guiado por pruebas (TDD) y la integración continua \cite{Cockburn2020}.
+Una metodología de desarrollo de software es un conjunto de principios, prácticas y procesos sistemáticos que guían la planificación, diseño, implementación, prueba y mantenimiento de sistemas de software. Según \citeauthor{Sommerville2021} \cite{Sommerville2021}, las metodologías de desarrollo de software ``proporcionan un marco estructurado para gestionar la complejidad de los proyectos de software, asegurando que se cumplan los requisitos del cliente y se entregue un producto de alta calidad dentro del tiempo y el presupuesto establecidos''. Estas metodologías pueden variar desde enfoques tradicionales, como el modelo en cascada, que sigue una secuencia lineal de fases, hasta enfoques ágiles, como Scrum o Extreme Programming (XP), que promueven la flexibilidad, la colaboración y la entrega iterativa de funcionalidades \cite{SchwaberSutherland2020}.
 
-La elección de XP se justifica por la naturaleza dinámica del desarrollo de videojuegos educativos, que requiere adaptarse rápidamente a los cambios en el diseño y las mecánicas del juego \cite{SchwaberSutherland2020}. Además, la colaboración estrecha entre desarrollador y cliente es fundamental para garantizar que el contenido del juego esté alineado con los ODS. El énfasis de XP en la calidad del software, mediante pruebas continuas y refactorización, asegura que el videojuego sea a la vez funcional y un excelente recurso educativo.
+Para el desarrollo del videojuego educativo \textit{Go Goals! Digital} se seleccionó Extreme Programming (XP). Esta metodología ágil, formulada originalmente por \citeauthor{Beck1999} en 1999 \cite{Beck1999}, enfatiza la flexibilidad, la colaboración y la entrega continua de valor al cliente. Se centra en prácticas como la programación en parejas, el desarrollo guiado por pruebas (TDD) y la integración continua \cite{Cockburn2020}. XP promueve un entorno de trabajo colaborativo donde los desarrolladores y los clientes trabajan juntos para definir las características del software, facilitando una mejor alineación entre las necesidades del usuario y el producto final.
 
-\subsubsection{Fases y valores de Extreme Programming}
-\label{subsubsec:fases_xp}
-
-XP establece cuatro fases principales en su ciclo de desarrollo: exploración, planificación, iteraciones y puesta en producción. Sus valores fundamentales son: comunicación, simplicidad, retroalimentación, valentía y respeto. Estos valores orientan las decisiones de desarrollo en cada iteración del proyecto \cite{Beck1999}.
+La elección de XP se justifica por la naturaleza dinámica del desarrollo de videojuegos educativos, que requiere adaptarse rápidamente a los cambios en el diseño y las mecánicas del juego \cite{SchwaberSutherland2020}. La colaboración estrecha entre desarrollador y cliente es fundamental para garantizar que el contenido del juego esté alineado con los ODS. El énfasis de XP en la calidad del software, mediante pruebas continuas y refactorización, asegura que \textit{Go Goals! Digital} sea a la vez funcional y un excelente recurso educativo.
 
 \begin{figure}[!htbp]
   \centering
   % \includegraphics[width=0.8\textwidth]{Images/figura_fases_xp}
   \framebox[0.8\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Fases de Extreme Programming aplicadas al proyecto (elaboración propia)]}}
-  \caption{Fases de Extreme Programming aplicadas al desarrollo del videojuego educativo (elaboración propia)\label{fig:fases_xp}}
+  \caption{Fases de Extreme Programming aplicadas al desarrollo de \textit{Go Goals! Digital} (elaboración propia)\label{fig:fases_xp}}
 \end{figure}
 
-\subsection{Motor de videojuegos: Godot Engine 4.4.1}
+\subsection{Herramienta CASE}
+\label{subsec:case}
+
+Las herramientas CASE (Computer-Aided Software Engineering) son software diseñado para apoyar el desarrollo, mantenimiento y gestión de sistemas de software, automatizando y optimizando diversas etapas del ciclo de vida del mismo. Según \citeauthor{Pressman2021} \cite{Pressman2021}, las herramientas CASE son ``aplicaciones que facilitan el modelado, diseño, implementación y documentación de sistemas de software, mejorando la productividad y la calidad del producto final''. Estas herramientas abarcan una amplia gama de funcionalidades, como la creación de diagramas con UML, la gestión de requisitos, la generación de código y la documentación automatizada \cite{Sommerville2021}.
+
+Se utilizó Visual Paradigm en su versión 8.0 como herramienta CASE para apoyar el diseño, modelado y documentación del sistema. Visual Paradigm es una plataforma integral que ofrece un conjunto de herramientas para el análisis y diseño de software, incluyendo diagramas UML, gestión de requisitos, modelado de bases de datos y prototipado de interfaces de usuario \cite{VisualParadigm2023}. Su versatilidad y facilidad de uso la convierten en una opción ideal para proyectos de ingeniería de software, especialmente en entornos académicos.
+
+Visual Paradigm permite a los desarrolladores crear y gestionar modelos de software de manera eficiente. Sus características principales incluyen soporte de diagramas UML (clases, secuencia, casos de uso y actividades), gestión y rastreo de requisitos del sistema, prototipado de interfaces que facilita el diseño de videojuegos, y funciones de colaboración en línea \cite{VisualParadigm2023}.
+
+\subsection{Lenguaje de modelado}
+\label{subsec:uml}
+
+El lenguaje de modelado utilizado es UML (Unified Modeling Language) en su versión 2.5.1. UML es un lenguaje de modelado visual estandarizado que se utiliza para representar, diseñar y documentar sistemas de software. Según \citeauthor{Fowler2018} \cite{Fowler2018}, UML es ``una herramienta esencial para visualizar la estructura, el comportamiento y las interacciones de un sistema, permitiendo a los equipos de desarrollo comunicar ideas complejas de manera clara y precisa''. UML se utiliza como herramienta fundamental para modelar los diferentes aspectos del sistema de \textit{Go Goals! Digital}, desde la arquitectura general hasta los detalles de implementación.
+
+UML aporta ventajas clave al proyecto: proporciona comunicación efectiva al constituir un lenguaje común para desarrolladores y los tutores del proyecto; ofrece documentación clara al servir de representación visual que facilita la evolución del software; y permite la detección temprana de errores al modelar el sistema antes de la implementación, posibilitando la identificación y corrección de problemas de diseño en etapas tempranas \cite{Fowler2018}.
+
+\subsection{Motor de videojuegos}
 \label{subsec:godot}
 
 Un motor de videojuegos es un conjunto de herramientas y tecnologías que permiten el desarrollo, la creación y la ejecución de videojuegos, proporcionando una infraestructura que incluye gráficos, física, sonido, inteligencia artificial y otras funcionalidades necesarias para crear un entorno interactivo y dinámico \cite{Gregory2020}. Para el desarrollo del videojuego educativo se seleccionó Godot Engine en su versión 4.4.1 \cite{GodotEngine2023}.
 
-Godot es un motor de código abierto bajo licencia MIT que ha ganado considerable popularidad en la comunidad de desarrollo de videojuegos por su flexibilidad, accesibilidad y facilidad de uso \cite{LinietskiManzur2020}. En su versión 4.4.1, el motor presenta mejoras significativas en el rendimiento gráfico, soporte robusto para gráficos bidimensionales optimizados y un sistema de scripting mejorado basado en GDScript.
-
-\begin{table}[!htbp]
-\centering
-\caption{Características técnicas de Godot Engine 4.4.1\label{tab:caract_godot}}
-\begin{tabular}{|p{0.25\textwidth}|p{0.35\textwidth}|p{0.3\textwidth}|}
-\hline
-\textbf{Característica} & \textbf{Descripción} & \textbf{Aplicación en Go Goals! Digital} \\
-\hline
-Sistema de nodos & Todo elemento es un nodo (Sprite2D, Area2D, Label, Button, etc.). & Cada casilla es un Area2D con colisión; escaleras y serpientes son AnimationPlayer independientes. \\
-\hline
-GDScript & Lenguaje tipo Python, dinámico y legible. & Lógica de dados, turnos, preguntas, evaluación de respuestas y guardado de progreso educativo. \\
-\hline
-Exportación multiplataforma & HTML5, Windows, Linux, Android, iOS nativos. & Acceso desde aulas con PC, tablets o smartphones. Distribución web sin instalación. \\
-\hline
-Soporte 2D avanzado & TileMaps, Path2D, partículas, shaders personalizados. & Recorrido hexagonal animado, efectos de confeti al ganar, transiciones suaves entre turnos. \\
-\hline
-\end{tabular}
-\end{table}
-
-\subsubsection{Comparativa de motores de videojuegos}
-\label{subsubsec:comparativa_motores}
-
-Para validar la selección de Godot como motor de desarrollo principal, se realizó un análisis comparativo sistemático con las alternativas tecnológicas más relevantes disponibles en el mercado. Unity, el motor comercial más ampliamente utilizado, presenta limitaciones críticas para este proyecto: sus términos de servicio han experimentado cambios controvertidos recientemente, sus exportaciones web generan archivos más pesados, y su curva de aprendizaje es considerablemente más pronunciada. Unreal Engine resulta claramente inadecuado para este proyecto educativo bidimensional por sus requisitos de regalías y su elevado consumo de recursos. Construct, si bien es especializado en desarrollo 2D, constituye un producto propietario con suscripción de pago mensual.
+Godot es un motor de código abierto bajo licencia MIT que ha ganado considerable popularidad en la comunidad de desarrollo de videojuegos por su flexibilidad, accesibilidad y facilidad de uso \cite{LinietskiManzur2020}. En su versión 4.4.1, el motor presenta mejoras significativas en el rendimiento gráfico, soporte robusto para gráficos bidimensionales optimizados y un sistema de scripting mejorado basado en GDScript. Las capacidades gráficas avanzadas de Godot 4.4.1 son ideales para crear un videojuego educativo atractivo que capte la atención de los estudiantes. La comunidad activa y el amplio soporte documental de Godot facilitan el aprendizaje y la resolución de problemas durante el proceso de desarrollo \cite{GodotEngine2023}.
 
 \begin{table}[!htbp]
 \centering
@@ -255,9 +245,9 @@ Para validar la selección de Godot como motor de desarrollo principal, se reali
 \hline
 Godot & Gratuito (MIT) & Nativa & Baja & Cumple 100\% criterios \\
 \hline
-Unity & Grat. (Prop.) & WebGL (pesado) & Media-alta & Archivos pesados, licencia incierta \\
+Unity & Grat. (Prop.) & WebGL pesado & Media-alta & Archivos pesados, licencia incierta \\
 \hline
-Unreal & Grat. (regalías/Prop.) & Escasa & Alta & Inadecuado para 2D, sobrecarga \\
+Unreal & Grat. (regalías) & Escasa & Alta & Inadecuado para 2D, sobrecarga \\
 \hline
 Construct & Pago (suscripción) & HTML5 & Muy baja & Requiere pago, código cerrado \\
 \hline
@@ -266,28 +256,55 @@ Construct & Pago (suscripción) & HTML5 & Muy baja & Requiere pago, código cerr
 
 \begin{figure}[!htbp]
   \centering
-  % \includegraphics[width=0.8\textwidth]{Images/figura_comparativa_motores}
-  \framebox[0.8\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Comparativa visual de motores de videojuegos disponibles (elaboración propia)]}}
+  % \includegraphics[width=0.75\textwidth]{Images/figura_comparativa_motores}
+  \framebox[0.75\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Comparativa de motores de videojuegos disponibles (elaboración propia)]}}
   \caption{Comparativa de motores de videojuegos por criterios del proyecto (elaboración propia)\label{fig:comparativa_motores}}
 \end{figure}
 
-\subsection{Herramientas complementarias del entorno de desarrollo}
-\label{subsec:herramientas_complementarias}
+\subsection{Lenguaje de programación}
+\label{subsec:gdscript}
 
-En consonancia con los criterios de selección tecnológica establecidos ---accesibilidad universal, código abierto, facilidad de aprendizaje, capacidad gráfica 2D robusta y bajo consumo de recursos--- se seleccionaron herramientas específicas para complementar el desarrollo en Godot.
+Un lenguaje de programación es un sistema formal de comunicación que permite a los desarrolladores escribir instrucciones precisas para que una computadora ejecute tareas específicas. Según \citeauthor{Sommerville2021} \cite{Sommerville2021}, los lenguajes de programación son herramientas esenciales en el desarrollo de software, ya que permiten crear aplicaciones, sistemas operativos, videojuegos y otras soluciones tecnológicas, y evolucionan constantemente para adaptarse a las necesidades emergentes.
 
-\subsubsection{Herramientas de edición gráfica y control de versiones}
-\label{subsubsec:herramientas_graficas}
+Se utilizó GDScript como lenguaje de programación principal. Este es un lenguaje de scripting dinámico y de alto nivel diseñado específicamente para el motor de videojuegos Godot Engine. Su sintaxis es similar a Python, lo que lo hace accesible para programadores de todos los niveles \cite{GodotDocs2023}. GDScript está optimizado para la creación de videojuegos, ofreciendo una integración nativa con las funcionalidades de Godot como la gestión de escenas, nodos y recursos, lo que permite un desarrollo ágil y eficiente \cite{LinietskiManzur2020}.
 
-Para la edición de sprites se seleccionó Aseprite o su equivalente de código abierto LibreSprite. Para la recreación vectorial del tablero hexagonal se seleccionó Inkscape. El almacenamiento y gestión de preguntas educativas se implementa mediante archivos estructurados en formato JSON, lo que permite que educadores sin conocimientos de programación puedan añadir o modificar preguntas mediante cualquier editor de texto simple \cite{GodotDocs2023}.
+La elección de GDScript para \textit{Go Goals! Digital} se justifica por su compatibilidad nativa con Godot Engine, la rapidez en el desarrollo, y su simplicidad que permite implementar mecánicas educativas complejas ---como el sistema de preguntas por ODS, la lógica de escaleras y serpientes, y la gestión de turnos--- en menos tiempo comparado con otros lenguajes como C\# o C++. Su facilidad para la creación de prototipos rápidos y la iteración constante es un factor esencial en el proceso de desarrollo bajo la metodología XP. Además, la comunidad activa y los recursos documentales disponibles permiten un desarrollo más eficiente \cite{GodotDocs2023}.
 
-El sistema de control de versiones utilizado es Git en su versión 2.43.0, integrado con GitHub Projects para la gestión de tareas bajo la metodología XP \cite{ChaconStraub2014, GitHubDocs2022}. Finalmente, la distribución web gratuita del videojuego se implementa mediante GitHub Pages \cite{GitHubPages2023}, garantizando accesibilidad global sin requerir instalación de software adicional.
+\subsection{Herramienta de diseño de activos gráficos}
+\label{subsec:inkscape}
+
+El diseño de los activos gráficos bidimensionales del videojuego, incluyendo el tablero hexagonal, los íconos de los ODS y las fichas de los jugadores, requiere una herramienta de edición vectorial capaz de producir gráficos escalables y de alta calidad. Se seleccionó Inkscape en su versión 1.3 como herramienta principal para el diseño del tablero y los elementos gráficos vectoriales del juego.
+
+Inkscape es un editor de gráficos vectoriales de código abierto y gratuito, compatible con el estándar SVG (Scalable Vector Graphics), que permite crear ilustraciones, íconos y diagramas de calidad profesional \cite{GodotDocs2023}. Su elección se justifica por su naturaleza gratuita y de código abierto, su capacidad de exportar en formatos compatibles con Godot (PNG, SVG), y la posibilidad de ajustar fácilmente los colores oficiales de cada ODS (definidos por las Naciones Unidas) para cada casilla temática del tablero.
+
+El contenido educativo del videojuego ---el banco de preguntas por ODS--- se gestiona mediante archivos estructurados en formato JSON, lo que permite a educadores sin conocimientos de programación añadir, modificar o traducir preguntas mediante cualquier editor de texto \cite{GodotDocs2023}.
 
 \begin{figure}[!htbp]
   \centering
-  % \includegraphics[width=0.75\textwidth]{Images/figura_entorno_desarrollo}
-  \framebox[0.75\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Diagrama del entorno de desarrollo integrado (elaboración propia)]}}
-  \caption{Entorno de desarrollo integrado para el videojuego Go Goals! Digital (elaboración propia)\label{fig:entorno_desarrollo}}
+  % \includegraphics[width=0.7\textwidth]{Images/figura_inkscape_tablero}
+  \framebox[0.7\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Diseño del tablero hexagonal en Inkscape (elaboración propia)]}}
+  \caption{Diseño vectorial del tablero hexagonal de \textit{Go Goals! Digital} en Inkscape (elaboración propia)\label{fig:inkscape_tablero}}
+\end{figure}
+
+\subsection{Sistema de control de versiones}
+\label{subsec:git}
+
+El sistema de control de versiones utilizado en el desarrollo de la propuesta de solución es Git en su versión 2.43.0. Git es un sistema de control de versiones distribuido ampliamente utilizado para gestionar cambios en el código fuente durante el desarrollo de software. Según \citeauthor{ChaconStraub2014} \cite{ChaconStraub2014}, Git permite a los desarrolladores ``rastrear modificaciones en archivos, coordinar el trabajo en equipo y mantener un historial completo de cambios, facilitando la colaboración y la reversión a versiones anteriores en caso de errores''. A diferencia de los sistemas centralizados, Git opera de manera distribuida, lo que significa que cada desarrollador tiene una copia completa del repositorio, incluyendo su historial de cambios \cite{ChaconStraub2014}.
+
+Git utiliza un modelo basado en \textit{snapshots} (instantáneas) en lugar de diferencias entre archivos, lo que lo hace eficiente en términos de almacenamiento y rendimiento. Ofrece funcionalidades avanzadas como ramificaciones (\textit{branching}) y fusiones (\textit{merging}), permitiendo trabajar en múltiples características de manera simultánea sin interferencias \cite{ChaconStraub2014}. Para \textit{Go Goals! Digital} esto resulta esencial para gestionar las iteraciones de XP de manera organizada y revertir cambios ante errores en el desarrollo de las mecánicas de juego.
+
+\subsection{Software de gestión de proyectos}
+\label{subsec:github_projects}
+
+Se establece GitHub Projects como software de gestión de proyectos. Esta es una herramienta integrada en GitHub que permite a los equipos de desarrollo gestionar y organizar tareas, \textit{issues} y \textit{pull requests} de manera eficiente \cite{GitHubDocs2022}. GitHub Projects es una solución flexible para la planificación y seguimiento del progreso de proyectos de software, ofreciendo una vista visual del flujo de trabajo y las prioridades del equipo.
+
+Esta herramienta es especialmente útil para equipos que siguen metodologías ágiles como XP, ya que permite crear tableros personalizados con columnas que representan diferentes etapas del desarrollo: ``Por hacer'', ``En progreso'' y ``Terminado''. GitHub Projects incluye características como la automatización de tareas, que mueve automáticamente las tareas entre columnas según criterios definidos, y la integración con \textit{issues} y \textit{pull requests}, lo que facilita el seguimiento del progreso y la trazabilidad de las tareas \cite{GitHubDocs2022}.
+
+\begin{figure}[!htbp]
+  \centering
+  % \includegraphics[width=0.85\textwidth]{Images/figura_github_projects}
+  \framebox[0.85\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Tablero de GitHub Projects del proyecto (elaboración propia)]}}
+  \caption{Tablero de gestión de tareas en GitHub Projects para \textit{Go Goals! Digital} (elaboración propia)\label{fig:github_projects}}
 \end{figure}
 
 %---------------------------------------------------------------------------
@@ -297,11 +314,13 @@ El sistema de control de versiones utilizado es Git en su versión 2.43.0, integ
 A partir de los contenidos abordados en el presente capítulo, se establecen las siguientes conclusiones:
 
 \begin{enumerate}
-    \item Los referentes teóricos sobre Aprendizaje Basado en Juegos, gamificación, Teoría del Flujo y Modelo TPACK confirman la pertinencia pedagógica de los videojuegos educativos como mediadores para la enseñanza de los Objetivos de Desarrollo Sostenible \cite{PlassFoundations2020, Deterding2020}.
+    \item Los referentes teóricos sobre Aprendizaje Basado en Juegos, gamificación, Teoría del Flujo y Modelo TPACK confirman la pertinencia pedagógica de los videojuegos educativos como mediadores para la enseñanza de los Objetivos de Desarrollo Sostenible.
 
     \item El diagnóstico del estado actual del juego de mesa \textit{Go Goals!} evidenció que, si bien posee un diseño pedagógico sólido y alineado con los ODS, su formato físico presenta limitaciones estructurales que afectan su accesibilidad, escalabilidad, rejugabilidad y capacidad para registrar el aprendizaje, lo cual valida plenamente el problema científico planteado.
 
-    \item La selección de Godot Engine 4.4.1 como motor de desarrollo, sustentada en el análisis comparativo con alternativas tecnológicas, resulta la opción que mejor cumple los criterios de accesibilidad universal, código abierto, capacidad gráfica 2D y bajo consumo de recursos requeridos por el proyecto \cite{GodotEngine2023}.
+    \item La selección de Godot Engine 4.4.1 como motor de desarrollo, sustentada en el análisis comparativo con alternativas tecnológicas, resulta la opción que mejor cumple los criterios de accesibilidad universal, código abierto, capacidad gráfica 2D y bajo consumo de recursos requeridos por el proyecto.
 
-    \item La metodología Extreme Programming se justifica como el enfoque de desarrollo más adecuado para el presente proyecto, por su capacidad de adaptación iterativa, la colaboración estrecha con usuarios educativos y el énfasis en la calidad del software mediante pruebas continuas \cite{Beck1999, SchwaberSutherland2020}.
+    \item La metodología Extreme Programming se justifica como el enfoque de desarrollo más adecuado para el presente proyecto por su capacidad de adaptación iterativa, la colaboración estrecha con usuarios educativos y el énfasis en la calidad del software mediante pruebas continuas.
+
+    \item Se seleccionaron y justificaron las herramientas tecnológicas que conforman el entorno de desarrollo: Visual Paradigm como herramienta CASE, UML como lenguaje de modelado, GDScript como lenguaje de programación, Inkscape como herramienta de diseño gráfico, Git como sistema de control de versiones y GitHub Projects como software de gestión del proyecto.
 \end{enumerate}

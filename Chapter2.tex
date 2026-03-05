@@ -262,6 +262,114 @@ A continuación se presentan las historias de usuario definidas para las funcion
 	\storyobservation{Debe incluir controles deslizantes para volumen de música y efectos de sonido; el estado de la partida debe guardarse en archivo local; debe ser posible cargar la partida desde el menú principal.}
 \end{userstory}
 
+\begin{userstory}[tb:hu13]
+	\storyname{Personalización de jugadores}
+	\storyuser{Jugador estudiante}
+	\storyiter{1}
+	\storypriority{Alta}
+	\storyrisk{Bajo}
+	\storypoints{1.5}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{Como jugador estudiante quiero ingresar mi nombre y seleccionar el color de mi ficha para identificarme durante la partida.}
+	\storyobservation{Debe incluir un campo de texto para el nombre de cada jugador; debe ofrecer al menos 6 opciones de color para la ficha; los datos ingresados deben persistir durante toda la sesión; el color seleccionado no debe estar disponible para los demás jugadores.}
+\end{userstory}
+
+\begin{userstory}[tb:hu14]
+	\storyname{Visualización de información del ODS}
+	\storyuser{Jugador estudiante}
+	\storyiter{2}
+	\storypriority{Alta}
+	\storyrisk{Bajo}
+	\storypoints{2.0}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{Como jugador estudiante quiero ver una breve descripción del ODS al aterrizar en su casilla para contextualizarme antes de responder la pregunta.}
+	\storyobservation{Al caer en casilla temática debe mostrarse el ícono oficial del ODS, su número, nombre y una descripción breve de no más de dos oraciones; la información debe mostrarse antes de presentar la pregunta; el diseño debe respetar los colores oficiales de cada ODS.}
+\end{userstory}
+
+\begin{userstory}[tb:hu15]
+	\storyname{Temporizador de respuesta}
+	\storyuser{Educador}
+	\storyiter{3}
+	\storypriority{Baja}
+	\storyrisk{Medio}
+	\storypoints{2.0}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{Como educador quiero activar un temporizador opcional para que los jugadores respondan dentro de un límite de tiempo y agregar dinamismo a la partida.}
+	\storyobservation{El temporizador debe ser configurable antes de iniciar la partida (30, 60 o 90 segundos); al agotar el tiempo sin respuesta se debe contabilizar como respuesta incorrecta; el temporizador debe mostrarse visualmente con cambio de color al llegar al 25\% del tiempo restante; su activación debe ser opcional.}
+\end{userstory}
+
+\begin{userstory}[tb:hu16]
+	\storyname{Modo de un jugador}
+	\storyuser{Jugador estudiante}
+	\storyiter{4}
+	\storypriority{Media}
+	\storyrisk{Alto}
+	\storypoints{5.0}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{Como jugador estudiante quiero poder jugar en solitario contra un oponente controlado por el sistema para practicar los ODS.}
+	\storyobservation{El modo un jugador debe ofrecer un oponente automático; el oponente debe simular una velocidad de juego normal; las respuestas del oponente pueden ser correctas en un porcentaje configurable para ajustar la dificultad; debe diferenciarse visualmente el turno del jugador y el del sistema.}
+\end{userstory}
+
+\begin{userstory}[tb:hu17]
+	\storyname{Pantalla de clasificación al finalizar}
+	\storyuser{Jugador estudiante}
+	\storyiter{3}
+	\storypriority{Media}
+	\storyrisk{Bajo}
+	\storypoints{1.5}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{Como jugador estudiante quiero ver una tabla clasificatoria al final de la partida para conocer el desempeño de todos los jugadores.}
+	\storyobservation{La pantalla de clasificación debe mostrar el puesto, nombre y porcentaje de respuestas correctas de cada jugador; debe destacar al ganador; debe incluir un botón de jugar de nuevo y uno de volver al menú principal; deve mostrarse animación de confeti para el primer lugar.}
+\end{userstory}
+
+\begin{userstory}[tb:hu18]
+	\storyname{Notificación visual del turno activo}
+	\storyuser{Jugador estudiante}
+	\storyiter{2}
+	\storypriority{Alta}
+	\storyrisk{Bajo}
+	\storypoints{1.0}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{Como jugador estudiante quiero recibir una notificación visual y sonora de cuándo es mi turno para estar atento al juego.}
+	\storyobservation{Debe mostrarse un mensaje de ``¡Es tu turno, [nombre]!'' con animación de entrada; la ficha del jugador activo debe resaltarse visualmente en el tablero; debe reproducirse un efecto de sonido al inicio de cada turno; el botón de lanzar dado solo debe estar activo en el turno del jugador correspondiente.}
+\end{userstory}
+
+\begin{userstory}[tb:hu19]
+	\storyname{Accesibilidad de la interfaz}
+	\storyuser{Jugador estudiante}
+	\storyiter{5}
+	\storypriority{Media}
+	\storyrisk{Bajo}
+	\storypoints{2.0}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{Como jugador estudiante quiero que la interfaz sea accesible y legible para poder disfrutar el juego sin dificultades visuales.}
+	\storyobservation{El tamaño de fuente en todos los textos del juego no debe ser inferior a 16pt; los botones deben tener un tamaño mínimo de 60x60 píxeles; las preguntas deben poder leerse sin necesidad de scroll; la aplicación debe funcionar correctamente en resoluciones de 1024x768 o superiores.}
+\end{userstory}
+
+\begin{userstory}[tb:hu20]
+	\storyname{Pantalla de créditos}
+	\storyuser{Jugador estudiante}
+	\storyiter{5}
+	\storypriority{Baja}
+	\storyrisk{Bajo}
+	\storypoints{0.5}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{Como jugador estudiante quiero acceder a una pantalla de créditos para conocer quiénes desarrollaron el juego.}
+	\storyobservation{La pantalla de créditos debe ser accesible desde el menú principal; debe mostrar el nombre del desarrollador, la institución y el año; debe incluir referencias a Go Goals! de las Naciones Unidas y a Godot Engine.}
+\end{userstory}
+
+\begin{userstory}[tb:hu21]
+	\storyname{Compatibilidad web y exportación}
+	\storyuser{Educador}
+	\storyiter{5}
+	\storypriority{Alta}
+	\storyrisk{Medio}
+	\storypoints{3.0}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{Como educador quiero acceder al videojuego desde un navegador sin instalación para usarlo en cualquier aula con acceso a internet.}
+	\storyobservation{El videojuego debe exportarse correctamente a HTML5 mediante Godot; debe funcionar en Chrome, Firefox y Edge; el tiempo de carga inicial no debe superar los 15 segundos en una conexión de 10 Mbps; el ejecutable web debe ser distribuible mediante GitHub Pages sin costo alguno.}
+\end{userstory}
+
 \subsection{Estimación de tiempo de desarrollo}
 \label{subsec:estimacion}
 
@@ -298,7 +406,25 @@ Los puntos de estimación en el desarrollo ágil se utilizan para medir el esfue
 \hline
 12 & Configuración de audio y guardado de partida & 2.5 \\
 \hline
-\multicolumn{2}{|r|}{\textbf{Total}} & \textbf{35.5} \\
+13 & Personalización de jugadores & 1.5 \\
+\hline
+14 & Visualización de información del ODS & 2.0 \\
+\hline
+15 & Temporizador de respuesta & 2.0 \\
+\hline
+16 & Modo de un jugador & 5.0 \\
+\hline
+17 & Pantalla de clasificación al finalizar & 1.5 \\
+\hline
+18 & Notificación visual del turno activo & 1.0 \\
+\hline
+19 & Accesibilidad de la interfaz & 2.0 \\
+\hline
+20 & Pantalla de créditos & 0.5 \\
+\hline
+21 & Compatibilidad web y exportación & 3.0 \\
+\hline
+\multicolumn{2}{|r|}{\textbf{Total}} & \textbf{53.5} \\
 \hline
 \end{tabular}
 \end{table}
@@ -779,13 +905,13 @@ Descripción & Se implementa el \texttt{StatsManager} como autoload para registr
 A partir del proceso de análisis, diseño e implementación descrito en el presente capítulo, se establecen las siguientes conclusiones:
 
 \begin{enumerate}
-    \item La solución propuesta constituye una adaptación digital fiel del juego de mesa \textit{Go Goals!} que preserva su esencia pedagógica mientras incorpora capacidades tecnológicas que superan sus limitaciones estructurales, respondiendo directamente al problema científico planteado \cite{GoGoals2020}.
+    \item La solución propuesta constituye una adaptación digital fiel del juego de mesa \textit{Go Goals!} que preserva su esencia pedagógica mientras incorpora capacidades tecnológicas que superan sus limitaciones estructurales, respondiendo directamente al problema científico planteado.
 
-    \item Los artefactos de ingeniería de requisitos obtenidos mediante historias de usuario reflejan de manera precisa las necesidades pedagógicas y funcionales del videojuego, garantizando la alineación entre los objetivos educativos y las decisiones técnicas adoptadas \cite{Cohn2020}.
+    \item Los artefactos de ingeniería de requisitos obtenidos mediante 21 historias de usuario reflejan de manera precisa las necesidades pedagógicas y funcionales del videojuego, garantizando la alineación entre los objetivos educativos y las decisiones técnicas adoptadas.
 
-    \item La arquitectura en capas modulares implementada en Godot Engine, fundamentada en el SceneTree y el sistema de señales, favorece la mantenibilidad, escalabilidad y extensibilidad del sistema, permitiendo futuras incorporaciones de contenido y funcionalidades sin afectar los componentes existentes \cite{GodotDocs2023}.
+    \item La arquitectura en capas modulares implementada en Godot Engine, fundamentada en el SceneTree y el sistema de señales, favorece la mantenibilidad, escalabilidad y extensibilidad del sistema, permitiendo futuras incorporaciones de contenido y funcionalidades sin afectar los componentes existentes.
 
     \item La separación entre contenido educativo y código lógico mediante archivos JSON facilita la actualización del banco de preguntas por parte de educadores sin conocimientos de programación, potenciando la sostenibilidad del recurso como herramienta pedagógica colaborativa.
 
-    \item La aplicación de patrones de diseño GRASP y GOF, junto con estándares de codificación coherentes con las convenciones de GDScript, garantiza la calidad técnica del software y sienta las bases para su validación en el capítulo siguiente \cite{Pressman2021}.
+    \item La aplicación de patrones de diseño GRASP y GOF, junto con estándares de codificación coherentes con las convenciones de GDScript, garantiza la calidad técnica del software y sienta las bases para su validación en el capítulo siguiente.
 \end{enumerate}
