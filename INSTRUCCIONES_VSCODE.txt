@@ -1,0 +1,76 @@
+========================================
+CÓMO USAR LA PLANTILLA EN VS CODE
+========================================
+
+✅ ÚLTIMA ACTUALIZACIÓN: Todos los caracteres corruptos han sido corregidos
+   en thesis.cls. Guarda cualquier archivo .tex para recompilar y verificar.
+
+REQUISITOS:
+-----------
+1. Tener instalado MiKTeX: https://miktex.org/download
+2. Tener instalado VS Code: https://code.visualstudio.com/
+3. Instalar la extensión "LaTeX Workshop" en VS Code
+
+CONFIGURACIÓN INICIAL:
+----------------------
+1. Abre VS Code
+2. Ve a Extensions (Ctrl+Shift+X)
+3. Busca "LaTeX Workshop" y haz clic en Install
+4. Reinicia VS Code
+
+CÓMO TRABAJAR:
+--------------
+Opción 1 - Compilación automática (RECOMENDADO):
+   - Abre cualquier archivo .tex en VS Code
+   - Haz tus cambios
+   - Guarda el archivo (Ctrl+S)
+   - LaTeX Workshop compilará automáticamente
+   - El PDF se actualizará en la pestaña de VS Code
+
+Opción 2 - Compilación manual desde VS Code:
+   - Presiona Ctrl+Alt+B para compilar
+   - O haz clic derecho en el archivo .tex → "Build LaTeX project"
+
+Opción 3 - Compilación con script .bat:
+   - Ejecuta 2_COMPILAR.bat desde el explorador de Windows
+   - Útil si LaTeX Workshop da problemas
+
+VER EL PDF:
+-----------
+- El PDF se abre automáticamente en una pestaña de VS Code
+- Si no se abre, presiona Ctrl+Alt+V
+- O haz clic derecho → "View LaTeX PDF" → "View in VS Code tab"
+
+SOLUCIÓN DE PROBLEMAS:
+----------------------
+Si aparece "Recipe terminated with error":
+
+1. Cierra el PDF si lo tienes abierto en otro programa (Adobe, SumatraPDF, etc.)
+2. Ejecuta 1_LIMPIAR.bat para limpiar archivos temporales
+3. Vuelve a compilar con Ctrl+Alt+B
+
+Si el PDF no se actualiza automáticamente:
+1. Cierra la pestaña del PDF en VS Code
+2. Presiona Ctrl+Alt+V para abrirlo de nuevo
+
+ARCHIVOS IMPORTANTES:
+---------------------
+- example.tex          → Documento principal
+- Chapter1.tex, etc.   → Capítulos de la tesis
+- thesis.cls           → Clase de la plantilla (NO MODIFICAR)
+- example.bib          → Referencias bibliográficas
+
+SCRIPTS ÚTILES:
+---------------
+- 1_LIMPIAR.bat        → Limpia archivos temporales
+- 2_COMPILAR.bat       → Compila el documento completo
+- 0_COMPILAR_VSCODE.bat → Compila cerrando el PDF primero
+
+ATAJOS DE TECLADO EN VS CODE:
+------------------------------
+- Ctrl+S               → Guardar (compila automáticamente)
+- Ctrl+Alt+B           → Compilar manualmente
+- Ctrl+Alt+V           → Ver PDF
+- Ctrl+Alt+J           → Ir a la ubicación en el PDF (SyncTeX)
+
+¡Listo! Ahora puedes trabajar cómodamente en tu tesis.

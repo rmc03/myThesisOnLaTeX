@@ -1,0 +1,128 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{Alfadhlani2011}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=44732d4b648ab9524d5dd0f0dea20182}{%
+           family={Alfadhlani},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08d82841fe870d331e86c665ce0f7f68}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fd0b92c39bcfac59d49276b1239b2cf4}
+      \strng{fullhash}{fd0b92c39bcfac59d49276b1239b2cf4}
+      \strng{fullhashraw}{fd0b92c39bcfac59d49276b1239b2cf4}
+      \strng{bibnamehash}{fd0b92c39bcfac59d49276b1239b2cf4}
+      \strng{authorbibnamehash}{fd0b92c39bcfac59d49276b1239b2cf4}
+      \strng{authornamehash}{fd0b92c39bcfac59d49276b1239b2cf4}
+      \strng{authorfullhash}{fd0b92c39bcfac59d49276b1239b2cf4}
+      \strng{authorfullhashraw}{fd0b92c39bcfac59d49276b1239b2cf4}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the International Conference}
+      \field{title}{Conference Paper Example}
+      \field{year}{2011}
+      \field{pages}{45\bibrangedash 52}
+      \range{pages}{8}
+    \endentry
+    \entry{Mathew2010}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c6034f3edb60451945f61e4ab190fe5b}{%
+           family={Mathew},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{c6034f3edb60451945f61e4ab190fe5b}
+      \strng{fullhash}{c6034f3edb60451945f61e4ab190fe5b}
+      \strng{fullhashraw}{c6034f3edb60451945f61e4ab190fe5b}
+      \strng{bibnamehash}{c6034f3edb60451945f61e4ab190fe5b}
+      \strng{authorbibnamehash}{c6034f3edb60451945f61e4ab190fe5b}
+      \strng{authornamehash}{c6034f3edb60451945f61e4ab190fe5b}
+      \strng{authorfullhash}{c6034f3edb60451945f61e4ab190fe5b}
+      \strng{authorfullhashraw}{c6034f3edb60451945f61e4ab190fe5b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Book Title Example}
+      \field{year}{2010}
+    \endentry
+    \entry{Ou2013}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=409a2909875d75e379ea8f31f0278730}{%
+           family={Ou},
+           familyi={O\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b18f02a97cf23823923df8c18784f5df}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3c412fb3613b9f92a2f8294c3eb937ba}
+      \strng{fullhash}{3c412fb3613b9f92a2f8294c3eb937ba}
+      \strng{fullhashraw}{3c412fb3613b9f92a2f8294c3eb937ba}
+      \strng{bibnamehash}{3c412fb3613b9f92a2f8294c3eb937ba}
+      \strng{authorbibnamehash}{3c412fb3613b9f92a2f8294c3eb937ba}
+      \strng{authornamehash}{3c412fb3613b9f92a2f8294c3eb937ba}
+      \strng{authorfullhash}{3c412fb3613b9f92a2f8294c3eb937ba}
+      \strng{authorfullhashraw}{3c412fb3613b9f92a2f8294c3eb937ba}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computer Science}
+      \field{title}{Example Article Title}
+      \field{volume}{10}
+      \field{year}{2013}
+      \field{pages}{123\bibrangedash 145}
+      \range{pages}{23}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

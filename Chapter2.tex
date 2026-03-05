@@ -1,0 +1,159 @@
+\chapter{Diseño de la solución propuesta al problema científico}
+\label{chap:chapter2}
+
+El presente capítulo tiene como objetivo describir el proceso de análisis, diseño e implementación del videojuego educativo Go Goals! Digital, desarrollado en Godot Engine 4.4.1. Se presentan los artefactos derivados de la ingeniería de requisitos mediante historias de usuario, la arquitectura del sistema, los mecanismos de almacenamiento y procesamiento de datos educativos, los prototipos de interfaces gráficas de usuario y el diseño de las mecánicas educativas centrales. El capítulo se estructura en cuatro epígrafes que siguen una secuencia lógica desde la conceptualización de la solución hasta los detalles de su implementación práctica.
+
+\section{Descripción de la solución propuesta}
+
+El videojuego educativo propuesto constituye una adaptación digital fiel del juego de mesa oficial ``Go Goals!'' de las Naciones Unidas, diseñado específicamente para promover el conocimiento y la comprensión de los diecisiete Objetivos de Desarrollo Sostenible entre niños de ocho a diez años. La solución mantiene todos los elementos pedagógicos centrales del juego original ---tablero hexagonal de sesenta y tres casillas, sistema de escaleras y serpientes, cartas de preguntas sobre cada ODS y mecánicas de recompensa por respuestas correctas--- mientras añade capacidades interactivas, visuales y de seguimiento que solo el medio digital puede proporcionar.
+
+El videojuego se desarrolla utilizando Godot Engine 4.4.1 como motor principal, garantizando código abierto, multiplataforma y accesibilidad universal. La arquitectura técnica se fundamenta en una estructura de capas modulares que facilitan el mantenimiento, la expansión futura y la contribución colaborativa de educadores y desarrolladores interesados en mejorar el recurso.
+
+\begin{table}[!htbp]
+\centering
+\caption{Resumen de características del videojuego educativo\label{tab:resumen_caracteristicas}}
+\begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
+\hline
+\textbf{Componente} & \textbf{Implementación Técnica y Pedagógica} \\
+\hline
+Fidelidad al Original & Tablero hexagonal de 63 casillas idéntico al físico; preservación de mecánicas de escaleras (refuerzo) y serpientes (corrección); uso de los colores oficiales de los ODS. \\
+\hline
+Mejoras Digitales & Animaciones suaves de fichas y entorno; sistema de partículas (confeti) para celebraciones; efectos de sonido para feedback inmediato (acierto/error). \\
+\hline
+Accesibilidad Universal & Exportación nativa a Web (HTML5), Android, Windows y Linux; interfaz adaptable a pantallas táctiles y ratón; optimización para equipos de gama baja. \\
+\hline
+Contenido Educativo & Carga dinámica de preguntas desde archivos JSON/CSV editables externamente; inclusión de las 34 preguntas originales más capacidad de expansión ilimitada. \\
+\hline
+Seguimiento y Datos & Registro automático de desempeño por jugador y por ODS; visualización de estadísticas de progreso; persistencia de datos local para guardar partidas. \\
+\hline
+Personalización & Configuración de audio, velocidad de juego y número de jugadores (1-6); soporte para modo un jugador contra IA básica. \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Ingeniería de requisitos del videojuego}
+
+El presente epígrafe presenta los artefactos resultantes del proceso de Ingeniería de Requisitos desarrollado para el videojuego educativo. La ingeniería de requisitos constituye una fase fundamental en el desarrollo de software, particularmente en el contexto de la metodología Extreme Programming, ya que establece las bases para comprender qué debe hacer el sistema desde la perspectiva del usuario final antes de proceder con el diseño e implementación técnica.
+
+\subsection{Historias de Usuario}
+Las historias de usuario capturan requisitos desde la perspectiva del usuario final. El formato empleado es el clásico: ``Como [rol], quiero [acción], para [beneficio]''. A continuación se presentan las historias de usuario definidas para las funcionalidades clave de la aplicación:
+
+\begin{userstory}[tb:hu1]
+	\storyname{Inicio de nueva partida educativa}
+	\storyuser{Jugador estudiante}
+	\storyiter{1}
+	\storypriority{Alta}
+	\storyrisk{Medio}
+	\storypoints{2.0}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{
+	Como jugador estudiante quiero iniciar una nueva partida para aprender sobre los ODS.
+	}
+	\storyobservation{Botón para iniciar partida; configuración de jugadores (1-6); carga del tablero y transición a la primera ronda.}
+\end{userstory}
+
+\begin{userstory}[tb:hu2]
+	\storyname{Visualización del tablero hexagonal de los ODS}
+	\storyuser{Jugador estudiante}
+	\storyiter{1}
+	\storypriority{Alta}
+	\storyrisk{Alto}
+	\storypoints{3.0}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{
+	Como jugador estudiante quiero ver el tablero completo (63 casillas) para entender el recorrido hacia 2030.
+	}
+	\storyobservation{Tablero fiel al diseño, 17 casillas temáticas identificadas, visible sin scroll y adaptable a resoluciones.}
+\end{userstory}
+
+\begin{userstory}[tb:hu3]
+	\storyname{Lanzamiento de dado virtual}
+	\storyuser{Jugador estudiante}
+	\storyiter{1}
+	\storypriority{Alta}
+	\storyrisk{Medio}
+	\storypoints{1.5}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{
+	Como jugador estudiante quiero lanzar un dado virtual para determinar el avance de mi ficha.
+	}
+	\storyobservation{Animación breve, resultado 1-6 pseudoaleatorio, evitar múltiples lanzamientos por turno, feedback visual/sonoro.}
+\end{userstory}
+
+\begin{userstory}[tb:hu4]
+	\storyname{Movimiento automático de fichas}
+	\storyuser{Jugador estudiante}
+	\storyiter{1}
+	\storypriority{Alta}
+	\storyrisk{Alto}
+	\storypoints{4.0}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{
+	Como jugador estudiante quiero que mi ficha se mueva automáticamente según el dado para concentrarme en el contenido.
+	}
+	\storyobservation{Movimiento animado por casilla, cálculo de trayectoria, verificación de casilla final (escalera/serpiente/ODS).}
+\end{userstory}
+
+\begin{userstory}[tb:hu6]
+	\storyname{Preguntas educativas sobre ODS}
+	\storyuser{Jugador estudiante}
+	\storyiter{2}
+	\storypriority{Alta}
+	\storyrisk{Alto}
+	\storypoints{5.0}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{
+	Como jugador estudiante quiero responder preguntas cuando caiga en casillas ODS para aprender interactivamente.
+	}
+	\storyobservation{Pausa de juego, modal con pregunta del banco, texto legible (8-10 años), botones grandes, límite de tiempo opcional.}
+\end{userstory}
+
+\begin{userstory}[tb:hu7]
+	\storyname{Evaluación y retroalimentación de respuestas}
+	\storyuser{Jugador estudiante}
+	\storyiter{2}
+	\storypriority{Alta}
+	\storyrisk{Medio}
+	\storypoints{3.0}
+	\storyprogrammer{Ruslan Alexei Martinez Campos}
+	\storydescription{
+	Como jugador estudiante quiero recibir retroalimentación inmediata para entender mis respuestas.
+	}
+	\storyobservation{Indicador de resultado (colores/texto), mensaje explicativo breve, duración visible aprox. 5 s, recompensa si corresponde.}
+\end{userstory}
+
+
+\section{Diseño e implementación del videojuego}
+
+\subsection{Arquitectura del sistema}
+
+Godot Engine utiliza una arquitectura jerárquica fundamentada en el concepto de nodos como unidades básicas de construcción. Cada elemento funcional del videojuego es representado como un nodo que hereda de la clase base Node. Esta filosofía arquitectónica de composición sobre herencia permite construir funcionalidades sofisticadas mediante la agregación de componentes simples y bien definidos. El SceneTree constituye la estructura de datos fundamental que gestiona todos los nodos activos durante la ejecución. Esta estructura organiza: 1) el orden de ejecución de métodos del ciclo de vida; 2) la jerarquía de transformaciones espaciales; y 3) el sistema de señales que permite comunicación desacoplada entre nodos.
+
+La arquitectura técnica del videojuego educativo se estructura en cinco capas principales. La Capa de Presentación constituye el nivel superior y gestiona todos los elementos visuales e interfaces de usuario. La Capa de Lógica de Juego implementa las reglas fundamentales, incluyendo el sistema de turnos, el generador de números aleatorios para el dado y la lógica de movimiento por casillas hexagonales. La Capa de Gestión Educativa contiene la lógica específica para la pedagogía y la evaluación, siendo responsable de seleccionar la pregunta adecuada basada en el ODS, evaluar respuestas y gestionar el progreso de aprendizaje. La Capa de Datos gestiona el almacenamiento y acceso a los contenidos estáticos y dinámicos del juego, conteniendo el pool de preguntas en JSON/CSV y la configuración del juego. Finalmente, la Capa de Persistencia maneja las interacciones con sistemas externos, como el guardado y carga de partidas locales.
+
+\subsection{Mecanismos de almacenamiento y procesamiento de datos educativos}
+
+El sistema implementa una arquitectura de datos que separa claramente el contenido educativo del código lógico, facilitando actualizaciones de contenido sin requerir recompilación. Las preguntas sobre los Objetivos de Desarrollo Sostenible se almacenan en formato JSON (JavaScript Object Notation). Cada objeto pregunta incluye campos obligatorios como: id, ods, pregunta, opciones, correcta y explicacion. El procesamiento de las preguntas implementa lógica de selección aleatoria sin repetición dentro de una sesión de juego, garantizando variedad educativa. Esta decisión arquitectónica permite además que educadores sin conocimientos de programación puedan añadir o modificar preguntas mediante cualquier editor de texto simple.
+
+\subsection{Prototipos de interfaces gráficas}
+
+El diseño de las interfaces gráficas de usuario prioriza la accesibilidad, comprensibilidad y atractivo visual para niños de ocho a diez años, manteniendo fidelidad al diseño original de ``Go Goals!'' con mejoras digitales. La interfaz del tablero de juego constituye la pantalla central del videojuego y se compone de sesenta y tres casillas hexagonales. Las escaleras se visualizan con tonalidades brillantes representando el refuerzo positivo, mientras que las serpientes utilizan colores neutros simbolizando el retroceso correctivo. Las fichas de jugadores se implementan como escenas instanciables que contienen el sprite del personaje Elyx, la mascota oficial de las Naciones Unidas, coloreado dinámicamente según el jugador.
+
+El panel de preguntas constituye la interfaz modal que se superpone al tablero de juego. Este panel muestra el ícono oficial y nombre del ODS correspondiente, el texto de la pregunta y las opciones de respuesta claramente diferenciadas. Su diseño prioriza la legibilidad para el grupo de edad objetivo mediante tipografía de tamaño adecuado y botones de respuesta de gran tamaño.
+
+\section{Diseño del despliegue de la solución}
+
+La estrategia de despliegue del videojuego educativo Go Goals! Digital se estructura en cuatro fases incrementales alineadas con la metodología Extreme Programming. La Fase 1 ---Prototipo--- comprende el tablero navegable, la lógica de dados y la carga básica de preguntas mediante archivos JSON. La Fase 2 ---Enriquecimiento--- incorpora animaciones fluidas, efectos visuales de partículas, sistema de audio y mejoras en la interfaz de usuario. La Fase 3 ---Sistemas Educativos--- implementa el registro de métricas de aprendizaje, estadísticas visuales y la expansión del banco de preguntas. La Fase 4 ---Despliegue--- contempla la optimización, localización a otros idiomas, documentación completa y publicación en repositorio abierto.
+
+La distribución web gratuita del videojuego se implementa mediante GitHub Pages, un servicio que permite alojar sitios web estáticos directamente desde repositorios de GitHub sin costos de infraestructura. Al exportar el proyecto de Godot en formato HTML5 compatible con navegadores modernos, los archivos resultantes pueden servirse automáticamente mediante una URL pública accesible globalmente. Esta decisión de arquitectura de despliegue garantiza que el recurso educativo sea accesible para estudiantes en contextos con equipamiento limitado, sin requerir instalación de software adicional.
+
+\section*{Conclusiones del Capítulo II}
+
+A partir del proceso de análisis, diseño e implementación descrito en el presente capítulo, se establecen las siguientes conclusiones:
+
+\begin{enumerate}
+    \item La solución propuesta constituye una adaptación digital fiel del juego de mesa Go Goals! que preserva su esencia pedagógica mientras incorpora capacidades tecnológicas que superan sus limitaciones estructurales, respondiendo directamente al problema científico planteado.
+    \item Los artefactos de ingeniería de requisitos obtenidos mediante historias de usuario reflejan de manera precisa las necesidades pedagógicas y funcionales del videojuego, garantizando alineación entre los objetivos educativos y las decisiones técnicas adoptadas.
+    \item La arquitectura en capas modulares implementada en Godot Engine favorece la mantenibilidad, escalabilidad y extensibilidad del sistema, permitiendo futuras incorporaciones de contenido y funcionalidades sin afectar los componentes existentes.
+    \item La separación entre contenido educativo y código lógico mediante archivos JSON facilita la actualización del banco de preguntas por parte de educadores sin conocimientos de programación, potenciando la sostenibilidad del recurso como herramienta pedagógica colaborativa.
+\end{enumerate}
