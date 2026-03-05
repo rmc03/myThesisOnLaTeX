@@ -73,7 +73,6 @@ Los requisitos funcionales son descripciones detalladas de las funciones, compor
 \hline
 14 & Configuración de audio & El sistema debe permitir activar o desactivar música y efectos de sonido. & Baja & Baja \\
 \hline
-15 & Guardar y cargar partida & El sistema debe permitir guardar el estado de la partida y reanudarla posteriormente. & Media & Alta \\
 \hline
 \end{tabular}
 \end{table}
@@ -251,15 +250,15 @@ A continuación se presentan las historias de usuario definidas para las funcion
 \end{userstory}
 
 \begin{userstory}[tb:hu12]
-	\storyname{Configuración de audio y guardado de partida}
+	\storyname{Configuración de audio}
 	\storyuser{Jugador estudiante}
 	\storyiter{4}
 	\storypriority{Baja}
 	\storyrisk{Baja}
 	\storypoints{2.5}
 	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero configurar el audio y guardar mi partida para personalizar mi experiencia y continuarla más tarde.}
-	\storyobservation{Debe incluir controles deslizantes para volumen de música y efectos de sonido; el estado de la partida debe guardarse en archivo local; debe ser posible cargar la partida desde el menú principal.}
+	\storydescription{Como jugador estudiante quiero configurar el audio para personalizar mi experiencia durante la partida.}
+	\storyobservation{Debe incluir controles deslizantes para el volumen de música y de los efectos de sonido.}
 \end{userstory}
 
 \begin{userstory}[tb:hu13]
@@ -404,7 +403,7 @@ Los puntos de estimación en el desarrollo ágil se utilizan para medir el esfue
 \hline
 11 & Menú principal y pantalla de instrucciones & 2.0 \\
 \hline
-12 & Configuración de audio y guardado de partida & 2.5 \\
+12 & Configuración de audio & 2.5 \\
 \hline
 13 & Personalización de jugadores & 1.5 \\
 \hline
@@ -463,7 +462,7 @@ El plan de iteraciones es una herramienta esencial para organizar y coordinar el
 \hline
 \multirow{2}{*}{5} & 10 & Estadísticas de aprendizaje & \multirow{2}{*}{6.5} \\
 \cline{2-3}
-& 12 & Configuración de audio y guardado de partida & \\
+& 12 & Configuración de audio & \\
 \hline
 \multicolumn{3}{|r|}{\textbf{Total}} & \textbf{44.5} \\
 \hline
@@ -678,7 +677,7 @@ AudioManager & - centralizar la reproducción de música de fondo y efectos de s
 \hline
 \textbf{Clase} & \textbf{Responsabilidades} & \textbf{Colaboradores} \\
 \hline
-RecordsManager & - gestionar la persistencia de puntuaciones y logros entre sesiones\newline - leer y escribir en archivos de guardado locales\newline - proveer datos históricos para la pantalla de estadísticas & GameManager\newline Player \\
+RecordsManager & - gestionar la persistencia de puntuaciones y logros entre sesiones\newline - proveer datos históricos para la pantalla de estadísticas & GameManager\newline Player \\
 \hline
 \end{tabular}
 \end{table}
@@ -892,16 +891,16 @@ Descripción & Se implementa el \texttt{QuestionManager} con carga de preguntas 
 
 \begin{table}[!htbp]
 \centering
-\caption{Tarea de ingeniería 6: Estadísticas y sistema de guardado\label{tab:ti6}}
+\caption{Tarea de ingeniería 6: Estadísticas de aprendizaje\label{tab:ti6}}
 \begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
 \hline
 \textbf{Campo} & \textbf{Descripción} \\
 \hline
 Tarea \# & 6 \\
 \hline
-HU relacionada & HU \#10, HU \#12 \\
+HU relacionada & HU \#10 \\
 \hline
-Nombre & Implementación del sistema de estadísticas de aprendizaje y guardado de partida \\
+Nombre & Implementación del sistema de estadísticas de aprendizaje \\
 \hline
 Tipo & Desarrollo \\
 \hline
@@ -911,7 +910,7 @@ Iteración & 5 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Se implementa el \texttt{StatsManager} como autoload para registrar respuestas durante la sesión. Se diseña la pantalla de estadísticas con visualización por jugador y por ODS. Se implementa el \texttt{SaveSystem} con serialización del estado del juego a archivo JSON local mediante la API de Godot. \\
+Descripción & Se implementa el \texttt{StatsManager} como autoload para registrar respuestas durante la sesión. Se diseña la pantalla de estadísticas con visualización por jugador y por ODS. \\
 \hline
 \end{tabular}
 \end{table}
