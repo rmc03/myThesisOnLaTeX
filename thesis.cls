@@ -851,13 +851,13 @@ showstringspaces=false,      % Leerzeichen in Strings anzeigen ?
 
 \RequirePackage[
 backend = biber,
-style = authoryear-ibid,
+style = authoryear,
 bibstyle = iso-authoryear,
 hyperref = true,
 backref=true,
 natbib = true,
 sortcites = true,
-ibidtracker = strict,
+ibidtracker = false,
 backrefstyle = three,
 opcittracker = true,
 sortlocale=es_ES]{biblatex}[2014/06/25]
