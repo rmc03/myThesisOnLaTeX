@@ -121,257 +121,650 @@ Las historias de usuario son una técnica fundamental en metodologías ágiles c
 
 A continuación se presentan las historias de usuario definidas para las funcionalidades clave del videojuego:
 
-\begin{userstory}[tb:hu1]
-	\storyname{Inicio de nueva partida educativa}
-	\storyuser{Jugador estudiante}
-	\storyiter{1}
-	\storypriority{Alta}
-	\storyrisk{Medio}
-	\storypoints{2.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero iniciar una nueva partida para aprender sobre los ODS de manera interactiva.}
-	\storyobservation{Debe incluir botón para iniciar partida; permite configurar número de jugadores (1--6); carga el tablero y realiza transición a la primera ronda; se inicializan estadísticas en cero.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 1: Inicio de nueva partida educativa [Elaboración propia]\label{tab:hu1}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 1 & \textbf{Nombre:} Inicio de nueva partida educativa \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Medio \\
+\hline
+\textbf{Puntos de estimación:} 2.0 & \textbf{Iteración asignada:} 1 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero iniciar una nueva partida para aprender sobre los ODS de manera interactiva.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Debe incluir botón para iniciar partida.
+    \item Permite configurar número de jugadores (1--6).
+    \item Carga el tablero y realiza transición a la primera ronda.
+    \item Se inicializan estadísticas en cero.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu2]
-	\storyname{Visualización del tablero hexagonal}
-	\storyuser{Jugador estudiante}
-	\storyiter{1}
-	\storypriority{Alta}
-	\storyrisk{Alto}
-	\storypoints{5.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero ver el tablero completo de 63 casillas para entender el recorrido hacia el año 2030.}
-	\storyobservation{El tablero debe ser fiel al diseño oficial; las 17 casillas temáticas deben identificarse con el ícono del ODS correspondiente; el tablero debe ser visible sin scroll; debe ser adaptable a distintas resoluciones de pantalla.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 2: Visualización del tablero hexagonal [Elaboración propia]\label{tab:hu2}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 2 & \textbf{Nombre:} Visualización del tablero hexagonal \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Alto \\
+\hline
+\textbf{Puntos de estimación:} 5.0 & \textbf{Iteración asignada:} 1 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero ver el tablero completo de 63 casillas para entender el recorrido hacia el año 2030.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item El tablero debe ser fiel al diseño oficial.
+    \item Las 17 casillas temáticas deben identificarse con el ícono del ODS correspondiente.
+    \item El tablero debe ser visible sin scroll.
+    \item Debe ser adaptable a distintas resoluciones de pantalla.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu3]
-	\storyname{Lanzamiento de dado virtual}
-	\storyuser{Jugador estudiante}
-	\storyiter{1}
-	\storypriority{Alta}
-	\storyrisk{Medio}
-	\storypoints{1.5}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero lanzar un dado virtual para determinar el avance de mi ficha en el tablero.}
-	\storyobservation{Debe mostrar animación breve del dado; el resultado entre 1 y 6 debe ser pseudoaleatorio; no debe ser posible lanzar el dado más de una vez por turno; debe incluir feedback visual y sonoro al obtener el resultado.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 3: Lanzamiento de dado virtual [Elaboración propia]\label{tab:hu3}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 3 & \textbf{Nombre:} Lanzamiento de dado virtual \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Medio \\
+\hline
+\textbf{Puntos de estimación:} 1.5 & \textbf{Iteración asignada:} 1 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero lanzar un dado virtual para determinar el avance de mi ficha en el tablero.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Debe mostrar animación breve del dado.
+    \item El resultado entre 1 y 6 debe ser pseudoaleatorio.
+    \item No debe ser posible lanzar el dado más de una vez por turno.
+    \item Debe incluir feedback visual y sonoro al obtener el resultado.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu4]
-	\storyname{Movimiento animado de ficha}
-	\storyuser{Jugador estudiante}
-	\storyiter{1}
-	\storypriority{Alta}
-	\storyrisk{Alto}
-	\storypoints{4.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero que mi ficha se mueva automáticamente según el resultado del dado para concentrarme en el contenido educativo.}
-	\storyobservation{El movimiento debe ser animado casilla por casilla; debe calcularse la trayectoria correcta; al llegar a la casilla final se comprueba si es casilla ODS, escalera o serpiente.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 4: Movimiento animado de ficha [Elaboración propia]\label{tab:hu4}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 4 & \textbf{Nombre:} Movimiento animado de ficha \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Alto \\
+\hline
+\textbf{Puntos de estimación:} 4.0 & \textbf{Iteración asignada:} 1 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero que mi ficha se mueva automáticamente según el resultado del dado para concentrarme en el contenido educativo.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item El movimiento debe ser animado casilla por casilla.
+    \item Debe calcularse la trayectoria correcta.
+    \item Al llegar a la casilla final se comprueba si es casilla ODS, escalera o serpiente.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu5]
-	\storyname{Efecto de escalera y serpiente}
-	\storyuser{Jugador estudiante}
-	\storyiter{2}
-	\storypriority{Alta}
-	\storyrisk{Medio}
-	\storypoints{3.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero que el juego aplique el efecto de escalera o serpiente cuando corresponda para experimentar la mecánica original del juego.}
-	\storyobservation{El sistema debe detectar la casilla final; en casilla de escalera la ficha debe avanzar a la casilla destino con animación de subida; en casilla de serpiente la ficha retrocede con animación descendente; debe incluir feedback sonoro diferenciado.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 5: Efecto de escalera y serpiente [Elaboración propia]\label{tab:hu5}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 5 & \textbf{Nombre:} Efecto de escalera y serpiente \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Medio \\
+\hline
+\textbf{Puntos de estimación:} 3.0 & \textbf{Iteración asignada:} 2 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero que el juego aplique el efecto de escalera o serpiente cuando corresponda para experimentar la mecánica original del juego.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item El sistema debe detectar la casilla final.
+    \item En casilla de escalera la ficha debe avanzar a la casilla destino con animación de subida.
+    \item En casilla de serpiente la ficha retrocede con animación descendente.
+    \item Debe incluir feedback sonoro diferenciado.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu6]
-	\storyname{Preguntas educativas sobre ODS}
-	\storyuser{Jugador estudiante}
-	\storyiter{2}
-	\storypriority{Alta}
-	\storyrisk{Alto}
-	\storypoints{5.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero responder preguntas cuando caiga en una casilla temática de ODS para aprender interactivamente sobre la sostenibilidad.}
-	\storyobservation{El juego debe pausar el turno al caer en casilla ODS; se debe mostrar un panel modal con el ícono del ODS, el texto de la pregunta y las opciones de respuesta; el texto debe ser legible para niños de 8--10 años; los botones deben ser de tamaño grande; se selecciona una pregunta aleatoria sin repetir dentro de la sesión; puede activarse límite de tiempo opcional.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 6: Preguntas educativas sobre ODS [Elaboración propia]\label{tab:hu6}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 6 & \textbf{Nombre:} Preguntas educativas sobre ODS \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Alto \\
+\hline
+\textbf{Puntos de estimación:} 5.0 & \textbf{Iteración asignada:} 2 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero responder preguntas cuando caiga en una casilla temática de ODS para aprender interactivamente sobre la sostenibilidad.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item El juego debe pausar el turno al caer en casilla ODS.
+    \item Se debe mostrar un panel modal con el ícono del ODS, el texto de la pregunta y las opciones de respuesta.
+    \item El texto debe ser legible para niños de 8--10 años.
+    \item Los botones deben ser de tamaño grande.
+    \item Se selecciona una pregunta aleatoria sin repetir dentro de la sesión.
+    \item Puede activarse límite de tiempo opcional.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu7]
-	\storyname{Evaluación y retroalimentación de respuestas}
-	\storyuser{Jugador estudiante}
-	\storyiter{2}
-	\storypriority{Alta}
-	\storyrisk{Medio}
-	\storypoints{3.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero recibir retroalimentación inmediata al responder para entender si acerté y por qué.}
-	\storyobservation{El sistema debe mostrar un indicador visual de resultado (verde/rojo); debe mostrar un mensaje explicativo breve de la respuesta correcta; la duración del feedback debe ser de aproximadamente 5 segundos; si la respuesta es correcta se mantiene la posición o se avanza por escalera; si es incorrecta se aplica el retroceso.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 7: Evaluación y retroalimentación de respuestas [Elaboración propia]\label{tab:hu7}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 7 & \textbf{Nombre:} Evaluación y retroalimentación de respuestas \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Medio \\
+\hline
+\textbf{Puntos de estimación:} 3.0 & \textbf{Iteración asignada:} 2 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero recibir retroalimentación inmediata al responder para entender si acerté y por qué.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item El sistema debe mostrar un indicador visual de resultado (verde/rojo).
+    \item Debe mostrar un mensaje explicativo breve de la respuesta correcta.
+    \item La duración del feedback debe ser de aproximadamente 5 segundos.
+    \item Si la respuesta es correcta se mantiene la posición o se avanza por escalera.
+    \item Si es incorrecta se aplica el retroceso.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu8]
-	\storyname{Gestión de turnos automática}
-	\storyuser{Jugador estudiante}
-	\storyiter{2}
-	\storypriority{Alta}
-	\storyrisk{Baja}
-	\storypoints{2.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero que el sistema gestione los turnos automáticamente para que el juego fluya sin interrupciones.}
-	\storyobservation{El sistema debe indicar visualmente el jugador activo; al finalizar el turno debe pasar automáticamente al siguiente jugador en orden; en modo de un jugador contra la IA, el turno de la IA debe ejecutarse automáticamente.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 8: Gestión de turnos automática [Elaboración propia]\label{tab:hu8}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 8 & \textbf{Nombre:} Gestión de turnos automática \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Baja \\
+\hline
+\textbf{Puntos de estimación:} 2.0 & \textbf{Iteración asignada:} 2 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero que el sistema gestione los turnos automáticamente para que el juego fluya sin interrupciones.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item El sistema debe indicar visualmente el jugador activo.
+    \item Al finalizar el turno debe pasar automáticamente al siguiente jugador en orden.
+    \item En modo de un jugador contra la IA, el turno de la IA debe ejecutarse automáticamente.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu9]
-	\storyname{Condición de victoria}
-	\storyuser{Jugador estudiante}
-	\storyiter{3}
-	\storypriority{Alta}
-	\storyrisk{Baja}
-	\storypoints{1.5}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero que el juego detecte cuando llegue a la casilla 63 para saber que gané.}
-	\storyobservation{El sistema debe detectar la llegada a la casilla final; debe mostrar una pantalla de victoria con animación de confeti y el nombre del ganador; debe ofrecer opciones de jugar de nuevo o volver al menú principal.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 9: Condición de victoria [Elaboración propia]\label{tab:hu9}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 9 & \textbf{Nombre:} Condición de victoria \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Baja \\
+\hline
+\textbf{Puntos de estimación:} 1.5 & \textbf{Iteración asignada:} 3 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero que el juego detecte cuando llegue a la casilla 63 para saber que gané.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item El sistema debe detectar la llegada a la casilla final.
+    \item Debe mostrar una pantalla de victoria con animación de confeti y el nombre del ganador.
+    \item Debe ofrecer opciones de jugar de nuevo o volver al menú principal.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu10]
-	\storyname{Estadísticas de aprendizaje}
-	\storyuser{Jugador estudiante / Educador}
-	\storyiter{3}
-	\storypriority{Media}
-	\storyrisk{Medio}
-	\storypoints{4.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como educador quiero visualizar las estadísticas de respuestas por jugador y por ODS para evaluar el aprendizaje.}
-	\storyobservation{Al finalizar la partida se debe mostrar una pantalla de estadísticas; debe incluir el porcentaje de respuestas correctas por jugador; debe identificar los ODS con menor porcentaje de aciertos para cada jugador; las estadísticas deben poder consultarse durante la partida mediante un botón de pausa.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 10: Estadísticas de aprendizaje [Elaboración propia]\label{tab:hu10}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 10 & \textbf{Nombre:} Estadísticas de aprendizaje \\
+\hline
+\textbf{Prioridad:} Media & \textbf{Riesgo:} Medio \\
+\hline
+\textbf{Puntos de estimación:} 4.0 & \textbf{Iteración asignada:} 3 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como educador quiero visualizar las estadísticas de respuestas por jugador y por ODS para evaluar el aprendizaje.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Al finalizar la partida se debe mostrar una pantalla de estadísticas.
+    \item Debe incluir el porcentaje de respuestas correctas por jugador.
+    \item Debe identificar los ODS con menor porcentaje de aciertos para cada jugador.
+    \item Las estadísticas deben poder consultarse durante la partida mediante un botón de pausa.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu11]
-	\storyname{Menú principal y pantalla de instrucciones}
-	\storyuser{Jugador estudiante}
-	\storyiter{1}
-	\storypriority{Alta}
-	\storyrisk{Baja}
-	\storypoints{2.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero acceder a un menú principal intuitivo y a las instrucciones del juego para aprender a jugarlo fácilmente.}
-	\storyobservation{El menú principal debe incluir botones: Jugar, Instrucciones, Configuración y Salir; la pantalla de instrucciones debe explicar la mecánica de forma visual; debe incluir referencias a los 17 ODS con sus colores e íconos oficiales.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 11: Menú principal y pantalla de instrucciones [Elaboración propia]\label{tab:hu11}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 11 & \textbf{Nombre:} Menú principal y pantalla de instrucciones \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Baja \\
+\hline
+\textbf{Puntos de estimación:} 2.0 & \textbf{Iteración asignada:} 1 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero acceder a un menú principal intuitivo y a las instrucciones del juego para aprender a jugarlo fácilmente.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item El menú principal debe incluir botones: Jugar, Instrucciones, Configuración y Salir.
+    \item La pantalla de instrucciones debe explicar la mecánica de forma visual.
+    \item Debe incluir referencias a los 17 ODS con sus colores e íconos oficiales.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu12]
-	\storyname{Configuración de audio}
-	\storyuser{Jugador estudiante}
-	\storyiter{4}
-	\storypriority{Baja}
-	\storyrisk{Baja}
-	\storypoints{2.5}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero configurar el audio para personalizar mi experiencia durante la partida.}
-	\storyobservation{Debe incluir controles deslizantes para el volumen de música y de los efectos de sonido.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 12: Configuración de audio [Elaboración propia]\label{tab:hu12}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 12 & \textbf{Nombre:} Configuración de audio \\
+\hline
+\textbf{Prioridad:} Baja & \textbf{Riesgo:} Baja \\
+\hline
+\textbf{Puntos de estimación:} 2.5 & \textbf{Iteración asignada:} 4 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero configurar el audio para personalizar mi experiencia durante la partida.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Debe incluir controles deslizantes para el volumen de música y de los efectos de sonido.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu13]
-	\storyname{Personalización de jugadores}
-	\storyuser{Jugador estudiante}
-	\storyiter{1}
-	\storypriority{Alta}
-	\storyrisk{Bajo}
-	\storypoints{1.5}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero ingresar mi nombre y seleccionar el color de mi ficha para identificarme durante la partida.}
-	\storyobservation{Debe incluir un campo de texto para el nombre de cada jugador; debe ofrecer al menos 6 opciones de color para la ficha; los datos ingresados deben persistir durante toda la sesión; el color seleccionado no debe estar disponible para los demás jugadores.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 13: Personalización de jugadores [Elaboración propia]\label{tab:hu13}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 13 & \textbf{Nombre:} Personalización de jugadores \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Bajo \\
+\hline
+\textbf{Puntos de estimación:} 1.5 & \textbf{Iteración asignada:} 1 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero ingresar mi nombre y seleccionar el color de mi ficha para identificarme durante la partida.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Debe incluir un campo de texto para el nombre de cada jugador.
+    \item Debe ofrecer al menos 6 opciones de color para la ficha.
+    \item Los datos ingresados deben persistir durante toda la sesión.
+    \item El color seleccionado no debe estar disponible para los demás jugadores.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu14]
-	\storyname{Visualización de información del ODS}
-	\storyuser{Jugador estudiante}
-	\storyiter{2}
-	\storypriority{Alta}
-	\storyrisk{Bajo}
-	\storypoints{2.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero ver una breve descripción del ODS al aterrizar en su casilla para contextualizarme antes de responder la pregunta.}
-	\storyobservation{Al caer en casilla temática debe mostrarse el ícono oficial del ODS, su número, nombre y una descripción breve de no más de dos oraciones; la información debe mostrarse antes de presentar la pregunta; el diseño debe respetar los colores oficiales de cada ODS.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 14: Visualización de información del ODS [Elaboración propia]\label{tab:hu14}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 14 & \textbf{Nombre:} Visualización de información del ODS \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Bajo \\
+\hline
+\textbf{Puntos de estimación:} 2.0 & \textbf{Iteración asignada:} 2 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero ver una breve descripción del ODS al aterrizar en su casilla para contextualizarme antes de responder la pregunta.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Al caer en casilla temática debe mostrarse el ícono oficial del ODS, su número, nombre y una descripción breve de no más de dos oraciones.
+    \item La información debe mostrarse antes de presentar la pregunta.
+    \item El diseño debe respetar los colores oficiales de cada ODS.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu15]
-	\storyname{Temporizador de respuesta}
-	\storyuser{Educador}
-	\storyiter{3}
-	\storypriority{Baja}
-	\storyrisk{Medio}
-	\storypoints{2.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como educador quiero activar un temporizador opcional para que los jugadores respondan dentro de un límite de tiempo y agregar dinamismo a la partida.}
-	\storyobservation{El temporizador debe ser configurable antes de iniciar la partida (30, 60 o 90 segundos); al agotar el tiempo sin respuesta se debe contabilizar como respuesta incorrecta; el temporizador debe mostrarse visualmente con cambio de color al llegar al 25\% del tiempo restante; su activación debe ser opcional.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 15: Temporizador de respuesta [Elaboración propia]\label{tab:hu15}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 15 & \textbf{Nombre:} Temporizador de respuesta \\
+\hline
+\textbf{Prioridad:} Baja & \textbf{Riesgo:} Medio \\
+\hline
+\textbf{Puntos de estimación:} 2.0 & \textbf{Iteración asignada:} 3 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como educador quiero activar un temporizador opcional para que los jugadores respondan dentro de un límite de tiempo y agregar dinamismo a la partida.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item El temporizador debe ser configurable antes de iniciar la partida (30, 60 o 90 segundos).
+    \item Al agotar el tiempo sin respuesta se debe contabilizar como respuesta incorrecta.
+    \item El temporizador debe mostrarse visualmente con cambio de color al llegar al 25\% del tiempo restante.
+    \item Su activación debe ser opcional.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu16]
-	\storyname{Modo de un jugador}
-	\storyuser{Jugador estudiante}
-	\storyiter{4}
-	\storypriority{Media}
-	\storyrisk{Alto}
-	\storypoints{5.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero poder jugar en solitario contra un oponente controlado por el sistema para practicar los ODS.}
-	\storyobservation{El modo un jugador debe ofrecer un oponente automático; el oponente debe simular una velocidad de juego normal; las respuestas del oponente pueden ser correctas en un porcentaje configurable para ajustar la dificultad; debe diferenciarse visualmente el turno del jugador y el del sistema.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 16: Modo de un jugador [Elaboración propia]\label{tab:hu16}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 16 & \textbf{Nombre:} Modo de un jugador \\
+\hline
+\textbf{Prioridad:} Media & \textbf{Riesgo:} Alto \\
+\hline
+\textbf{Puntos de estimación:} 5.0 & \textbf{Iteración asignada:} 4 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero poder jugar en solitario contra un oponente controlado por el sistema para practicar los ODS.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item El modo un jugador debe ofrecer un oponente automático.
+    \item El oponente debe simular una velocidad de juego normal.
+    \item Las respuestas del oponente pueden ser correctas en un porcentaje configurable para ajustar la dificultad.
+    \item Debe diferenciarse visualmente el turno del jugador y el del sistema.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu17]
-	\storyname{Pantalla de clasificación al finalizar}
-	\storyuser{Jugador estudiante}
-	\storyiter{3}
-	\storypriority{Media}
-	\storyrisk{Bajo}
-	\storypoints{1.5}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero ver una tabla clasificatoria al final de la partida para conocer el desempeño de todos los jugadores.}
-	\storyobservation{La pantalla de clasificación debe mostrar el puesto, nombre y porcentaje de respuestas correctas de cada jugador; debe destacar al ganador; debe incluir un botón de jugar de nuevo y uno de volver al menú principal; deve mostrarse animación de confeti para el primer lugar.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 17: Pantalla de clasificación al finalizar [Elaboración propia]\label{tab:hu17}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 17 & \textbf{Nombre:} Pantalla de clasificación al finalizar \\
+\hline
+\textbf{Prioridad:} Media & \textbf{Riesgo:} Bajo \\
+\hline
+\textbf{Puntos de estimación:} 1.5 & \textbf{Iteración asignada:} 3 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero ver una tabla clasificatoria al final de la partida para conocer el desempeño de todos los jugadores.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item La pantalla de clasificación debe mostrar el puesto, nombre y porcentaje de respuestas correctas de cada jugador.
+    \item Debe destacar al ganador.
+    \item Debe incluir un botón de jugar de nuevo y uno de volver al menú principal.
+    \item Deve mostrarse animación de confeti para el primer lugar.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu18]
-	\storyname{Notificación visual del turno activo}
-	\storyuser{Jugador estudiante}
-	\storyiter{2}
-	\storypriority{Alta}
-	\storyrisk{Bajo}
-	\storypoints{1.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero recibir una notificación visual y sonora de cuándo es mi turno para estar atento al juego.}
-	\storyobservation{Debe mostrarse un mensaje de ``¡Es tu turno, [nombre]!'' con animación de entrada; la ficha del jugador activo debe resaltarse visualmente en el tablero; debe reproducirse un efecto de sonido al inicio de cada turno; el botón de lanzar dado solo debe estar activo en el turno del jugador correspondiente.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 18: Notificación visual del turno activo [Elaboración propia]\label{tab:hu18}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 18 & \textbf{Nombre:} Notificación visual del turno activo \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Bajo \\
+\hline
+\textbf{Puntos de estimación:} 1.0 & \textbf{Iteración asignada:} 2 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero recibir una notificación visual y sonora de cuándo es mi turno para estar atento al juego.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Debe mostrarse un mensaje de ``¡Es tu turno, [nombre]!'' con animación de entrada.
+    \item La ficha del jugador activo debe resaltarse visualmente en el tablero.
+    \item Debe reproducirse un efecto de sonido al inicio de cada turno.
+    \item El botón de lanzar dado solo debe estar activo en el turno del jugador correspondiente.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu19]
-	\storyname{Accesibilidad de la interfaz}
-	\storyuser{Jugador estudiante}
-	\storyiter{5}
-	\storypriority{Media}
-	\storyrisk{Bajo}
-	\storypoints{2.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero que la interfaz sea accesible y legible para poder disfrutar el juego sin dificultades visuales.}
-	\storyobservation{El tamaño de fuente en todos los textos del juego no debe ser inferior a 16pt; los botones deben tener un tamaño mínimo de 60x60 píxeles; las preguntas deben poder leerse sin necesidad de scroll; la aplicación debe funcionar correctamente en resoluciones de 1024x768 o superiores.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 19: Accesibilidad de la interfaz [Elaboración propia]\label{tab:hu19}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 19 & \textbf{Nombre:} Accesibilidad de la interfaz \\
+\hline
+\textbf{Prioridad:} Media & \textbf{Riesgo:} Bajo \\
+\hline
+\textbf{Puntos de estimación:} 2.0 & \textbf{Iteración asignada:} 5 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero que la interfaz sea accesible y legible para poder disfrutar el juego sin dificultades visuales.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item El tamaño de fuente en todos los textos del juego no debe ser inferior a 16pt.
+    \item Los botones deben tener un tamaño mínimo de 60x60 píxeles.
+    \item Las preguntas deben poder leerse sin necesidad de scroll.
+    \item La aplicación debe funcionar correctamente en resoluciones de 1024x768 o superiores.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu20]
-	\storyname{Pantalla de créditos}
-	\storyuser{Jugador estudiante}
-	\storyiter{5}
-	\storypriority{Baja}
-	\storyrisk{Bajo}
-	\storypoints{0.5}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como jugador estudiante quiero acceder a una pantalla de créditos para conocer quiénes desarrollaron el juego.}
-	\storyobservation{La pantalla de créditos debe ser accesible desde el menú principal; debe mostrar el nombre del desarrollador, la institución y el año; debe incluir referencias a Go Goals! de las Naciones Unidas y a Godot Engine.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 20: Pantalla de créditos [Elaboración propia]\label{tab:hu20}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 20 & \textbf{Nombre:} Pantalla de créditos \\
+\hline
+\textbf{Prioridad:} Baja & \textbf{Riesgo:} Bajo \\
+\hline
+\textbf{Puntos de estimación:} 0.5 & \textbf{Iteración asignada:} 5 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador estudiante quiero acceder a una pantalla de créditos para conocer quiénes desarrollaron el juego.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item La pantalla de créditos debe ser accesible desde el menú principal.
+    \item Debe mostrar el nombre del desarrollador, la institución y el año.
+    \item Debe incluir referencias a Go Goals! de las Naciones Unidas y a Godot Engine.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{userstory}[tb:hu21]
-	\storyname{Compatibilidad web y exportación}
-	\storyuser{Educador}
-	\storyiter{5}
-	\storypriority{Alta}
-	\storyrisk{Medio}
-	\storypoints{3.0}
-	\storyprogrammer{Ruslan Alexei Martinez Campos}
-	\storydescription{Como educador quiero acceder al videojuego desde un navegador sin instalación para usarlo en cualquier aula con acceso a internet.}
-	\storyobservation{El videojuego debe exportarse correctamente a HTML5 mediante Godot; debe funcionar en Chrome, Firefox y Edge; el tiempo de carga inicial no debe superar los 15 segundos en una conexión de 10 Mbps; el ejecutable web debe ser distribuible mediante GitHub Pages sin costo alguno.}
-\end{userstory}
+\begin{table}[!htbp]
+\centering
+\caption{Historia de usuario 21: Compatibilidad web y exportación [Elaboración propia]\label{tab:hu21}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 21 & \textbf{Nombre:} Compatibilidad web y exportación \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Medio \\
+\hline
+\textbf{Puntos de estimación:} 3.0 & \textbf{Iteración asignada:} 5 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como educador quiero acceder al videojuego desde un navegador sin instalación para usarlo en cualquier aula con acceso a internet.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item El videojuego debe exportarse correctamente a HTML5 mediante Godot.
+    \item Debe funcionar en Chrome, Firefox y Edge.
+    \item El tiempo de carga inicial no debe superar los 15 segundos en una conexión de 10 Mbps.
+    \item El ejecutable web debe ser distribuible mediante GitHub Pages sin costo alguno.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
 
 \subsection{Estimación de tiempo de desarrollo}
 \label{subsec:estimacion}
