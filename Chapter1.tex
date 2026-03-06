@@ -22,7 +22,42 @@ Para la comprensión de la presente investigación se definen los conceptos fund
 
 \textbf{Sostenibilidad}: principio rector que busca armonizar el progreso humano con la preservación del medio ambiente y la equidad social, asegurando que las acciones actuales no comprometan el bienestar de las generaciones futuras \parencite{WCED1987}. La sostenibilidad implica ``un desarrollo que equilibra las dimensiones económica, social y ambiental, garantizando que los recursos naturales se utilicen de manera responsable'' \parencite{PNUD2021}.
 
-\textbf{Objetivos de Desarrollo Sostenible (ODS)}: conjunto de 17 metas globales adoptadas por las Naciones Unidas en 2015 como parte de la Agenda 2030 para el Desarrollo Sostenible. Estos objetivos buscan abordar los desafíos más urgentes que enfrenta la humanidad, como la pobreza, la desigualdad, el cambio climático, la degradación ambiental y la justicia \parencite{NacionesUnidas2015}.
+\textbf{Objetivos de Desarrollo Sostenible (ODS)}: conjunto de 17 metas globales adoptadas por las Naciones Unidas en 2015 como parte de la Agenda 2030 para el Desarrollo Sostenible. Estos objetivos buscan abordar los desafíos más urgentes que enfrenta la humanidad, como la pobreza, la desigualdad, el cambio climático, la degradación ambiental y la justicia \parencite{NacionesUnidas2015}. A continuación, se presenta una tabla resumen de estos objetivos para contextualizar su alcance:
+
+\begin{table}[!htbp]
+\centering
+\caption{Resumen de los 17 Objetivos de Desarrollo Sostenible \parencite{NacionesUnidas2015} (elaboración propia)\label{tab:resumen_ods}}
+\renewcommand{\arraystretch}{1.2}
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{\#} & \textbf{Objetivo} & \textbf{Propósito principal} \\ \hline
+1 & Fin de la pobreza & Erradicar la pobreza en todas sus formas. \\ \hline
+2 & Hambre cero & Poner fin al hambre y mejorar la nutrición. \\ \hline
+3 & Salud y bienestar & Garantizar una vida sana para todos. \\ \hline
+4 & Educación de calidad & Asegurar educación inclusiva y equitativa. \\ \hline
+5 & Igualdad de género & Lograr la igualdad y empoderar a mujeres y niñas. \\ \hline
+6 & Agua limpia y saneamiento & Garantizar disponibilidad y gestión del agua. \\ \hline
+7 & Energía asequible & Asegurar acceso a energía moderna y limpia. \\ \hline
+8 & Trabajo decente & Promover el crecimiento económico y empleo pleno. \\ \hline
+9 & Industria e innovación & Construir infraestructuras resilientes. \\ \hline
+10 & Reducción de desigualdades & Reducir la desigualdad entre países. \\ \hline
+11 & Ciudades sostenibles & Lograr asentamientos inclusivos y seguros. \\ \hline
+12 & Consumo responsable & Garantizar modalidades de consumo sostenible. \\ \hline
+13 & Acción por el clima & Adoptar medidas urgentes contra el cambio climático. \\ \hline
+14 & Vida submarina & Conservar océanos y recursos marinos. \\ \hline
+15 & Vida de ecosistemas & Proteger y restaurar los ecosistemas terrestres. \\ \hline
+16 & Paz y justicia & Promover sociedades pacíficas e inclusivas. \\ \hline
+17 & Alianzas para los objetivos & Fortalecer la alianza mundial para el desarrollo. \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[!htbp]
+  \centering
+  % \includegraphics[width=0.85\textwidth]{Images/ods_overview}
+  \framebox[0.85\textwidth]{\rule{0pt}{6cm} \textit{[Espacio para la foto de los 17 ODS]}}
+  \caption{Visión general de los diecisiete Objetivos de Desarrollo Sostenible \label{fig:ods_overview}}
+\end{figure}
 
 \textbf{Educación para el Desarrollo Sostenible (EDS)}: enfoque educativo integral que busca empoderar a las personas, comunidades y sociedades para tomar decisiones informadas y responsables que contribuyan a un futuro sostenible. La EDS es ``un proceso de aprendizaje que permite a las personas adquirir los conocimientos, las competencias, las actitudes y los valores necesarios para construir un futuro sostenible'' \parencite{UNESCO2020EDS}.
 
@@ -331,6 +366,12 @@ El sistema de control de versiones utilizado en el desarrollo de la propuesta de
 
 Git utiliza un modelo basado en \textit{snapshots} (instantáneas) en lugar de diferencias entre archivos, lo que lo hace eficiente en términos de almacenamiento y rendimiento. Ofrece funcionalidades avanzadas como ramificaciones (\textit{branching}) y fusiones (\textit{merging}), permitiendo trabajar en múltiples características de manera simultánea sin interferencias \parencite{ChaconStraub2014}. Para \textit{Go Goals! Digital} esto resulta esencial para gestionar las iteraciones de XP de manera organizada y revertir cambios ante errores en el desarrollo de las mecánicas de juego.
 
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.85\textwidth]{Images/git_version_control.png}
+  \caption{Manejo del historial de versiones y ramificaciones con Git (elaboración propia)\label{fig:git_version}}
+\end{figure}
+
 \subsection{Software de gestión de proyectos}
 \label{subsec:github_projects}
 
@@ -340,9 +381,8 @@ Esta herramienta es especialmente útil para equipos que siguen metodologías á
 
 \begin{figure}[!htbp]
   \centering
-  % \includegraphics[width=0.85\textwidth]{Images/figura_github_projects}
-  \framebox[0.85\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Tablero de GitHub Projects del proyecto]}}
-  \caption{Tablero de gestión de tareas en GitHub Projects para \textit{Go Goals! Digital}\label{fig:github_projects}}
+  \includegraphics[width=0.85\textwidth]{Images/github_projects.png}
+  \caption{Tablero de gestión de tareas ágiles en GitHub Projects para \textit{Go Goals! Digital} (elaboración propia)\label{fig:github_projects}}
 \end{figure}
 
 El conjunto de herramientas seleccionadas para el desarrollo de \textit{Go Goals! Digital} forma un ecosistema tecnológico coherente y complementario. La metodología XP establece el marco de trabajo iterativo; Visual Paradigm y UML garantizan el modelado y la documentación del sistema; Godot Engine 4.4.1 y GDScript constituyen el núcleo de la implementación; Inkscape aporta los activos gráficos vectoriales del tablero; Git asegura la trazabilidad de cambios; y GitHub Projects canaliza la gestión de tareas bajo el enfoque ágil. La integración de estas herramientas permite un flujo de trabajo continuo, donde cada decisión tecnológica refuerza a las demás, reduciendo la deuda técnica y garantizando la mantenibilidad del producto final.
