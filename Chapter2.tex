@@ -11,7 +11,7 @@ El presente capítulo tiene como objetivo presentar el proceso de análisis, dis
 
 Las principales mejoras que introduce la versión digital respecto al formato físico son:
 \begin{itemize}
-    \item \textbf{Accesibilidad universal}: exportación nativa a Web (HTML5), Windows y Linux, sin necesidad de materiales físicos ni impresión.
+    \item \textbf{Accesibilidad universal}: exportación nativa a plataformas de escritorio (Windows, Linux y macOS), sin necesidad de materiales físicos ni impresión.
     \item \textbf{Contenido dinámico}: banco de preguntas ampliable en formato JSON, editable por educadores sin conocimientos de programación.
     \item \textbf{Retroalimentación enriquecida}: animaciones de fichas, efectos de sonido, feedback visual inmediato (colores, partículas) al responder.
     \item \textbf{Seguimiento del aprendizaje}: registro automático de respuestas correctas e incorrectas por jugador y por ODS.
@@ -25,7 +25,7 @@ Las principales mejoras que introduce la versión digital respecto al formato f�
   \caption{Vista general del videojuego educativo \textit{Go Goals! Digital} (elaboración propia)\label{fig:propuesta_solucion}}
 \end{figure}
 
-Dentro del ecosistema de recursos educativos digitales sobre desarrollo sostenible, \textit{Go Goals! Digital} ocupa un nicho específico: es el único videojuego desarrollado en Cuba que adapta fielmente la mecánica del juego de mesa oficial de las Naciones Unidas a un entorno digital interactivo. A diferencia de otras iniciativas educativas basadas en vídeos o materiales estáticos, este videojuego integra la competencia entre varios jugadores, el azar controlado y la evaluación del conocimiento en una sola experiencia lúdica. La plataforma Godot Engine, elegida por su licencia libre (MIT) y su capacidad de exportación multiplataforma, garantiza que el juego pueda ejecutarse tanto en equipos de escritorio como desde el navegador web, sin requerir instalaciones adicionales, lo que es especialmente relevante en contextos educativos con recursos tecnológicos limitados \parencite{GodotEngine2023}.
+Dentro del ecosistema de recursos educativos digitales sobre desarrollo sostenible, \textit{Go Goals! Digital} ocupa un nicho específico: es el único videojuego desarrollado en Cuba que adapta fielmente la mecánica del juego de mesa oficial de las Naciones Unidas a un entorno digital interactivo. A diferencia de otras iniciativas educativas basadas en vídeos o materiales estáticos, este videojuego integra la competencia entre varios jugadores, el azar controlado y la evaluación del conocimiento en una sola experiencia lúdica. La plataforma Godot Engine, elegida por su licencia libre (MIT) y su capacidad de exportación multiplataforma, garantiza que el juego pueda ejecutarse de manera nativa en diversos sistemas operativos de escritorio (Windows, Linux y macOS), sin requerir configuraciones complejas adicionalmente, lo que es especialmente relevante en contextos educativos con recursos tecnológicos limitados \parencite{GodotEngine2023}.
 
 El público objetivo son niños y jóvenes de entre 8 y 14 años, con especial énfasis en el contexto escolar cubano, donde la disponibilidad de materiales didácticos digitales actualizados sobre los ODS es aún escasa \parencite{InformeVoluntarioCuba2021}. El diseño del videojuego respeta los colores, íconos y denominaciones oficiales de cada ODS definidos por las Naciones Unidas, lo que refuerza la identificación visual del contenido educativo y facilita su uso como complemento de programas curriculares relacionados con la sostenibilidad.
 
@@ -112,7 +112,7 @@ Interfaz accesible para niños & Usabilidad & La interfaz gráfica debe emplear 
 \hline
 Tiempo de respuesta & Rendimiento & El sistema debe responder a las acciones del usuario (lanzar dado, seleccionar respuesta) en menos de 0,5 segundos. \\
 \hline
-Compatibilidad multiplataforma & Compatibilidad & El videojuego debe ser compatible con Windows 10+, Linux y navegadores web modernos (Chrome, Firefox, Edge). \\
+Compatibilidad multiplataforma & Compatibilidad & El videojuego debe ser compatible con la última versión estable de los sistemas operativos Windows 10+, Linux y macOS. \\
 \hline
 Tutorial contextual & Usabilidad & Al presentarse una funcionalidad nueva, el sistema debe mostrar un tutorial o indicación breve. \\
 \hline
@@ -751,28 +751,28 @@ A continuación se presentan las historias de usuario definidas para las funcion
 
 \begin{table}[H]
 \centering
-\caption{Historia de usuario 21: Compatibilidad web y exportación [Elaboración propia]\label{tab:hu21}}
+\caption{Historia de usuario 21: Exportación multiplataforma de escritorio [Elaboración propia]\label{tab:hu21}}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
 \hline
-\textbf{Número:} 21 & \textbf{Nombre:} Compatibilidad web y exportación \\
+\textbf{Número:} 21 & \textbf{Nombre:} Exportación multiplataforma de escritorio \\
 \hline
 \textbf{Prioridad:} Alta & \textbf{Riesgo:} Medio \\
 \hline
 \textbf{Puntos de estimación:} 3.0 & \textbf{Iteración asignada:} 5 \\
 \hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como educador quiero acceder al videojuego desde un navegador sin instalación para usarlo en cualquier aula con acceso a internet.} \\
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como educador quiero que el videojuego esté disponible en diversos sistemas operativos de escritorio para usarlo en cualquier aula sin restricciones de plataforma.} \\
 \hline
 \multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
 \vspace{-0.5em}
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item El videojuego debe exportarse correctamente a HTML5 mediante Godot.
-    \item Debe funcionar en Chrome, Firefox y Edge.
-    \item El tiempo de carga inicial no debe superar los 15 segundos en una conexión de 10 Mbps.
-    \item El ejecutable web debe ser distribuible mediante GitHub Pages sin costo alguno.
+    \item El videojuego debe exportarse correctamente a ejecutables nativos mediante Godot.
+    \item Debe funcionar en Windows, Linux y macOS.
+    \item Los requisitos de hardware deben ser mínimos para funcionar en equipos antiguos.
+    \item El ejecutable debe ser fácilmente distribuible mediante memorias USB u otros medios locales.
 \end{itemize}
 \vspace{-1em}
 } \\
@@ -832,7 +832,7 @@ Los puntos de estimación en el desarrollo ágil se utilizan para medir el esfue
 \hline
 20. & Pantalla de créditos & 0.5 \\
 \hline
-21. & Compatibilidad web y exportación & 3.0 \\
+21. & Exportación multiplataforma de escritorio & 3.0 \\
 \hline
 \multicolumn{2}{|r|}{\textbf{Total}} & \textbf{53.5} \\
 \hline
@@ -891,7 +891,7 @@ El plan de iteraciones es una herramienta esencial para organizar y coordinar el
 \cline{2-3}
  & 20 & Pantalla de créditos & \\
 \cline{2-3}
- & 21 & Compatibilidad web y exportación & \\
+ & 21 & Exportación multiplataforma de escritorio & \\
 \hline
 \multicolumn{3}{|r|}{\textbf{Total}} & \textbf{53.5} \\
 \hline
@@ -907,15 +907,15 @@ El presente epígrafe constituye la transición esencial entre la planificación
 \subsection{Arquitectura utilizada}
 \label{subsec:arquitectura}
 
-Godot Engine utiliza una arquitectura jerárquica fundamentada en el concepto de nodos como unidades básicas de construcción. Cada elemento funcional del videojuego es representado como un nodo que hereda de la clase base \texttt{Node} \parencite{GodotDocs2023}. Esta filosofía arquitectónica de composición sobre herencia permite construir funcionalidades sofisticadas mediante la agregación de componentes simples y bien definidos. El videojuego \textit{Go Goals! Digital} combina cuatro patrones arquitectónicos complementarios que estructuran el código en niveles de responsabilidad claramente diferenciados.
+Godot Engine utiliza una arquitectura jerárquica fundamentada en el concepto de nodos como unidades básicas de construcción. Cada elemento funcional del videojuego es representado como un nodo que hereda de la clase base \texttt{Node} \parencite{GodotDocs2023}. Esta filosofía arquitectónica de composición sobre herencia permite construir funcionalidades sofisticadas mediante la agregación de componentes simples y bien definidos. El videojuego \textit{Go Goals! Digital} emplea una arquitectura modular orientada a escenas (\textit{scene-driven}), apoyada por servicios globales y coordinada centralmente. Este enfoque estructura el proyecto en cuatro pilares fundamentales de diseño y responsabilidad.
 
-El primer patrón es el \textbf{Singleton mediante Autoloads}. Godot facilita este patrón a través de los Autoloads: nodos que se registran globalmente y son accesibles desde cualquier escena del proyecto sin necesidad de referencias directas. El proyecto emplea tres Autoloads fundamentales: \texttt{GameData} (\texttt{res://autoloads/GameData.gd}), que mantiene la configuración de la partida (cantidad de jugadores) y actúa como capa de acceso al banco de preguntas en \texttt{questions.json}; \texttt{AudioManager}, que centraliza la reproducción de música y efectos de sonido liberando a los nodos de juego de instanciar \texttt{AudioStreamPlayer} locales; y \texttt{RecordsManager}, que gestiona la persistencia de puntuaciones y logros entre sesiones \parencite{GodotDocs2023}.
+El primer pilar es la \textbf{Arquitectura Orientada a Escenas}. La navegación principal y los límites de las interfaces dependen del sistema nativo de escenas de Godot. Entornos como el menú principal, la pantalla de juego interactiva y el menú de fin de partida funcionan como fronteras naturales de presentación. Dentro del juego, el nivel principal actúa como controlador de composición local (\textit{composition root}), ensamblando las dependencias y conectando la interfaz de usuario con la lógica sin mezclar directamente sus responsabilidades.
 
-El segundo patrón es el \textbf{Bus de Eventos (Event Bus)}. El archivo \texttt{GameEvents} (\texttt{res://scripts/Core/Events.gd}) define un conjunto de se\~nales globales que actúan como canal de comunicación entre todos los componentes del sistema. Las se\~nales principales incluyen \texttt{dice\_rolled}, \texttt{player\_moving}, \texttt{quiz\_started}, \texttt{quiz\_requested(ods\_id)} y \texttt{game\_won}. Esta arquitectura desacopla totalmente la lógica del \textit{Modelo} de la capa de \textit{Vista}: el \texttt{GameManager} emite la se\~nal \texttt{quiz\_requested(ods\_id)}, y la UI la recibe de forma independiente para mostrar el panel de preguntas, sin que exista ningún conocimiento mutuo directo entre ambos componentes \parencite{GodotDocs2023}.
+El segundo pilar son los \textbf{Servicios Globales y Autoloads}. Godot facilita el patrón Singleton a través de nodos que se registran globalmente, permitiendo el acceso a funcionalidades transversales desde cualquier escena. El proyecto emplea la clase \texttt{GameData} para mantener la configuración de la partida y cargar el banco de preguntas; \texttt{AudioManager} para centralizar la reproducción de música y efectos de sonido; y \texttt{RecordsManager} para gestionar la persistencia local de las puntuaciones de forma estructurada e independiente \parencite{GodotDocs2023}.
 
-El tercer patrón es la \textbf{M\'aquina de Estados (State Machine)}. El archivo \texttt{GameState} (\texttt{res://scripts/Core/GameState.gd}) gestiona de forma explícita las fases del juego mediante una enumeración: \texttt{MENU}, \texttt{PLAYING}, \texttt{PAUSED} y \texttt{GAME\_OVER}. Además, centraliza en RAM el estado activo de la partida: cuál jugador tiene el turno (\texttt{active\_player\_index}), la cantidad de turnos de cada jugador y sus posiciones actuales en el tablero.
+El tercer pilar es la \textbf{Coordinación Central y Comunicación por Eventos}. En lugar de un patrón \textit{Model-View-Controller} estricto, el flujo del juego es orquestado por un coordinador central de aplicación (\texttt{GameManager}). Este componente concentra los casos de uso principales: control de turnos, movimiento, preguntas y victoria. Para lograr un bajo acoplamiento, la comunicación hacia la interfaz gráfica se rige por el uso de se\~nales o \textit{Event Bus}. Así, interfaces como el panel de preguntas reaccionan de manera independiente a la aparición de eventos sin depender en código de la lógica del coordinador.
 
-El cuarto patrón es \textbf{MVC orientado a componentes}. El \texttt{GameManager} (\texttt{res://scripts/Managers/GameManager.gd}) actúa como \textit{Controlador} principal, orquestando la inicialización del tablero, el lanzamiento del dado, el cálculo de rutas y la verificación de condiciones de victoria \parencite{Pressman2021}. Las entidades en \texttt{res://scripts/Entities/} --- \texttt{Board.gd}, \texttt{Player.gd} y \texttt{Tile.gd} --- actúan como los objetos del \textit{Modelo} y \textit{Vista}, encapsulando sus propiedades pero dejando la orquestación al \texttt{GameManager}.
+El cuarto pilar es el \textbf{Modelo de Estado Separado y Entidades Ligeras}. El estado mutable de la partida (fase del juego, turno actual, cantidad de tiradas) se aísla en un modelo de estado explícito (\texttt{GameState}), lo cual facilita administrar pausas o finalizaciones. Adicionalmente, el dominio se representa a través de entidades interactivas ligeras (elementos lógicos de tablero, casillas y fichas) que encapsulan su comportamiento particular, pero que delegan el control de flujo global al coordinador de la partida.
 
 \begin{figure}[!htbp]
   \centering
@@ -1162,7 +1162,7 @@ Este patrón GOF garantiza que determinadas clases tengan una única instancia a
 \subsubsection{Patrón Bus de Eventos (Observer global)}
 \label{subsubsec:eventbus}
 
-El archivo \texttt{GameEvents} (\texttt{res://scripts/Core/Events.gd}) implementa una variante del patrón Observer a nivel de bus de eventos global \parencite{Pressman2021}. En lugar de conectar directamente un emisor con sus suscriptores, \texttt{GameEvents} define se\~nales globales que cualquier componente puede emitir o escuchar de forma independiente. Las se\~nales principales del sistema son: \texttt{dice\_rolled} (el dado fue lanzado), \texttt{player\_moving} (la ficha está en movimiento), \texttt{quiz\_started} (se inició una ronda de pregunta), \texttt{quiz\_requested(ods\_id)} (se solicita la pregunta de un ODS específico) y \texttt{game\_won} (un jugador alcanzó la meta). Este patrón elimina el acoplamiento entre el \texttt{GameManager} y los componentes de UI: el controlador emite \texttt{quiz\_requested(ods\_id)} sin saber quién lo escucha, y la UI responde de forma independiente \parencite{GodotDocs2023}.
+El archivo \texttt{GameEvents} (\url{res://scripts/Core/Events.gd}) implementa una variante del patrón Observer a nivel de bus de eventos global \parencite{Pressman2021}. En lugar de conectar directamente un emisor con sus suscriptores, \texttt{GameEvents} define se\~nales globales que cualquier componente puede emitir o escuchar de forma independiente. Las se\~nales principales del sistema son: \texttt{dice\_rolled} (el dado fue lanzado), \texttt{player\_moving} (la ficha está en movimiento), \texttt{quiz\_started} (se inició una ronda de pregunta), \texttt{quiz\_requested(ods\_id)} (se solicita la pregunta de un ODS específico) y \texttt{game\_won} (un jugador alcanzó la meta). Este patrón elimina el acoplamiento entre el \texttt{GameManager} y los componentes de UI: el controlador emite \texttt{quiz\_requested(ods\_id)} sin saber quién lo escucha, y la UI responde de forma independiente \parencite{GodotDocs2023}.
 
 \begin{figure}[!htbp]
   \centering
@@ -1450,7 +1450,7 @@ Descripción & Desarrollo de un autómata que simula la toma de decisiones y el 
 
 \begin{table}[H]
 \centering
-\caption{Tarea de ingeniería 11: Exportación y optimización web\label{tab:ti11}}
+\caption{Tarea de ingeniería 11: Exportación y optimización multiplataforma\label{tab:ti11}}
 \begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
 \hline
 \textbf{Campo} & \textbf{Descripción} \\
@@ -1469,7 +1469,7 @@ Iteración & 5 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Configuración de perfiles de exportación en Godot. Optimización de assets para reducir el tiempo de carga web. Despliegue automatizado mediante GitHub Pages. \\
+Descripción & Configuración de perfiles de exportación en Godot para Windows, Linux y macOS. Optimización de assets para reducir el peso final de los instaladores. Verificación de compatibilidad en diferentes resoluciones de pantalla nativas. \\
 \hline
 \end{tabular}
 \end{table}
