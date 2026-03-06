@@ -124,6 +124,39 @@ Tamaño del ejecutable & Rendimiento & El ejecutable para Windows no debe supera
 \hline
 \end{longtable}
 
+\subsection{Matriz de trazabilidad de requisitos}
+\label{subsec:trazabilidad}
+
+Para garantizar la coherencia del diseño y asegurar que todas las necesidades funcionales identificadas sean abordadas por una o más historias de usuario, se ha elaborado la siguiente matriz de trazabilidad. Esta herramienta permite verificar la cobertura del sistema y facilita el seguimiento del progreso durante las iteraciones de desarrollo.
+
+\begin{table}[!htbp]
+\centering
+\caption{Matriz de trazabilidad: Requisitos Funcionales vs. Historias de Usuario (elaboración propia)\label{tab:trazabilidad}}
+\renewcommand{\arraystretch}{1.2}
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{RF} & \textbf{Nombre del Requisito} & \textbf{Historias de Usuario (HU)} \\ \hline
+1 & Inicio de partida & HU 1, HU 13 \\ \hline
+2 & Visualización del tablero & HU 2 \\ \hline
+3 & Lanzamiento de dado & HU 3 \\ \hline
+4 & Movimiento de ficha & HU 4 \\ \hline
+5 & Efecto de escalera & HU 5 \\ \hline
+6 & Efecto de serpiente & HU 5 \\ \hline
+7 & Mostrar pregunta ODS & HU 6, HU 14 \\ \hline
+8 & Evaluar respuesta & HU 7 \\ \hline
+9 & Gestión de turnos & HU 8, HU 18 \\ \hline
+10 & Condición de victoria & HU 9 \\ \hline
+11 & Estadísticas de partida & HU 10, HU 17 \\ \hline
+12 & Menú principal & HU 11 \\ \hline
+13 & Pantalla de instrucciones & HU 11 \\ \hline
+14 & Configuración de audio & HU 12 \\ \hline
+- & Temporizador (Opcional) & HU 15 \\ \hline
+- & Modo Un Jugador (IA) & HU 16 \\ \hline
+- & Accesibilidad / Créditos & HU 19, HU 20 \\ \hline
+\end{tabular}
+\end{table}
+
 \subsection{Historias de usuario}
 \label{subsec:historias_usuario}
 
@@ -1152,36 +1185,48 @@ Cada clase implementada en GDScript incluye comentarios de documentación al ini
 \subsection{Patrones de diseño utilizados}
 \label{subsec:patrones}
 
-Los patrones de diseño son soluciones reutilizables a problemas recurrentes en el desarrollo de software. \textit{Go Goals! Digital} aplica cuatro patrones principales que actuan de forma complementaria y se encuentran reflejados directamente en la estructura del código fuente.
+Los patrones de diseño son soluciones reutilizables a problemas recurrentes en el desarrollo de software. Estos patrones proporcionan una manera estandarizada de abordar tareas de diseño recurrentes, mejorando la eficiencia y la coherencia del código. Al emplear patrones de diseño, los desarrolladores pueden beneficiarse de soluciones probadas que facilitan la comunicación, el mantenimiento y la extensibilidad del software \parencite{Pressman2021}. \textit{Go Goals! Digital} aplica los siguientes patrones de diseño, reflejados directamente en la estructura del código fuente.
 
-\subsubsection{Patrón Singleton mediante Autoloads}
-\label{subsubsec:singleton}
+\subsubsection{Patrones GRASP}
+\label{subsubsec:patrones_grasp}
 
-Este patrón GOF garantiza que determinadas clases tengan una única instancia accesible globalmente durante toda la sesión de juego \parencite{Pressman2021}. Godot implementa este patrón de forma nativa mediante el mecanismo de Autoloads. Los tres Autoloads del proyecto son: \texttt{GameData}, que actua como repositorio central de configuración y datos educativos; \texttt{AudioManager}, que centraliza toda la reproducción de audio evitando instancias dispersas de \texttt{AudioStreamPlayer}; y \texttt{RecordsManager}, que gestiona la persistencia de logros entre sesiones. Gracias a este patrón, cualquier nodo del árbol de escenas puede acceder a estos servicios sin crear dependencias directas ni referencias cruzadas entre escenas \parencite{GodotDocs2023}.
+Son un conjunto de principios para asignar responsabilidades y funciones en el diseño de software orientado a objetos. Estos patrones ayudan a los desarrolladores a tomar decisiones coherentes sobre dónde ubicar la funcionalidad dentro del sistema. Al aplicar estos principios, se puede lograr un diseño de software más modular, flexible y fácil de mantener \parencite{Pressman2021}.
 
-\subsubsection{Patrón Bus de Eventos (Observer global)}
-\label{subsubsec:eventbus}
+\textbf{Controlador de Fachada}
 
-El archivo \texttt{GameEvents} implementa una variante del patrón Observer a nivel de bus de eventos global \parencite{Pressman2021}. En lugar de conectar directamente un emisor con sus suscriptores, \texttt{GameEvents} define se\~nales globales que cualquier componente puede emitir o escuchar de forma independiente. Las se\~nales principales del sistema son: \texttt{dice\_rolled} (el dado fue lanzado), \texttt{player\_moving} (la ficha está en movimiento), \texttt{quiz\_started} (se inició una ronda de pregunta), \texttt{quiz\_requested(ods\_id)} (se solicita la pregunta de un ODS específico) y \texttt{game\_won} (un jugador alcanzó la meta). Este patrón elimina el acoplamiento entre el \texttt{GameManager} y los componentes de UI: el controlador emite \texttt{quiz\_requested(ods\_id)} sin saber quién lo escucha, y la UI responde de forma independiente \parencite{GodotDocs2023}.
+Tiene como objetivo asignar la responsabilidad de manejar las solicitudes del usuario a un componente específico, llamado controlador. En el proyecto, el script \texttt{GameManager.gd} centraliza la orquestación del ciclo de juego, delegando las tareas a otros objetos según sea necesario y coordinando el flujo general de la partida.
+
+\textbf{Experto en información}
+
+Se centra en asignar responsabilidades a la clase que posee la mayor cantidad de información necesaria para cumplir con dicha responsabilidad. Los modelos del proyecto (\texttt{Board.gd}, \texttt{Player.gd} y \texttt{Tile.gd}) encapsulan sus propias propiedades y aplican este principio, asegurando que cada entidad gestione únicamente sus propios datos.
+
+\textbf{Bajo acoplamiento}
+
+Este principio busca minimizar las dependencias entre las clases, lo que reduce el impacto de los cambios. Es notable que la configuración estática del tablero se aísla en \texttt{BoardConfig.gd}, separando los datos (escaleras, toboganes y casillas de quiz) de la lógica. Esta decisión de diseño garantiza que el sistema sea fácilmente extensible ante futuras modificaciones del tablero o las reglas del juego sin alterar el controlador principal.
+
+\subsubsection{Patrones GOF}
+\label{subsubsec:patrones_gof}
+
+Los patrones de diseño GOF (Gang of Four) actúan como directrices estructuradas y probadas que brindan a los desarrolladores un marco sólido para abordar desafíos específicos organizados en categorías como creacionales, estructurales y de comportamiento.
+
+\textbf{Singleton}
+
+Garantiza que una clase tenga una única instancia y proporciona un punto de acceso global a ella. Godot implementa este patrón de forma nativa mediante el mecanismo de Autoloads. Los Autoloads del proyecto son \texttt{GameData} (repositorio central), \texttt{AudioManager} (gestión de sonido global) y \texttt{RecordsManager} (persistencia de datos), permitiendo que cualquier nodo acceda a estos servicios sin dependencias cruzadas \parencite{GodotDocs2023}.
+
+\textbf{Observer (Bus de Eventos)}
+
+Define una dependencia de uno-a-muchos entre objetos. El archivo \texttt{GameEvents} implementa una variante de este patrón a nivel de bus de eventos global. En lugar de conectar directamente un emisor con sus suscriptores, define se\~nales globales (\texttt{dice\_rolled}, \texttt{quiz\_requested}) que cualquier componente emite o escucha de forma independiente, eliminando el acoplamiento entre el controlador y los componentes de la interfaz gráfica de usuario (UI).
 
 \begin{figure}[!htbp]
   \centering
   % \includegraphics[width=0.7\textwidth]{Images/figura_senales_godot}
   \framebox[0.7\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Bus de Eventos (GameEvents) --- flujo de se\~nales entre GameManager y UI (elaboración propia)]}}
-  \caption{Patrón Bus de Eventos implementado mediante se\~nales globales en Godot (elaboración propia)\label{fig:senales_godot}}
+  \caption{Patrón Observer implementado mediante se\~nales globales en Godot (elaboración propia)\label{fig:senales_godot}}
 \end{figure}
 
-\subsubsection{Patrón Máquina de Estados}
-\label{subsubsec:state}
+\textbf{State (Máquina de Estados)}
 
-El estado de la partida se gestiona de forma explícita y centralizada en \texttt{GameState.gd}, mediante una enumeración de fases: \texttt{MENU}, \texttt{PLAYING}, \texttt{PAUSED} y \texttt{GAME\_OVER} \parencite{Pressman2021}. Esta separación del estado respecto a la lógica de actualización garantiza que ninguna transición de estado quede implícita o dispersa en el código. Además, \texttt{GameState} centraliza en memoria RAM el estado de la partida en curso: el índice del jugador activo (\texttt{active\_player\_index}), el historial de turnos y las posiciones actuales de todas las fichas, facilitando las operaciones de guardado y restauración. La aplicación de este patrón permite al \texttt{GameManager} delegar las decisiones de transición de fase a una entidad especializada, reduciendo la complejidad ciclomática del controlador.
-
-\subsubsection{Patrón MVC orientado a componentes (GRASP)}
-\label{subsubsec:mvc_grasp}
-
-La arquitectura del proyecto aplica los principios GRASP (General Responsibility Assignment Software Patterns) \parencite{Pressman2021} en una estructura MVC adaptada al modelo de nodos de Godot. El \textbf{Controlador} es \texttt{GameManager.gd}, que centraliza la orquestación del ciclo de juego aplicando el principio GRASP de \textit{Controlador de Fachada}. Los \textbf{Modelos} son las entidades \texttt{Board.gd}, \texttt{Player.gd} y \texttt{Tile.gd}, que encapsulan propiedades y aplican el principio de \textit{experto en información} (cada entidad conoce solo sus propios datos). La \textbf{Vista} es gestionada por los scripts visuales y de interfaz, que escuchan eventos de \texttt{GameEvents} sin acoplarse al modelo.
-
-Es notable que la configuración del tablero se aisla en \texttt{BoardConfig.gd}, separando los datos estáticos de escaleras, toboganes y casillas de quiz del código lógico, lo que permite modificar la configuración del tablero sin alterar el controlador. Esta decisión de diseño aplica directamente el principio GRASP de \textit{bajo acoplamiento}, garantizando que el sistema sea fácilmente extensible ante futuras modificaciones del tablero o las reglas del juego \parencite{Pressman2021}.
+Permite a un objeto alterar su comportamiento cuando su estado interno cambia. El estado de la partida se gestiona de forma explícita y centralizada en \texttt{GameState.gd}, mediante una enumeración de fases (\texttt{MENU}, \texttt{PLAYING}, \texttt{PAUSED}, \texttt{GAME\_OVER}). Esta separación delega las decisiones de transición a una entidad especializada y facilita las operaciones de guardado y restauración del estado.
 
 \subsection{Tareas de ingeniería}
 \label{subsec:tareas_ingenieria}
