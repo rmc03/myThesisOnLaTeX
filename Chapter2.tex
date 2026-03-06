@@ -42,13 +42,21 @@ Como parte inicial de esta planificación, se realizaron sesiones de tormenta de
 
 Los requisitos funcionales son descripciones detalladas de las funciones, comportamientos y procesos que un sistema de software debe cumplir para satisfacer las necesidades de sus usuarios y alcanzar los objetivos del negocio. En esencia, definen ``lo que el sistema debe hacer'' al especificar, de forma clara y verificable, las entradas que recibe, las operaciones que realiza y las salidas que produce. Según \citeauthor{Pressman2021} \parencite{Pressman2021}, esta definición es esencial no solo para orientar las fases de análisis, diseño, implementación y pruebas, sino también para asegurar una comunicación efectiva entre todos los involucrados en el proyecto, evitando ambigüedades y facilitando la gestión de cambios durante el desarrollo.
 
-\begin{table}[H]
-\centering
-\caption{Requisitos funcionales del videojuego Go Goals! Digital\label{tab:req_funcionales}}
-\begin{tabular}{|c|p{0.3\textwidth}|p{0.37\textwidth}|c|c|}
+\begin{longtable}{|c|p{0.3\textwidth}|p{0.37\textwidth}|c|c|}
+\caption{Requisitos funcionales del videojuego Go Goals! Digital\label{tab:req_funcionales}} \\
 \hline
 \textbf{No.} & \textbf{Nombre} & \textbf{Descripción} & \textbf{Prioridad} & \textbf{Complejidad} \\
 \hline
+\endfirsthead
+\multicolumn{5}{c}
+{{ \tablename\ \thetable{} -- Continuación de la página anterior}} \\
+\hline
+\textbf{No.} & \textbf{Nombre} & \textbf{Descripción} & \textbf{Prioridad} & \textbf{Complejidad} \\
+\hline
+\endhead
+\hline \multicolumn{5}{r}{{Continúa en la próxima página...}} \\
+\endfoot
+\endlastfoot
 1. & Inicio de partida & El sistema debe permitir al usuario iniciar una nueva partida configurando el número de jugadores (1-6). & Alta & Baja \\
 \hline
 2. & Visualización del tablero & El sistema debe mostrar el tablero hexagonal completo con las 63 casillas correctamente identificadas. & Alta & Media \\
@@ -78,21 +86,28 @@ Los requisitos funcionales son descripciones detalladas de las funciones, compor
 14. & Configuración de audio & El sistema debe permitir activar o desactivar música y efectos de sonido. & Baja & Baja \\
 \hline
 \hline
-\end{tabular}
-\end{table}
+\end{longtable}
 
 \subsection{Requisitos no funcionales}
 \label{subsec:req_no_funcionales}
 
 Los requisitos no funcionales son aquellos que especifican criterios que pueden usarse para juzgar la operación de un sistema, en lugar de sus comportamientos específicos. Estos requisitos se centran en aspectos como el rendimiento, la seguridad, la usabilidad y la fiabilidad del sistema, y son esenciales para garantizar que el software cumpla con las expectativas de calidad y satisfacción del usuario final \parencite{Pressman2021}.
 
-\begin{table}[H]
-\centering
-\caption{Requisitos no funcionales del videojuego Go Goals! Digital\label{tab:req_no_funcionales}}
-\begin{tabular}{|p{0.28\textwidth}|p{0.18\textwidth}|p{0.45\textwidth}|}
+\begin{longtable}{|p{0.28\textwidth}|p{0.18\textwidth}|p{0.45\textwidth}|}
+\caption{Requisitos no funcionales del videojuego Go Goals! Digital\label{tab:req_no_funcionales}} \\
 \hline
 \textbf{Nombre} & \textbf{Tipo} & \textbf{Descripción} \\
 \hline
+\endfirsthead
+\multicolumn{3}{c}
+{{ \tablename\ \thetable{} -- Continuación de la página anterior}} \\
+\hline
+\textbf{Nombre} & \textbf{Tipo} & \textbf{Descripción} \\
+\hline
+\endhead
+\hline \multicolumn{3}{r}{{Continúa en la próxima página...}} \\
+\endfoot
+\endlastfoot
 Interfaz accesible para niños & Usabilidad & La interfaz gráfica debe emplear tipografía de tamaño no menor a 16pt, botones grandes y contraste alto, adecuados para usuarios de 8 a 10 años. \\
 \hline
 Tiempo de respuesta & Rendimiento & El sistema debe responder a las acciones del usuario (lanzar dado, seleccionar respuesta) en menos de 0,5 segundos. \\
@@ -107,8 +122,7 @@ Disponibilidad offline & Disponibilidad & La versión de escritorio debe funcion
 \hline
 Tamaño del ejecutable & Rendimiento & El ejecutable para Windows no debe superar 150 MB para facilitar su distribución en contextos con ancho de banda limitado. \\
 \hline
-\end{tabular}
-\end{table}
+\end{longtable}
 
 \subsection{Historias de usuario}
 \label{subsec:historias_usuario}
