@@ -40,7 +40,7 @@ Como parte inicial de esta planificación, se realizaron sesiones de tormenta de
 \subsection{Requisitos funcionales}
 \label{subsec:req_funcionales}
 
-Los requisitos funcionales son descripciones detalladas de las funciones, comportamientos y procesos que un sistema de software debe cumplir para satisfacer las necesidades de sus usuarios y alcanzar los objetivos del proyecto. Esta definición resulta esencial no solo para orientar las fases de análisis, diseño, implementación y pruebas, sino también para asegurar una comunicación efectiva entre todos los involucrados en el proyecto \parencite{Pressman2021}.
+Los requisitos funcionales son descripciones detalladas de las funciones, comportamientos y procesos que un sistema de software debe cumplir para satisfacer las necesidades de sus usuarios y alcanzar los objetivos del negocio. En esencia, definen ``lo que el sistema debe hacer'' al especificar, de forma clara y verificable, las entradas que recibe, las operaciones que realiza y las salidas que produce. Según \citeauthor{Pressman2021} \parencite{Pressman2021}, esta definición es esencial no solo para orientar las fases de análisis, diseño, implementación y pruebas, sino también para asegurar una comunicación efectiva entre todos los involucrados en el proyecto, evitando ambigüedades y facilitando la gestión de cambios durante el desarrollo.
 
 \begin{table}[!htbp]
 \centering
@@ -49,33 +49,33 @@ Los requisitos funcionales son descripciones detalladas de las funciones, compor
 \hline
 \textbf{No.} & \textbf{Nombre} & \textbf{Descripción} & \textbf{Prioridad} & \textbf{Complejidad} \\
 \hline
-1 & Inicio de partida & El sistema debe permitir al usuario iniciar una nueva partida configurando el número de jugadores (1-6). & Alta & Baja \\
+1. & Inicio de partida & El sistema debe permitir al usuario iniciar una nueva partida configurando el número de jugadores (1-6). & Alta & Baja \\
 \hline
-2 & Visualización del tablero & El sistema debe mostrar el tablero hexagonal completo con las 63 casillas correctamente identificadas. & Alta & Media \\
+2. & Visualización del tablero & El sistema debe mostrar el tablero hexagonal completo con las 63 casillas correctamente identificadas. & Alta & Media \\
 \hline
-3 & Lanzamiento de dado & El sistema debe simular el lanzamiento de un dado de 6 caras con resultado pseudoaleatorio. & Alta & Baja \\
+3. & Lanzamiento de dado & El sistema debe simular el lanzamiento de un dado de 6 caras con resultado pseudoaleatorio. & Alta & Baja \\
 \hline
-4 & Movimiento de ficha & El sistema debe mover la ficha del jugador activo la cantidad de casillas indicada por el dado con animación. & Alta & Media \\
+4. & Movimiento de ficha & El sistema debe mover la ficha del jugador activo la cantidad de casillas indicada por el dado con animación. & Alta & Media \\
 \hline
-5 & Efecto de escalera & El sistema debe detectar casillas de escalera y aplicar el avance correspondiente con animación. & Alta & Media \\
+5. & Efecto de escalera & El sistema debe detectar casillas de escalera y aplicar el avance correspondiente con animación. & Alta & Media \\
 \hline
-6 & Efecto de serpiente & El sistema debe detectar casillas de serpiente y aplicar el retroceso correspondiente con animación. & Alta & Media \\
+6. & Efecto de serpiente & El sistema debe detectar casillas de serpiente y aplicar el retroceso correspondiente con animación. & Alta & Media \\
 \hline
-7 & Mostrar pregunta ODS & El sistema debe mostrar una pregunta aleatoria del banco cuando una ficha cae en casilla temática. & Alta & Alta \\
+7. & Mostrar pregunta ODS & El sistema debe mostrar una pregunta aleatoria del banco cuando una ficha cae en casilla temática. & Alta & Alta \\
 \hline
-8 & Evaluar respuesta & El sistema debe evaluar la respuesta del jugador, mostrar retroalimentación y aplicar el efecto correspondiente. & Alta & Media \\
+8. & Evaluar respuesta & El sistema debe evaluar la respuesta del jugador, mostrar retroalimentación y aplicar el efecto correspondiente. & Alta & Media \\
 \hline
-9 & Gestión de turnos & El sistema debe gestionar el turno de cada jugador de forma automática y mostrar el jugador activo. & Alta & Media \\
+9. & Gestión de turnos & El sistema debe gestionar el turno de cada jugador de forma automática y mostrar el jugador activo. & Alta & Media \\
 \hline
-10 & Condición de victoria & El sistema debe detectar cuando un jugador llega a la casilla 63 y mostrar la pantalla de victoria. & Alta & Baja \\
+10. & Condición de victoria & El sistema debe detectar cuando un jugador llega a la casilla 63 y mostrar la pantalla de victoria. & Alta & Baja \\
 \hline
-11 & Estadísticas de partida & El sistema debe registrar y mostrar las respuestas correctas e incorrectas por jugador y por ODS. & Media & Alta \\
+11. & Estadísticas de partida & El sistema debe registrar y mostrar las respuestas correctas e incorrectas por jugador y por ODS. & Media & Alta \\
 \hline
-12 & Menú principal & El sistema debe contar con un menú principal con opciones de iniciar partida, ver instrucciones y salir. & Alta & Baja \\
+12. & Menú principal & El sistema debe contar con un menú principal con opciones de iniciar partida, ver instrucciones y salir. & Alta & Baja \\
 \hline
-13 & Pantalla de instrucciones & El sistema debe mostrar las reglas del juego de manera clara y accesible. & Media & Baja \\
+13. & Pantalla de instrucciones & El sistema debe mostrar las reglas del juego de manera clara y accesible. & Media & Baja \\
 \hline
-14 & Configuración de audio & El sistema debe permitir activar o desactivar música y efectos de sonido. & Baja & Baja \\
+14. & Configuración de audio & El sistema debe permitir activar o desactivar música y efectos de sonido. & Baja & Baja \\
 \hline
 \hline
 \end{tabular}
@@ -778,47 +778,47 @@ Los puntos de estimación en el desarrollo ágil se utilizan para medir el esfue
 \hline
 \textbf{No. HU} & \textbf{Nombre} & \textbf{Puntos (días)} \\
 \hline
-1 & Inicio de nueva partida educativa & 2.0 \\
+1. & Inicio de nueva partida educativa & 2.0 \\
 \hline
-2 & Visualización del tablero hexagonal & 5.0 \\
+2. & Visualización del tablero hexagonal & 5.0 \\
 \hline
-3 & Lanzamiento de dado virtual & 1.5 \\
+3. & Lanzamiento de dado virtual & 1.5 \\
 \hline
-4 & Movimiento animado de ficha & 4.0 \\
+4. & Movimiento animado de ficha & 4.0 \\
 \hline
-5 & Efecto de escalera y serpiente & 3.0 \\
+5. & Efecto de escalera y serpiente & 3.0 \\
 \hline
-6 & Preguntas educativas sobre ODS & 5.0 \\
+6. & Preguntas educativas sobre ODS & 5.0 \\
 \hline
-7 & Evaluación y retroalimentación de respuestas & 3.0 \\
+7. & Evaluación y retroalimentación de respuestas & 3.0 \\
 \hline
-8 & Gestión de turnos automática & 2.0 \\
+8. & Gestión de turnos automática & 2.0 \\
 \hline
-9 & Condición de victoria & 1.5 \\
+9. & Condición de victoria & 1.5 \\
 \hline
-10 & Estadísticas de aprendizaje & 4.0 \\
+10. & Estadísticas de aprendizaje & 4.0 \\
 \hline
-11 & Menú principal y pantalla de instrucciones & 2.0 \\
+11. & Menú principal y pantalla de instrucciones & 2.0 \\
 \hline
-12 & Configuración de audio & 2.5 \\
+12. & Configuración de audio & 2.5 \\
 \hline
-13 & Personalización de jugadores & 1.5 \\
+13. & Personalización de jugadores & 1.5 \\
 \hline
-14 & Visualización de información del ODS & 2.0 \\
+14. & Visualización de información del ODS & 2.0 \\
 \hline
-15 & Temporizador de respuesta & 2.0 \\
+15. & Temporizador de respuesta & 2.0 \\
 \hline
-16 & Modo de un jugador & 5.0 \\
+16. & Modo de un jugador & 5.0 \\
 \hline
-17 & Pantalla de clasificación al finalizar & 1.5 \\
+17. & Pantalla de clasificación al finalizar & 1.5 \\
 \hline
-18 & Notificación visual del turno activo & 1.0 \\
+18. & Notificación visual del turno activo & 1.0 \\
 \hline
-19 & Accesibilidad de la interfaz & 2.0 \\
+19. & Accesibilidad de la interfaz & 2.0 \\
 \hline
-20 & Pantalla de créditos & 0.5 \\
+20. & Pantalla de créditos & 0.5 \\
 \hline
-21 & Compatibilidad web y exportación & 3.0 \\
+21. & Compatibilidad web y exportación & 3.0 \\
 \hline
 \multicolumn{2}{|r|}{\textbf{Total}} & \textbf{53.5} \\
 \hline
