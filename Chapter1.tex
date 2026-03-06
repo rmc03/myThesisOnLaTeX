@@ -267,9 +267,9 @@ UML aporta ventajas clave al proyecto: proporciona comunicación efectiva al con
 \subsection{Motor de videojuegos}
 \label{subsec:godot}
 
-Un motor de videojuegos es un conjunto de herramientas y tecnologías que permiten el desarrollo, la creación y la ejecución de videojuegos, proporcionando una infraestructura que incluye gráficos, física, sonido, inteligencia artificial y otras funcionalidades necesarias para crear un entorno interactivo y dinámico \parencite{Gregory2020}. Para el desarrollo del videojuego educativo se seleccionó Godot Engine en su versión 4.4.1 \parencite{GodotEngine2023}.
+Un motor de videojuegos es un conjunto de herramientas y tecnologías que permiten el desarrollo, la creación y la ejecución de videojuegos, proporcionando una infraestructura que incluye gráficos, física, sonido, inteligencia artificial y otras funcionalidades necesarias para crear un entorno interactivo y dinámico \parencite{Gregory2020}. La selección del motor es una decisión crítica que condiciona el flujo de trabajo, la compatibilidad multiplataforma y la mantenibilidad del software. Tras un proceso de evaluación técnica basado en los requerimientos pedagógicos y técnicos de \textit{Go Goals! Digital}, se seleccionó Godot Engine en su versión 4.4.1 \parencite{GodotEngine2023}.
 
-Godot es un motor de código abierto bajo licencia MIT que ha ganado considerable popularidad en la comunidad de desarrollo de videojuegos por su flexibilidad, accesibilidad y facilidad de uso \parencite{LinietskiManzur2020}. En su versión 4.4.1, el motor presenta mejoras significativas en el rendimiento gráfico, soporte robusto para gráficos bidimensionales optimizados y un sistema de scripting mejorado basado en GDScript. Las capacidades gráficas avanzadas de Godot 4.4.1 son ideales para crear un videojuego educativo atractivo que capte la atención de los estudiantes. La comunidad activa y el amplio soporte documental de Godot facilitan el aprendizaje y la resolución de problemas durante el proceso de desarrollo \parencite{GodotEngine2023}.
+Para sustentar esta decisión, se realizó una comparativa con otros motores comerciales líderes en la industria, evaluando criterios como el costo de licenciamiento, el soporte nativo para entornos 2D, la eficiencia del ejecutable final y la facilidad de aprendizaje para el equipo de desarrollo. Los resultados de este análisis se presentan en la Tabla \ref{tab:comparativa_motores}.
 
 \begin{table}[!htbp]
 \centering
@@ -291,11 +291,12 @@ Godot es un motor de código abierto bajo licencia MIT que ha ganado considerabl
 \end{tabular}
 \end{table}
 
+La elección definitiva de Godot Engine se fundamenta en su arquitectura basada en nodos y escenas, lo cual permite una modularidad excepcional para un juego de tablero donde cada casilla, ficha y panel de preguntas puede ser desarrollado y probado de forma independiente. Además, su licencia de código abierto garantiza que el producto final sea totalmente libre de dependencias comerciales o costos futuros, alineándose con los objetivos de sostenibilidad del proyecto. La integración del lenguaje GDScript, optimizado específicamente para el ciclo de vida de los objetos en Godot, facilitó una implementación ágil de la lógica de turnos y el sistema de evaluación de respuestas.
+
 \begin{figure}[!htbp]
   \centering
-  % \includegraphics[width=0.75\textwidth]{Images/figura_comparativa_motores}
-  \framebox[0.75\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Comparativa de motores de videojuegos disponibles (elaboración propia)]}}
-  \caption{Comparativa de motores de videojuegos por criterios del proyecto (elaboración propia)\label{fig:comparativa_motores}}
+  \includegraphics[width=1.0\textwidth]{godot_engine_interface_1772784057883.png}
+  \caption{Interfaz de desarrollo de Godot Engine 4 mostrando el entorno de trabajo del proyecto (elaboración propia)\label{fig:godot_interface}}
 \end{figure}
 
 \subsection{Lenguaje de programación}
