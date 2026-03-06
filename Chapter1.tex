@@ -238,18 +238,20 @@ Godot es un motor de código abierto bajo licencia MIT que ha ganado considerabl
 
 \begin{table}[!htbp]
 \centering
-\caption{Comparativa de motores de videojuegos\label{tab:comparativa_motores}}
-\begin{tabular}{|l|l|l|l|p{0.25\textwidth}|}
+\caption{Comparativa ampliada de motores de videojuegos según criterios del proyecto\label{tab:comparativa_motores}}
+\renewcommand{\arraystretch}{1.4}
+\small
+\begin{tabular}{|p{0.12\textwidth}|p{0.18\textwidth}|p{0.20\textwidth}|p{0.20\textwidth}|p{0.20\textwidth}|}
 \hline
-\textbf{Motor} & \textbf{Licencia} & \textbf{Export. Web} & \textbf{Curva Aprend.} & \textbf{Conclusión} \\
+\textbf{Motor} & \textbf{Licencia y Costos} & \textbf{Soporte 2D y Rendimiento} & \textbf{Exportación Web (HTML5)} & \textbf{Curva de Aprendizaje} \\
 \hline
-Godot & Gratuito (MIT) & Nativa & Baja & Cumple 100\% criterios \\
+\textbf{Godot} (v4.4.1) & Código abierto (MIT). Totalmente gratuito, sin regalías ni costos de suscripción. & Motor 2D dedicado real (basado en píxeles). Alta optimización para equipos de bajos recursos. & Soporte nativo. Genera archivos muy ligeros, ideales para contextos educativos con baja conectividad. & Baja. Uso de GDScript (sintaxis inspirada en Python), lo que agiliza el desarrollo de prototipos. \\
 \hline
-Unity & Grat. (Prop.) & WebGL pesado & Media-alta & Archivos pesados, licencia incierta \\
+\textbf{Unity} & Propietaria. Gratuito hasta cierto nivel de ingresos; sujeto a inestabilidad por cambios de políticas. & Soporte 2D robusto, pero integrado sobre un núcleo 3D, lo que añade sobrecarga innecesaria al proyecto. & Funcional mediante WebGL, pero produce compilaciones pesadas que experimentan carga lenta. & Media-alta. Requiere dominio de C\# y navegar una interfaz de editor considerablemente más densa. \\
 \hline
-Unreal & Grat. (regalías) & Escasa & Alta & Inadecuado para 2D, sobrecarga \\
+\textbf{Unreal Engine} & Propietaria. Gratuito inicialmente, pero exige pago de regalías tras superar límites de ventas. & Orientado mayormente a gráficos 3D fotorrealistas de alta fidelidad. Subutilizado en juegos 2D simples. & Soporte web muy escaso; de hecho, ha sido descontinuado o relegado en sus versiones más recientes. & Alta. Basado en C++ o el sistema visual Blueprints, con altos requerimientos de hardware para ejecución. \\
 \hline
-Construct & Pago (suscripción) & HTML5 & Muy baja & Requiere pago, código cerrado \\
+\textbf{Construct 3} & Propietaria. Modelo de negocio basado en suscripción periódica de pago obligatorio. & Excelente herramienta específica para desarrollo 2D rápido y sin requerir gran potencia computacional. & Exportación HTML5 de primera clase, concebida de forma nativa para plataformas web. & Muy baja. Basado puramente en un entorno visual y hojas de eventos, sin programación de código tradicional. \\
 \hline
 \end{tabular}
 \end{table}
