@@ -1,0 +1,32 @@
+d:/Universidad/Tesis/Thesis_template fix/Chapter1.tex:90:\caption{Tablero oficial del juego de mesa Go Goals! de las Naciones Unidas \parencite{GoGoals2020}\label{fig:gogals_tablero}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter1.tex:95:\caption{Ejemplos de preguntas por nivel cognitivo según ODS\label{tab:preguntas_niveles}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter1.tex:160:\caption{Mecánica de tablero digital interactivo en la serie comercial \textit{Mario Party} \label{fig:mario_party}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter1.tex:176:\caption{Componentes del juego de mesa Go Goals!\label{tab:componentes_juego}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter1.tex:206:\caption{Diagnóstico del estado actual de Go Goals! (formato físico)\label{tab:diagnostico}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter1.tex:276:\caption{Comparativa ampliada de motores de videojuegos según criterios del proyecto\label{tab:comparativa_motores}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:46:\caption{Requisitos funcionales del videojuego Go Goals! Digital\label{tab:req_funcionales}} \\
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:97:\caption{Requisitos no funcionales del videojuego Go Goals! Digital\label{tab:req_no_funcionales}} \\
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:790:\caption{Puntos de estimación por historia de usuario\label{tab:estimacion}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:849:\caption{Plan de iteraciones de desarrollo\label{tab:plan_iteraciones}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:996:\caption{Tarjeta CRC GameData (Autoload)\label{tab:crc_gamedata}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1008:\caption{Tarjeta CRC GameEvents (Bus de Eventos)\label{tab:crc_gameevents}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1020:\caption{Tarjeta CRC GameState\label{tab:crc_gamestate}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1032:\caption{Tarjeta CRC GameManager (Controlador)\label{tab:crc_gamemanager}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1044:\caption{Tarjeta CRC BoardConfig\label{tab:crc_boardconfig}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1056:\caption{Tarjeta CRC Board (Entidad)\label{tab:crc_board}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1068:\caption{Tarjeta CRC Tile (Entidad)\label{tab:crc_tile}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1080:\caption{Tarjeta CRC Player (Entidad)\label{tab:crc_player}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1092:\caption{Tarjeta CRC AudioManager (Autoload)\label{tab:crc_audiomanager}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1104:\caption{Tarjeta CRC RecordsManager (Autoload)\label{tab:crc_recordsmanager}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1193:\caption{Tarea de ingeniería 1: Diseño e implementación del tablero hexagonal\label{tab:ti1}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1219:\caption{Tarea de ingeniería 2: Implementación del menú principal\label{tab:ti2}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1245:\caption{Tarea de ingeniería 3: Lógica del dado y movimiento de fichas\label{tab:ti3}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1271:\caption{Tarea de ingeniería 4: Escaleras, serpientes y gestión de turnos\label{tab:ti4}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1297:\caption{Tarea de ingeniería 5: Sistema de preguntas y evaluación de respuestas\label{tab:ti5}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1323:\caption{Tarea de ingeniería 6: Estadísticas de aprendizaje\label{tab:ti6}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1349:\caption{Tarea de ingeniería 7: Personalización de jugadores\label{tab:ti7}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1375:\caption{Tarea de ingeniería 8: Panel informativo de ODS\label{tab:ti8}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1401:\caption{Tarea de ingeniería 9: Notificaciones de turno activo\label{tab:ti9}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1427:\caption{Tarea de ingeniería 10: Inteligencia Artificial oponente\label{tab:ti10}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1453:\caption{Tarea de ingeniería 11: Exportación y optimización multiplataforma\label{tab:ti11}}
+d:/Universidad/Tesis/Thesis_template fix/Chapter2.tex:1479:\caption{Tarea de ingeniería 12: Configuración de sistema y accesibilidad\label{tab:ti12}}

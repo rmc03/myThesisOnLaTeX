@@ -19,108 +19,1334 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
-    \entry{Alfadhlani2011}{inproceedings}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=44732d4b648ab9524d5dd0f0dea20182}{%
-           family={Alfadhlani},
-           familyi={A\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=08d82841fe870d331e86c665ce0f7f68}{%
-           family={Johnson},
-           familyi={J\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
+    \entry{BancoMundial2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=081c29fc27b70573aca57b57327d4b03}{%
+           family={{Banco Mundial}},
+           familyi={B\bibinitperiod}}}%
       }
-      \strng{namehash}{fd0b92c39bcfac59d49276b1239b2cf4}
-      \strng{fullhash}{fd0b92c39bcfac59d49276b1239b2cf4}
-      \strng{fullhashraw}{fd0b92c39bcfac59d49276b1239b2cf4}
-      \strng{bibnamehash}{fd0b92c39bcfac59d49276b1239b2cf4}
-      \strng{authorbibnamehash}{fd0b92c39bcfac59d49276b1239b2cf4}
-      \strng{authornamehash}{fd0b92c39bcfac59d49276b1239b2cf4}
-      \strng{authorfullhash}{fd0b92c39bcfac59d49276b1239b2cf4}
-      \strng{authorfullhashraw}{fd0b92c39bcfac59d49276b1239b2cf4}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \strng{namehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{fullhash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{fullhashraw}{081c29fc27b70573aca57b57327d4b03}
+      \strng{bibnamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorbibnamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authornamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorfullhash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorfullhashraw}{081c29fc27b70573aca57b57327d4b03}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the International Conference}
-      \field{title}{Conference Paper Example}
-      \field{year}{2011}
-      \field{pages}{45\bibrangedash 52}
-      \range{pages}{8}
+      \field{howpublished}{\url{https://datos.bancomundial.org/indicador/SE.ADT.LITR.ZS?locations=CU}}
+      \field{title}{Indicadores de Desarrollo Mundial: Educación en Cuba}
+      \field{year}{2023}
     \endentry
-    \entry{Mathew2010}{book}{}{}
+    \entry{BancoMundial2025}{misc}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=c6034f3edb60451945f61e4ab190fe5b}{%
-           family={Mathew},
-           familyi={M\bibinitperiod},
-           given={R.},
+        {{un=0,uniquepart=base,hash=081c29fc27b70573aca57b57327d4b03}{%
+           family={{Banco Mundial}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{fullhash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{fullhashraw}{081c29fc27b70573aca57b57327d4b03}
+      \strng{bibnamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorbibnamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authornamehash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorfullhash}{081c29fc27b70573aca57b57327d4b03}
+      \strng{authorfullhashraw}{081c29fc27b70573aca57b57327d4b03}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.bancomundial.org/es/programs/educacion-america-latina-caribe}}
+      \field{title}{Programa de Educación para América Latina y el Caribe}
+      \field{year}{2025}
+    \endentry
+    \entry{Beck1999}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c5dcbe71f60a8d55caa11fe1493614d0}{%
+           family={Beck},
+           familyi={B\bibinitperiod},
+           given={Kent},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{fullhash}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{fullhashraw}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{bibnamehash}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{authorbibnamehash}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{authornamehash}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{authorfullhash}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{authorfullhashraw}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Extreme Programming Explained: Embrace Change}
+      \field{year}{1999}
+    \endentry
+    \entry{ChaconStraub2014}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8f4ee0c97dee95179ce1e79e846dd298}{%
+           family={Chacon},
+           familyi={C\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50418136ff59fed99760e32ba5613c51}{%
+           family={Straub},
+           familyi={S\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{1764b95256df68c84d8a593fc2dfa143}
+      \strng{fullhash}{1764b95256df68c84d8a593fc2dfa143}
+      \strng{fullhashraw}{1764b95256df68c84d8a593fc2dfa143}
+      \strng{bibnamehash}{1764b95256df68c84d8a593fc2dfa143}
+      \strng{authorbibnamehash}{1764b95256df68c84d8a593fc2dfa143}
+      \strng{authornamehash}{1764b95256df68c84d8a593fc2dfa143}
+      \strng{authorfullhash}{1764b95256df68c84d8a593fc2dfa143}
+      \strng{authorfullhashraw}{1764b95256df68c84d8a593fc2dfa143}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{howpublished}{\url{https://git-scm.com/book/en/v2}}
+      \field{title}{Pro Git}
+      \field{year}{2014}
+    \endentry
+    \entry{ChenSmith2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9b50467cee7d519d088c538b83755eb5}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be8287076101e244d3b27831a7b490c3}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4cff5c77d394cfd5f3fcb93f44a189ca}{%
+           family={Alvarez},
+           familyi={A\bibinitperiod},
+           given={Roberto},
            giveni={R\bibinitperiod},
            givenun=0}}%
       }
-      \list{location}{1}{%
-        {New York}%
+      \strng{namehash}{f43ff3571c538ffa8207eeb2a7aedf7d}
+      \strng{fullhash}{f43ff3571c538ffa8207eeb2a7aedf7d}
+      \strng{fullhashraw}{f43ff3571c538ffa8207eeb2a7aedf7d}
+      \strng{bibnamehash}{f43ff3571c538ffa8207eeb2a7aedf7d}
+      \strng{authorbibnamehash}{f43ff3571c538ffa8207eeb2a7aedf7d}
+      \strng{authornamehash}{f43ff3571c538ffa8207eeb2a7aedf7d}
+      \strng{authorfullhash}{f43ff3571c538ffa8207eeb2a7aedf7d}
+      \strng{authorfullhashraw}{f43ff3571c538ffa8207eeb2a7aedf7d}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Games}
+      \field{number}{2}
+      \field{title}{Adaptive difficulty in video games: A machine learning approach}
+      \field{volume}{15}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+    \endentry
+    \entry{Cockburn2020}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c1e5acec4259bb4c17ca1a00866f32e1}{%
+           family={Cockburn},
+           familyi={C\bibinitperiod},
+           given={Alistair},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
-        {Academic Press}%
+        {Addison-Wesley}%
       }
-      \strng{namehash}{c6034f3edb60451945f61e4ab190fe5b}
-      \strng{fullhash}{c6034f3edb60451945f61e4ab190fe5b}
-      \strng{fullhashraw}{c6034f3edb60451945f61e4ab190fe5b}
-      \strng{bibnamehash}{c6034f3edb60451945f61e4ab190fe5b}
-      \strng{authorbibnamehash}{c6034f3edb60451945f61e4ab190fe5b}
-      \strng{authornamehash}{c6034f3edb60451945f61e4ab190fe5b}
-      \strng{authorfullhash}{c6034f3edb60451945f61e4ab190fe5b}
-      \strng{authorfullhashraw}{c6034f3edb60451945f61e4ab190fe5b}
+      \strng{namehash}{c1e5acec4259bb4c17ca1a00866f32e1}
+      \strng{fullhash}{c1e5acec4259bb4c17ca1a00866f32e1}
+      \strng{fullhashraw}{c1e5acec4259bb4c17ca1a00866f32e1}
+      \strng{bibnamehash}{c1e5acec4259bb4c17ca1a00866f32e1}
+      \strng{authorbibnamehash}{c1e5acec4259bb4c17ca1a00866f32e1}
+      \strng{authornamehash}{c1e5acec4259bb4c17ca1a00866f32e1}
+      \strng{authorfullhash}{c1e5acec4259bb4c17ca1a00866f32e1}
+      \strng{authorfullhashraw}{c1e5acec4259bb4c17ca1a00866f32e1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Agile Software Development: The Cooperative Game}
+      \field{year}{2020}
+    \endentry
+    \entry{Cohn2020}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d33712bcde2d63bad054a832b61d01e8}{%
+           family={Cohn},
+           familyi={C\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{d33712bcde2d63bad054a832b61d01e8}
+      \strng{fullhash}{d33712bcde2d63bad054a832b61d01e8}
+      \strng{fullhashraw}{d33712bcde2d63bad054a832b61d01e8}
+      \strng{bibnamehash}{d33712bcde2d63bad054a832b61d01e8}
+      \strng{authorbibnamehash}{d33712bcde2d63bad054a832b61d01e8}
+      \strng{authornamehash}{d33712bcde2d63bad054a832b61d01e8}
+      \strng{authorfullhash}{d33712bcde2d63bad054a832b61d01e8}
+      \strng{authorfullhashraw}{d33712bcde2d63bad054a832b61d01e8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Agile Estimating and Planning}
+      \field{year}{2020}
+    \endentry
+    \entry{WCED1987}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4b29a87b8a330d33866110b05a89515f}{%
+           family={{Comisión Mundial sobre el Medio Ambiente y el Desarrollo}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Naciones Unidas}%
+      }
+      \strng{namehash}{4b29a87b8a330d33866110b05a89515f}
+      \strng{fullhash}{4b29a87b8a330d33866110b05a89515f}
+      \strng{fullhashraw}{4b29a87b8a330d33866110b05a89515f}
+      \strng{bibnamehash}{4b29a87b8a330d33866110b05a89515f}
+      \strng{authorbibnamehash}{4b29a87b8a330d33866110b05a89515f}
+      \strng{authornamehash}{4b29a87b8a330d33866110b05a89515f}
+      \strng{authorfullhash}{4b29a87b8a330d33866110b05a89515f}
+      \strng{authorfullhashraw}{4b29a87b8a330d33866110b05a89515f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Documento ONU A/42/427}
+      \field{title}{Nuestro Futuro Común (Informe Brundtland)}
+      \field{year}{1987}
+    \endentry
+    \entry{Deterding2020}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4ad251c02d478d38f2fe79e126ae6bf1}{%
+           family={Deterding},
+           familyi={D\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e30e680021e8a5cc3386a4e76898191}{%
+           family={Zagal},
+           familyi={Z\bibinitperiod},
+           given={José\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ffdccdd762cc3a72815ffc2dc866d7f}{%
+           family={Björk},
+           familyi={B\bibinitperiod},
+           given={Staffan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ce5eaa2de862a413a4d53f8d403f325d}
+      \strng{fullhash}{ce5eaa2de862a413a4d53f8d403f325d}
+      \strng{fullhashraw}{ce5eaa2de862a413a4d53f8d403f325d}
+      \strng{bibnamehash}{ce5eaa2de862a413a4d53f8d403f325d}
+      \strng{authorbibnamehash}{ce5eaa2de862a413a4d53f8d403f325d}
+      \strng{authornamehash}{ce5eaa2de862a413a4d53f8d403f325d}
+      \strng{authorfullhash}{ce5eaa2de862a413a4d53f8d403f325d}
+      \strng{authorfullhashraw}{ce5eaa2de862a413a4d53f8d403f325d}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the ACM on Human-Computer Interaction}
+      \field{number}{CSCW2}
+      \field{title}{Game design elements in non-game contexts: A framework for gamification}
+      \field{volume}{4}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 22}
+      \range{pages}{22}
+    \endentry
+    \entry{EcologiaVerde2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7806d8c942b7a954e2e53bb1a5c3754a}{%
+           family={{EcologíaVerde}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{7806d8c942b7a954e2e53bb1a5c3754a}
+      \strng{fullhash}{7806d8c942b7a954e2e53bb1a5c3754a}
+      \strng{fullhashraw}{7806d8c942b7a954e2e53bb1a5c3754a}
+      \strng{bibnamehash}{7806d8c942b7a954e2e53bb1a5c3754a}
+      \strng{authorbibnamehash}{7806d8c942b7a954e2e53bb1a5c3754a}
+      \strng{authornamehash}{7806d8c942b7a954e2e53bb1a5c3754a}
+      \strng{authorfullhash}{7806d8c942b7a954e2e53bb1a5c3754a}
+      \strng{authorfullhashraw}{7806d8c942b7a954e2e53bb1a5c3754a}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.ecologiaverde.com/ventajas-y-desventajas-del-desarrollo-sostenible-319.html}}
+      \field{title}{Ventajas y desventajas del desarrollo sostenible}
+      \field{year}{2024}
+    \endentry
+    \entry{EuropeanCouncil2022}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f396f1bc28ac8e236ccabd23fbd316f7}{%
+           family={{European Council}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{f396f1bc28ac8e236ccabd23fbd316f7}
+      \strng{fullhash}{f396f1bc28ac8e236ccabd23fbd316f7}
+      \strng{fullhashraw}{f396f1bc28ac8e236ccabd23fbd316f7}
+      \strng{bibnamehash}{f396f1bc28ac8e236ccabd23fbd316f7}
+      \strng{authorbibnamehash}{f396f1bc28ac8e236ccabd23fbd316f7}
+      \strng{authornamehash}{f396f1bc28ac8e236ccabd23fbd316f7}
+      \strng{authorfullhash}{f396f1bc28ac8e236ccabd23fbd316f7}
+      \strng{authorfullhashraw}{f396f1bc28ac8e236ccabd23fbd316f7}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://education.ec.europa.eu/sites/default/files/document-library-docs/deap-communication-sept2020_en.pdf}}
+      \field{title}{Digital education action plan 2021-2027: Resetting education and training for the digital age}
+      \field{year}{2022}
+    \endentry
+    \entry{EuropeanUnion2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=158562a5e9dc942912330c711ca123ca}{%
+           family={{European Union}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{158562a5e9dc942912330c711ca123ca}
+      \strng{fullhash}{158562a5e9dc942912330c711ca123ca}
+      \strng{fullhashraw}{158562a5e9dc942912330c711ca123ca}
+      \strng{bibnamehash}{158562a5e9dc942912330c711ca123ca}
+      \strng{authorbibnamehash}{158562a5e9dc942912330c711ca123ca}
+      \strng{authornamehash}{158562a5e9dc942912330c711ca123ca}
+      \strng{authorfullhash}{158562a5e9dc942912330c711ca123ca}
+      \strng{authorfullhashraw}{158562a5e9dc942912330c711ca123ca}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://ec.europa.eu/eurostat/web/sdi}}
+      \field{title}{Sustainable development in the European Union: Overview of progress towards the SDGs}
+      \field{year}{2024}
+    \endentry
+    \entry{FloodCradock2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5a145a7a10e215d96e0542dfde0c3c96}{%
+           family={Flood},
+           familyi={F\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd13041c7f933c62fdad3fa21875b7ce}{%
+           family={Cradock-Henry},
+           familyi={C\bibinithyphendelim H\bibinitperiod},
+           given={N.\bibnamedelimi A.},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c0c0b85a5dc547fd02657168dbb7a3a}{%
+           family={Blackett},
+           familyi={B\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4c516643862040040abc8be953fd2ecb}
+      \strng{fullhash}{4c516643862040040abc8be953fd2ecb}
+      \strng{fullhashraw}{4c516643862040040abc8be953fd2ecb}
+      \strng{bibnamehash}{4c516643862040040abc8be953fd2ecb}
+      \strng{authorbibnamehash}{4c516643862040040abc8be953fd2ecb}
+      \strng{authornamehash}{4c516643862040040abc8be953fd2ecb}
+      \strng{authorfullhash}{4c516643862040040abc8be953fd2ecb}
+      \strng{authorfullhashraw}{4c516643862040040abc8be953fd2ecb}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geoscience Communication}
+      \field{number}{1}
+      \field{title}{A collaborative adaptation game for promoting climate action: Minions of Disruptions™}
+      \field{volume}{7}
+      \field{year}{2024}
+      \field{pages}{167\bibrangedash 189}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.5194/gc-7-167-2024
+      \endverb
+    \endentry
+    \entry{Fowler2018}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=312ac886938a9b2be4f8eb607567fe4c}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{fullhash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{fullhashraw}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{bibnamehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{authorbibnamehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{authornamehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{authorfullhash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{authorfullhashraw}{312ac886938a9b2be4f8eb607567fe4c}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{UML Distilled: A Brief Guide to the Standard Object Modeling Language}
+      \field{year}{2018}
+    \endentry
+    \entry{GitHubDocs2022}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9b127eb47f59d27ace73783046da8889}{%
+           family={{GitHub, Inc.}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b127eb47f59d27ace73783046da8889}
+      \strng{fullhash}{9b127eb47f59d27ace73783046da8889}
+      \strng{fullhashraw}{9b127eb47f59d27ace73783046da8889}
+      \strng{bibnamehash}{9b127eb47f59d27ace73783046da8889}
+      \strng{authorbibnamehash}{9b127eb47f59d27ace73783046da8889}
+      \strng{authornamehash}{9b127eb47f59d27ace73783046da8889}
+      \strng{authorfullhash}{9b127eb47f59d27ace73783046da8889}
+      \strng{authorfullhashraw}{9b127eb47f59d27ace73783046da8889}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://docs.github.com/en/github/managing-your-work-on-github/about-projects}}
+      \field{title}{GitHub Projects documentation}
+      \field{year}{2022}
+    \endentry
+    \entry{GlobalEduReport2022}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=222b3d3ec63a1e17a4296149b3abbf8b}{%
+           family={{Global Education Monitoring Report Team}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {UNESCO}%
+      }
+      \strng{namehash}{222b3d3ec63a1e17a4296149b3abbf8b}
+      \strng{fullhash}{222b3d3ec63a1e17a4296149b3abbf8b}
+      \strng{fullhashraw}{222b3d3ec63a1e17a4296149b3abbf8b}
+      \strng{bibnamehash}{222b3d3ec63a1e17a4296149b3abbf8b}
+      \strng{authorbibnamehash}{222b3d3ec63a1e17a4296149b3abbf8b}
+      \strng{authornamehash}{222b3d3ec63a1e17a4296149b3abbf8b}
+      \strng{authorfullhash}{222b3d3ec63a1e17a4296149b3abbf8b}
+      \strng{authorfullhashraw}{222b3d3ec63a1e17a4296149b3abbf8b}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://en.unesco.org/gem-report/non-state_actors}}
+      \field{title}{Global Education Monitoring Report 2021/2: Non-State Actors in Education: Who Chooses? Who Loses?}
+      \field{year}{2022}
+    \endentry
+    \entry{GodotEngine2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=da247a11d1698b246cac2b51685687cc}{%
+           family={{Godot Engine}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{da247a11d1698b246cac2b51685687cc}
+      \strng{fullhash}{da247a11d1698b246cac2b51685687cc}
+      \strng{fullhashraw}{da247a11d1698b246cac2b51685687cc}
+      \strng{bibnamehash}{da247a11d1698b246cac2b51685687cc}
+      \strng{authorbibnamehash}{da247a11d1698b246cac2b51685687cc}
+      \strng{authornamehash}{da247a11d1698b246cac2b51685687cc}
+      \strng{authorfullhash}{da247a11d1698b246cac2b51685687cc}
+      \strng{authorfullhashraw}{da247a11d1698b246cac2b51685687cc}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://godotengine.org}}
+      \field{title}{Godot 4.4.1 – Motor de videojuegos de código abierto}
+      \field{year}{2023}
+    \endentry
+    \entry{GodotDocs2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a4511990fce4272b79405f30bc10dbc8}{%
+           family={{Godot Engine Documentation}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4511990fce4272b79405f30bc10dbc8}
+      \strng{fullhash}{a4511990fce4272b79405f30bc10dbc8}
+      \strng{fullhashraw}{a4511990fce4272b79405f30bc10dbc8}
+      \strng{bibnamehash}{a4511990fce4272b79405f30bc10dbc8}
+      \strng{authorbibnamehash}{a4511990fce4272b79405f30bc10dbc8}
+      \strng{authornamehash}{a4511990fce4272b79405f30bc10dbc8}
+      \strng{authorfullhash}{a4511990fce4272b79405f30bc10dbc8}
+      \strng{authorfullhashraw}{a4511990fce4272b79405f30bc10dbc8}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://docs.godotengine.org}}
+      \field{title}{Documentación Oficial de Godot Engine 4}
+      \field{year}{2023}
+    \endentry
+    \entry{Gregory2020}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b97f772b60bfb5bf77251b45263e44dd}{%
+           family={Gregory},
+           familyi={G\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{b97f772b60bfb5bf77251b45263e44dd}
+      \strng{fullhash}{b97f772b60bfb5bf77251b45263e44dd}
+      \strng{fullhashraw}{b97f772b60bfb5bf77251b45263e44dd}
+      \strng{bibnamehash}{b97f772b60bfb5bf77251b45263e44dd}
+      \strng{authorbibnamehash}{b97f772b60bfb5bf77251b45263e44dd}
+      \strng{authornamehash}{b97f772b60bfb5bf77251b45263e44dd}
+      \strng{authorfullhash}{b97f772b60bfb5bf77251b45263e44dd}
+      \strng{authorfullhashraw}{b97f772b60bfb5bf77251b45263e44dd}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Game Engine Architecture}
+      \field{year}{2020}
+    \endentry
+    \entry{InformeVoluntarioCuba2021}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=52d43e9d25dfc101f7b667e83f6d909a}{%
+           family={{Grupo Nacional para la Implementación de la Agenda 2030}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{52d43e9d25dfc101f7b667e83f6d909a}
+      \strng{fullhash}{52d43e9d25dfc101f7b667e83f6d909a}
+      \strng{fullhashraw}{52d43e9d25dfc101f7b667e83f6d909a}
+      \strng{bibnamehash}{52d43e9d25dfc101f7b667e83f6d909a}
+      \strng{authorbibnamehash}{52d43e9d25dfc101f7b667e83f6d909a}
+      \strng{authornamehash}{52d43e9d25dfc101f7b667e83f6d909a}
+      \strng{authorfullhash}{52d43e9d25dfc101f7b667e83f6d909a}
+      \strng{authorfullhashraw}{52d43e9d25dfc101f7b667e83f6d909a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.mep.gob.cu/es/documento/informe-nacional-voluntario-cuba-2021-sobre-la-agenda-2030}}
+      \field{title}{Informe Nacional Voluntario Cuba 2021 sobre la Agenda 2030}
+      \field{year}{2021}
+    \endentry
+    \entry{Hawlitschek2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d1aeadd8cd74745c9ebe500f8f196824}{%
+           family={Hawlitschek},
+           familyi={H\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3f82840128fdba36046dd1dd87afb964}{%
+           family={Joeckel},
+           familyi={J\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=252fa9535c3acf6114438d09c606f56e}{%
+           family={Wittstock},
+           familyi={W\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{389f2f95e02c623327787b864cba81d0}
+      \strng{fullhash}{389f2f95e02c623327787b864cba81d0}
+      \strng{fullhashraw}{389f2f95e02c623327787b864cba81d0}
+      \strng{bibnamehash}{389f2f95e02c623327787b864cba81d0}
+      \strng{authorbibnamehash}{389f2f95e02c623327787b864cba81d0}
+      \strng{authornamehash}{389f2f95e02c623327787b864cba81d0}
+      \strng{authorfullhash}{389f2f95e02c623327787b864cba81d0}
+      \strng{authorfullhashraw}{389f2f95e02c623327787b864cba81d0}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Business \& Information Systems Engineering}
+      \field{number}{4}
+      \field{title}{Gameful Learning for a More Sustainable World}
+      \field{volume}{64}
+      \field{year}{2022}
+      \field{pages}{459\bibrangedash 482}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1007/s12599-021-00731-x
+      \endverb
+    \endentry
+    \entry{JohnsonLee2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e2089f792c7e0314a9d5734744414015}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=dd12628ece2c2bcccc0e876cbeafa9c9}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{df219263f82e92f0ccad11a8ac09b4e7}
+      \strng{fullhash}{df219263f82e92f0ccad11a8ac09b4e7}
+      \strng{fullhashraw}{df219263f82e92f0ccad11a8ac09b4e7}
+      \strng{bibnamehash}{df219263f82e92f0ccad11a8ac09b4e7}
+      \strng{authorbibnamehash}{df219263f82e92f0ccad11a8ac09b4e7}
+      \strng{authornamehash}{df219263f82e92f0ccad11a8ac09b4e7}
+      \strng{authorfullhash}{df219263f82e92f0ccad11a8ac09b4e7}
+      \strng{authorfullhashraw}{df219263f82e92f0ccad11a8ac09b4e7}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers in Human Behavior}
+      \field{title}{The psychology of game design: How feedback loops shape player behavior}
+      \field{volume}{114}
+      \field{year}{2021}
+      \field{pages}{106557}
+      \range{pages}{1}
+    \endentry
+    \entry{LinietskiManzur2020}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f047680321afef6d2a866047b4d16413}{%
+           family={Linietsky},
+           familyi={L\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b5cbe2d43096da01dafdd6e8b583bfb}{%
+           family={Manzur},
+           familyi={M\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing}%
+      }
+      \strng{namehash}{f91599b825fa33502235589cc7fbb096}
+      \strng{fullhash}{f91599b825fa33502235589cc7fbb096}
+      \strng{fullhashraw}{f91599b825fa33502235589cc7fbb096}
+      \strng{bibnamehash}{f91599b825fa33502235589cc7fbb096}
+      \strng{authorbibnamehash}{f91599b825fa33502235589cc7fbb096}
+      \strng{authornamehash}{f91599b825fa33502235589cc7fbb096}
+      \strng{authorfullhash}{f91599b825fa33502235589cc7fbb096}
+      \strng{authorfullhashraw}{f91599b825fa33502235589cc7fbb096}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Godot Engine: The Complete Guide to Creating Games with Godot}
+      \field{year}{2020}
+    \endentry
+    \entry{MartinezGimenes2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f626a1a50f257666603efa4a232cb384}{%
+           family={Martínez},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b9296d8169642e043cd165152d8393a}{%
+           family={Gimenes},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=649761cebc1356f3b946457a4d377cae}{%
+           family={Lambert},
+           familyi={L\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cc487ddd206a80fb946ae89876be417f}
+      \strng{fullhash}{cc487ddd206a80fb946ae89876be417f}
+      \strng{fullhashraw}{cc487ddd206a80fb946ae89876be417f}
+      \strng{bibnamehash}{cc487ddd206a80fb946ae89876be417f}
+      \strng{authorbibnamehash}{cc487ddd206a80fb946ae89876be417f}
+      \strng{authornamehash}{cc487ddd206a80fb946ae89876be417f}
+      \strng{authorfullhash}{cc487ddd206a80fb946ae89876be417f}
+      \strng{authorfullhashraw}{cc487ddd206a80fb946ae89876be417f}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Book Title Example}
-      \field{year}{2010}
+      \field{journaltitle}{PLoS ONE}
+      \field{number}{3}
+      \field{title}{Video games and board games: Effects of playing practice on cognition}
+      \field{volume}{18}
+      \field{year}{2023}
+      \field{pages}{e0283654}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0283654
+      \endverb
     \endentry
-    \entry{Ou2013}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=409a2909875d75e379ea8f31f0278730}{%
-           family={Ou},
-           familyi={O\bibinitperiod},
-           given={Y.},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b18f02a97cf23823923df8c18784f5df}{%
-           family={Smith},
-           familyi={S\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod},
+    \entry{MesaLago2022}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=837a9857ca7b4f6b79a6c11e944eeb9a}{%
+           family={Mesa-Lago},
+           familyi={M\bibinithyphendelim L\bibinitperiod},
+           given={Carmelo},
+           giveni={C\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{3c412fb3613b9f92a2f8294c3eb937ba}
-      \strng{fullhash}{3c412fb3613b9f92a2f8294c3eb937ba}
-      \strng{fullhashraw}{3c412fb3613b9f92a2f8294c3eb937ba}
-      \strng{bibnamehash}{3c412fb3613b9f92a2f8294c3eb937ba}
-      \strng{authorbibnamehash}{3c412fb3613b9f92a2f8294c3eb937ba}
-      \strng{authornamehash}{3c412fb3613b9f92a2f8294c3eb937ba}
-      \strng{authorfullhash}{3c412fb3613b9f92a2f8294c3eb937ba}
-      \strng{authorfullhashraw}{3c412fb3613b9f92a2f8294c3eb937ba}
-      \field{sortinit}{O}
-      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \strng{namehash}{837a9857ca7b4f6b79a6c11e944eeb9a}
+      \strng{fullhash}{837a9857ca7b4f6b79a6c11e944eeb9a}
+      \strng{fullhashraw}{837a9857ca7b4f6b79a6c11e944eeb9a}
+      \strng{bibnamehash}{837a9857ca7b4f6b79a6c11e944eeb9a}
+      \strng{authorbibnamehash}{837a9857ca7b4f6b79a6c11e944eeb9a}
+      \strng{authornamehash}{837a9857ca7b4f6b79a6c11e944eeb9a}
+      \strng{authorfullhash}{837a9857ca7b4f6b79a6c11e944eeb9a}
+      \strng{authorfullhashraw}{837a9857ca7b4f6b79a6c11e944eeb9a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computer Science}
-      \field{title}{Example Article Title}
+      \field{journaltitle}{Revista de Ciencia Política}
+      \field{number}{1}
+      \field{title}{La economía cubana: Entre el embargo y la pandemia}
+      \field{volume}{42}
+      \field{year}{2022}
+      \field{pages}{45\bibrangedash 68}
+      \range{pages}{24}
+    \endentry
+    \entry{NacionesUnidas2015}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=289d6d295de5d9f9e01197fab2b80b67}{%
+           family={{Naciones Unidas}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{289d6d295de5d9f9e01197fab2b80b67}
+      \strng{fullhash}{289d6d295de5d9f9e01197fab2b80b67}
+      \strng{fullhashraw}{289d6d295de5d9f9e01197fab2b80b67}
+      \strng{bibnamehash}{289d6d295de5d9f9e01197fab2b80b67}
+      \strng{authorbibnamehash}{289d6d295de5d9f9e01197fab2b80b67}
+      \strng{authornamehash}{289d6d295de5d9f9e01197fab2b80b67}
+      \strng{authorfullhash}{289d6d295de5d9f9e01197fab2b80b67}
+      \strng{authorfullhashraw}{289d6d295de5d9f9e01197fab2b80b67}
+      \field{extraname}{1}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.un.org/sustainabledevelopment/es/}}
+      \field{note}{Resolución A/RES/70/1}
+      \field{title}{Transformar nuestro mundo: la Agenda 2030 para el Desarrollo Sostenible}
+      \field{year}{2015}
+    \endentry
+    \entry{GoGoals2020}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=289d6d295de5d9f9e01197fab2b80b67}{%
+           family={{Naciones Unidas}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{289d6d295de5d9f9e01197fab2b80b67}
+      \strng{fullhash}{289d6d295de5d9f9e01197fab2b80b67}
+      \strng{fullhashraw}{289d6d295de5d9f9e01197fab2b80b67}
+      \strng{bibnamehash}{289d6d295de5d9f9e01197fab2b80b67}
+      \strng{authorbibnamehash}{289d6d295de5d9f9e01197fab2b80b67}
+      \strng{authornamehash}{289d6d295de5d9f9e01197fab2b80b67}
+      \strng{authorfullhash}{289d6d295de5d9f9e01197fab2b80b67}
+      \strng{authorfullhashraw}{289d6d295de5d9f9e01197fab2b80b67}
+      \field{extraname}{2}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.un.org/sustainabledevelopment/es/takeaction/}}
+      \field{note}{Official educational board game by the United Nations}
+      \field{title}{Go Goals! Board Game}
+      \field{year}{2020}
+    \endentry
+    \entry{PlassFoundations2020}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5c69c2e85df213e704ddaf5e8e54ddcb}{%
+           family={Plass},
+           familyi={P\bibinitperiod},
+           given={Jan\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6139d80271ec93b3a56e3729c33bde4b}{%
+           family={Homer},
+           familyi={H\bibinitperiod},
+           given={Bruce\bibnamedelima D.},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33d291218833ce137d138e8e17863604}{%
+           family={Kinzer},
+           familyi={K\bibinitperiod},
+           given={Charles\bibnamedelima K.},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{60630572f1bc542a9af2176a0d4cd208}
+      \strng{fullhash}{60630572f1bc542a9af2176a0d4cd208}
+      \strng{fullhashraw}{60630572f1bc542a9af2176a0d4cd208}
+      \strng{bibnamehash}{60630572f1bc542a9af2176a0d4cd208}
+      \strng{authorbibnamehash}{60630572f1bc542a9af2176a0d4cd208}
+      \strng{authornamehash}{60630572f1bc542a9af2176a0d4cd208}
+      \strng{authorfullhash}{60630572f1bc542a9af2176a0d4cd208}
+      \strng{authorfullhashraw}{60630572f1bc542a9af2176a0d4cd208}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Educational Psychologist}
+      \field{number}{4}
+      \field{title}{Foundations of game-based learning}
+      \field{volume}{50}
+      \field{year}{2020}
+      \field{pages}{258\bibrangedash 283}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1080/00461520.2015.1122533
+      \endverb
+    \endentry
+    \entry{PlassHomer2020}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5c69c2e85df213e704ddaf5e8e54ddcb}{%
+           family={Plass},
+           familyi={P\bibinitperiod},
+           given={Jan\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bcc3ded7dcfcffd5504d0475fabf58d6}{%
+           family={Mayer},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6139d80271ec93b3a56e3729c33bde4b}{%
+           family={Homer},
+           familyi={H\bibinitperiod},
+           given={Bruce\bibnamedelima D.},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{6a0f1a4053b09ecdc428b62f84a3df05}
+      \strng{fullhash}{6a0f1a4053b09ecdc428b62f84a3df05}
+      \strng{fullhashraw}{6a0f1a4053b09ecdc428b62f84a3df05}
+      \strng{bibnamehash}{6a0f1a4053b09ecdc428b62f84a3df05}
+      \strng{authorbibnamehash}{6a0f1a4053b09ecdc428b62f84a3df05}
+      \strng{authornamehash}{6a0f1a4053b09ecdc428b62f84a3df05}
+      \strng{authorfullhash}{6a0f1a4053b09ecdc428b62f84a3df05}
+      \strng{authorfullhashraw}{6a0f1a4053b09ecdc428b62f84a3df05}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Handbook of Game-Based Learning}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.7551/mitpress/11864.001.0001
+      \endverb
+    \endentry
+    \entry{Pressman2021}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4d3f81788d99cf425c4b6e0a454baab0}{%
+           family={Pressman},
+           familyi={P\bibinitperiod},
+           given={Roger\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13b3d71ce7fd3614b4e2e9ce804597f3}{%
+           family={Maxim},
+           familyi={M\bibinitperiod},
+           given={Bruce\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Education}%
+      }
+      \strng{namehash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{fullhash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{fullhashraw}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{bibnamehash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{authorbibnamehash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{authornamehash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{authorfullhash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{authorfullhashraw}{da6ec91488daec8c3c9eddf18c78dad8}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{9}
+      \field{title}{Software Engineering: A Practitioner's Approach}
+      \field{year}{2021}
+    \endentry
+    \entry{PNUD2021}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=acdbccfd71725f88fc2979baa7dc6345}{%
+           family={{Programa de las Naciones Unidas para el Desarrollo}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{acdbccfd71725f88fc2979baa7dc6345}
+      \strng{fullhash}{acdbccfd71725f88fc2979baa7dc6345}
+      \strng{fullhashraw}{acdbccfd71725f88fc2979baa7dc6345}
+      \strng{bibnamehash}{acdbccfd71725f88fc2979baa7dc6345}
+      \strng{authorbibnamehash}{acdbccfd71725f88fc2979baa7dc6345}
+      \strng{authornamehash}{acdbccfd71725f88fc2979baa7dc6345}
+      \strng{authorfullhash}{acdbccfd71725f88fc2979baa7dc6345}
+      \strng{authorfullhashraw}{acdbccfd71725f88fc2979baa7dc6345}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://hdr.undp.org/informe-sobre-desarrollo-humano-2021-22}}
+      \field{title}{Informe sobre Desarrollo Humano 2021/2022: Tiempos inciertos, vidas inestables}
+      \field{year}{2021}
+    \endentry
+    \entry{R3crea2022}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=244c1938ee9fa8e6340f5f2b28069ebb}{%
+           family={{R3crea}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{244c1938ee9fa8e6340f5f2b28069ebb}
+      \strng{fullhash}{244c1938ee9fa8e6340f5f2b28069ebb}
+      \strng{fullhashraw}{244c1938ee9fa8e6340f5f2b28069ebb}
+      \strng{bibnamehash}{244c1938ee9fa8e6340f5f2b28069ebb}
+      \strng{authorbibnamehash}{244c1938ee9fa8e6340f5f2b28069ebb}
+      \strng{authornamehash}{244c1938ee9fa8e6340f5f2b28069ebb}
+      \strng{authorfullhash}{244c1938ee9fa8e6340f5f2b28069ebb}
+      \strng{authorfullhashraw}{244c1938ee9fa8e6340f5f2b28069ebb}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://r3crea.com/innovacion/ventajas-y-desventajas-de-los-objetivos-de-desarrollo-sostenible/}}
+      \field{title}{Ventajas y desventajas de los objetivos de desarrollo sostenible}
+      \field{year}{2022}
+    \endentry
+    \entry{CubaConstitucion2019}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=95279bee82cae0184dbe3c1acc09719e}{%
+           family={{República de Cuba}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{95279bee82cae0184dbe3c1acc09719e}
+      \strng{fullhash}{95279bee82cae0184dbe3c1acc09719e}
+      \strng{fullhashraw}{95279bee82cae0184dbe3c1acc09719e}
+      \strng{bibnamehash}{95279bee82cae0184dbe3c1acc09719e}
+      \strng{authorbibnamehash}{95279bee82cae0184dbe3c1acc09719e}
+      \strng{authornamehash}{95279bee82cae0184dbe3c1acc09719e}
+      \strng{authorfullhash}{95279bee82cae0184dbe3c1acc09719e}
+      \strng{authorfullhashraw}{95279bee82cae0184dbe3c1acc09719e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Artículo 73: Derecho a la educación. Gaceta Oficial No. 5 Extraordinaria}
+      \field{title}{Constitución de la República de Cuba}
+      \field{year}{2019}
+    \endentry
+    \entry{Rogers2020}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bba811e2e2e1b288d9c19ae6ab57075f}{%
+           family={Rogers},
+           familyi={R\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{bba811e2e2e1b288d9c19ae6ab57075f}
+      \strng{fullhash}{bba811e2e2e1b288d9c19ae6ab57075f}
+      \strng{fullhashraw}{bba811e2e2e1b288d9c19ae6ab57075f}
+      \strng{bibnamehash}{bba811e2e2e1b288d9c19ae6ab57075f}
+      \strng{authorbibnamehash}{bba811e2e2e1b288d9c19ae6ab57075f}
+      \strng{authornamehash}{bba811e2e2e1b288d9c19ae6ab57075f}
+      \strng{authorfullhash}{bba811e2e2e1b288d9c19ae6ab57075f}
+      \strng{authorfullhashraw}{bba811e2e2e1b288d9c19ae6ab57075f}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Level Up! The Guide to Great Video Game Design}
+      \field{year}{2020}
+    \endentry
+    \entry{SchwaberSutherland2020}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ee6f08fcba839e09471a0bc69152b6a5}{%
+           family={Schwaber},
+           familyi={S\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e3f26f6f816a26c6ab36bc7a899bcde}{%
+           family={Sutherland},
+           familyi={S\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{fullhash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{fullhashraw}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{bibnamehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authorbibnamehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authornamehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authorfullhash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authorfullhashraw}{303ea1dc92fd8c772eac56316b2074ef}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf}}
+      \field{title}{The Scrum Guide: The definitive guide to Scrum: The rules of the game}
+      \field{year}{2020}
+    \endentry
+    \entry{Sommerville2021}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=70341b3bfcce7026902f4eb1e4111b58}{%
+           family={Sommerville},
+           familyi={S\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education}%
+      }
+      \strng{namehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{fullhash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{fullhashraw}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{bibnamehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{authorbibnamehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{authornamehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{authorfullhash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{authorfullhashraw}{70341b3bfcce7026902f4eb1e4111b58}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{10}
+      \field{title}{Software Engineering}
+      \field{year}{2021}
+    \endentry
+    \entry{Stiglitz2018}{misc}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=cb57f4b2aeede8f5865afde7b8453d40}{%
+           family={Stiglitz},
+           familyi={S\bibinitperiod},
+           given={Joseph\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18688d43042a810cb6ae6bb19c167f1b}{%
+           family={Sen},
+           familyi={S\bibinitperiod},
+           given={Amartya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=87e63ccf2d53beace096ca490da7cc0b}{%
+           family={Fitoussi},
+           familyi={F\bibinitperiod},
+           given={Jean-Paul},
+           giveni={J\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a4f50d253806325aef06e7f44eec009c}
+      \strng{fullhash}{a4f50d253806325aef06e7f44eec009c}
+      \strng{fullhashraw}{a4f50d253806325aef06e7f44eec009c}
+      \strng{bibnamehash}{a4f50d253806325aef06e7f44eec009c}
+      \strng{authorbibnamehash}{a4f50d253806325aef06e7f44eec009c}
+      \strng{authornamehash}{a4f50d253806325aef06e7f44eec009c}
+      \strng{authorfullhash}{a4f50d253806325aef06e7f44eec009c}
+      \strng{authorfullhashraw}{a4f50d253806325aef06e7f44eec009c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.economie.gouv.fr/files/finances/presse/dossiers_de_presse/090914mesure_perf_eco_progres_social/synthese_ang.pdf}}
+      \field{title}{Report by the Commission on the Measurement of Economic Performance and Social Progress}
+      \field{year}{2018}
+    \endentry
+    \entry{UNESCO2017}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=24a0ef0a6269be289db4de9570763de3}{%
+           family={{UNESCO}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \strng{bibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorbibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authornamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \field{extraname}{1}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.unesco.org/es/articles/educacion-para-el-desarrollo-sostenible}}
+      \field{title}{Educación para el Desarrollo Sostenible: Objetivos de aprendizaje}
+      \field{year}{2017}
+    \endentry
+    \entry{UNESCO2020EDS}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=24a0ef0a6269be289db4de9570763de3}{%
+           family={{UNESCO}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \strng{bibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorbibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authornamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \field{extraname}{2}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.unesco.org/es/articles/educacion-para-el-desarrollo-sostenible-hoja-de-ruta}}
+      \field{title}{Education for Sustainable Development: A Roadmap}
+      \field{year}{2020}
+    \endentry
+    \entry{UNESCO2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=24a0ef0a6269be289db4de9570763de3}{%
+           family={{UNESCO}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \strng{bibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorbibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authornamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \field{extraname}{3}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.unesco.org/es/articles/los-adolescentes-tienen-el-doble-de-probabilidad-de-no-ir-la-escuela-que-los-ninos-en-edad-escolar}}
+      \field{title}{Los adolescentes tienen el doble de probabilidad de no ir a la escuela que los niños en edad escolar}
+      \field{year}{2023}
+    \endentry
+    \entry{UNICEF2020}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d13783605ea066c4fee77fe8192de83a}{%
+           family={{UNICEF}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{d13783605ea066c4fee77fe8192de83a}
+      \strng{fullhash}{d13783605ea066c4fee77fe8192de83a}
+      \strng{fullhashraw}{d13783605ea066c4fee77fe8192de83a}
+      \strng{bibnamehash}{d13783605ea066c4fee77fe8192de83a}
+      \strng{authorbibnamehash}{d13783605ea066c4fee77fe8192de83a}
+      \strng{authornamehash}{d13783605ea066c4fee77fe8192de83a}
+      \strng{authorfullhash}{d13783605ea066c4fee77fe8192de83a}
+      \strng{authorfullhashraw}{d13783605ea066c4fee77fe8192de83a}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://coronavirus.onu.org.mx/al-menos-una-tercera-parte-de-los-ninos-en-edad-escolar-en-el-mundo-no-tuvo-acceso-a-educacion-a-distancia-durante-el-cierre-de-las-escuelas-por-covid-19}}
+      \field{title}{La accesibilidad de la educación a distancia: Un informe sobre la brecha digital durante el COVID-19}
+      \field{year}{2020}
+    \endentry
+    \entry{VisualParadigm2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e588e2345a68a3ee7ee10c3b154e3eef}{%
+           family={{Visual Paradigm}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{e588e2345a68a3ee7ee10c3b154e3eef}
+      \strng{fullhash}{e588e2345a68a3ee7ee10c3b154e3eef}
+      \strng{fullhashraw}{e588e2345a68a3ee7ee10c3b154e3eef}
+      \strng{bibnamehash}{e588e2345a68a3ee7ee10c3b154e3eef}
+      \strng{authorbibnamehash}{e588e2345a68a3ee7ee10c3b154e3eef}
+      \strng{authornamehash}{e588e2345a68a3ee7ee10c3b154e3eef}
+      \strng{authorfullhash}{e588e2345a68a3ee7ee10c3b154e3eef}
+      \strng{authorfullhashraw}{e588e2345a68a3ee7ee10c3b154e3eef}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.visual-paradigm.com/}}
+      \field{title}{Visual Paradigm: The all-in-one CASE tool for software development}
+      \field{year}{2023}
+    \endentry
+    \entry{WuLee2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9631b17bf9bfcef6479dcb391fb85322}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jason\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=c1a495081b57427097d7a91e0116da10}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Joey\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{70efd21afbdead442423b1e9f74e8bc4}
+      \strng{fullhash}{70efd21afbdead442423b1e9f74e8bc4}
+      \strng{fullhashraw}{70efd21afbdead442423b1e9f74e8bc4}
+      \strng{bibnamehash}{70efd21afbdead442423b1e9f74e8bc4}
+      \strng{authorbibnamehash}{70efd21afbdead442423b1e9f74e8bc4}
+      \strng{authornamehash}{70efd21afbdead442423b1e9f74e8bc4}
+      \strng{authorfullhash}{70efd21afbdead442423b1e9f74e8bc4}
+      \strng{authorfullhashraw}{70efd21afbdead442423b1e9f74e8bc4}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Climate Change}
+      \field{number}{5}
+      \field{title}{Climate change games as tools for education and engagement}
       \field{volume}{10}
-      \field{year}{2013}
-      \field{pages}{123\bibrangedash 145}
-      \range{pages}{23}
+      \field{year}{2020}
+      \field{pages}{526\bibrangedash 532}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1038/s41558-020-0740-1
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

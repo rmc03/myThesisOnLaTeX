@@ -1,0 +1,21 @@
+Conclusiones del capítulo
+Durante el desarrollo del capítulo, se logró una comprensión más profunda del problema planteado y se
+cumplieron las primeras tareas de investigación, lo que llevó a las siguientes conclusiones:
+Análisis Conceptual: El análisis de los conceptos relacionados con la temática del trabajo permitió
+
+---
+
+Conclusiones del capítulo:
+La descripción detallada de la propuesta de solución y los requisitos permitió establecer una comprensión
+integral de las capacidades necesarias para la aplicación. La especificación de los requisitos funcionales a
+través de historias de usuario facilitó la claridad en la codificación y en el
+
+---
+
+Conclusiones del capítulo
+El presente capítulo permitió concluir que las fases de implementación y evaluación fueron esenciales para
+asegurar la calidad y funcionalidad del sistema. A través de una planificación y ejecución meticulosa, se
+verificó que el producto desarrollado cumpliera con los requisitos y expectativas
+
+---
+

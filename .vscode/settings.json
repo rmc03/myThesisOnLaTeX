@@ -66,5 +66,6 @@
             ],
             "env": {}
         }
-    ]
+    ],
+    "kiroAgent.configureMCP": "Disabled"
 }
