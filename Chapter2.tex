@@ -7,7 +7,7 @@ El presente capítulo tiene como objetivo presentar el proceso de análisis, dis
 \section{Descripción de la propuesta de solución}
 \label{sec:descripcion_propuesta}
 
-\textit{Go Goals! Digital} es un videojuego educativo basado en la adaptación digital del juego de mesa oficial \textit{Go Goals!} de las Naciones Unidas \cite{GoGoals2020}. En su formato digital, los jugadores (de 1 a 6) controlan fichas en un tablero hexagonal de 63 casillas que metaforiza el recorrido colectivo hacia el año 2030, horizonte establecido por la Agenda 2030 para el Desarrollo Sostenible \cite{NacionesUnidas2015}. El avance se determina mediante un dado virtual, y al caer en una de las 17 casillas temáticas (una por ODS), el jugador debe responder una pregunta de opción múltiple sobre el objetivo correspondiente. Las respuestas correctas activan el efecto de escalera (avance positivo), mientras que las incorrectas activan el efecto de serpiente (retroceso correctivo), preservando la mecánica pedagógica central del juego original.
+\textit{Go Goals! Digital} es un videojuego educativo basado en la adaptación digital del juego de mesa oficial \textit{Go Goals!} de las Naciones Unidas \parencite{GoGoals2020}. En su formato digital, los jugadores (de 1 a 6) controlan fichas en un tablero hexagonal de 63 casillas que metaforiza el recorrido colectivo hacia el año 2030, horizonte establecido por la Agenda 2030 para el Desarrollo Sostenible \parencite{NacionesUnidas2015}. El avance se determina mediante un dado virtual, y al caer en una de las 17 casillas temáticas (una por ODS), el jugador debe responder una pregunta de opción múltiple sobre el objetivo correspondiente. Las respuestas correctas activan el efecto de escalera (avance positivo), mientras que las incorrectas activan el efecto de serpiente (retroceso correctivo), preservando la mecánica pedagógica central del juego original.
 
 Las principales mejoras que introduce la versión digital respecto al formato físico son:
 \begin{itemize}
@@ -29,14 +29,14 @@ Las principales mejoras que introduce la versión digital respecto al formato f�
 \section{Planificación}
 \label{sec:planificacion}
 
-El presente epígrafe se enfoca en la organización y gestión del proyecto siguiendo la metodología Extreme Programming (XP). La planificación en XP se centra en la flexibilidad y la colaboración continua con el cliente, utilizando iteraciones cortas para adaptarse a cambios y priorizar funcionalidades \cite{Beck1999}. Aquí se detallan los procesos clave que guían el desarrollo de \textit{Go Goals! Digital}, desde la obtención de requisitos hasta la definición de historias de usuario, la estimación de tiempo y el plan de iteraciones.
+El presente epígrafe se enfoca en la organización y gestión del proyecto siguiendo la metodología Extreme Programming (XP). La planificación en XP se centra en la flexibilidad y la colaboración continua con el cliente, utilizando iteraciones cortas para adaptarse a cambios y priorizar funcionalidades \parencite{Beck1999}. Aquí se detallan los procesos clave que guían el desarrollo de \textit{Go Goals! Digital}, desde la obtención de requisitos hasta la definición de historias de usuario, la estimación de tiempo y el plan de iteraciones.
 
-Como parte inicial de esta planificación, se realizaron sesiones de tormenta de ideas (brainstorming) para enfocar el proyecto en la arquitectura general y posteriormente reuniones que resultaron en la definición de los requisitos funcionales, no funcionales e historias de usuario \cite{SchwaberSutherland2020}.
+Como parte inicial de esta planificación, se realizaron sesiones de tormenta de ideas (brainstorming) para enfocar el proyecto en la arquitectura general y posteriormente reuniones que resultaron en la definición de los requisitos funcionales, no funcionales e historias de usuario \parencite{SchwaberSutherland2020}.
 
 \subsection{Requisitos funcionales}
 \label{subsec:req_funcionales}
 
-Los requisitos funcionales son descripciones detalladas de las funciones, comportamientos y procesos que un sistema de software debe cumplir para satisfacer las necesidades de sus usuarios y alcanzar los objetivos del proyecto. Según \citeauthor{Pressman2021} \cite{Pressman2021}, esta definición es esencial no solo para orientar las fases de análisis, diseño, implementación y pruebas, sino también para asegurar una comunicación efectiva entre todos los involucrados en el proyecto.
+Los requisitos funcionales son descripciones detalladas de las funciones, comportamientos y procesos que un sistema de software debe cumplir para satisfacer las necesidades de sus usuarios y alcanzar los objetivos del proyecto. Según \citeauthor{Pressman2021} \parencite{Pressman2021}, esta definición es esencial no solo para orientar las fases de análisis, diseño, implementación y pruebas, sino también para asegurar una comunicación efectiva entre todos los involucrados en el proyecto.
 
 \begin{table}[!htbp]
 \centering
@@ -80,7 +80,7 @@ Los requisitos funcionales son descripciones detalladas de las funciones, compor
 \subsection{Requisitos no funcionales}
 \label{subsec:req_no_funcionales}
 
-Los requisitos no funcionales son aquellos que especifican criterios que pueden usarse para juzgar la operación de un sistema, en lugar de sus comportamientos específicos. Estos requisitos se centran en aspectos como el rendimiento, la seguridad, la usabilidad y la fiabilidad del sistema, y son esenciales para garantizar que el software cumpla con las expectativas de calidad y satisfacción del usuario final \cite{Pressman2021}.
+Los requisitos no funcionales son aquellos que especifican criterios que pueden usarse para juzgar la operación de un sistema, en lugar de sus comportamientos específicos. Estos requisitos se centran en aspectos como el rendimiento, la seguridad, la usabilidad y la fiabilidad del sistema, y son esenciales para garantizar que el software cumpla con las expectativas de calidad y satisfacción del usuario final \parencite{Pressman2021}.
 
 \begin{table}[!htbp]
 \centering
@@ -109,7 +109,7 @@ Tamaño del ejecutable & Rendimiento & El ejecutable para Windows no debe supera
 \subsection{Historias de usuario}
 \label{subsec:historias_usuario}
 
-Las historias de usuario son una técnica fundamental en metodologías ágiles como Extreme Programming (XP), utilizadas para capturar requisitos desde la perspectiva del usuario final. Según \citeauthor{Cohn2020} \cite{Cohn2020}, una historia de usuario es ``una descripción breve y simple de una funcionalidad deseada, expresada en lenguaje cotidiano y centrada en el valor que aporta al usuario''. A diferencia de los documentos de requisitos tradicionales, las historias de usuario son más flexibles, pero siguen el formato estandarizado:
+Las historias de usuario son una técnica fundamental en metodologías ágiles como Extreme Programming (XP), utilizadas para capturar requisitos desde la perspectiva del usuario final. Según \citeauthor{Cohn2020} \parencite{Cohn2020}, una historia de usuario es ``una descripción breve y simple de una funcionalidad deseada, expresada en lenguaje cotidiano y centrada en el valor que aporta al usuario''. A diferencia de los documentos de requisitos tradicionales, las historias de usuario son más flexibles, pero siguen el formato estandarizado:
 
 \begin{center}
 \textit{``Como [rol], quiero [acción], para [beneficio]''}
@@ -372,7 +372,7 @@ A continuación se presentan las historias de usuario definidas para las funcion
 \subsection{Estimación de tiempo de desarrollo}
 \label{subsec:estimacion}
 
-Los puntos de estimación en el desarrollo ágil se utilizan para medir el esfuerzo relativo requerido para completar una historia de usuario, en lugar de estimar el tiempo exacto. Esto sirve para evaluar su complejidad, comparar historias de usuario y planificar las iteraciones \cite{Cohn2020}.
+Los puntos de estimación en el desarrollo ágil se utilizan para medir el esfuerzo relativo requerido para completar una historia de usuario, en lugar de estimar el tiempo exacto. Esto sirve para evaluar su complejidad, comparar historias de usuario y planificar las iteraciones \parencite{Cohn2020}.
 
 \begin{table}[!htbp]
 \centering
@@ -431,7 +431,7 @@ Los puntos de estimación en el desarrollo ágil se utilizan para medir el esfue
 \subsection{Plan de iteraciones}
 \label{subsec:plan_iteraciones}
 
-El plan de iteraciones es una herramienta esencial para organizar y coordinar el trabajo del equipo de desarrollo. Cada iteración suele durar entre una y tres semanas, y comienza con una reunión de planificación en la que el cliente presenta las historias de usuario priorizadas, y el equipo de desarrollo estima y se compromete a completar las tareas necesarias \cite{Cohn2020}. Este enfoque permite entregar incrementos funcionales del software de manera continua, asegurando que el producto evolucione de acuerdo con las necesidades cambiantes del cliente.
+El plan de iteraciones es una herramienta esencial para organizar y coordinar el trabajo del equipo de desarrollo. Cada iteración suele durar entre una y tres semanas, y comienza con una reunión de planificación en la que el cliente presenta las historias de usuario priorizadas, y el equipo de desarrollo estima y se compromete a completar las tareas necesarias \parencite{Cohn2020}. Este enfoque permite entregar incrementos funcionales del software de manera continua, asegurando que el producto evolucione de acuerdo con las necesidades cambiantes del cliente.
 
 \begin{table}[!htbp]
 \centering
@@ -478,15 +478,15 @@ El presente epígrafe constituye la transición esencial entre la planificación
 \subsection{Arquitectura utilizada}
 \label{subsec:arquitectura}
 
-Godot Engine utiliza una arquitectura jerárquica fundamentada en el concepto de nodos como unidades básicas de construcción. Cada elemento funcional del videojuego es representado como un nodo que hereda de la clase base \texttt{Node} \cite{GodotDocs2023}. Esta filosofía arquitectónica de composición sobre herencia permite construir funcionalidades sofisticadas mediante la agregación de componentes simples y bien definidos. El videojuego \textit{Go Goals! Digital} combina cuatro patrones arquitectónicos complementarios que estructuran el código en niveles de responsabilidad claramente diferenciados.
+Godot Engine utiliza una arquitectura jerárquica fundamentada en el concepto de nodos como unidades básicas de construcción. Cada elemento funcional del videojuego es representado como un nodo que hereda de la clase base \texttt{Node} \parencite{GodotDocs2023}. Esta filosofía arquitectónica de composición sobre herencia permite construir funcionalidades sofisticadas mediante la agregación de componentes simples y bien definidos. El videojuego \textit{Go Goals! Digital} combina cuatro patrones arquitectónicos complementarios que estructuran el código en niveles de responsabilidad claramente diferenciados.
 
-El primer patrón es el \textbf{Singleton mediante Autoloads}. Godot facilita este patrón a través de los Autoloads: nodos que se registran globalmente y son accesibles desde cualquier escena del proyecto sin necesidad de referencias directas. El proyecto emplea tres Autoloads fundamentales: \texttt{GameData} (\texttt{res://autoloads/GameData.gd}), que mantiene la configuración de la partida (cantidad de jugadores) y actúa como capa de acceso al banco de preguntas en \texttt{questions.json}; \texttt{AudioManager}, que centraliza la reproducción de música y efectos de sonido liberando a los nodos de juego de instanciar \texttt{AudioStreamPlayer} locales; y \texttt{RecordsManager}, que gestiona la persistencia de puntuaciones y logros entre sesiones \cite{GodotDocs2023}.
+El primer patrón es el \textbf{Singleton mediante Autoloads}. Godot facilita este patrón a través de los Autoloads: nodos que se registran globalmente y son accesibles desde cualquier escena del proyecto sin necesidad de referencias directas. El proyecto emplea tres Autoloads fundamentales: \texttt{GameData} (\texttt{res://autoloads/GameData.gd}), que mantiene la configuración de la partida (cantidad de jugadores) y actúa como capa de acceso al banco de preguntas en \texttt{questions.json}; \texttt{AudioManager}, que centraliza la reproducción de música y efectos de sonido liberando a los nodos de juego de instanciar \texttt{AudioStreamPlayer} locales; y \texttt{RecordsManager}, que gestiona la persistencia de puntuaciones y logros entre sesiones \parencite{GodotDocs2023}.
 
-El segundo patrón es el \textbf{Bus de Eventos (Event Bus)}. El archivo \texttt{GameEvents} (\texttt{res://scripts/Core/Events.gd}) define un conjunto de se\~nales globales que actúan como canal de comunicación entre todos los componentes del sistema. Las se\~nales principales incluyen \texttt{dice\_rolled}, \texttt{player\_moving}, \texttt{quiz\_started}, \texttt{quiz\_requested(ods\_id)} y \texttt{game\_won}. Esta arquitectura desacopla totalmente la lógica del \textit{Modelo} de la capa de \textit{Vista}: el \texttt{GameManager} emite la se\~nal \texttt{quiz\_requested(ods\_id)}, y la UI la recibe de forma independiente para mostrar el panel de preguntas, sin que exista ningún conocimiento mutuo directo entre ambos componentes \cite{GodotDocs2023}.
+El segundo patrón es el \textbf{Bus de Eventos (Event Bus)}. El archivo \texttt{GameEvents} (\texttt{res://scripts/Core/Events.gd}) define un conjunto de se\~nales globales que actúan como canal de comunicación entre todos los componentes del sistema. Las se\~nales principales incluyen \texttt{dice\_rolled}, \texttt{player\_moving}, \texttt{quiz\_started}, \texttt{quiz\_requested(ods\_id)} y \texttt{game\_won}. Esta arquitectura desacopla totalmente la lógica del \textit{Modelo} de la capa de \textit{Vista}: el \texttt{GameManager} emite la se\~nal \texttt{quiz\_requested(ods\_id)}, y la UI la recibe de forma independiente para mostrar el panel de preguntas, sin que exista ningún conocimiento mutuo directo entre ambos componentes \parencite{GodotDocs2023}.
 
 El tercer patrón es la \textbf{M\'aquina de Estados (State Machine)}. El archivo \texttt{GameState} (\texttt{res://scripts/Core/GameState.gd}) gestiona de forma explícita las fases del juego mediante una enumeración: \texttt{MENU}, \texttt{PLAYING}, \texttt{PAUSED} y \texttt{GAME\_OVER}. Además, centraliza en RAM el estado activo de la partida: cuál jugador tiene el turno (\texttt{active\_player\_index}), la cantidad de turnos de cada jugador y sus posiciones actuales en el tablero.
 
-El cuarto patrón es \textbf{MVC orientado a componentes}. El \texttt{GameManager} (\texttt{res://scripts/Managers/GameManager.gd}) actúa como \textit{Controlador} principal, orquestando la inicialización del tablero, el lanzamiento del dado, el cálculo de rutas y la verificación de condiciones de victoria \cite{Pressman2021}. Las entidades en \texttt{res://scripts/Entities/} --- \texttt{Board.gd}, \texttt{Player.gd} y \texttt{Tile.gd} --- actúan como los objetos del \textit{Modelo} y \textit{Vista}, encapsulando sus propiedades pero dejando la orquestación al \texttt{GameManager}.
+El cuarto patrón es \textbf{MVC orientado a componentes}. El \texttt{GameManager} (\texttt{res://scripts/Managers/GameManager.gd}) actúa como \textit{Controlador} principal, orquestando la inicialización del tablero, el lanzamiento del dado, el cálculo de rutas y la verificación de condiciones de victoria \parencite{Pressman2021}. Las entidades en \texttt{res://scripts/Entities/} --- \texttt{Board.gd}, \texttt{Player.gd} y \texttt{Tile.gd} --- actúan como los objetos del \textit{Modelo} y \textit{Vista}, encapsulando sus propiedades pero dejando la orquestación al \texttt{GameManager}.
 
 \begin{figure}[!htbp]
   \centering
@@ -498,7 +498,7 @@ El cuarto patrón es \textbf{MVC orientado a componentes}. El \texttt{GameManage
 \subsubsection{Estructura de directorios del proyecto}
 \label{subsubsec:capas}
 
-La organización del código fuente sigue una estructura jerárquica por responsabilidad funcional, coherente con los principios de alta cohesión y bajo acoplamiento \cite{Pressman2021}:
+La organización del código fuente sigue una estructura jerárquica por responsabilidad funcional, coherente con los principios de alta cohesión y bajo acoplamiento \parencite{Pressman2021}:
 
 \begin{itemize}
     \item \textbf{autoloads/}: contiene los Singletons globales del proyecto (\texttt{GameData}, \texttt{AudioManager}, \texttt{RecordsManager}).
@@ -519,7 +519,7 @@ La organización del código fuente sigue una estructura jerárquica por respons
 \subsubsection{Flujo de ejecución del ciclo de juego}
 \label{subsubsec:flujo_ejecucion}
 
-El ciclo principal de una partida sigue un flujo bien definido y orquestado por el \texttt{GameManager}. Primero, durante la \textbf{inicialización}, el \texttt{GameManager} lee la configuración del tablero desde \texttt{BoardConfig.gd} e inicializa las entidades \texttt{Board} y los jugadores (\texttt{Player}) con sus posiciones de salida. Segundo, al \textbf{lanzar el dado}, el jugador presiona el botón correspondiente, \texttt{GameManager} llama a \texttt{roll\_dice()} y emite la se\~nal global \texttt{dice\_rolled} a través de \texttt{GameEvents}. Tercero, en el \textbf{movimiento}, \texttt{GameManager} calcula el destino y aplica un \texttt{Tween} en \texttt{\_animate\_movement()} para desplazar visualmente la ficha casilla por casilla, reproduciendo sonidos a través de \texttt{AudioManager}. Cuarto, en la \textbf{resolución de casilla}, al terminar el movimiento (\texttt{\_on\_movement\_finished}), se evalúa la casilla mediante \texttt{\_check\_tile()}: si es una \textit{casilla normal}, el turno pasa al siguiente jugador actualizando \texttt{GameState}; si es una \textit{casilla especial}, se anima automáticamente el traslado al destino; si es \textit{casilla de quiz}, se emite la se\~nal \texttt{quiz\_requested(ods\_id)} y la UI muestra el panel modal con la pregunta leída desde \texttt{GameData}; si es la \textit{casilla final (63)}, se emite \texttt{game\_won} y se detiene la música \cite{GodotDocs2023}.
+El ciclo principal de una partida sigue un flujo bien definido y orquestado por el \texttt{GameManager}. Primero, durante la \textbf{inicialización}, el \texttt{GameManager} lee la configuración del tablero desde \texttt{BoardConfig.gd} e inicializa las entidades \texttt{Board} y los jugadores (\texttt{Player}) con sus posiciones de salida. Segundo, al \textbf{lanzar el dado}, el jugador presiona el botón correspondiente, \texttt{GameManager} llama a \texttt{roll\_dice()} y emite la se\~nal global \texttt{dice\_rolled} a través de \texttt{GameEvents}. Tercero, en el \textbf{movimiento}, \texttt{GameManager} calcula el destino y aplica un \texttt{Tween} en \texttt{\_animate\_movement()} para desplazar visualmente la ficha casilla por casilla, reproduciendo sonidos a través de \texttt{AudioManager}. Cuarto, en la \textbf{resolución de casilla}, al terminar el movimiento (\texttt{\_on\_movement\_finished}), se evalúa la casilla mediante \texttt{\_check\_tile()}: si es una \textit{casilla normal}, el turno pasa al siguiente jugador actualizando \texttt{GameState}; si es una \textit{casilla especial}, se anima automáticamente el traslado al destino; si es \textit{casilla de quiz}, se emite la se\~nal \texttt{quiz\_requested(ods\_id)} y la UI muestra el panel modal con la pregunta leída desde \texttt{GameData}; si es la \textit{casilla final (63)}, se emite \texttt{game\_won} y se detiene la música \parencite{GodotDocs2023}.
 
 \subsection{Prototipos de interfaces gráficas}
 \label{subsec:prototipos}
@@ -560,7 +560,7 @@ La pantalla de estadísticas se muestra al finalizar la partida y permite accede
 \subsection{Tarjetas CRC}
 \label{subsec:tarjetas_crc}
 
-Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica fundamental en el diseño ágil, particularmente relevante en la metodología Extreme Programming. Son una herramienta efectiva para la conceptualización y diseño de sistemas orientados a objetos, que facilita la identificación de las clases, sus responsabilidades y las colaboraciones necesarias entre ellas \cite{Sommerville2021}. A continuación se presentan las principales tarjetas CRC de \textit{Go Goals! Digital}, correspondientes a las clases reales del proyecto:
+Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica fundamental en el diseño ágil, particularmente relevante en la metodología Extreme Programming. Son una herramienta efectiva para la conceptualización y diseño de sistemas orientados a objetos, que facilita la identificación de las clases, sus responsabilidades y las colaboraciones necesarias entre ellas \parencite{Sommerville2021}. A continuación se presentan las principales tarjetas CRC de \textit{Go Goals! Digital}, correspondientes a las clases reales del proyecto:
 
 \begin{table}[!htbp]
 \centering
@@ -691,12 +691,12 @@ El presente epígrafe describe el proceso de implementación del videojuego educ
 \subsection{Estándares de codificación}
 \label{subsec:estandares}
 
-Los estándares de codificación son un conjunto de convenciones y reglas que guían la forma en que se escribe el código fuente de un sistema, con el objetivo de mejorar su legibilidad, mantenibilidad y consistencia. Según \citeauthor{Sommerville2021} \cite{Sommerville2021}, el cumplimiento de estándares de codificación es un factor clave para reducir la deuda técnica y facilitar la colaboración en equipos de desarrollo.
+Los estándares de codificación son un conjunto de convenciones y reglas que guían la forma en que se escribe el código fuente de un sistema, con el objetivo de mejorar su legibilidad, mantenibilidad y consistencia. Según \citeauthor{Sommerville2021} \parencite{Sommerville2021}, el cumplimiento de estándares de codificación es un factor clave para reducir la deuda técnica y facilitar la colaboración en equipos de desarrollo.
 
 \subsubsection{Nomenclatura y estructura de archivos}
 \label{subsubsec:nomenclatura}
 
-Para el desarrollo en GDScript se aplicaron los siguientes estándares de nomenclatura, coherentes con las convenciones oficiales de la documentación de Godot \cite{GodotDocs2023}:
+Para el desarrollo en GDScript se aplicaron los siguientes estándares de nomenclatura, coherentes con las convenciones oficiales de la documentación de Godot \parencite{GodotDocs2023}:
 
 \begin{itemize}
     \item \textbf{Clases}: PascalCase (ejemplo: \texttt{GameManager}, \texttt{QuestionManager}).
@@ -718,7 +718,7 @@ La estructura de archivos del proyecto sigue una organización jerárquica por f
 \subsubsection{Documentación del código}
 \label{subsubsec:documentacion_codigo}
 
-Cada clase implementada en GDScript incluye comentarios de documentación al inicio del archivo describiendo su propósito, y comentarios de bloque en funciones de lógica compleja. Esta práctica facilita el mantenimiento futuro del código y permite la incorporación de nuevos desarrolladores al proyecto \cite{GodotDocs2023}.
+Cada clase implementada en GDScript incluye comentarios de documentación al inicio del archivo describiendo su propósito, y comentarios de bloque en funciones de lógica compleja. Esta práctica facilita el mantenimiento futuro del código y permite la incorporación de nuevos desarrolladores al proyecto \parencite{GodotDocs2023}.
 
 \subsection{Patrones de diseño utilizados}
 \label{subsec:patrones}
@@ -728,12 +728,12 @@ Los patrones de diseño son soluciones reutilizables a problemas recurrentes en 
 \subsubsection{Patrón Singleton mediante Autoloads}
 \label{subsubsec:singleton}
 
-Este patrón GOF garantiza que determinadas clases tengan una única instancia accesible globalmente durante toda la sesión de juego \cite{Pressman2021}. Godot implementa este patrón de forma nativa mediante el mecanismo de Autoloads. Los tres Autoloads del proyecto son: \texttt{GameData}, que actua como repositorio central de configuración y datos educativos; \texttt{AudioManager}, que centraliza toda la reproducción de audio evitando instancias dispersas de \texttt{AudioStreamPlayer}; y \texttt{RecordsManager}, que gestiona la persistencia de logros entre sesiones. Gracias a este patrón, cualquier nodo del árbol de escenas puede acceder a estos servicios sin crear dependencias directas ni referencias cruzadas entre escenas \cite{GodotDocs2023}.
+Este patrón GOF garantiza que determinadas clases tengan una única instancia accesible globalmente durante toda la sesión de juego \parencite{Pressman2021}. Godot implementa este patrón de forma nativa mediante el mecanismo de Autoloads. Los tres Autoloads del proyecto son: \texttt{GameData}, que actua como repositorio central de configuración y datos educativos; \texttt{AudioManager}, que centraliza toda la reproducción de audio evitando instancias dispersas de \texttt{AudioStreamPlayer}; y \texttt{RecordsManager}, que gestiona la persistencia de logros entre sesiones. Gracias a este patrón, cualquier nodo del árbol de escenas puede acceder a estos servicios sin crear dependencias directas ni referencias cruzadas entre escenas \parencite{GodotDocs2023}.
 
 \subsubsection{Patrón Bus de Eventos (Observer global)}
 \label{subsubsec:eventbus}
 
-El archivo \texttt{GameEvents} (\texttt{res://scripts/Core/Events.gd}) implementa una variante del patrón Observer a nivel de bus de eventos global \cite{Pressman2021}. En lugar de conectar directamente un emisor con sus suscriptores, \texttt{GameEvents} define se\~nales globales que cualquier componente puede emitir o escuchar de forma independiente. Las se\~nales principales del sistema son: \texttt{dice\_rolled} (el dado fue lanzado), \texttt{player\_moving} (la ficha está en movimiento), \texttt{quiz\_started} (se inició una ronda de pregunta), \texttt{quiz\_requested(ods\_id)} (se solicita la pregunta de un ODS específico) y \texttt{game\_won} (un jugador alcanzó la meta). Este patrón elimina el acoplamiento entre el \texttt{GameManager} y los componentes de UI: el controlador emite \texttt{quiz\_requested(ods\_id)} sin saber quién lo escucha, y la UI responde de forma independiente \cite{GodotDocs2023}.
+El archivo \texttt{GameEvents} (\texttt{res://scripts/Core/Events.gd}) implementa una variante del patrón Observer a nivel de bus de eventos global \parencite{Pressman2021}. En lugar de conectar directamente un emisor con sus suscriptores, \texttt{GameEvents} define se\~nales globales que cualquier componente puede emitir o escuchar de forma independiente. Las se\~nales principales del sistema son: \texttt{dice\_rolled} (el dado fue lanzado), \texttt{player\_moving} (la ficha está en movimiento), \texttt{quiz\_started} (se inició una ronda de pregunta), \texttt{quiz\_requested(ods\_id)} (se solicita la pregunta de un ODS específico) y \texttt{game\_won} (un jugador alcanzó la meta). Este patrón elimina el acoplamiento entre el \texttt{GameManager} y los componentes de UI: el controlador emite \texttt{quiz\_requested(ods\_id)} sin saber quién lo escucha, y la UI responde de forma independiente \parencite{GodotDocs2023}.
 
 \begin{figure}[!htbp]
   \centering
@@ -745,14 +745,14 @@ El archivo \texttt{GameEvents} (\texttt{res://scripts/Core/Events.gd}) implement
 \subsubsection{Patrón Máquina de Estados}
 \label{subsubsec:state}
 
-El estado de la partida se gestiona de forma explícita y centralizada en \texttt{GameState.gd}, mediante una enumeración de fases: \texttt{MENU}, \texttt{PLAYING}, \texttt{PAUSED} y \texttt{GAME\_OVER} \cite{Pressman2021}. Esta separación del estado respecto a la lógica de actualización garantiza que ninguna transición de estado quede implícita o dispersa en el código. Además, \texttt{GameState} centraliza en memoria RAM el estado de la partida en curso: el índice del jugador activo (\texttt{active\_player\_index}), el historial de turnos y las posiciones actuales de todas las fichas, facilitando las operaciones de guardado y restauración. La aplicación de este patrón permite al \texttt{GameManager} delegar las decisiones de transición de fase a una entidad especializada, reduciendo la complejidad ciclomática del controlador.
+El estado de la partida se gestiona de forma explícita y centralizada en \texttt{GameState.gd}, mediante una enumeración de fases: \texttt{MENU}, \texttt{PLAYING}, \texttt{PAUSED} y \texttt{GAME\_OVER} \parencite{Pressman2021}. Esta separación del estado respecto a la lógica de actualización garantiza que ninguna transición de estado quede implícita o dispersa en el código. Además, \texttt{GameState} centraliza en memoria RAM el estado de la partida en curso: el índice del jugador activo (\texttt{active\_player\_index}), el historial de turnos y las posiciones actuales de todas las fichas, facilitando las operaciones de guardado y restauración. La aplicación de este patrón permite al \texttt{GameManager} delegar las decisiones de transición de fase a una entidad especializada, reduciendo la complejidad ciclomática del controlador.
 
 \subsubsection{Patrón MVC orientado a componentes (GRASP)}
 \label{subsubsec:mvc_grasp}
 
-La arquitectura del proyecto aplica los principios GRASP (General Responsibility Assignment Software Patterns) \cite{Pressman2021} en una estructura MVC adaptada al modelo de nodos de Godot. El \textbf{Controlador} es \texttt{GameManager.gd}, que centraliza la orquestación del ciclo de juego aplicando el principio GRASP de \textit{controlador de la fa\c{c}ade}. Los \textbf{Modelos} son las entidades en \texttt{scripts/Entities/}: \texttt{Board.gd}, \texttt{Player.gd} y \texttt{Tile.gd}, que encapsulan propiedades y aplican el principio de \textit{experto en información} (cada entidad conoce solo sus propios datos). La \textbf{Vista} es gestionada por los scripts en \texttt{scripts/UI/}, que escuchan eventos de \texttt{GameEvents} sin acoplarse al modelo.
+La arquitectura del proyecto aplica los principios GRASP (General Responsibility Assignment Software Patterns) \parencite{Pressman2021} en una estructura MVC adaptada al modelo de nodos de Godot. El \textbf{Controlador} es \texttt{GameManager.gd}, que centraliza la orquestación del ciclo de juego aplicando el principio GRASP de \textit{controlador de la fa\c{c}ade}. Los \textbf{Modelos} son las entidades en \texttt{scripts/Entities/}: \texttt{Board.gd}, \texttt{Player.gd} y \texttt{Tile.gd}, que encapsulan propiedades y aplican el principio de \textit{experto en información} (cada entidad conoce solo sus propios datos). La \textbf{Vista} es gestionada por los scripts en \texttt{scripts/UI/}, que escuchan eventos de \texttt{GameEvents} sin acoplarse al modelo.
 
-Es notable que la configuración del tablero se aisla en \texttt{BoardConfig.gd} (\texttt{scripts/Data/}), separando los datos estáticos de escaleras, toboganes y casillas de quiz del código lógico, lo que permite modificar la configuración del tablero sin alterar el controlador. Esta decisión de diseño aplica directamente el principio GRASP de \textit{bajo acoplamiento}, garantizando que el sistema sea fácilmente extensible ante futuras modificaciones del tablero o las reglas del juego \cite{Pressman2021}.
+Es notable que la configuración del tablero se aisla en \texttt{BoardConfig.gd} (\texttt{scripts/Data/}), separando los datos estáticos de escaleras, toboganes y casillas de quiz del código lógico, lo que permite modificar la configuración del tablero sin alterar el controlador. Esta decisión de diseño aplica directamente el principio GRASP de \textit{bajo acoplamiento}, garantizando que el sistema sea fácilmente extensible ante futuras modificaciones del tablero o las reglas del juego \parencite{Pressman2021}.
 
 \subsection{Tareas de ingeniería}
 \label{subsec:tareas_ingenieria}
