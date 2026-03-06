@@ -54,7 +54,7 @@ Los requisitos funcionales son descripciones detalladas de las funciones, compor
 \textbf{No.} & \textbf{Nombre} & \textbf{Descripción} & \textbf{Prioridad} & \textbf{Complejidad} \\
 \hline
 \endhead
-\hline \multicolumn{5}{r}{{Continúa en la próxima página...}} \\
+
 \endfoot
 \endlastfoot
 1. & Inicio de partida & El sistema debe permitir al usuario iniciar una nueva partida configurando el número de jugadores (1-6). & Alta & Baja \\
@@ -105,7 +105,7 @@ Los requisitos no funcionales son aquellos que especifican criterios que pueden 
 \textbf{Nombre} & \textbf{Tipo} & \textbf{Descripción} \\
 \hline
 \endhead
-\hline \multicolumn{3}{r}{{Continúa en la próxima página...}} \\
+
 \endfoot
 \endlastfoot
 Interfaz accesible para niños & Usabilidad & La interfaz gráfica debe emplear tipografía de tamaño no menor a 16pt, botones grandes y contraste alto, adecuados para usuarios de 8 a 10 años. \\
@@ -851,31 +851,49 @@ El plan de iteraciones es una herramienta esencial para organizar y coordinar el
 \hline
 \textbf{Iteración} & \textbf{No. HU} & \textbf{Historia de Usuario} & \textbf{Duración (días)} \\
 \hline
-\multirow{3}{*}{1} & 1 & Inicio de nueva partida educativa & \multirow{3}{*}{8.5} \\
+\multirow{4}{*}{1} & 1 & Inicio de nueva partida educativa & \multirow{4}{*}{10.5} \\
 \cline{2-3}
-& 2 & Visualización del tablero hexagonal & \\
+ & 2 & Visualización del tablero hexagonal & \\
 \cline{2-3}
-& 11 & Menú principal y pantalla de instrucciones & \\
+ & 11 & Menú principal y pantalla de instrucciones & \\
+\cline{2-3}
+ & 13 & Personalización de jugadores & \\
 \hline
-\multirow{2}{*}{2} & 3 & Lanzamiento de dado virtual & \multirow{2}{*}{9.0} \\
+\multirow{4}{*}{2} & 3 & Lanzamiento de dado virtual & \multirow{4}{*}{12.5} \\
 \cline{2-3}
-& 4 & Movimiento animado de ficha & \\
+ & 4 & Movimiento animado de ficha & \\
+\cline{2-3}
+ & 14 & Visualización de información del ODS & \\
+\cline{2-3}
+ & 18 & Notificación visual del turno activo & \\
 \hline
-\multirow{3}{*}{3} & 5 & Efecto de escalera y serpiente & \multirow{3}{*}{10.5} \\
+\multirow{4}{*}{3} & 5 & Efecto de escalera y serpiente & \multirow{4}{*}{11.5} \\
 \cline{2-3}
-& 8 & Gestión de turnos automática & \\
+ & 8 & Gestión de turnos automática & \\
 \cline{2-3}
-& 9 & Condición de victoria & \\
+ & 9 & Condición de victoria & \\
+\cline{2-3}
+ & 10 & Estadísticas de aprendizaje & \\
 \hline
-\multirow{2}{*}{4} & 6 & Preguntas educativas sobre ODS & \multirow{2}{*}{10.0} \\
+\multirow{3}{*}{4} & 6 & Preguntas educativas sobre ODS & \multirow{3}{*}{10.0} \\
 \cline{2-3}
-& 7 & Evaluación y retroalimentación de respuestas & \\
-\hline
-\multirow{2}{*}{5} & 10 & Estadísticas de aprendizaje & \multirow{2}{*}{6.5} \\
+ & 7 & Evaluación y retroalimentación de respuestas & \\
 \cline{2-3}
-& 12 & Configuración de audio & \\
+ & 15 & Temporizador de respuesta & \\
 \hline
-\multicolumn{3}{|r|}{\textbf{Total}} & \textbf{44.5} \\
+\multirow{6}{*}{5} & 12 & Configuración de audio & \multirow{6}{*}{9.0} \\
+\cline{2-3}
+ & 16 & Modo de un jugador & \\
+\cline{2-3}
+ & 17 & Pantalla de clasificación al finalizar & \\
+\cline{2-3}
+ & 19 & Accesibilidad de la interfaz & \\
+\cline{2-3}
+ & 20 & Pantalla de créditos & \\
+\cline{2-3}
+ & 21 & Compatibilidad web y exportación & \\
+\hline
+\multicolumn{3}{|r|}{\textbf{Total}} & \textbf{53.5} \\
 \hline
 \end{tabular}
 \end{table}
@@ -1322,6 +1340,162 @@ Iteración & 5 \\
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
 Descripción & Se implementa el \texttt{StatsManager} como autoload para registrar respuestas durante la sesión. Se diseña la pantalla de estadísticas con visualización por jugador y por ODS. \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Tarea de ingeniería 7: Personalización de jugadores\label{tab:ti7}}
+\begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
+\hline
+\textbf{Campo} & \textbf{Descripción} \\
+\hline
+Tarea \# & 7 \\
+\hline
+HU relacionada & HU \#13 \\
+\hline
+Nombre & Sistema de personalización de perfiles de jugador \\
+\hline
+Tipo & Desarrollo \\
+\hline
+Puntos estimados & 1.5 días \\
+\hline
+Iteración & 1 \\
+\hline
+Programador & Ruslan Alexei Martinez Campos \\
+\hline
+Descripción & Diferenciación visual de fichas. Implementación de la persistencia de nombres y colores seleccionados a través de \texttt{GameData}. Validación de colores para evitar duplicados. \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Tarea de ingeniería 8: Panel informativo de ODS\label{tab:ti8}}
+\begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
+\hline
+\textbf{Campo} & \textbf{Descripción} \\
+\hline
+Tarea \# & 8 \\
+\hline
+HU relacionada & HU \#14 \\
+\hline
+Nombre & Implementación del panel informativo previo a preguntas \\
+\hline
+Tipo & Desarrollo \\
+\hline
+Puntos estimados & 2.0 días \\
+\hline
+Iteración & 2 \\
+\hline
+Programador & Ruslan Alexei Martinez Campos \\
+\hline
+Descripción & Creación de interfaz informativa que muestra íconos y objetivos específicos antes de la fase de evaluación. Sincronización con el Bus de Eventos para pausar el flujo de juego. \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Tarea de ingeniería 9: Notificaciones de turno activo\label{tab:ti9}}
+\begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
+\hline
+\textbf{Campo} & \textbf{Descripción} \\
+\hline
+Tarea \# & 9 \\
+\hline
+HU relacionada & HU \#18 \\
+\hline
+Nombre & Sistema de resaltado y notificación de turno \\
+\hline
+Tipo & Desarrollo \\
+\hline
+Puntos estimados & 1.0 días \\
+\hline
+Iteración & 2 \\
+\hline
+Programador & Ruslan Alexei Martinez Campos \\
+\hline
+Descripción & Implementación de efectos de brillo (glow) sobre la ficha del jugador activo y banners animados de entrada de turno. Integración con se\~nales de \texttt{GameState}. \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Tarea de ingeniería 10: Inteligencia Artificial oponente\label{tab:ti10}}
+\begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
+\hline
+\textbf{Campo} & \textbf{Descripción} \\
+\hline
+Tarea \# & 10 \\
+\hline
+HU relacionada & HU \#16 \\
+\hline
+Nombre & Implementación de lógica para oponente virtual (IA) \\
+\hline
+Tipo & Desarrollo \\
+\hline
+Puntos estimados & 5.0 días \\
+\hline
+Iteración & 5 \\
+\hline
+Programador & Ruslan Alexei Martinez Campos \\
+\hline
+Descripción & Desarrollo de un autómata que simula la toma de decisiones y el lanzamiento de dados. Configuración de probabilidades de acierto para ajustar la dificultad del juego. \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Tarea de ingeniería 11: Exportación y optimización web\label{tab:ti11}}
+\begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
+\hline
+\textbf{Campo} & \textbf{Descripción} \\
+\hline
+Tarea \# & 11 \\
+\hline
+HU relacionada & HU \#21 \\
+\hline
+Nombre & Optimización y despliegue multiplataforma (HTML5) \\
+\hline
+Tipo & Desarrollo \\
+\hline
+Puntos estimados & 3.0 días \\
+\hline
+Iteración & 5 \\
+\hline
+Programador & Ruslan Alexei Martinez Campos \\
+\hline
+Descripción & Configuración de perfiles de exportación en Godot. Optimización de assets para reducir el tiempo de carga web. Despliegue automatizado mediante GitHub Pages. \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Tarea de ingeniería 12: Configuración de sistema y accesibilidad\label{tab:ti12}}
+\begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
+\hline
+\textbf{Campo} & \textbf{Descripción} \\
+\hline
+Tarea \# & 12 \\
+\hline
+HU relacionada & HU \#12, HU \#19 \\
+\hline
+Nombre & Ajustes de audio y parámetros de legibilidad visual \\
+\hline
+Tipo & Desarrollo \\
+\hline
+Puntos estimados & 4.5 días \\
+\hline
+Iteración & 5 \\
+\hline
+Programador & Ruslan Alexei Martinez Campos \\
+\hline
+Descripción & Implementación de buses de audio centralizados y paneles de configuración. Ajuste dinámico de escala de fuentes y tamaños de botones para garantizar accesibilidad. \\
 \hline
 \end{tabular}
 \end{table}
