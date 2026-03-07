@@ -288,9 +288,10 @@ Ingeniero en Ciencias Informáticas }
 {
 \def\@keywords{#1}
 }
-\renewcommand{\abstract}[1]
+\renewcommand{\abstract}[2]
 {
-\def\@abstract{#1}
+\def\@abstractes{#1}
+\def\@abstracten{#2}
 }
 
 \newcommand{\set@thought}
@@ -330,9 +331,17 @@ Ingeniero en Ciencias Informáticas }
 \thispagestyle{empty}
 \chapter*{Resumen}
 {
-\@abstract
+\@abstractes
 \quad\\[0.6\baselineskip]
 \noindent \textbf{Palabras clave:} \@keywords.
+}
+\newpage
+\thispagestyle{empty}
+\chapter*{Abstract}
+{
+\@abstracten
+\quad\\[0.6\baselineskip]
+\noindent \textbf{Keywords:} \@keywords.
 }
 }
 
@@ -347,7 +356,10 @@ Ingeniero en Ciencias Informáticas }
 \ifx\@keywords\@undefined\relax
 \PackageError{Thesis}{You need to define the command \protect\keywords\space to continue}{}
 \fi
-\ifx\@abstract\@undefined\relax
+\ifx\@abstractes\@undefined\relax
+\PackageError{Thesis}{You need to define the command \protect\abstract\space to continue}{}
+\fi
+\ifx\@abstracten\@undefined\relax
 \PackageError{Thesis}{You need to define the command \protect\abstract\space to continue}{}
 \fi
 \ifx\@thought\@undefined\relax
