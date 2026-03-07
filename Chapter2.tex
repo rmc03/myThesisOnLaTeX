@@ -818,13 +818,22 @@ A continuación se presentan las historias de usuario definidas para las funcion
 
 Los puntos de estimación en el desarrollo ágil se utilizan para medir el esfuerzo relativo requerido para completar una historia de usuario, en lugar de estimar el tiempo exacto. Esto sirve para evaluar su complejidad, comparar historias de usuario y planificar las iteraciones \parencite{Cohn2020}.
 
-\begin{table}[H]
-\centering
-\caption{Puntos de estimación por historia de usuario (elaboración propia)\label{tab:estimacion}}
-\begin{tabular}{|c|p{0.45\textwidth}|c|}
+\begin{longtable}{|c|p{0.45\textwidth}|c|}
+\caption{Puntos de estimación por historia de usuario (elaboración propia)\label{tab:estimacion}} \\
 \hline
 \textbf{No. HU} & \textbf{Nombre} & \textbf{Puntos (días)} \\
 \hline
+\endfirsthead
+\multicolumn{3}{c}%
+{{\tablename\ \thetable{} -- Continuación de la página anterior}} \\
+\hline
+\textbf{No. HU} & \textbf{Nombre} & \textbf{Puntos (días)} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
 1. & Inicio de nueva partida educativa & 2.0 \\
 \hline
 2. & Visualización del tablero hexagonal & 5.0 \\
@@ -869,21 +878,29 @@ Los puntos de estimación en el desarrollo ágil se utilizan para medir el esfue
 \hline
 \multicolumn{2}{|r|}{\textbf{Total}} & \textbf{53.5} \\
 \hline
-\end{tabular}
-\end{table}
+\end{longtable}
 
 \subsection{Plan de iteraciones}
 \label{subsec:plan_iteraciones}
 
 El plan de iteraciones es una herramienta esencial para organizar y coordinar el trabajo del equipo de desarrollo. Cada iteración suele durar entre una y tres semanas, y comienza con una reunión de planificación en la que el cliente presenta las historias de usuario priorizadas, y el equipo de desarrollo estima y se compromete a completar las tareas necesarias \parencite{Cohn2020}. Este enfoque permite entregar incrementos funcionales del software de manera continua, asegurando que el producto evolucione de acuerdo con las necesidades cambiantes del cliente.
 
-\begin{table}[H]
-\centering
-\caption{Plan de iteraciones de desarrollo (elaboración propia)\label{tab:plan_iteraciones}}
-\begin{tabular}{|c|c|p{0.45\textwidth}|c|}
+\begin{longtable}{|c|c|p{0.45\textwidth}|c|}
+\caption{Plan de iteraciones de desarrollo (elaboración propia)\label{tab:plan_iteraciones}} \\
 \hline
 \textbf{Iteración} & \textbf{No. HU} & \textbf{Historia de Usuario} & \textbf{Duración (días)} \\
 \hline
+\endfirsthead
+\multicolumn{4}{c}%
+{{\tablename\ \thetable{} -- Continuación de la página anterior}} \\
+\hline
+\textbf{Iteración} & \textbf{No. HU} & \textbf{Historia de Usuario} & \textbf{Duración (días)} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
 \multirow{4}{*}{1} & 1 & Inicio de nueva partida educativa & \multirow{4}{*}{10.5} \\
 \cline{2-3}
  & 2 & Visualización del tablero hexagonal & \\
@@ -928,8 +945,7 @@ El plan de iteraciones es una herramienta esencial para organizar y coordinar el
 \hline
 \multicolumn{3}{|r|}{\textbf{Total}} & \textbf{53.5} \\
 \hline
-\end{tabular}
-\end{table}
+\end{longtable}
 
 %---------------------------------------------------------------------------
 \section{Diseño}
