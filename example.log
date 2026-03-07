@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.24)  6 MAR 2026 02:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.24)  6 MAR 2026 19:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1752,7 +1752,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'authoryear-ibid.dbx' not found.
+Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count519
@@ -1916,12 +1916,12 @@ ined, overwriting.
 Package biblatex Info: Delimiter 'nonameyeardelim' in context 'biblist' already
  defined, overwriting.
 )
-Package biblatex Info: Trying to load citation style 'authoryear-ibid'...
-Package biblatex Info: ... file 'authoryear-ibid.cbx' found.
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
 
 (C:\Users\Ruslan MC\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\author
-year-ibid.cbx
-File: authoryear-ibid.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
+year.cbx
+File: authoryear.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1984,58 +1984,58 @@ LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 21.
-LaTeX Info: Redefining \. on input line 766.
-LaTeX Info: Redefining \% on input line 766.
-LaTeX Info: Redefining \. on input line 767.
-LaTeX Info: Redefining \% on input line 767.
-LaTeX Info: Redefining \. on input line 772.
-LaTeX Info: Redefining \% on input line 772.
-LaTeX Info: Redefining \. on input line 773.
-LaTeX Info: Redefining \% on input line 773.
-LaTeX Info: Redefining \. on input line 778.
-LaTeX Info: Redefining \% on input line 778.
-LaTeX Info: Redefining \. on input line 779.
-LaTeX Info: Redefining \% on input line 779.
-LaTeX Info: Redefining \. on input line 780.
-LaTeX Info: Redefining \% on input line 780.
-LaTeX Info: Redefining \. on input line 781.
-LaTeX Info: Redefining \% on input line 781.
-LaTeX Info: Redefining \. on input line 790.
-LaTeX Info: Redefining \% on input line 790.
-LaTeX Info: Redefining \. on input line 791.
-LaTeX Info: Redefining \% on input line 791.
-LaTeX Info: Redefining \. on input line 792.
-LaTeX Info: Redefining \% on input line 792.
-LaTeX Info: Redefining \. on input line 793.
-LaTeX Info: Redefining \% on input line 793.
-LaTeX Info: Redefining \. on input line 795.
-LaTeX Info: Redefining \% on input line 795.
-LaTeX Info: Redefining \. on input line 796.
-LaTeX Info: Redefining \% on input line 796.
-LaTeX Info: Redefining \. on input line 799.
-LaTeX Info: Redefining \% on input line 799.
-LaTeX Info: Redefining \. on input line 800.
-LaTeX Info: Redefining \% on input line 800.
-LaTeX Info: Redefining \. on input line 805.
-LaTeX Info: Redefining \% on input line 805.
-LaTeX Info: Redefining \. on input line 806.
-LaTeX Info: Redefining \% on input line 806.
-LaTeX Info: Redefining \. on input line 807.
-LaTeX Info: Redefining \% on input line 807.
-LaTeX Info: Redefining \. on input line 808.
-LaTeX Info: Redefining \% on input line 808.
-LaTeX Info: Redefining \. on input line 810.
-LaTeX Info: Redefining \% on input line 810.
-LaTeX Info: Redefining \. on input line 811.
-LaTeX Info: Redefining \% on input line 811.
-LaTeX Info: Redefining \. on input line 826.
-LaTeX Info: Redefining \% on input line 826.
-LaTeX Info: Redefining \. on input line 827.
-LaTeX Info: Redefining \% on input line 827.
-LaTeX Info: Redefining \. on input line 828.
-LaTeX Info: Redefining \% on input line 828.
-LaTeX Info: Redefining \. on input line 829.
-LaTeX Info: Redefining \% on input line 829.
+LaTeX Info: Redefining \. on input line 653.
+LaTeX Info: Redefining \% on input line 653.
+LaTeX Info: Redefining \. on input line 654.
+LaTeX Info: Redefining \% on input line 654.
+LaTeX Info: Redefining \. on input line 655.
+LaTeX Info: Redefining \% on input line 655.
+LaTeX Info: Redefining \. on input line 656.
+LaTeX Info: Redefining \% on input line 656.
+LaTeX Info: Redefining \. on input line 657.
+LaTeX Info: Redefining \% on input line 657.
+LaTeX Info: Redefining \. on input line 658.
+LaTeX Info: Redefining \% on input line 658.
+LaTeX Info: Redefining \. on input line 659.
+LaTeX Info: Redefining \% on input line 659.
+LaTeX Info: Redefining \. on input line 660.
+LaTeX Info: Redefining \% on input line 660.
+LaTeX Info: Redefining \. on input line 661.
+LaTeX Info: Redefining \% on input line 661.
+LaTeX Info: Redefining \. on input line 662.
+LaTeX Info: Redefining \% on input line 662.
+LaTeX Info: Redefining \. on input line 663.
+LaTeX Info: Redefining \% on input line 663.
+LaTeX Info: Redefining \. on input line 664.
+LaTeX Info: Redefining \% on input line 664.
+LaTeX Info: Redefining \. on input line 665.
+LaTeX Info: Redefining \% on input line 665.
+LaTeX Info: Redefining \. on input line 666.
+LaTeX Info: Redefining \% on input line 666.
+LaTeX Info: Redefining \. on input line 667.
+LaTeX Info: Redefining \% on input line 667.
+LaTeX Info: Redefining \. on input line 668.
+LaTeX Info: Redefining \% on input line 668.
+LaTeX Info: Redefining \. on input line 669.
+LaTeX Info: Redefining \% on input line 669.
+LaTeX Info: Redefining \. on input line 670.
+LaTeX Info: Redefining \% on input line 670.
+LaTeX Info: Redefining \. on input line 671.
+LaTeX Info: Redefining \% on input line 671.
+LaTeX Info: Redefining \. on input line 672.
+LaTeX Info: Redefining \% on input line 672.
+LaTeX Info: Redefining \. on input line 673.
+LaTeX Info: Redefining \% on input line 673.
+LaTeX Info: Redefining \. on input line 674.
+LaTeX Info: Redefining \% on input line 674.
+LaTeX Info: Redefining \. on input line 675.
+LaTeX Info: Redefining \% on input line 675.
+LaTeX Info: Redefining \. on input line 676.
+LaTeX Info: Redefining \% on input line 676.
+LaTeX Info: Redefining \. on input line 677.
+LaTeX Info: Redefining \% on input line 677.
+LaTeX Info: Redefining \. on input line 678.
+LaTeX Info: Redefining \% on input line 678.
 )
 \openout1 = `example.aux'.
 
@@ -2356,6 +2356,9 @@ LaTeX Font Info:    Font shape `T1/txr/b/sc' in size <10.95> not available
 [7
 
 ]
+LaTeX Info: Redefining \sptext on input line 63.
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
 LaTeX Info: Redefining \sptext on input line 64.
 LaTeX Info: Redefining \. on input line 64.
 LaTeX Info: Redefining \% on input line 64.
@@ -2431,9 +2434,6 @@ LaTeX Info: Redefining \% on input line 87.
 LaTeX Info: Redefining \sptext on input line 88.
 LaTeX Info: Redefining \. on input line 88.
 LaTeX Info: Redefining \% on input line 88.
-LaTeX Info: Redefining \sptext on input line 89.
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
 )
 \tf@toc=\write8
 \openout8 = `example.toc'.
@@ -2444,12 +2444,6 @@ LaTeX Info: Redefining \% on input line 89.
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \sptext on input line 21.
-LaTeX Info: Redefining \. on input line 21.
-LaTeX Info: Redefining \% on input line 21.
-LaTeX Info: Redefining \sptext on input line 22.
-LaTeX Info: Redefining \. on input line 22.
-LaTeX Info: Redefining \% on input line 22.
 LaTeX Info: Redefining \sptext on input line 23.
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
@@ -2522,6 +2516,12 @@ LaTeX Info: Redefining \% on input line 45.
 LaTeX Info: Redefining \sptext on input line 46.
 LaTeX Info: Redefining \. on input line 46.
 LaTeX Info: Redefining \% on input line 46.
+LaTeX Info: Redefining \sptext on input line 47.
+LaTeX Info: Redefining \. on input line 47.
+LaTeX Info: Redefining \% on input line 47.
+LaTeX Info: Redefining \sptext on input line 48.
+LaTeX Info: Redefining \. on input line 48.
+LaTeX Info: Redefining \% on input line 48.
 )
 \tf@lof=\write9
 \openout9 = `example.lof'.
@@ -2539,12 +2539,6 @@ LaTeX Info: Redefining \% on input line 1.
 [10
 
 ]
-LaTeX Info: Redefining \sptext on input line 57.
-LaTeX Info: Redefining \. on input line 57.
-LaTeX Info: Redefining \% on input line 57.
-LaTeX Info: Redefining \sptext on input line 58.
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
 LaTeX Info: Redefining \sptext on input line 59.
 LaTeX Info: Redefining \. on input line 59.
 LaTeX Info: Redefining \% on input line 59.
@@ -2617,6 +2611,12 @@ LaTeX Info: Redefining \% on input line 81.
 LaTeX Info: Redefining \sptext on input line 82.
 LaTeX Info: Redefining \. on input line 82.
 LaTeX Info: Redefining \% on input line 82.
+LaTeX Info: Redefining \sptext on input line 83.
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
+LaTeX Info: Redefining \sptext on input line 84.
+LaTeX Info: Redefining \. on input line 84.
+LaTeX Info: Redefining \% on input line 84.
 )
 \tf@lot=\write10
 \openout10 = `example.lot'.
@@ -2675,9 +2675,12 @@ LaTeX Font Info:    Font shape `T1/txr/b/n' in size <12> not available
 [4
 
 ]
+LaTeX Font Info:    Font shape `T1/txr/b/n' in size <10> not available
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 34.
 
-LaTeX Info: Redefining \. on input line 35.
-LaTeX Info: Redefining \% on input line 35.
+
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
 
 Package fancyhdr Warning: \headheight is too small (14.05273pt): 
 (fancyhdr)                Make it at least 27.65274pt, for example:
@@ -2687,8 +2690,8 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 
 [5]
 
-LaTeX Info: Redefining \. on input line 56.
-LaTeX Info: Redefining \% on input line 56.
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
 
 Package fancyhdr Warning: \headheight is too small (14.05273pt): 
 (fancyhdr)                Make it at least 27.65274pt, for example:
@@ -2698,8 +2701,8 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 
 [6]
 
-LaTeX Info: Redefining \. on input line 80.
-LaTeX Info: Redefining \% on input line 80.
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
 
 Package fancyhdr Warning: \headheight is too small (14.05273pt): 
 (fancyhdr)                Make it at least 27.65274pt, for example:
@@ -2708,14 +2711,9 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [7]
-Underfull \hbox (badness 1546) in paragraph at lines 98--99
-[]|\T1/txr/bx/n/10.95 Pregunta ni-vel al-to (apli-ca-ción /
- []
 
-
-
-LaTeX Info: Redefining \. on input line 113.
-LaTeX Info: Redefining \% on input line 113.
+LaTeX Info: Redefining \. on input line 115.
+LaTeX Info: Redefining \% on input line 115.
 
 Package fancyhdr Warning: \headheight is too small (14.05273pt): 
 (fancyhdr)                Make it at least 27.65274pt, for example:
@@ -2724,9 +2722,14 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [8]
+Underfull \hbox (badness 1546) in paragraph at lines 133--134
+[]|\T1/txr/bx/n/10.95 Pregunta ni-vel al-to (apli-ca-ción /
+ []
 
-LaTeX Info: Redefining \. on input line 134.
-LaTeX Info: Redefining \% on input line 134.
+
+
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
 
 Package fancyhdr Warning: \headheight is too small (14.05273pt): 
 (fancyhdr)                Make it at least 27.65274pt, for example:
@@ -2735,19 +2738,9 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [9]
-Underfull \hbox (badness 1184) in paragraph at lines 145--145
-[]|\T1/txr/bx/n/10.95 Trivia Crack (Pre-
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--149
-[]|\T1/txr/bx/n/10.95 Alba: A Wild-li-fe
- []
-
-
-
-LaTeX Info: Redefining \. on input line 173.
-LaTeX Info: Redefining \% on input line 173.
+LaTeX Info: Redefining \. on input line 169.
+LaTeX Info: Redefining \% on input line 169.
 
 Package fancyhdr Warning: \headheight is too small (14.05273pt): 
 (fancyhdr)                Make it at least 27.65274pt, for example:
@@ -2756,9 +2749,19 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [10]
+Underfull \hbox (badness 1184) in paragraph at lines 180--180
+[]|\T1/txr/bx/n/10.95 Trivia Crack (Pre-
+ []
 
-LaTeX Info: Redefining \. on input line 199.
-LaTeX Info: Redefining \% on input line 199.
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--184
+[]|\T1/txr/bx/n/10.95 Alba: A Wild-li-fe
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 208.
+LaTeX Info: Redefining \% on input line 208.
 
 Package fancyhdr Warning: \headheight is too small (14.05273pt): 
 (fancyhdr)                Make it at least 27.65274pt, for example:
@@ -2767,11 +2770,6 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [11]
-Underfull \hbox (badness 1152) in paragraph at lines 219--219
-[]|\T1/txr/m/n/10.95 Retroalimentación cua-li-ta-ti-va in-me-
- []
-
-
 
 LaTeX Info: Redefining \. on input line 234.
 LaTeX Info: Redefining \% on input line 234.
@@ -2783,9 +2781,14 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [12]
+Underfull \hbox (badness 1152) in paragraph at lines 254--254
+[]|\T1/txr/m/n/10.95 Retroalimentación cua-li-ta-ti-va in-me-
+ []
 
-LaTeX Info: Redefining \. on input line 256.
-LaTeX Info: Redefining \% on input line 256.
+
+
+LaTeX Info: Redefining \. on input line 269.
+LaTeX Info: Redefining \% on input line 269.
 
 Package fancyhdr Warning: \headheight is too small (14.05273pt): 
 (fancyhdr)                Make it at least 27.65274pt, for example:
@@ -2795,8 +2798,8 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 
 [13]
 
-LaTeX Info: Redefining \. on input line 271.
-LaTeX Info: Redefining \% on input line 271.
+LaTeX Info: Redefining \. on input line 291.
+LaTeX Info: Redefining \% on input line 291.
 
 Package fancyhdr Warning: \headheight is too small (14.05273pt): 
 (fancyhdr)                Make it at least 27.65274pt, for example:
@@ -2805,167 +2808,9 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [14]
-LaTeX Font Info:    Font shape `T1/txr/b/n' in size <10> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 281.
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--281
-[]|\T1/txr/bx/n/10 Exportación Mul-ti-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
-[]|\T1/txr/bx/n/10 Godot
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
-[]|\T1/txr/m/n/10 Código abier-to
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
-\T1/txr/m/n/10 (MIT). To-tal-men-te
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
-[]|\T1/txr/m/n/10 Motor 2D de-di-ca-do
- []
-
-
-Underfull \hbox (badness 1275) in paragraph at lines 283--283
-\T1/txr/m/n/10 real (ba-sa-do en pí-xe-
- []
-
-
-Underfull \hbox (badness 2119) in paragraph at lines 283--283
-[]|\T1/txr/m/n/10 Soporte na-ti-vo y efi-
- []
-
-
-Underfull \hbox (badness 1675) in paragraph at lines 283--283
-\T1/txr/m/n/10 cien-te pa-ra Win-dows,
- []
-
-
-Underfull \hbox (badness 2662) in paragraph at lines 283--284
-\T1/txr/m/n/10 (sin-ta-xis ins-pi-ra-da en
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--285
-\T1/txr/m/n/10 has-ta cier-to ni-vel
- []
-
-
-Underfull \hbox (badness 3815) in paragraph at lines 285--285
-\T1/txr/m/n/10 de in-gre-sos; su-je-to
- []
-
-
-Underfull \hbox (badness 4492) in paragraph at lines 285--285
-\T1/txr/m/n/10 a ines-ta-bi-li-dad por
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--285
-[]|\T1/txr/m/n/10 Soporte 2D ro-bus-to,
- []
-
-
-Underfull \hbox (badness 6236) in paragraph at lines 285--285
-\T1/txr/m/n/10 pe-ro in-te-gra-do so-bre
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--285
-\T1/txr/m/n/10 ti-pla-ta-for-ma, aun-que
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--285
-\T1/txr/m/n/10 ge-ne-ra eje-cu-ta-bles
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
-[]|\T1/txr/m/n/10 Media-alta. Re-quie-re
- []
-
-
-Underfull \hbox (badness 1184) in paragraph at lines 285--286
-\T1/txr/m/n/10 ve-gar una in-ter-faz de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
-\T1/txr/m/n/10 edi-tor con-si-de-ra-ble-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
-\T1/txr/m/n/10 ini-cial-men-te, pe-ro
- []
-
-
-Underfull \hbox (badness 4132) in paragraph at lines 287--287
-\T1/txr/m/n/10 exi-ge pa-go de re-
- []
-
-
-Underfull \hbox (badness 7047) in paragraph at lines 287--287
-\T1/txr/m/n/10 ga-lías tras su-pe-rar
- []
-
-
-Underfull \hbox (badness 4441) in paragraph at lines 287--287
-[]|\T1/txr/m/n/10 Soporta las prin-ci-pa-
- []
-
-
-Underfull \hbox (badness 1533) in paragraph at lines 287--287
-\T1/txr/m/n/10 cri-to-rio, pe-ro con re-
- []
-
-
-Underfull \hbox (badness 2221) in paragraph at lines 287--287
-\T1/txr/m/n/10 que-ri-mien-tos mí-ni-mos
- []
-
-
-Underfull \hbox (badness 2753) in paragraph at lines 289--289
-[]|\T1/txr/m/n/10 Propietaria. Mo-de-lo
- []
-
-
-Underfull \hbox (badness 3354) in paragraph at lines 289--289
-\T1/txr/m/n/10 sus-crip-ción pe-rió-di-
- []
-
-
-Underfull \hbox (badness 2285) in paragraph at lines 289--289
-[]|\T1/txr/m/n/10 Excelente he-rra-mien-ta
- []
-
-
-Underfull \hbox (badness 3148) in paragraph at lines 289--289
-\T1/txr/m/n/10 llo 2D rá-pi-do y sin
- []
-
-
-Underfull \hbox (badness 1603) in paragraph at lines 289--290
-\T1/txr/m/n/10 tos, sin pro-gra-ma-ción
- []
-
-
-Overfull \hbox (15.41441pt too wide) in paragraph at lines 279--292
- [][] 
- []
-
-
-
-LaTeX Info: Redefining \. on input line 305.
-LaTeX Info: Redefining \% on input line 305.
+LaTeX Info: Redefining \. on input line 306.
+LaTeX Info: Redefining \% on input line 306.
 
 Package fancyhdr Warning: \headheight is too small (14.05273pt): 
 (fancyhdr)                Make it at least 27.65274pt, for example:
@@ -2974,9 +2819,164 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [15]
+Underfull \hbox (badness 10000) in paragraph at lines 316--316
+[]|\T1/txr/bx/n/10 Exportación Mul-ti-
+ []
 
-LaTeX Info: Redefining \. on input line 316.
-LaTeX Info: Redefining \% on input line 316.
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+[]|\T1/txr/bx/n/10 Godot
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+[]|\T1/txr/m/n/10 Código abier-to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+\T1/txr/m/n/10 (MIT). To-tal-men-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+[]|\T1/txr/m/n/10 Motor 2D de-di-ca-do
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 318--318
+\T1/txr/m/n/10 real (ba-sa-do en pí-xe-
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 318--318
+[]|\T1/txr/m/n/10 Soporte na-ti-vo y efi-
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 318--318
+\T1/txr/m/n/10 cien-te pa-ra Win-dows,
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 318--319
+\T1/txr/m/n/10 (sin-ta-xis ins-pi-ra-da en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+\T1/txr/m/n/10 has-ta cier-to ni-vel
+ []
+
+
+Underfull \hbox (badness 3815) in paragraph at lines 320--320
+\T1/txr/m/n/10 de in-gre-sos; su-je-to
+ []
+
+
+Underfull \hbox (badness 4492) in paragraph at lines 320--320
+\T1/txr/m/n/10 a ines-ta-bi-li-dad por
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+[]|\T1/txr/m/n/10 Soporte 2D ro-bus-to,
+ []
+
+
+Underfull \hbox (badness 6236) in paragraph at lines 320--320
+\T1/txr/m/n/10 pe-ro in-te-gra-do so-bre
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+\T1/txr/m/n/10 ti-pla-ta-for-ma, aun-que
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+\T1/txr/m/n/10 ge-ne-ra eje-cu-ta-bles
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
+[]|\T1/txr/m/n/10 Media-alta. Re-quie-re
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 320--321
+\T1/txr/m/n/10 ve-gar una in-ter-faz de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
+\T1/txr/m/n/10 edi-tor con-si-de-ra-ble-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--322
+\T1/txr/m/n/10 ini-cial-men-te, pe-ro
+ []
+
+
+Underfull \hbox (badness 4132) in paragraph at lines 322--322
+\T1/txr/m/n/10 exi-ge pa-go de re-
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 322--322
+\T1/txr/m/n/10 ga-lías tras su-pe-rar
+ []
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 322--322
+[]|\T1/txr/m/n/10 Soporta las prin-ci-pa-
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 322--322
+\T1/txr/m/n/10 cri-to-rio, pe-ro con re-
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 322--322
+\T1/txr/m/n/10 que-ri-mien-tos mí-ni-mos
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 324--324
+[]|\T1/txr/m/n/10 Propietaria. Mo-de-lo
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 324--324
+\T1/txr/m/n/10 sus-crip-ción pe-rió-di-
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 324--324
+[]|\T1/txr/m/n/10 Excelente he-rra-mien-ta
+ []
+
+
+Underfull \hbox (badness 3148) in paragraph at lines 324--324
+\T1/txr/m/n/10 llo 2D rá-pi-do y sin
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 324--325
+\T1/txr/m/n/10 tos, sin pro-gra-ma-ción
+ []
+
+
+Overfull \hbox (15.41441pt too wide) in paragraph at lines 314--327
+ [][] 
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 330.
+LaTeX Info: Redefining \% on input line 330.
 
 Package fancyhdr Warning: \headheight is too small (14.05273pt): 
 (fancyhdr)                Make it at least 27.65274pt, for example:
@@ -2985,20 +2985,15 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [16]
+<godot_icon_1772784255587.png, id=534, 642.4pt x 642.4pt>
+File: godot_icon_1772784255587.png Graphic file (type png)
+<use godot_icon_1772784255587.png>
+Package pdftex.def Info: godot_icon_1772784255587.png  used on input line 333.
+(pdftex.def)             Requested size: 70.46037pt x 70.45836pt.
 
-LaTeX Info: Redefining \. on input line 337.
-LaTeX Info: Redefining \% on input line 337.
 
-Package fancyhdr Warning: \headheight is too small (14.05273pt): 
-(fancyhdr)                Make it at least 27.65274pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.65274pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
-
-[17]
-
-LaTeX Info: Redefining \. on input line 361.
-LaTeX Info: Redefining \% on input line 361.
+LaTeX Info: Redefining \. on input line 352.
+LaTeX Info: Redefining \% on input line 352.
 
 Package fancyhdr Warning: \headheight is too small (14.05273pt): 
 (fancyhdr)                Make it at least 27.65274pt, for example:
@@ -3006,7 +3001,29 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
-[18]) (Chapter2.tex
+[17 <./godot_icon_1772784255587.png (PNG copy)>]
+
+LaTeX Info: Redefining \. on input line 380.
+LaTeX Info: Redefining \% on input line 380.
+
+Package fancyhdr Warning: \headheight is too small (14.05273pt): 
+(fancyhdr)                Make it at least 27.65274pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.65274pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
+
+[18]
+
+LaTeX Info: Redefining \. on input line 391.
+LaTeX Info: Redefining \% on input line 391.
+
+Package fancyhdr Warning: \headheight is too small (14.05273pt): 
+(fancyhdr)                Make it at least 27.65274pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.65274pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
+
+[19]) (Chapter2.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -3017,17 +3034,17 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
-[19]
+[20]
 Cap\'{\i }tulo 2.
 
 
-[20
+[21
 
 ]
 
 LaTeX Info: Redefining \. on input line 37.
 LaTeX Info: Redefining \% on input line 37.
-[21]
+[22]
 Overfull \hbox (19.32993pt too wide) in alignment at lines 45--50
  [] [] [] [] [] 
  []
@@ -3054,73 +3071,77 @@ Overfull \hbox (19.32993pt too wide) in alignment at lines 59--89
 
 LaTeX Info: Redefining \. on input line 89.
 LaTeX Info: Redefining \% on input line 89.
-[22]
+[23]
 LaTeX Info: Redefining \. on input line 125.
 LaTeX Info: Redefining \% on input line 125.
- [23]
+ [24]
 
-LaTeX Info: Redefining \. on input line 168.
-LaTeX Info: Redefining \% on input line 168.
-[24]
-
-LaTeX Info: Redefining \. on input line 230.
-LaTeX Info: Redefining \% on input line 230.
+LaTeX Info: Redefining \. on input line 164.
+LaTeX Info: Redefining \% on input line 164.
 [25]
 
-LaTeX Info: Redefining \. on input line 291.
-LaTeX Info: Redefining \% on input line 291.
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
 [26]
 
-LaTeX Info: Redefining \. on input line 356.
-LaTeX Info: Redefining \% on input line 356.
+LaTeX Info: Redefining \. on input line 293.
+LaTeX Info: Redefining \% on input line 293.
 [27]
 
-LaTeX Info: Redefining \. on input line 416.
-LaTeX Info: Redefining \% on input line 416.
+LaTeX Info: Redefining \. on input line 357.
+LaTeX Info: Redefining \% on input line 357.
 [28]
 
-LaTeX Info: Redefining \. on input line 477.
-LaTeX Info: Redefining \% on input line 477.
+LaTeX Info: Redefining \. on input line 389.
+LaTeX Info: Redefining \% on input line 389.
 [29]
 
-LaTeX Info: Redefining \. on input line 536.
-LaTeX Info: Redefining \% on input line 536.
+LaTeX Info: Redefining \. on input line 449.
+LaTeX Info: Redefining \% on input line 449.
 [30]
 
-LaTeX Info: Redefining \. on input line 597.
-LaTeX Info: Redefining \% on input line 597.
+LaTeX Info: Redefining \. on input line 510.
+LaTeX Info: Redefining \% on input line 510.
 [31]
 
-LaTeX Info: Redefining \. on input line 659.
-LaTeX Info: Redefining \% on input line 659.
+LaTeX Info: Redefining \. on input line 569.
+LaTeX Info: Redefining \% on input line 569.
 [32]
 
-LaTeX Info: Redefining \. on input line 721.
-LaTeX Info: Redefining \% on input line 721.
+LaTeX Info: Redefining \. on input line 630.
+LaTeX Info: Redefining \% on input line 630.
 [33]
 
-LaTeX Info: Redefining \. on input line 782.
-LaTeX Info: Redefining \% on input line 782.
+LaTeX Info: Redefining \. on input line 692.
+LaTeX Info: Redefining \% on input line 692.
 [34]
 
-LaTeX Info: Redefining \. on input line 841.
-LaTeX Info: Redefining \% on input line 841.
+LaTeX Info: Redefining \. on input line 754.
+LaTeX Info: Redefining \% on input line 754.
 [35]
 
-LaTeX Info: Redefining \. on input line 900.
-LaTeX Info: Redefining \% on input line 900.
+LaTeX Info: Redefining \. on input line 815.
+LaTeX Info: Redefining \% on input line 815.
 [36]
+
+LaTeX Info: Redefining \. on input line 874.
+LaTeX Info: Redefining \% on input line 874.
+[37]
+
+LaTeX Info: Redefining \. on input line 933.
+LaTeX Info: Redefining \% on input line 933.
+[38]
 LaTeX Font Info:    Trying to load font information for T1+txtt on input line 9
-10.
+43.
 
 (C:\Users\Ruslan MC\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
 
-LaTeX Info: Redefining \. on input line 911.
-LaTeX Info: Redefining \% on input line 911.
-[37]
-Overfull \hbox (22.90953pt too wide) in paragraph at lines 933--934
+LaTeX Info: Redefining \. on input line 944.
+LaTeX Info: Redefining \% on input line 944.
+[39]
+Overfull \hbox (22.90953pt too wide) in paragraph at lines 966--967
 []\T1/txr/bx/n/10.95 autoloads/\T1/txr/m/n/10.95 : con-tie-ne los Sin-gle-tons 
 glo-ba-les del pro-yec-to (\T1/txtt/m/n/10.95 GameData\T1/txr/m/n/10.95 , \T1/t
 xtt/m/n/10.95 AudioManager\T1/txr/m/n/10.95 , \T1/txtt/m/n/10.95 RecordsManager
@@ -3129,77 +3150,77 @@ xtt/m/n/10.95 AudioManager\T1/txr/m/n/10.95 , \T1/txtt/m/n/10.95 RecordsManager
 
 
 
-LaTeX Info: Redefining \. on input line 935.
-LaTeX Info: Redefining \% on input line 935.
-[38]
-
-LaTeX Info: Redefining \. on input line 952.
-LaTeX Info: Redefining \% on input line 952.
-[39]
-
-LaTeX Info: Redefining \. on input line 969.
-LaTeX Info: Redefining \% on input line 969.
+LaTeX Info: Redefining \. on input line 968.
+LaTeX Info: Redefining \% on input line 968.
 [40]
 
-LaTeX Info: Redefining \. on input line 993.
-LaTeX Info: Redefining \% on input line 993.
+LaTeX Info: Redefining \. on input line 985.
+LaTeX Info: Redefining \% on input line 985.
 [41]
-Underfull \hbox (badness 1968) in paragraph at lines 1001--1001
+
+LaTeX Info: Redefining \. on input line 1002.
+LaTeX Info: Redefining \% on input line 1002.
+[42]
+
+LaTeX Info: Redefining \. on input line 1026.
+LaTeX Info: Redefining \% on input line 1026.
+[43]
+Underfull \hbox (badness 1968) in paragraph at lines 1034--1034
 \T1/txr/m/n/10.95 - pro-veer pre-gun-tas alea-to-rias por
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1013--1013
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
 []|\T1/txr/m/n/10.95 - de-fi-nir las se-ña-les glo-ba-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1013--1013
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
 \T1/txr/m/n/10.95 les del sis-te-ma: \T1/txtt/m/n/10.95 dice_rolled\T1/txr/m/n/
 10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1013--1013
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
 \T1/txtt/m/n/10.95 player_moving\T1/txr/m/n/10.95 , \T1/txtt/m/n/10.95 quiz_sta
 rted\T1/txr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1013--1013
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
 \T1/txtt/m/n/10.95 quiz_requested(ods_id)\T1/txr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 1025--1025
+Underfull \hbox (badness 2245) in paragraph at lines 1058--1058
 \T1/txr/m/n/10.95 - al-ma-ce-nar el es-ta-do de la par-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1025--1025
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
 \T1/txr/m/n/10.95 ti-da en cur-so: ju-ga-dor ac-ti-vo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1025--1025
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
 \T1/txr/m/n/10.95 (\T1/txtt/m/n/10.95 active_player_index\T1/txr/m/n/10.95 ), p
 o-si-
  []
 
 
 
-LaTeX Info: Redefining \. on input line 1041.
-LaTeX Info: Redefining \% on input line 1041.
-[42]
-
-LaTeX Info: Redefining \. on input line 1089.
-LaTeX Info: Redefining \% on input line 1089.
-[43]
-
-LaTeX Info: Redefining \. on input line 1131.
-LaTeX Info: Redefining \% on input line 1131.
+LaTeX Info: Redefining \. on input line 1074.
+LaTeX Info: Redefining \% on input line 1074.
 [44]
-Overfull \hbox (8.8571pt too wide) in paragraph at lines 1132--1134
+
+LaTeX Info: Redefining \. on input line 1122.
+LaTeX Info: Redefining \% on input line 1122.
+[45]
+
+LaTeX Info: Redefining \. on input line 1164.
+LaTeX Info: Redefining \% on input line 1164.
+[46]
+Overfull \hbox (8.8571pt too wide) in paragraph at lines 1165--1167
 []\T1/txr/bx/n/10.95 Variables y fun-cio-nes\T1/txr/m/n/10.95 : sna-ke_case (ej
 em-plo: \T1/txtt/m/n/10.95 current_player\T1/txr/m/n/10.95 , \T1/txtt/m/n/10.95
  roll_dice()\T1/txr/m/n/10.95 ). \T1/txr/bx/n/10.95 Cons-tan-tes\T1/txr/m/n/10.
@@ -3208,109 +3229,113 @@ em-plo: \T1/txtt/m/n/10.95 current_player\T1/txr/m/n/10.95 , \T1/txtt/m/n/10.95
 
 
 
-LaTeX Info: Redefining \. on input line 1161.
-LaTeX Info: Redefining \% on input line 1161.
-[45]
-
-LaTeX Info: Redefining \. on input line 1178.
-LaTeX Info: Redefining \% on input line 1178.
-[46]
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1194--1215
- [][] 
- []
-
-
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1220--1241
- [][] 
- []
-
-
-
-LaTeX Info: Redefining \. on input line 1242.
-LaTeX Info: Redefining \% on input line 1242.
+LaTeX Info: Redefining \. on input line 1190.
+LaTeX Info: Redefining \% on input line 1190.
 [47]
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1246--1267
- [][] 
- []
 
-
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1272--1293
- [][] 
- []
-
-
-
-LaTeX Info: Redefining \. on input line 1294.
-LaTeX Info: Redefining \% on input line 1294.
+LaTeX Info: Redefining \. on input line 1219.
+LaTeX Info: Redefining \% on input line 1219.
 [48]
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1298--1319
- [][] 
- []
-
-
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1324--1345
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1239--1260
  [][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 1346.
-LaTeX Info: Redefining \% on input line 1346.
+LaTeX Info: Redefining \. on input line 1261.
+LaTeX Info: Redefining \% on input line 1261.
 [49]
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1350--1371
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1265--1286
  [][] 
  []
 
 
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1376--1397
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1291--1312
  [][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 1398.
-LaTeX Info: Redefining \% on input line 1398.
+LaTeX Info: Redefining \. on input line 1313.
+LaTeX Info: Redefining \% on input line 1313.
 [50]
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1402--1423
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1317--1338
  [][] 
  []
 
 
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1428--1449
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1343--1364
  [][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 1450.
-LaTeX Info: Redefining \% on input line 1450.
+LaTeX Info: Redefining \. on input line 1365.
+LaTeX Info: Redefining \% on input line 1365.
 [51]
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1454--1475
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1369--1390
  [][] 
  []
 
 
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1480--1501
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1395--1416
  [][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 1502.
-LaTeX Info: Redefining \% on input line 1502.
-[52]) (Chapter3.tex
+LaTeX Info: Redefining \. on input line 1417.
+LaTeX Info: Redefining \% on input line 1417.
+[52]
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1421--1442
+ [][] 
+ []
+
+
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1447--1468
+ [][] 
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 1469.
+LaTeX Info: Redefining \% on input line 1469.
+[53]
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1473--1494
+ [][] 
+ []
+
+
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1499--1520
+ [][] 
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 1521.
+LaTeX Info: Redefining \% on input line 1521.
+[54]
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1525--1546
+ [][] 
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 1558.
+LaTeX Info: Redefining \% on input line 1558.
+[55]) (Chapter3.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[53]
+[56]
 Cap\'{\i }tulo 3.
 ) (Conclusions.tex
 
-[54
+[57
 
 ]) (Suggestions.tex
 
-[55
+[58
 
 ]) (Appendices.tex)
 
@@ -3322,7 +3347,7 @@ No file example.gls.
 No file example.acr.
 
 
-[56
+[59
 
 ]
 LaTeX Info: Redefining \sptext on input line 42.
@@ -3339,9 +3364,9 @@ LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
 
 Overfull \hbox (13.73611pt too wide) in paragraph at lines 42--42
-[][]\T1/txr/m/n/10.95 ECOLOGÍAVERDE, 2024. \T1/txr/m/it/10.95 Ven-ta-jas y des-
-ven-ta-jas del de-sa-rro-llo sos-te-ni-ble \T1/txr/m/n/10.95 [[][]$\T1/txtt/m/n
-/10.95 https : / / www . ecologiaverde .
+[]\T1/txr/m/n/10.95 ECOLOGÍAVERDE, 2024. \T1/txr/m/it/10.95 Ven-ta-jas y des-ve
+n-ta-jas del de-sa-rro-llo sos-te-ni-ble \T1/txr/m/n/10.95 [[][]$\T1/txtt/m/n/1
+0.95 https : / / www . ecologiaverde .
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 4
@@ -3363,7 +3388,7 @@ LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
 
 
-[57
+[60
 
 ]
 LaTeX Info: Redefining \sptext on input line 42.
@@ -3392,16 +3417,16 @@ LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
 
 Overfull \hbox (9.04317pt too wide) in paragraph at lines 42--42
-[][]\T1/txr/m/n/10.95 NACIONES UNI-DAS, 2020. \T1/txr/m/it/10.95 Go Goals! Boar
-d Ga-me \T1/txr/m/n/10.95 [[][]$\T1/txtt/m/n/10.95 https : / / www . un . org /
- sustainabledevelopment /
+[]\T1/txr/m/n/10.95 NACIONES UNI-DAS, 2020. \T1/txr/m/it/10.95 Go Goals! Board 
+Ga-me \T1/txr/m/n/10.95 [[][]$\T1/txtt/m/n/10.95 https : / / www . un . org / s
+ustainabledevelopment /
  []
 
 
 
 LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
-[58]
+[61]
 LaTeX Info: Redefining \sptext on input line 42.
 LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
@@ -3424,7 +3449,7 @@ LaTeX Info: Redefining \% on input line 42.
 
 LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
-[59]
+[62]
 LaTeX Info: Redefining \sptext on input line 42.
 LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
@@ -3441,7 +3466,7 @@ LaTeX Info: Redefining \% on input line 42.
 
 LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
-[60]
+[63]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -3478,20 +3503,20 @@ LaTeX Font Info:    Font shape `T1/txr/b/n' in size <24.88> not available
 (Font)              Font shape `T1/txr/bx/n' tried instead on input line 42.
 
 
-[61
+[64
 
 
 
 ]
 Ap\'{e}ndice A.
-<Anexos/BloqueCoronaReport.pdf, id=911, 614.295pt x 794.97pt>
+<Anexos/BloqueCoronaReport.pdf, id=930, 614.295pt x 794.97pt>
 File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf  used on input line 42.
 (pdftex.def)             Requested size: 276.43019pt x 357.7332pt.
 
 
-[62
+[65
 
 
  <./Anexos/BloqueCoronaReport.pdf>]
@@ -3502,20 +3527,20 @@ Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf  used on input line 42.
 (pdftex.def)             Requested size: 276.43019pt x 357.7332pt.
 
 
-[63
+[66
 
 ]
 
 LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
-[64]
+[67]
 \c@tempcnt=\count623
 \c@includepdfpage=\count624
 File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf  used on input line 42.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Anexos/BloqueCoronaReport.pdf, id=941, page=1, 614.295pt x 794.97pt>
+<Anexos/BloqueCoronaReport.pdf, id=961, page=1, 614.295pt x 794.97pt>
 File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf, page 1>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf , page1 used on input li
@@ -3543,11 +3568,11 @@ File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf , page1 used on input li
 ne 42.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[65
+[68
 
 
  <./Anexos/BloqueCoronaReport.pdf>]
-<Anexos/BloqueCoronaReport.pdf, id=964, page=2, 614.295pt x 794.97pt>
+<Anexos/BloqueCoronaReport.pdf, id=983, page=2, 614.295pt x 794.97pt>
 File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf, page 2>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf , page2 used on input li
@@ -3565,107 +3590,115 @@ File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf , page2 used on input li
 ne 42.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[66
+[69
 
  <./Anexos/BloqueCoronaReport.pdf>] (example.aux
 LaTeX Info: Redefining \sptext on input line 21.
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
-LaTeX Info: Redefining \sptext on input line 766.
-LaTeX Info: Redefining \. on input line 766.
-LaTeX Info: Redefining \% on input line 766.
-LaTeX Info: Redefining \sptext on input line 767.
-LaTeX Info: Redefining \. on input line 767.
-LaTeX Info: Redefining \% on input line 767.
-LaTeX Info: Redefining \sptext on input line 772.
-LaTeX Info: Redefining \. on input line 772.
-LaTeX Info: Redefining \% on input line 772.
-LaTeX Info: Redefining \sptext on input line 773.
-LaTeX Info: Redefining \. on input line 773.
-LaTeX Info: Redefining \% on input line 773.
-LaTeX Info: Redefining \sptext on input line 778.
-LaTeX Info: Redefining \. on input line 778.
-LaTeX Info: Redefining \% on input line 778.
-LaTeX Info: Redefining \sptext on input line 779.
-LaTeX Info: Redefining \. on input line 779.
-LaTeX Info: Redefining \% on input line 779.
-LaTeX Info: Redefining \sptext on input line 780.
-LaTeX Info: Redefining \. on input line 780.
-LaTeX Info: Redefining \% on input line 780.
-LaTeX Info: Redefining \sptext on input line 781.
-LaTeX Info: Redefining \. on input line 781.
-LaTeX Info: Redefining \% on input line 781.
-LaTeX Info: Redefining \sptext on input line 790.
-LaTeX Info: Redefining \. on input line 790.
-LaTeX Info: Redefining \% on input line 790.
-LaTeX Info: Redefining \sptext on input line 791.
-LaTeX Info: Redefining \. on input line 791.
-LaTeX Info: Redefining \% on input line 791.
-LaTeX Info: Redefining \sptext on input line 792.
-LaTeX Info: Redefining \. on input line 792.
-LaTeX Info: Redefining \% on input line 792.
-LaTeX Info: Redefining \sptext on input line 793.
-LaTeX Info: Redefining \. on input line 793.
-LaTeX Info: Redefining \% on input line 793.
-LaTeX Info: Redefining \sptext on input line 795.
-LaTeX Info: Redefining \. on input line 795.
-LaTeX Info: Redefining \% on input line 795.
-LaTeX Info: Redefining \sptext on input line 796.
-LaTeX Info: Redefining \. on input line 796.
-LaTeX Info: Redefining \% on input line 796.
-LaTeX Info: Redefining \sptext on input line 799.
-LaTeX Info: Redefining \. on input line 799.
-LaTeX Info: Redefining \% on input line 799.
-LaTeX Info: Redefining \sptext on input line 800.
-LaTeX Info: Redefining \. on input line 800.
-LaTeX Info: Redefining \% on input line 800.
-LaTeX Info: Redefining \sptext on input line 805.
-LaTeX Info: Redefining \. on input line 805.
-LaTeX Info: Redefining \% on input line 805.
-LaTeX Info: Redefining \sptext on input line 806.
-LaTeX Info: Redefining \. on input line 806.
-LaTeX Info: Redefining \% on input line 806.
-LaTeX Info: Redefining \sptext on input line 807.
-LaTeX Info: Redefining \. on input line 807.
-LaTeX Info: Redefining \% on input line 807.
-LaTeX Info: Redefining \sptext on input line 808.
-LaTeX Info: Redefining \. on input line 808.
-LaTeX Info: Redefining \% on input line 808.
-LaTeX Info: Redefining \sptext on input line 810.
-LaTeX Info: Redefining \. on input line 810.
-LaTeX Info: Redefining \% on input line 810.
-LaTeX Info: Redefining \sptext on input line 811.
-LaTeX Info: Redefining \. on input line 811.
-LaTeX Info: Redefining \% on input line 811.
-LaTeX Info: Redefining \sptext on input line 826.
-LaTeX Info: Redefining \. on input line 826.
-LaTeX Info: Redefining \% on input line 826.
-LaTeX Info: Redefining \sptext on input line 827.
-LaTeX Info: Redefining \. on input line 827.
-LaTeX Info: Redefining \% on input line 827.
-LaTeX Info: Redefining \sptext on input line 828.
-LaTeX Info: Redefining \. on input line 828.
-LaTeX Info: Redefining \% on input line 828.
-LaTeX Info: Redefining \sptext on input line 829.
-LaTeX Info: Redefining \. on input line 829.
-LaTeX Info: Redefining \% on input line 829.
+LaTeX Info: Redefining \sptext on input line 653.
+LaTeX Info: Redefining \. on input line 653.
+LaTeX Info: Redefining \% on input line 653.
+LaTeX Info: Redefining \sptext on input line 654.
+LaTeX Info: Redefining \. on input line 654.
+LaTeX Info: Redefining \% on input line 654.
+LaTeX Info: Redefining \sptext on input line 655.
+LaTeX Info: Redefining \. on input line 655.
+LaTeX Info: Redefining \% on input line 655.
+LaTeX Info: Redefining \sptext on input line 656.
+LaTeX Info: Redefining \. on input line 656.
+LaTeX Info: Redefining \% on input line 656.
+LaTeX Info: Redefining \sptext on input line 657.
+LaTeX Info: Redefining \. on input line 657.
+LaTeX Info: Redefining \% on input line 657.
+LaTeX Info: Redefining \sptext on input line 658.
+LaTeX Info: Redefining \. on input line 658.
+LaTeX Info: Redefining \% on input line 658.
+LaTeX Info: Redefining \sptext on input line 659.
+LaTeX Info: Redefining \. on input line 659.
+LaTeX Info: Redefining \% on input line 659.
+LaTeX Info: Redefining \sptext on input line 660.
+LaTeX Info: Redefining \. on input line 660.
+LaTeX Info: Redefining \% on input line 660.
+LaTeX Info: Redefining \sptext on input line 661.
+LaTeX Info: Redefining \. on input line 661.
+LaTeX Info: Redefining \% on input line 661.
+LaTeX Info: Redefining \sptext on input line 662.
+LaTeX Info: Redefining \. on input line 662.
+LaTeX Info: Redefining \% on input line 662.
+LaTeX Info: Redefining \sptext on input line 663.
+LaTeX Info: Redefining \. on input line 663.
+LaTeX Info: Redefining \% on input line 663.
+LaTeX Info: Redefining \sptext on input line 664.
+LaTeX Info: Redefining \. on input line 664.
+LaTeX Info: Redefining \% on input line 664.
+LaTeX Info: Redefining \sptext on input line 665.
+LaTeX Info: Redefining \. on input line 665.
+LaTeX Info: Redefining \% on input line 665.
+LaTeX Info: Redefining \sptext on input line 666.
+LaTeX Info: Redefining \. on input line 666.
+LaTeX Info: Redefining \% on input line 666.
+LaTeX Info: Redefining \sptext on input line 667.
+LaTeX Info: Redefining \. on input line 667.
+LaTeX Info: Redefining \% on input line 667.
+LaTeX Info: Redefining \sptext on input line 668.
+LaTeX Info: Redefining \. on input line 668.
+LaTeX Info: Redefining \% on input line 668.
+LaTeX Info: Redefining \sptext on input line 669.
+LaTeX Info: Redefining \. on input line 669.
+LaTeX Info: Redefining \% on input line 669.
+LaTeX Info: Redefining \sptext on input line 670.
+LaTeX Info: Redefining \. on input line 670.
+LaTeX Info: Redefining \% on input line 670.
+LaTeX Info: Redefining \sptext on input line 671.
+LaTeX Info: Redefining \. on input line 671.
+LaTeX Info: Redefining \% on input line 671.
+LaTeX Info: Redefining \sptext on input line 672.
+LaTeX Info: Redefining \. on input line 672.
+LaTeX Info: Redefining \% on input line 672.
+LaTeX Info: Redefining \sptext on input line 673.
+LaTeX Info: Redefining \. on input line 673.
+LaTeX Info: Redefining \% on input line 673.
+LaTeX Info: Redefining \sptext on input line 674.
+LaTeX Info: Redefining \. on input line 674.
+LaTeX Info: Redefining \% on input line 674.
+LaTeX Info: Redefining \sptext on input line 675.
+LaTeX Info: Redefining \. on input line 675.
+LaTeX Info: Redefining \% on input line 675.
+LaTeX Info: Redefining \sptext on input line 676.
+LaTeX Info: Redefining \. on input line 676.
+LaTeX Info: Redefining \% on input line 676.
+LaTeX Info: Redefining \sptext on input line 677.
+LaTeX Info: Redefining \. on input line 677.
+LaTeX Info: Redefining \% on input line 677.
+LaTeX Info: Redefining \sptext on input line 678.
+LaTeX Info: Redefining \. on input line 678.
+LaTeX Info: Redefining \% on input line 678.
 )
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'example.run.xml'.
 \openout1 = `example.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50239 strings out of 468081
- 973367 string characters out of 5423816
- 1997933 words of memory out of 5000000
- 77714 multiletter control sequences out of 15000+600000
+ 50253 strings out of 468081
+ 974559 string characters out of 5423816
+ 1998694 words of memory out of 5000000
+ 77722 multiletter control sequences out of 15000+600000
  716838 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,17n,131p,2542b,3587s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,17n,131p,2542b,3585s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{glo:Engine} has been referenced but does not exist,
  replaced by a fixed one
@@ -3686,9 +3719,9 @@ s/utmb8a.pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 times/utmr8a.pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/
 urw/times/utmr8a.pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on example.pdf (80 pages, 615500 bytes).
+Output written on example.pdf (83 pages, 1014697 bytes).
 PDF statistics:
- 1246 PDF objects out of 1440 (max. 8388607)
- 292 named destinations out of 1000 (max. 500000)
- 438 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1269 PDF objects out of 1440 (max. 8388607)
+ 298 named destinations out of 1000 (max. 500000)
+ 451 words of extra memory for PDF output out of 10000 (max. 10000000)
 

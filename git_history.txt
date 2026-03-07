@@ -1,0 +1,37 @@
+e6d7a02 fix(cap1): separa tabla ODS y figura con parrafo de transicion academico
+9af92fa fix(cap1): combina tabla ODS e imagen en minipage lado a lado para eliminar espacio en blanco
+87a5259 fix(floats): reemplaza [!htbp] por [H] en todas las figuras y tablas para corregir posicion
+13253a1 feat(cap1): sustituye placeholders por imagenes reales de ODS, GoGoals! y GitHub Projects
+b4fc8cb style(cap1): remueve imagenes generadas por IA de git y github projects y las sustituye por mdframed placeholders para insercion manual posterior
+0862e5f fix(cap1): regenera imagen de git con aspect ratio panorámico 16:9 estricto para encajar en el documento
+af299e0 feat(cap1): anade imagenes generadas para git y github projects
+87fef5e refactor(cap2): reestructura seccion de patrones de diseno separando GRASP y GOF segun la referencia
+250fd12 style: cambia estilo de bibliografia a authoryear para evitar ibid y corrige entrada duplicada de glosario
+c0b0223 style: remueve (elaboración propia) de herramientas externas y limpia tags duplicados
+7769c66 style: corrige atribución de autoría en epígrafes de herramientas externas
+397d604 style(cap1): reemplaza captura de pantalla grande por icono pequeño de Godot
+9b4ef3b style(cap1): añade imagen y justificacion profesional para Godot Engine
+acc97a1 style: asegura (elaboración propia) en todos los epígrafes del documento
+85645ff style: adapta el titulo de conclusiones parciales a la segunda referencia y arregla typo de fachada
+a2f7141 style(cap2): elimina rutas adicionales y asienta la cita correcta en lugar de ibid en MVC
+768f888 style(cap2): elimina todas las URLs de archivos tipo res:// del capitulo para mayor formalidad
+03b8101 refactor(cap2): corrige seccion de arquitectura guiandose por ARQUITECTURA_JUEGO.md y elimina rutas
+eacabfc style(cap2): expande tareas de ingeniería y sincroniza plan de iteraciones con todas las HUs
+55434f4 fix(cap2): reemplaza table por longtable en requisitos para permitir salto de pagina y evitar desbordamiento
+f528165 fix(cap2): usa paquete float y [H] para evitar que las tablas se desfasen a secciones incorrectas
+45f24b7 style(cap2): formatea parrafos introductorios y tablas de requisitos segun tesis referencia
+7a76c46 style(cap2): elimina redundancia jugador estudiante en historias de usuario
+67e4950 style(cap2): formatea historias de usuario como tabla segun referencia imagen
+9a9411e fix(cap1): ajusta anchos de columna en tabla 1.2 para no exceder margen
+e5246a9 fix(cap1): corrige float de tabla 1.2 reordenando parrafos y añade figura de mario party
+3393b5a feat(cap1): agrega estudio de soluciones homologas segun estructura de tesis referencia
+cbc312f style(cap1): amplia y detalla tabla comparativa de motores
+6ad41cf restructure(intro): adapta introduccion a esquema de tesis referencia con seccion Marco Teorico independiente
+5332dcf style(redaccion): elimina patron Segun X (X,año), varia conectores, agrega cierre de I.4 y amplia sec II.1
+737dfa3 fix(citas): reemplaza \cite{} por \parencite{} y \citeauthor+\cite por \textcite en cap1, cap2 e introduccion
+72ab80d refactor(cap2): elimina todas las referencias al sistema de guardado de partida
+066d27a feat(cap2): actualiza arquitectura, CRC y patrones con clases reales del código (GameData, GameEvents, GameState, BoardConfig, etc.)
+e063729 fix(estructura): epígrafe I.4 con 8 subsecciones, 21 HU en cap2, sin citas en conclusiones, nueva bibliografía
+251518a feat(cap2): agrega capítulo 2 completo con estructura Oscar Pacheco adaptada a Go Goals! Digital
+2d620e4 feat(cap1): restructura capítulo 1 con 3 niveles jerárquicos, citas y espacios para figuras; agrega bibliografía completa
+cef81ab chore: estado inicial de la plantilla LaTeX con capitulos 1 y 2 insertados
