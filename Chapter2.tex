@@ -128,14 +128,20 @@ Tamaño del ejecutable & Rendimiento & El ejecutable para Windows no debe supera
 
 Para garantizar la coherencia del diseño y asegurar que todas las necesidades funcionales identificadas sean abordadas por una o más historias de usuario, se ha elaborado la siguiente matriz de trazabilidad. Esta herramienta permite verificar la cobertura del sistema y facilita el seguimiento del progreso durante las iteraciones de desarrollo.
 
-\begin{table}[!htbp]
-\centering
-\caption{Matriz de trazabilidad: Requisitos Funcionales vs. Historias de Usuario (elaboración propia)\label{tab:trazabilidad}}
-\renewcommand{\arraystretch}{1.2}
-\small
-\begin{tabular}{|l|l|l|}
+\begin{longtable}{|l|l|l|}
+\caption{Matriz de trazabilidad: Requisitos Funcionales vs. Historias de Usuario (elaboración propia)\label{tab:trazabilidad}} \\
 \hline
 \textbf{RF} & \textbf{Nombre del Requisito} & \textbf{Historias de Usuario (HU)} \\ \hline
+\endfirsthead
+\multicolumn{3}{c}%
+{{\tablename\ \thetable{} -- Continuación de la página anterior}} \\
+\hline
+\textbf{RF} & \textbf{Nombre del Requisito} & \textbf{Historias de Usuario (HU)} \\ \hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
 1 & Inicio de partida & HU 1, HU 13 \\ \hline
 2 & Visualización del tablero & HU 2 \\ \hline
 3 & Lanzamiento de dado & HU 3 \\ \hline
@@ -153,8 +159,7 @@ Para garantizar la coherencia del diseño y asegurar que todas las necesidades f
 - & Temporizador (Opcional) & HU 15 \\ \hline
 - & Modo Un Jugador (IA) & HU 16 \\ \hline
 - & Accesibilidad / Créditos & HU 19, HU 20 \\ \hline
-\end{tabular}
-\end{table}
+\end{longtable}
 
 \subsection{Historias de usuario}
 \label{subsec:historias_usuario}
