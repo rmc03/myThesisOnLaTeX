@@ -960,11 +960,12 @@ La organización del código fuente sigue una estructura jerárquica por respons
     \item \textbf{scripts/UI/}: contiene los scripts de la capa de presentación, incluyendo los paneles del tablero, el panel de preguntas, el menú de pausa y la pantalla de estadísticas.
 \end{itemize}
 
-\begin{figure}[!htbp]
+La figura \ref{fig:arquitectura_capas} ilustra de manera visual la integración de estos componentes arquitectónicos, mostrando cómo las capas de presentación (UI), lógica de negocio (Managers y Entities), infraestructura (Core) y servicios globales (Autoloads) se relacionan entre sí mediante el sistema de señales y el patrón de coordinación central implementado en Godot Engine.
+
+\begin{figure}[H]
   \centering
-  % \includegraphics[width=0.75\textwidth]{Images/figura_arquitectura_capas}
-  \framebox[0.75\textwidth]{\rule{0pt}{5cm} \textit{[Figura: Diagrama de la arquitectura multi-patrón de Go Goals! Digital (elaboración propia)]}}
-  \caption{Arquitectura multi-patrón del videojuego educativo \textit{Go Goals! Digital (elaboración propia)} (elaboración propia)\label{fig:arquitectura_capas}}
+  \includegraphics[width=0.75\textwidth]{Images/Arquitectura Multi Patrón}
+  \caption{Arquitectura multi-patrón del videojuego educativo \textit{Go Goals! Digital} (elaboración propia)\label{fig:arquitectura_capas}}
 \end{figure}
 
 \subsubsection{Flujo de ejecución del ciclo de juego}
