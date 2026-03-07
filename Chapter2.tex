@@ -56,33 +56,33 @@ Los requisitos funcionales son descripciones detalladas de las funciones, compor
 
 \endfoot
 \endlastfoot
-1. & Inicio de partida & El sistema debe permitir al usuario iniciar una nueva partida configurando el número de jugadores (1-6). & Alta & Baja \\
+1. & Iniciar partida & El sistema debe permitir al usuario iniciar una nueva partida configurando el número de jugadores (1-6). & Alta & Baja \\
 \hline
-2. & Visualización del tablero & El sistema debe mostrar el tablero hexagonal completo con las 63 casillas correctamente identificadas. & Alta & Media \\
+2. & Visualizar tablero & El sistema debe mostrar el tablero hexagonal completo con las 63 casillas correctamente identificadas. & Alta & Media \\
 \hline
-3. & Lanzamiento de dado & El sistema debe simular el lanzamiento de un dado de 6 caras con resultado pseudoaleatorio. & Alta & Baja \\
+3. & Lanzar dado & El sistema debe simular el lanzamiento de un dado de 6 caras con resultado pseudoaleatorio. & Alta & Baja \\
 \hline
-4. & Movimiento de ficha & El sistema debe mover la ficha del jugador activo la cantidad de casillas indicada por el dado con animación. & Alta & Media \\
+4. & Mover ficha & El sistema debe mover la ficha del jugador activo la cantidad de casillas indicada por el dado con animación. & Alta & Media \\
 \hline
-5. & Efecto de escalera & El sistema debe detectar casillas de escalera y aplicar el avance correspondiente con animación. & Alta & Media \\
+5. & Aplicar efecto de escalera & El sistema debe detectar casillas de escalera y aplicar el avance correspondiente con animación. & Alta & Media \\
 \hline
-6. & Efecto de serpiente & El sistema debe detectar casillas de serpiente y aplicar el retroceso correspondiente con animación. & Alta & Media \\
+6. & Aplicar efecto de serpiente & El sistema debe detectar casillas de serpiente y aplicar el retroceso correspondiente con animación. & Alta & Media \\
 \hline
 7. & Mostrar pregunta ODS & El sistema debe mostrar una pregunta aleatoria del banco cuando una ficha cae en casilla temática. & Alta & Alta \\
 \hline
 8. & Evaluar respuesta & El sistema debe evaluar la respuesta del jugador, mostrar retroalimentación y aplicar el efecto correspondiente. & Alta & Media \\
 \hline
-9. & Gestión de turnos & El sistema debe gestionar el turno de cada jugador de forma automática y mostrar el jugador activo. & Alta & Media \\
+9. & Gestionar turnos & El sistema debe gestionar el turno de cada jugador de forma automática y mostrar el jugador activo. & Alta & Media \\
 \hline
-10. & Condición de victoria & El sistema debe detectar cuando un jugador llega a la casilla 63 y mostrar la pantalla de victoria. & Alta & Baja \\
+10. & Determinar condición de victoria & El sistema debe detectar cuando un jugador llega a la casilla 63 y mostrar la pantalla de victoria. & Alta & Baja \\
 \hline
-11. & Estadísticas de partida & El sistema debe registrar y mostrar las respuestas correctas e incorrectas por jugador y por ODS. & Media & Alta \\
+11. & Mostrar estadísticas de partida & El sistema debe registrar y mostrar las respuestas correctas e incorrectas por jugador y por ODS. & Media & Alta \\
 \hline
-12. & Menú principal & El sistema debe contar con un menú principal con opciones de iniciar partida, ver instrucciones y salir. & Alta & Baja \\
+12. & Mostrar menú principal & El sistema debe contar con un menú principal con opciones de iniciar partida, ver instrucciones y salir. & Alta & Baja \\
 \hline
-13. & Pantalla de instrucciones & El sistema debe mostrar las reglas del juego de manera clara y accesible. & Media & Baja \\
+13. & Mostrar pantalla de instrucciones & El sistema debe mostrar las reglas del juego de manera clara y accesible. & Media & Baja \\
 \hline
-14. & Configuración de audio & El sistema debe permitir activar o desactivar música y efectos de sonido. & Baja & Baja \\
+14. & Configurar audio & El sistema debe permitir activar o desactivar música y efectos de sonido. & Baja & Baja \\
 \hline
 \hline
 \end{longtable}
@@ -107,19 +107,19 @@ Los requisitos no funcionales son aquellos que especifican criterios que pueden 
 
 \endfoot
 \endlastfoot
-Interfaz accesible para niños & Usabilidad & La interfaz gráfica debe emplear tipografía de tamaño no menor a 16pt, botones grandes y contraste alto, adecuados para usuarios de 8 a 10 años. \\
+Proporcionar interfaz accesible para niños & Usabilidad & La interfaz gráfica debe emplear tipografía de tamaño no menor a 16pt, botones grandes y contraste alto, adecuados para usuarios de 8 a 10 años. \\
 \hline
-Tiempo de respuesta & Rendimiento & El sistema debe responder a las acciones del usuario (lanzar dado, seleccionar respuesta) en menos de 0,5 segundos. \\
+Garantizar tiempo de respuesta & Rendimiento & El sistema debe responder a las acciones del usuario (lanzar dado, seleccionar respuesta) en menos de 0,5 segundos. \\
 \hline
-Compatibilidad multiplataforma & Compatibilidad & El videojuego debe ser compatible con la última versión estable de los sistemas operativos Windows 10+, Linux y macOS. \\
+Asegurar compatibilidad multiplataforma & Compatibilidad & El videojuego debe ser compatible con la última versión estable de los sistemas operativos Windows 10+, Linux y macOS. \\
 \hline
-Tutorial contextual & Usabilidad & Al presentarse una funcionalidad nueva, el sistema debe mostrar un tutorial o indicación breve. \\
+Incluir tutorial contextual & Usabilidad & Al presentarse una funcionalidad nueva, el sistema debe mostrar un tutorial o indicación breve. \\
 \hline
-Documentación interna del código & Mantenibilidad & El código GDScript debe generar documentación interna mediante comentarios de documentación accesibles para futuras iteraciones. \\
+Mantener documentación interna del código & Mantenibilidad & El código GDScript debe generar documentación interna mediante comentarios de documentación accesibles para futuras iteraciones. \\
 \hline
-Disponibilidad offline & Disponibilidad & La versión de escritorio debe funcionar completamente sin conexión a internet. \\
+Garantizar disponibilidad offline & Disponibilidad & La versión de escritorio debe funcionar completamente sin conexión a internet. \\
 \hline
-Tamaño del ejecutable & Rendimiento & El ejecutable para Windows no debe superar 150 MB para facilitar su distribución en contextos con ancho de banda limitado. \\
+Limitar tamaño del ejecutable & Rendimiento & El ejecutable para Windows no debe superar 150 MB para facilitar su distribución en contextos con ancho de banda limitado. \\
 \hline
 \end{longtable}
 
