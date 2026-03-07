@@ -307,15 +307,22 @@ Un motor de videojuegos es un conjunto de herramientas y tecnologías que permit
 
 Para sustentar esta decisión, se realizó una comparativa con otros motores comerciales líderes en la industria, evaluando criterios como el costo de licenciamiento, el soporte nativo para entornos 2D, la eficiencia del ejecutable final y la facilidad de aprendizaje para el equipo de desarrollo. Los resultados de este análisis se presentan en la Tabla \ref{tab:comparativa_motores}.
 
-\begin{table}[!htbp]
-\centering
-\caption{Comparativa ampliada de motores de videojuegos según criterios del proyecto (elaboración propia)\label{tab:comparativa_motores}}
-\renewcommand{\arraystretch}{1.4}
-\small
-\begin{tabular}{|p{0.12\textwidth}|p{0.18\textwidth}|p{0.20\textwidth}|p{0.20\textwidth}|p{0.20\textwidth}|}
+\begin{longtable}{|p{0.12\textwidth}|p{0.18\textwidth}|p{0.20\textwidth}|p{0.20\textwidth}|p{0.20\textwidth}|}
+\caption{Comparativa ampliada de motores de videojuegos según criterios del proyecto (elaboración propia)\label{tab:comparativa_motores}} \\
 \hline
 \textbf{Motor} & \textbf{Licencia y Costos} & \textbf{Soporte 2D y Rendimiento} & \textbf{Exportación Multiplataforma} & \textbf{Curva de Aprendizaje} \\
 \hline
+\endfirsthead
+\multicolumn{5}{c}%
+{{\tablename\ \thetable{} -- Continuación de la página anterior}} \\
+\hline
+\textbf{Motor} & \textbf{Licencia y Costos} & \textbf{Soporte 2D y Rendimiento} & \textbf{Exportación Multiplataforma} & \textbf{Curva de Aprendizaje} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
 \textbf{Godot} (v4.4.1) & Código abierto (MIT). Totalmente gratuito, sin regalías ni costos de suscripción. & Motor 2D dedicado real (basado en píxeles). Alta optimización para equipos de bajos recursos. & Soporte nativo y eficiente para Windows, Linux y macOS sin necesidad de complementos. & Baja. Uso de GDScript (sintaxis inspirada en Python), lo que agiliza el desarrollo de prototipos. \\
 \hline
 \textbf{Unity} & Propietaria. Gratuito hasta cierto nivel de ingresos; sujeto a inestabilidad por cambios de políticas. & Soporte 2D robusto, pero integrado sobre un núcleo 3D, lo que añade sobrecarga innecesaria al proyecto. & Excelente soporte multiplataforma, aunque genera ejecutables considerablemente más pesados. & Media-alta. Requiere dominio de C\# y navegar una interfaz de editor considerablemente más densa. \\
@@ -324,8 +331,7 @@ Para sustentar esta decisión, se realizó una comparativa con otros motores com
 \hline
 \textbf{Construct 3} & Propietaria. Modelo de negocio basado en suscripción periódica de pago obligatorio. & Excelente herramienta específica para desarrollo 2D rápido y sin requerir gran potencia computacional. & Aunque permite exportación a escritorio, está concebida de forma nativa para entornos web (HTML5). & Muy baja. Basado puramente en un entorno visual y hojas de eventos, sin programación de código tradicional. \\
 \hline
-\end{tabular}
-\end{table}
+\end{longtable}
 
 Como se puede apreciar en el análisis comparativo, la elección definitiva de Godot Engine se fundamenta en su arquitectura basada en nodos y escenas, lo cual permite una modularidad excepcional para un juego de tablero donde cada casilla, ficha y panel de preguntas puede ser desarrollado y probado de forma independiente. Además, su licencia de código abierto garantiza que el producto final sea totalmente libre de dependencias comerciales o costos futuros, alineándose con los objetivos de sostenibilidad del proyecto. La integración del lenguaje GDScript, optimizado específicamente para el ciclo de vida de los objetos en Godot, facilitó una implementación ágil de la lógica de turnos y el sistema de evaluación de respuestas.
 
