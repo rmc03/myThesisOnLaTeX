@@ -109,8 +109,8 @@
 \RequirePackage{etoolbox}
 \RequirePackage{xkeyval}
 \RequirePackage{environ}
-\RequirePackage[urlcolor=blue, filecolor=magenta, colorlinks, linkcolor=blue,
- citecolor=blue]{hyperref}
+\RequirePackage[urlcolor=black, filecolor=black, colorlinks, linkcolor=black,
+ citecolor=black]{hyperref}
 \RequirePackage[nostamp]{draftwatermark}
 \RequirePackage{textpos}
 \RequirePackage{rotating}
