@@ -388,9 +388,12 @@ Ingeniero en Ciencias Informáticas }
 \tableofcontents
 \listoffigures
 \listoftables
-\ifbool{noloa}{}{\listofalgorithms}
-\ifbool{nolol}{}{\lstlistoflistings}
-\ifoptionfinal{}{\phantomsection\listoftodos\addcontentsline{toc}{chapter}{Lista de tareas pendientes}}
+% Comentado: Lista de algoritmos
+%\ifbool{noloa}{}{\listofalgorithms}
+% Comentado: Lista de códigos fuentes
+%\ifbool{nolol}{}{\lstlistoflistings}
+% Comentado: Lista de tareas pendientes
+%\ifoptionfinal{}{\phantomsection\listoftodos\addcontentsline{toc}{chapter}{Lista de tareas pendientes}}
 }
 \newcommand{\introduction}
 {
