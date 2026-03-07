@@ -1051,12 +1051,9 @@ Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica f
 \begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
 \textbf{Clase:} & GameData \\
 \hline
-\textbf{Responsabilidades} & - mantener la configuración de la partida (número de jugadores) \\
- & - cargar y servir el banco de preguntas desde \texttt{questions.json} \\
- & - proveer preguntas aleatorias por ODS sin repetición \\
+\textbf{Responsabilidades} & - mantener la configuración de la partida (número de jugadores) \newline - cargar y servir el banco de preguntas desde \texttt{questions.json} \newline - proveer preguntas aleatorias por ODS sin repetición \\
 \hline
-\textbf{Clases relacionadas} & GameManager \\
- & BoardConfig \\
+\textbf{Clases relacionadas} & GameManager \newline BoardConfig \\
 \hline
 \end{tabular}
 \end{table}
@@ -1072,11 +1069,9 @@ Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica f
 \begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
 \textbf{Clase:} & GameEvents \\
 \hline
-\textbf{Responsabilidades} & - definir las se\~nales globales del sistema: \texttt{dice\_rolled}, \texttt{player\_moving}, \texttt{quiz\_started}, \texttt{quiz\_requested(ods\_id)}, \texttt{game\_won} \\
- & - actuar como canal de comunicación desacoplado entre lógica y UI \\
+\textbf{Responsabilidades} & - definir las se\~nales globales del sistema: \texttt{dice\_rolled}, \texttt{player\_moving}, \texttt{quiz\_started}, \texttt{quiz\_requested(ods\_id)}, \texttt{game\_won} \newline - actuar como canal de comunicación desacoplado entre lógica y UI \\
 \hline
-\textbf{Clases relacionadas} & GameManager \\
- & Scripts de UI \\
+\textbf{Clases relacionadas} & GameManager \newline Scripts de UI \\
 \hline
 \end{tabular}
 \end{table}
@@ -1092,11 +1087,9 @@ Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica f
 \begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
 \textbf{Clase:} & GameState \\
 \hline
-\textbf{Responsabilidades} & - gestionar la fase activa del juego mediante enumeración (MENU, PLAYING, PAUSED, GAME\_OVER) \\
- & - almacenar el estado de la partida en curso: jugador activo (\texttt{active\_player\_index}), posiciones y conteo de turnos \\
+\textbf{Responsabilidades} & - gestionar la fase activa del juego mediante enumeración (MENU, PLAYING, PAUSED, GAME\_OVER) \newline - almacenar el estado de la partida en curso: jugador activo (\texttt{active\_player\_index}), posiciones y conteo de turnos \\
 \hline
-\textbf{Clases relacionadas} & GameManager \\
- & Player \\
+\textbf{Clases relacionadas} & GameManager \newline Player \\
 \hline
 \end{tabular}
 \end{table}
@@ -1112,14 +1105,9 @@ Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica f
 \begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
 \textbf{Clase:} & GameManager \\
 \hline
-\textbf{Responsabilidades} & - orquestar el ciclo completo de la partida (inicio, turno, resolución de casilla, fin) \\
- & - calcular rutas de movimiento e invocar animaciones \\
- & - verificar condiciones de victoria \\
+\textbf{Responsabilidades} & - orquestar el ciclo completo de la partida (inicio, turno, resolución de casilla, fin) \newline - calcular rutas de movimiento e invocar animaciones \newline - verificar condiciones de victoria \\
 \hline
-\textbf{Clases relacionadas} & GameState \\
- & GameEvents \\
- & BoardConfig \\
- & AudioManager \\
+\textbf{Clases relacionadas} & GameState \newline GameEvents \newline BoardConfig \newline AudioManager \\
 \hline
 \end{tabular}
 \end{table}
@@ -1135,11 +1123,9 @@ Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica f
 \begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
 \textbf{Clase:} & BoardConfig \\
 \hline
-\textbf{Responsabilidades} & - definir la configuración estática del tablero: posiciones de escaleras, toboganes y casillas de pregunta por ODS \\
- & - proveer información de tipo y destino de cada casilla \\
+\textbf{Responsabilidades} & - definir la configuración estática del tablero: posiciones de escaleras, toboganes y casillas de pregunta por ODS \newline - proveer información de tipo y destino de cada casilla \\
 \hline
-\textbf{Clases relacionadas} & GameManager \\
- & Board \\
+\textbf{Clases relacionadas} & GameManager \newline Board \\
 \hline
 \end{tabular}
 \end{table}
@@ -1155,12 +1141,9 @@ Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica f
 \begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
 \textbf{Clase:} & Board \\
 \hline
-\textbf{Responsabilidades} & - representar el estado visual y lógico del tablero de 63 casillas \\
- & - exponer métodos de acceso a posiciones específicas \\
+\textbf{Responsabilidades} & - representar el estado visual y lógico del tablero de 63 casillas \newline - exponer métodos de acceso a posiciones específicas \\
 \hline
-\textbf{Clases relacionadas} & GameManager \\
- & Tile \\
- & BoardConfig \\
+\textbf{Clases relacionadas} & GameManager \newline Tile \newline BoardConfig \\
 \hline
 \end{tabular}
 \end{table}
@@ -1176,12 +1159,9 @@ Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica f
 \begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
 \textbf{Clase:} & Tile \\
 \hline
-\textbf{Responsabilidades} & - mantener el tipo de casilla (normal, escalera, tobogán, quiz, meta) \\
- & - almacenar el destino de traslado en caso de casilla especial \\
- & - almacenar el identificador ODS en caso de casilla de pregunta \\
+\textbf{Responsabilidades} & - mantener el tipo de casilla (normal, escalera, tobogán, quiz, meta) \newline - almacenar el destino de traslado en caso de casilla especial \newline - almacenar el identificador ODS en caso de casilla de pregunta \\
 \hline
-\textbf{Clases relacionadas} & Board \\
- & GameManager \\
+\textbf{Clases relacionadas} & Board \newline GameManager \\
 \hline
 \end{tabular}
 \end{table}
@@ -1197,12 +1177,9 @@ Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica f
 \begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
 \textbf{Clase:} & Player \\
 \hline
-\textbf{Responsabilidades} & - mantener la posición actual y el historial de turnos del jugador \\
- & - almacenar nombre e identificador de color de ficha \\
- & - registrar estadísticas de respuestas \\
+\textbf{Responsabilidades} & - mantener la posición actual y el historial de turnos del jugador \newline - almacenar nombre e identificador de color de ficha \newline - registrar estadísticas de respuestas \\
 \hline
-\textbf{Clases relacionadas} & GameState \\
- & GameManager \\
+\textbf{Clases relacionadas} & GameState \newline GameManager \\
 \hline
 \end{tabular}
 \end{table}
@@ -1218,12 +1195,9 @@ Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica f
 \begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
 \textbf{Clase:} & AudioManager \\
 \hline
-\textbf{Responsabilidades} & - centralizar la reproducción de música de fondo y efectos de sonido \\
- & - controlar el volumen global \\
- & - liberar a los nodos de juego de gestionar \texttt{AudioStreamPlayer} locales \\
+\textbf{Responsabilidades} & - centralizar la reproducción de música de fondo y efectos de sonido \newline - controlar el volumen global \newline - liberar a los nodos de juego de gestionar \texttt{AudioStreamPlayer} locales \\
 \hline
-\textbf{Clases relacionadas} & GameManager \\
- & Scripts de UI \\
+\textbf{Clases relacionadas} & GameManager \newline Scripts de UI \\
 \hline
 \end{tabular}
 \end{table}
@@ -1239,11 +1213,9 @@ Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica f
 \begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
 \textbf{Clase:} & RecordsManager \\
 \hline
-\textbf{Responsabilidades} & - gestionar la persistencia de puntuaciones y logros entre sesiones \\
- & - proveer datos históricos para la pantalla de estadísticas \\
+\textbf{Responsabilidades} & - gestionar la persistencia de puntuaciones y logros entre sesiones \newline - proveer datos históricos para la pantalla de estadísticas \\
 \hline
-\textbf{Clases relacionadas} & GameManager \\
- & Player \\
+\textbf{Clases relacionadas} & GameManager \newline Player \\
 \hline
 \end{tabular}
 \end{table}
