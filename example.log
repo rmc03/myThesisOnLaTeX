@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.24)  7 MAR 2026 19:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.24)  7 MAR 2026 19:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3354,7 +3354,7 @@ LaTeX Info: Redefining \% on input line 1275.
 File: Images/signals.png Graphic file (type png)
 <use Images/signals.png>
 Package pdftex.def Info: Images/signals.png  used on input line 1282.
-(pdftex.def)             Requested size: 352.31625pt x 192.16667pt.
+(pdftex.def)             Requested size: 422.77664pt x 230.60707pt.
 
 Overfull \hbox (1.71078pt too wide) in paragraph at lines 1298--1319
  [][] 
@@ -3362,8 +3362,8 @@ Overfull \hbox (1.71078pt too wide) in paragraph at lines 1298--1319
 
 
 
-LaTeX Info: Redefining \. on input line 1320.
-LaTeX Info: Redefining \% on input line 1320.
+LaTeX Info: Redefining \. on input line 1319.
+LaTeX Info: Redefining \% on input line 1319.
 [51 <./Images/signals.png>]
 Overfull \hbox (1.71078pt too wide) in paragraph at lines 1324--1345
  [][] 
@@ -3804,9 +3804,6 @@ L3 programming layer <2025-09-02>
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                example
 (biblatex)                and rerun LaTeX afterwards.
@@ -3842,7 +3839,7 @@ pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 r8a.pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
 /utmr8a.pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on example.pdf (83 pages, 6634954 bytes).
+Output written on example.pdf (83 pages, 6634977 bytes).
 PDF statistics:
  1272 PDF objects out of 1440 (max. 8388607)
  291 named destinations out of 1000 (max. 500000)
