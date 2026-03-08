@@ -54,10 +54,10 @@
 \contentsline {subsubsection}{Patrones GOF}{50}{section*.77}%
 \contentsline {subsection}{\numberline {2.4.3}Tareas de ingeniería}{52}{subsection.2.4.3}%
 \contentsline {section}{Conclusiones del capítulo}{57}{section*.91}%
-\contentsline {chapter}{\numberline {3}Resultados}{59}{chapter.3}%
-\contentsline {chapter}{Conclusiones}{60}{chapter*.93}%
-\contentsline {chapter}{Recomendaciones}{61}{chapter*.95}%
-\contentsline {chapter}{Referencias bibliográficas}{62}{chapter*.96}%
+\contentsline {chapter}{\numberline {3}Resultados}{60}{chapter.3}%
+\contentsline {chapter}{Conclusiones}{61}{chapter*.93}%
+\contentsline {chapter}{Recomendaciones}{62}{chapter*.95}%
+\contentsline {chapter}{Referencias bibliográficas}{63}{chapter*.96}%
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
@@ -84,8 +84,8 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{Apéndices}{66}{section*.97}%
-\contentsline {chapter}{\numberline {A}Proyectos y Avales}{67}{appendix.Alph1}%
-\contentsline {chapter}{\numberline {B}Otro reporte}{68}{appendix.Alph2}%
-\contentsline {section}{\numberline {B.1}Otra sección de muestra}{68}{section.Alph2.1}%
-\contentsline {section}{\numberline {B.2}Otro ensamble Industrial}{69}{section.Alph2.2}%
+\contentsline {chapter}{Apéndices}{67}{section*.97}%
+\contentsline {chapter}{\numberline {A}Proyectos y Avales}{68}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {B}Otro reporte}{69}{appendix.Alph2}%
+\contentsline {section}{\numberline {B.1}Otra sección de muestra}{69}{section.Alph2.1}%
+\contentsline {section}{\numberline {B.2}Otro ensamble Industrial}{70}{section.Alph2.2}%

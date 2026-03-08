@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.24)  7 MAR 2026 19:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.24)  7 MAR 2026 19:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3441,21 +3441,25 @@ Overfull \hbox (1.71078pt too wide) in paragraph at lines 1584--1605
 
 
 
-LaTeX Info: Redefining \. on input line 1617.
-LaTeX Info: Redefining \% on input line 1617.
-[57]) (Chapter3.tex
+LaTeX Info: Redefining \. on input line 1614.
+LaTeX Info: Redefining \% on input line 1614.
+[57]
+
+LaTeX Info: Redefining \. on input line 1622.
+LaTeX Info: Redefining \% on input line 1622.
+[58]) (Chapter3.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[58]
+[59]
 Cap\'{\i }tulo 3.
 ) (Conclusions.tex
 
-[59
+[60
 
 ]) (Suggestions.tex
 
-[60
+[61
 
 ]) (Appendices.tex)
 
@@ -3467,7 +3471,7 @@ No file example.gls.
 No file example.acr.
 
 
-[61
+[62
 
 ]
 LaTeX Info: Redefining \sptext on input line 38.
@@ -3508,7 +3512,7 @@ LaTeX Info: Redefining \. on input line 38.
 LaTeX Info: Redefining \% on input line 38.
 
 
-[62
+[63
 
 ]
 LaTeX Info: Redefining \sptext on input line 38.
@@ -3546,30 +3550,13 @@ ustainabledevelopment /
 
 LaTeX Info: Redefining \. on input line 38.
 LaTeX Info: Redefining \% on input line 38.
-[63]
-LaTeX Info: Redefining \sptext on input line 38.
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
-LaTeX Info: Redefining \sptext on input line 38.
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
-LaTeX Info: Redefining \sptext on input line 38.
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
-LaTeX Info: Redefining \sptext on input line 38.
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
-LaTeX Info: Redefining \sptext on input line 38.
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
-LaTeX Info: Redefining \sptext on input line 38.
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
-
-
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
 [64]
+LaTeX Info: Redefining \sptext on input line 38.
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
+LaTeX Info: Redefining \sptext on input line 38.
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
 LaTeX Info: Redefining \sptext on input line 38.
 LaTeX Info: Redefining \. on input line 38.
 LaTeX Info: Redefining \% on input line 38.
@@ -3587,6 +3574,23 @@ LaTeX Info: Redefining \% on input line 38.
 LaTeX Info: Redefining \. on input line 38.
 LaTeX Info: Redefining \% on input line 38.
 [65]
+LaTeX Info: Redefining \sptext on input line 38.
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
+LaTeX Info: Redefining \sptext on input line 38.
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
+LaTeX Info: Redefining \sptext on input line 38.
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
+LaTeX Info: Redefining \sptext on input line 38.
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
+
+
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
+[66]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -3623,7 +3627,7 @@ LaTeX Font Info:    Font shape `T1/txr/b/n' in size <24.88> not available
 (Font)              Font shape `T1/txr/bx/n' tried instead on input line 38.
 
 
-[66
+[67
 
 
 
@@ -3636,7 +3640,7 @@ Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf  used on input line 38.
 (pdftex.def)             Requested size: 276.43019pt x 357.7332pt.
 
 
-[67
+[68
 
 
  <./Anexos/BloqueCoronaReport.pdf>]
@@ -3647,20 +3651,20 @@ Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf  used on input line 38.
 (pdftex.def)             Requested size: 276.43019pt x 357.7332pt.
 
 
-[68
+[69
 
 ]
 
 LaTeX Info: Redefining \. on input line 38.
 LaTeX Info: Redefining \% on input line 38.
-[69]
+[70]
 \c@tempcnt=\count623
 \c@includepdfpage=\count624
 File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf  used on input line 38.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Anexos/BloqueCoronaReport.pdf, id=975, page=1, 614.295pt x 794.97pt>
+<Anexos/BloqueCoronaReport.pdf, id=974, page=1, 614.295pt x 794.97pt>
 File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf, page 1>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf , page1 used on input li
@@ -3688,11 +3692,11 @@ File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf , page1 used on input li
 ne 38.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[70
+[71
 
 
  <./Anexos/BloqueCoronaReport.pdf>]
-<Anexos/BloqueCoronaReport.pdf, id=997, page=2, 614.295pt x 794.97pt>
+<Anexos/BloqueCoronaReport.pdf, id=996, page=2, 614.295pt x 794.97pt>
 File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf, page 2>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf , page2 used on input li
@@ -3710,7 +3714,7 @@ File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf , page2 used on input li
 ne 38.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[71
+[72
 
  <./Anexos/BloqueCoronaReport.pdf>] (example.aux
 LaTeX Info: Redefining \sptext on input line 21.
@@ -3804,6 +3808,9 @@ L3 programming layer <2025-09-02>
 LaTeX Warning: There were undefined references.
 
 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                example
 (biblatex)                and rerun LaTeX afterwards.
@@ -3813,8 +3820,8 @@ Package logreq Info: Writing requests to 'example.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50357 strings out of 468081
- 978350 string characters out of 5423816
+ 50353 strings out of 468081
+ 978323 string characters out of 5423816
  2007301 words of memory out of 5000000
  77844 multiletter control sequences out of 15000+600000
  712374 words of font info for 159 fonts, out of 8000000 for 9000
@@ -3839,9 +3846,9 @@ pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 r8a.pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
 /utmr8a.pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on example.pdf (83 pages, 6634985 bytes).
+Output written on example.pdf (84 pages, 6638352 bytes).
 PDF statistics:
- 1272 PDF objects out of 1440 (max. 8388607)
- 291 named destinations out of 1000 (max. 500000)
+ 1269 PDF objects out of 1440 (max. 8388607)
+ 287 named destinations out of 1000 (max. 500000)
  510 words of extra memory for PDF output out of 10000 (max. 10000000)
 
