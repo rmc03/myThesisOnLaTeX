@@ -52,7 +52,7 @@
 \contentsline {subsection}{\numberline {2.4.2}Patrones de diseño utilizados}{50}{subsection.2.4.2}%
 \contentsline {subsubsection}{Patrones GRASP}{50}{section*.76}%
 \contentsline {subsubsection}{Patrones GOF}{50}{section*.77}%
-\contentsline {subsection}{\numberline {2.4.3}Tareas de ingeniería}{51}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.3}Tareas de ingeniería}{52}{subsection.2.4.3}%
 \contentsline {section}{Conclusiones del capítulo}{57}{section*.91}%
 \contentsline {chapter}{\numberline {3}Resultados}{59}{chapter.3}%
 \contentsline {chapter}{Conclusiones}{60}{chapter*.93}%
