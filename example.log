@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.24)  7 MAR 2026 18:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.24)  7 MAR 2026 19:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2655,7 +2655,7 @@ LaTeX Font Info:    Font shape `T1/txr/b/n' in size <12> not available
 ]
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <10> not available
 (Font)              Font shape `T1/txr/bx/n' tried instead on input line 34.
-<Images/17 ODS.jpg, id=396, 931.98187pt x 466.74374pt>
+<Images/17 ODS.jpg, id=395, 931.98187pt x 466.74374pt>
 File: Images/17 ODS.jpg Graphic file (type jpg)
 <use Images/17 ODS.jpg>
 Package pdftex.def Info: Images/17 ODS.jpg  used on input line 57.
@@ -2694,7 +2694,7 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [7]
-<Images/Relación ABJ, TPACK y Gamificación.jpg, id=431, 1027.84pt x 561.09625
+<Images/Relación ABJ, TPACK y Gamificación.jpg, id=430, 1027.84pt x 561.09625
 pt>
 File: Images/Relación ABJ, TPACK y Gamificación.jpg Graphic file (type jpg)
 <use Images/Relación ABJ, TPACK y Gamificación.jpg>
@@ -2713,7 +2713,7 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [8 <./Images/Relación ABJ, TPACK y Gamificación.jpg>]
-<Images/Tablero del juego de mesa Go Goals!.jpg, id=440, 1284.8pt x 722.7pt>
+<Images/Tablero del juego de mesa Go Goals!.jpg, id=439, 1284.8pt x 722.7pt>
 File: Images/Tablero del juego de mesa Go Goals!.jpg Graphic file (type jpg)
 <use Images/Tablero del juego de mesa Go Goals!.jpg>
 Package pdftex.def Info: Images/Tablero del juego de mesa Go Goals!.jpg  used o
@@ -2747,7 +2747,7 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [10]
-<Images/Mario Party.png, id=461, 525.46312pt x 289.83281pt>
+<Images/Mario Party.png, id=460, 525.46312pt x 289.83281pt>
 File: Images/Mario Party.png Graphic file (type png)
 <use Images/Mario Party.png>
 Package pdftex.def Info: Images/Mario Party.png  used on input line 162.
@@ -2812,7 +2812,7 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [14]
-<Images/XP.png, id=495, 729.927pt x 414.348pt>
+<Images/XP.png, id=494, 729.927pt x 414.348pt>
 File: Images/XP.png Graphic file (type png)
 <use Images/XP.png>
 Package pdftex.def Info: Images/XP.png  used on input line 283.
@@ -3040,7 +3040,7 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [16]
-<Images/godot.png, id=521, 416.757pt x 229.45724pt>
+<Images/godot.png, id=520, 416.757pt x 229.45724pt>
 File: Images/godot.png Graphic file (type png)
 <use Images/godot.png>
 Package pdftex.def Info: Images/godot.png  used on input line 340.
@@ -3073,7 +3073,7 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [18]
-<Images/Control de versiones Git.png, id=541, 692.5875pt x 357.58594pt>
+<Images/Control de versiones Git.png, id=540, 692.5875pt x 357.58594pt>
 File: Images/Control de versiones Git.png Graphic file (type png)
 <use Images/Control de versiones Git.png>
 Package pdftex.def Info: Images/Control de versiones Git.png  used on input lin
@@ -3091,7 +3091,7 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [19 <./Images/Control de versiones Git.png>]
-<Images/GitHub Projects.jpg, id=552, 1139.25626pt x 931.48pt>
+<Images/GitHub Projects.jpg, id=551, 1139.25626pt x 931.48pt>
 File: Images/GitHub Projects.jpg Graphic file (type jpg)
 <use Images/GitHub Projects.jpg>
 Package pdftex.def Info: Images/GitHub Projects.jpg  used on input line 384.
@@ -3125,7 +3125,7 @@ Cap\'{\i }tulo 2.
 [22
 
 ]
-<Images/Menú Principal.png, id=573, 822.07124pt x 461.92575pt>
+<Images/Menú Principal.png, id=572, 822.07124pt x 461.92575pt>
 File: Images/Menú Principal.png Graphic file (type png)
 <use Images/Menú Principal.png>
 Package pdftex.def Info: Images/Menú Principal.png  used on input line 23.
@@ -3236,7 +3236,7 @@ File: t1txtt.fd 2000/12/15 v3.1
 LaTeX Info: Redefining \. on input line 940.
 LaTeX Info: Redefining \% on input line 940.
 [39]
-<Images/SceeneTree.jpg, id=659, 995.72pt x 1060.96375pt>
+<Images/SceeneTree.jpg, id=658, 995.72pt x 1060.96375pt>
 File: Images/SceeneTree.jpg Graphic file (type jpg)
 <use Images/SceeneTree.jpg>
 Package pdftex.def Info: Images/SceeneTree.jpg  used on input line 945.
@@ -3254,7 +3254,7 @@ xtt/m/n/10.95 AudioManager\T1/txr/m/n/10.95 , \T1/txtt/m/n/10.95 RecordsManager
 LaTeX Info: Redefining \. on input line 957.
 LaTeX Info: Redefining \% on input line 957.
 [40 <./Images/SceeneTree.jpg>]
-<Images/Arquitectura Multi Patrón.jpg, id=667, 1413.28pt x 770.88pt>
+<Images/Arquitectura Multi Patrón.jpg, id=666, 1413.28pt x 770.88pt>
 File: Images/Arquitectura Multi Patrón.jpg Graphic file (type jpg)
 <use Images/Arquitectura Multi Patrón.jpg>
 Package pdftex.def Info: Images/Arquitectura Multi Patrón.jpg  used on input l
@@ -3265,7 +3265,7 @@ ine 967.
 LaTeX Info: Redefining \. on input line 977.
 LaTeX Info: Redefining \% on input line 977.
 [41 <./Images/Arquitectura Multi Patrón.jpg>]
-<Images/GoGoals Digital.png, id=673, 1026.08344pt x 579.66562pt>
+<Images/GoGoals Digital.png, id=672, 1026.08344pt x 579.66562pt>
 File: Images/GoGoals Digital.png Graphic file (type png)
 <use Images/GoGoals Digital.png>
 Package pdftex.def Info: Images/GoGoals Digital.png  used on input line 987.
@@ -3275,12 +3275,12 @@ Package pdftex.def Info: Images/GoGoals Digital.png  used on input line 987.
 LaTeX Info: Redefining \. on input line 995.
 LaTeX Info: Redefining \% on input line 995.
 [42 <./Images/GoGoals Digital.png>]
-<Images/Panel Preguntas.png, id=680, 854.44218pt x 402.75468pt>
+<Images/Panel Preguntas.png, id=679, 854.44218pt x 402.75468pt>
 File: Images/Panel Preguntas.png Graphic file (type png)
 <use Images/Panel Preguntas.png>
 Package pdftex.def Info: Images/Panel Preguntas.png  used on input line 998.
 (pdftex.def)             Requested size: 352.31625pt x 166.0646pt.
-<Images/Ranking.png, id=681, 1027.84pt x 1046.91125pt>
+<Images/Ranking.png, id=680, 1027.84pt x 1046.91125pt>
 File: Images/Ranking.png Graphic file (type png)
 <use Images/Ranking.png>
 Package pdftex.def Info: Images/Ranking.png  used on input line 1011.
@@ -3332,7 +3332,7 @@ em-plo: \T1/txtt/m/n/10.95 current_player\T1/txr/m/n/10.95 , \T1/txtt/m/n/10.95
 95 : SCREA-
  []
 
-<Images/Jerarquia.jpg, id=709, 835.12pt x 1257.69875pt>
+<Images/Jerarquia.jpg, id=708, 835.12pt x 1257.69875pt>
 File: Images/Jerarquia.jpg Graphic file (type jpg)
 <use Images/Jerarquia.jpg>
 Package pdftex.def Info: Images/Jerarquia.jpg  used on input line 1236.
@@ -3350,93 +3350,99 @@ LaTeX Info: Redefining \% on input line 1249.
 LaTeX Info: Redefining \. on input line 1275.
 LaTeX Info: Redefining \% on input line 1275.
 [50]
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1299--1320
+<Images/signals.png, id=730, 1413.28pt x 770.88pt>
+File: Images/signals.png Graphic file (type png)
+<use Images/signals.png>
+Package pdftex.def Info: Images/signals.png  used on input line 1282.
+(pdftex.def)             Requested size: 352.31625pt x 192.16667pt.
+
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1298--1319
  [][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 1321.
-LaTeX Info: Redefining \% on input line 1321.
-[51]
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1325--1346
+LaTeX Info: Redefining \. on input line 1320.
+LaTeX Info: Redefining \% on input line 1320.
+[51 <./Images/signals.png>]
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1324--1345
  [][] 
  []
 
 
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1351--1372
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1350--1371
  [][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 1373.
-LaTeX Info: Redefining \% on input line 1373.
+LaTeX Info: Redefining \. on input line 1372.
+LaTeX Info: Redefining \% on input line 1372.
 [52]
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1377--1398
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1376--1397
  [][] 
  []
 
 
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1403--1424
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1402--1423
  [][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 1425.
-LaTeX Info: Redefining \% on input line 1425.
+LaTeX Info: Redefining \. on input line 1424.
+LaTeX Info: Redefining \% on input line 1424.
 [53]
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1429--1450
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1428--1449
  [][] 
  []
 
 
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1455--1476
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1454--1475
  [][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 1477.
-LaTeX Info: Redefining \% on input line 1477.
+LaTeX Info: Redefining \. on input line 1476.
+LaTeX Info: Redefining \% on input line 1476.
 [54]
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1481--1502
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1480--1501
  [][] 
  []
 
 
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1507--1528
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1506--1527
  [][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 1529.
-LaTeX Info: Redefining \% on input line 1529.
+LaTeX Info: Redefining \. on input line 1528.
+LaTeX Info: Redefining \% on input line 1528.
 [55]
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1533--1554
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1532--1553
  [][] 
  []
 
 
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1559--1580
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1558--1579
  [][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 1581.
-LaTeX Info: Redefining \% on input line 1581.
+LaTeX Info: Redefining \. on input line 1580.
+LaTeX Info: Redefining \% on input line 1580.
 [56]
-Overfull \hbox (1.71078pt too wide) in paragraph at lines 1585--1606
+Overfull \hbox (1.71078pt too wide) in paragraph at lines 1584--1605
  [][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 1618.
-LaTeX Info: Redefining \% on input line 1618.
+LaTeX Info: Redefining \. on input line 1617.
+LaTeX Info: Redefining \% on input line 1617.
 [57]) (Chapter3.tex
 
 LaTeX Info: Redefining \. on input line 1.
@@ -3623,7 +3629,7 @@ LaTeX Font Info:    Font shape `T1/txr/b/n' in size <24.88> not available
 
 ]
 Ap\'{e}ndice A.
-<Anexos/BloqueCoronaReport.pdf, id=942, 614.295pt x 794.97pt>
+<Anexos/BloqueCoronaReport.pdf, id=944, 614.295pt x 794.97pt>
 File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf  used on input line 38.
@@ -3654,7 +3660,7 @@ File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf  used on input line 38.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Anexos/BloqueCoronaReport.pdf, id=973, page=1, 614.295pt x 794.97pt>
+<Anexos/BloqueCoronaReport.pdf, id=975, page=1, 614.295pt x 794.97pt>
 File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf, page 1>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf , page1 used on input li
@@ -3686,7 +3692,7 @@ ne 38.
 
 
  <./Anexos/BloqueCoronaReport.pdf>]
-<Anexos/BloqueCoronaReport.pdf, id=995, page=2, 614.295pt x 794.97pt>
+<Anexos/BloqueCoronaReport.pdf, id=997, page=2, 614.295pt x 794.97pt>
 File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf, page 2>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf , page2 used on input li
@@ -3810,10 +3816,10 @@ Package logreq Info: Writing requests to 'example.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50346 strings out of 468081
- 978088 string characters out of 5423816
- 2007320 words of memory out of 5000000
- 77833 multiletter control sequences out of 15000+600000
+ 50357 strings out of 468081
+ 978350 string characters out of 5423816
+ 2007301 words of memory out of 5000000
+ 77844 multiletter control sequences out of 15000+600000
  712374 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,17n,131p,2542b,3588s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3836,9 +3842,9 @@ pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 r8a.pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
 /utmr8a.pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on example.pdf (83 pages, 5606014 bytes).
+Output written on example.pdf (83 pages, 6634954 bytes).
 PDF statistics:
- 1270 PDF objects out of 1440 (max. 8388607)
+ 1272 PDF objects out of 1440 (max. 8388607)
  291 named destinations out of 1000 (max. 500000)
- 505 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 510 words of extra memory for PDF output out of 10000 (max. 10000000)
 

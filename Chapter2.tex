@@ -1277,11 +1277,10 @@ Garantiza que una clase tenga una única instancia y proporciona un punto de acc
 
 Define una dependencia de uno-a-muchos entre objetos. El archivo \texttt{GameEvents} implementa una variante de este patrón a nivel de bus de eventos global. En lugar de conectar directamente un emisor con sus suscriptores, define se\~nales globales (\texttt{dice\_rolled}, \texttt{quiz\_requested}) que cualquier componente emite o escucha de forma independiente, eliminando el acoplamiento entre el controlador y los componentes de la interfaz gráfica de usuario (UI).
 
-\begin{figure}[!htbp]
+\begin{figure}[H]
   \centering
-  % \includegraphics[width=0.7\textwidth]{Images/figura_senales_godot}
-  \framebox[0.7\textwidth]{\rule{0pt}{4cm} \textit{[Figura: Bus de Eventos (GameEvents) --- flujo de se\~nales entre GameManager y UI (elaboración propia)]}}
-  \caption{Patrón Observer implementado mediante se\~nales globales en Godot (elaboración propia)\label{fig:senales_godot}}
+  \includegraphics[width=0.75\textwidth]{Images/signals}
+  \caption{Patrón Observer implementado mediante señales globales en Godot (elaboración propia)\label{fig:senales_godot}}
 \end{figure}
 
 \textbf{State (Máquina de Estados)}
