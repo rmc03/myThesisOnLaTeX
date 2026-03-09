@@ -930,21 +930,29 @@ El presente epígrafe constituye la transición esencial entre la planificación
 \subsection{Arquitectura utilizada}
 \label{subsec:arquitectura}
 
-Godot Engine utiliza una arquitectura jerárquica fundamentada en el concepto de nodos como unidades básicas de construcción. Cada elemento funcional del videojuego es representado como un nodo que hereda de la clase base \texttt{Node} \parencite{GodotDocs2023}. Esta filosofía arquitectónica de composición sobre herencia permite construir funcionalidades sofisticadas mediante la agregación de componentes simples y bien definidos. El videojuego \textit{Go Goals! Digital} emplea una arquitectura modular orientada a escenas (\textit{scene-driven}), apoyada por servicios globales y coordinada centralmente. Este enfoque estructura el proyecto en cuatro pilares fundamentales de diseño y responsabilidad.
+Godot Engine utiliza una arquitectura jerárquica basada en nodos, donde cada elemento del videojuego (desde una ficha hasta un efecto de sonido) es un nodo que hereda de la clase base \texttt{Node}. Según la documentación oficial \parencite{GodotDocs2023}, los nodos son bloques de construcción modulares que se combinan para formar escenas complejas. El SceneTree (árbol de escenas) es la estructura que gestiona todas las escenas y nodos en tiempo de ejecución, funcionando como un árbol de procesamiento que organiza el orden de ejecución de métodos, la jerarquía de transformaciones para establecer las posiciones de los nodos en la pantalla y la gestión de señales que comunican a los nodos entre sí.
 
-El primer pilar es la \textbf{Arquitectura Orientada a Escenas}. La navegación principal y los límites de las interfaces dependen del sistema nativo de escenas de Godot. Entornos como el menú principal, la pantalla de juego interactiva y el menú de fin de partida funcionan como fronteras naturales de presentación. Dentro del juego, el nivel principal actúa como controlador de composición local (\textit{composition root}), ensamblando las dependencias y conectando la interfaz de usuario con la lógica sin mezclar directamente sus responsabilidades.
+El uso del SceneTree aporta ventajas significativas para \textit{Go Goals! Digital}. En primer lugar, aumenta la modularidad al permitir tener una escena para cada funcionalidad específica, como podría ser una ficha de jugador, que puede instanciarse dentro de otra escena más grande como el tablero. De esta manera, el tablero puede contener varias fichas, cada una con sus propiedades individuales (color, posición, nombre del jugador). Al momento de necesitar cambiarlas todas, se pueden realizar modificaciones en la escena de la ficha, reflejándose automáticamente en todas las instancias. Otra ventaja es el rendimiento, que mejora debido a que evita actualizaciones innecesarias y permite operaciones masivas como llamadas de métodos en grupos de nodos. Su diseño trae un enfoque de composición sobre herencia para no depender de jerarquías rígidas de clases y posee funcionalidades para realizar cambios de escenas de forma fluida.
 
-El segundo pilar son los \textbf{Servicios Globales y Autoloads}. Godot facilita el patrón Singleton a través de nodos que se registran globalmente, permitiendo el acceso a funcionalidades transversales desde cualquier escena. El proyecto emplea la clase \texttt{GameData} para mantener la configuración de la partida y cargar el banco de preguntas; \texttt{AudioManager} para centralizar la reproducción de música y efectos de sonido; y \texttt{RecordsManager} para gestionar la persistencia local de las puntuaciones de forma estructurada e independiente \parencite{GodotDocs2023}.
-
-El tercer pilar es la \textbf{Coordinación Central y Comunicación por Eventos}. En lugar de un patrón \textit{Model-View-Controller} estricto, el flujo del juego es orquestado por un coordinador central de aplicación (\texttt{GameManager}). Este componente concentra los casos de uso principales: control de turnos, movimiento, preguntas y victoria. Para lograr un bajo acoplamiento, la comunicación hacia la interfaz gráfica se rige por el uso de se\~nales o \textit{Event Bus}. Así, interfaces como el panel de preguntas reaccionan de manera independiente a la aparición de eventos sin depender en código de la lógica del coordinador.
-
-El cuarto pilar es el \textbf{Modelo de Estado Separado y Entidades Ligeras}. El estado mutable de la partida (fase del juego, turno actual, cantidad de tiradas) se aísla en un modelo de estado explícito (\texttt{GameState}), lo cual facilita administrar pausas o finalizaciones. Adicionalmente, el dominio se representa a través de entidades interactivas ligeras (elementos lógicos de tablero, casillas y fichas) que encapsulan su comportamiento particular, pero que delegan el control de flujo global al coordinador de la partida.
+La comunicación entre estos elementos se simplifica gracias al sistema de señales integrado, permitiendo que eventos como el lanzamiento del dado, el movimiento de fichas o la presentación de preguntas se coordinen eficientemente sin acoplamiento rígido entre componentes. Además, el SceneTree optimiza automáticamente el rendimiento al gestionar el orden de procesamiento y renderizado, algo relevante en un juego de tablero donde múltiples fichas, animaciones y elementos de interfaz pueden interactuar simultáneamente en pantalla. La capacidad de pausar o manipular selectivamente ramas enteras del árbol de escenas es particularmente útil para implementar mecánicas como el menú de pausa o la transición entre el tablero y el panel de preguntas educativas.
 
 \begin{figure}[!htbp]
   \centering
   \includegraphics[width=0.55\textwidth]{Images/SceeneTree}
   \caption{Ejemplo de jerarquía de nodos en el SceneTree de Godot: pantalla de instrucciones del videojuego \textit{Go Goals! Digital} (elaboración propia)\label{fig:scene_tree}}
 \end{figure}
+
+El videojuego \textit{Go Goals! Digital} emplea esta arquitectura modular orientada a escenas, apoyada por servicios globales y coordinada centralmente. Este enfoque estructura el proyecto en cuatro pilares fundamentales de diseño y responsabilidad:
+
+\begin{itemize}
+    \item \textbf{Arquitectura Orientada a Escenas}: La navegación principal y los límites de las interfaces dependen del sistema nativo de escenas de Godot. Entornos como el menú principal, la pantalla de juego interactiva y el menú de fin de partida funcionan como fronteras naturales de presentación. Dentro del juego, el nivel principal actúa como controlador de composición local (\textit{composition root}), ensamblando las dependencias y conectando la interfaz de usuario con la lógica sin mezclar directamente sus responsabilidades.
+    
+    \item \textbf{Servicios Globales y Autoloads}: Godot facilita el patrón Singleton a través de nodos que se registran globalmente, permitiendo el acceso a funcionalidades transversales desde cualquier escena. El proyecto emplea la clase \texttt{GameData} para mantener la configuración de la partida y cargar el banco de preguntas; \texttt{AudioManager} para centralizar la reproducción de música y efectos de sonido; y \texttt{RecordsManager} para gestionar la persistencia local de las puntuaciones de forma estructurada e independiente \parencite{GodotDocs2023}.
+    
+    \item \textbf{Coordinación Central y Comunicación por Eventos}: En lugar de un patrón \textit{Model-View-Controller} estricto, el flujo del juego es orquestado por un coordinador central de aplicación (\texttt{GameManager}). Este componente concentra los casos de uso principales: control de turnos, movimiento, preguntas y victoria. Para lograr un bajo acoplamiento, la comunicación hacia la interfaz gráfica se rige por el uso de señales o \textit{Event Bus}. Así, interfaces como el panel de preguntas reaccionan de manera independiente a la aparición de eventos sin depender en código de la lógica del coordinador.
+    
+    \item \textbf{Modelo de Estado Separado y Entidades Ligeras}: El estado mutable de la partida (fase del juego, turno actual, cantidad de tiradas) se aísla en un modelo de estado explícito (\texttt{GameState}), lo cual facilita administrar pausas o finalizaciones. Adicionalmente, el dominio se representa a través de entidades interactivas ligeras (elementos lógicos de tablero, casillas y fichas) que encapsulan su comportamiento particular, pero que delegan el control de flujo global al coordinador de la partida.
+\end{itemize}
 
 \subsubsection{Estructura de directorios del proyecto}
 \label{subsubsec:capas}
@@ -959,14 +967,6 @@ La organización del código fuente sigue una estructura jerárquica por respons
     \item \textbf{scripts/Managers/}: contiene el \texttt{GameManager.gd}, controlador central que orquesta el ciclo de la partida.
     \item \textbf{scripts/UI/}: contiene los scripts de la capa de presentación, incluyendo los paneles del tablero, el panel de preguntas, el menú de pausa y la pantalla de estadísticas.
 \end{itemize}
-
-La figura \ref{fig:arquitectura_capas} ilustra de manera visual la integración de estos componentes arquitectónicos, mostrando cómo las capas de presentación (UI), lógica de negocio (Managers y Entities), infraestructura (Core) y servicios globales (Autoloads) se relacionan entre sí mediante el sistema de señales y el patrón de coordinación central implementado en Godot Engine.
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.75\textwidth]{Images/Arquitectura Multi Patrón}
-  \caption{Arquitectura multi-patrón del videojuego educativo \textit{Go Goals! Digital} (elaboración propia)\label{fig:arquitectura_capas}}
-\end{figure}
 
 \subsubsection{Flujo de ejecución del ciclo de juego}
 \label{subsubsec:flujo_ejecucion}

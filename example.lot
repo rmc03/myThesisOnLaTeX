@@ -1,59 +1,58 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces Resumen de los 17 Objetivos de Desarrollo Sostenible \blx@tocontentsinit {0}\parencite {NacionesUnidas2015} (elaboración propia)}}{6}{table.caption.13}%
-\contentsline {table}{\numberline {1.2}{\ignorespaces Ejemplos de preguntas por nivel cognitivo según ODS (elaboración propia)}}{10}{table.caption.20}%
-\contentsline {table}{\numberline {1.3}{\ignorespaces Videojuegos educativos y de tablero relacionados a la sostenibilidad (elaboración propia)}}{11}{table.1.3}%
-\contentsline {table}{\numberline {1.4}{\ignorespaces Componentes del juego de mesa Go Goals! (elaboración propia)}}{13}{table.caption.23}%
-\contentsline {table}{\numberline {1.5}{\ignorespaces Diagnóstico del estado actual de Go Goals! (formato físico) (elaboración propia)}}{13}{table.caption.25}%
-\contentsline {table}{\numberline {1.6}{\ignorespaces Comparativa ampliada de motores de videojuegos según criterios del proyecto (elaboración propia)}}{17}{table.1.6}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces Ejemplos de preguntas por nivel cognitivo según ODS (elaboración propia)}}{10}{table.1.1}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Videojuegos educativos y de tablero relacionados a la sostenibilidad (elaboración propia)}}{12}{table.1.2}%
+\contentsline {table}{\numberline {1.3}{\ignorespaces Componentes del juego de mesa Go Goals! (elaboración propia)}}{14}{table.caption.21}%
+\contentsline {table}{\numberline {1.4}{\ignorespaces Diagnóstico del estado actual de Go Goals! (formato físico) (elaboración propia)}}{14}{table.1.4}%
+\contentsline {table}{\numberline {1.5}{\ignorespaces Comparativa ampliada de motores de videojuegos según criterios del proyecto (elaboración propia)}}{18}{table.1.5}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Requisitos funcionales del videojuego Go Goals! Digital (elaboración propia)}}{24}{table.2.1}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Requisitos no funcionales del videojuego Go Goals! Digital (elaboración propia)}}{26}{table.2.2}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces Historia de usuario 1: Inicio de nueva partida educativa (elaboración propia)}}{27}{table.caption.33}%
-\contentsline {table}{\numberline {2.4}{\ignorespaces Historia de usuario 2: Visualización del tablero hexagonal (elaboración propia)}}{27}{table.caption.34}%
-\contentsline {table}{\numberline {2.5}{\ignorespaces Historia de usuario 3: Lanzamiento de dado virtual (elaboración propia)}}{28}{table.caption.35}%
-\contentsline {table}{\numberline {2.6}{\ignorespaces Historia de usuario 4: Movimiento animado de ficha (elaboración propia)}}{28}{table.caption.36}%
-\contentsline {table}{\numberline {2.7}{\ignorespaces Historia de usuario 5: Efecto de escalera y serpiente (elaboración propia)}}{29}{table.caption.37}%
-\contentsline {table}{\numberline {2.8}{\ignorespaces Historia de usuario 6: Preguntas educativas sobre ODS (elaboración propia)}}{29}{table.caption.38}%
-\contentsline {table}{\numberline {2.9}{\ignorespaces Historia de usuario 7: Evaluación y retroalimentación de respuestas (elaboración propia)}}{30}{table.caption.39}%
-\contentsline {table}{\numberline {2.10}{\ignorespaces Historia de usuario 8: Gestión de turnos automática (elaboración propia)}}{30}{table.caption.40}%
-\contentsline {table}{\numberline {2.11}{\ignorespaces Historia de usuario 9: Condición de victoria (elaboración propia)}}{31}{table.caption.41}%
-\contentsline {table}{\numberline {2.12}{\ignorespaces Historia de usuario 10: Estadísticas de aprendizaje (elaboración propia)}}{31}{table.caption.42}%
-\contentsline {table}{\numberline {2.13}{\ignorespaces Historia de usuario 11: Menú principal y pantalla de instrucciones (elaboración propia)}}{32}{table.caption.43}%
-\contentsline {table}{\numberline {2.14}{\ignorespaces Historia de usuario 12: Configuración de audio (elaboración propia)}}{32}{table.caption.44}%
-\contentsline {table}{\numberline {2.15}{\ignorespaces Historia de usuario 13: Personalización de jugadores (elaboración propia)}}{33}{table.caption.45}%
-\contentsline {table}{\numberline {2.16}{\ignorespaces Historia de usuario 14: Visualización de información del ODS (elaboración propia)}}{33}{table.caption.46}%
-\contentsline {table}{\numberline {2.17}{\ignorespaces Historia de usuario 15: Temporizador de respuesta (elaboración propia)}}{34}{table.caption.47}%
-\contentsline {table}{\numberline {2.18}{\ignorespaces Historia de usuario 16: Modo de un jugador (elaboración propia)}}{34}{table.caption.48}%
-\contentsline {table}{\numberline {2.19}{\ignorespaces Historia de usuario 17: Pantalla de clasificación al finalizar (elaboración propia)}}{35}{table.caption.49}%
-\contentsline {table}{\numberline {2.20}{\ignorespaces Historia de usuario 18: Notificación visual del turno activo (elaboración propia)}}{35}{table.caption.50}%
-\contentsline {table}{\numberline {2.21}{\ignorespaces Historia de usuario 19: Accesibilidad de la interfaz (elaboración propia)}}{36}{table.caption.51}%
-\contentsline {table}{\numberline {2.22}{\ignorespaces Historia de usuario 20: Pantalla de créditos (elaboración propia)}}{36}{table.caption.52}%
-\contentsline {table}{\numberline {2.23}{\ignorespaces Historia de usuario 21: Exportación multiplataforma de escritorio (elaboración propia)}}{37}{table.caption.53}%
-\contentsline {table}{\numberline {2.24}{\ignorespaces Puntos de estimación por historia de usuario (elaboración propia)}}{37}{table.2.24}%
-\contentsline {table}{\numberline {2.25}{\ignorespaces Plan de iteraciones de desarrollo (elaboración propia)}}{38}{table.2.25}%
-\contentsline {table}{\numberline {2.26}{\ignorespaces Tarjeta CRC GameData (Autoload) (elaboración propia)}}{45}{table.caption.63}%
-\contentsline {table}{\numberline {2.27}{\ignorespaces Tarjeta CRC GameEvents (Bus de Eventos) (elaboración propia)}}{45}{table.caption.64}%
-\contentsline {table}{\numberline {2.28}{\ignorespaces Tarjeta CRC GameState (elaboración propia)}}{45}{table.caption.65}%
-\contentsline {table}{\numberline {2.29}{\ignorespaces Tarjeta CRC GameManager (Controlador) (elaboración propia)}}{46}{table.caption.66}%
-\contentsline {table}{\numberline {2.30}{\ignorespaces Tarjeta CRC BoardConfig (elaboración propia)}}{46}{table.caption.67}%
-\contentsline {table}{\numberline {2.31}{\ignorespaces Tarjeta CRC Board (Entidad) (elaboración propia)}}{46}{table.caption.68}%
-\contentsline {table}{\numberline {2.32}{\ignorespaces Tarjeta CRC Tile (Entidad) (elaboración propia)}}{47}{table.caption.69}%
-\contentsline {table}{\numberline {2.33}{\ignorespaces Tarjeta CRC Player (Entidad) (elaboración propia)}}{47}{table.caption.70}%
-\contentsline {table}{\numberline {2.34}{\ignorespaces Tarjeta CRC AudioManager (Autoload) (elaboración propia)}}{47}{table.caption.71}%
-\contentsline {table}{\numberline {2.35}{\ignorespaces Tarjeta CRC RecordsManager (Autoload) (elaboración propia)}}{48}{table.caption.72}%
-\contentsline {table}{\numberline {2.36}{\ignorespaces Tarea de ingeniería 1: Diseño e implementación del tablero hexagonal (elaboración propia)}}{52}{table.caption.79}%
-\contentsline {table}{\numberline {2.37}{\ignorespaces Tarea de ingeniería 2: Implementación del menú principal (elaboración propia)}}{52}{table.caption.80}%
-\contentsline {table}{\numberline {2.38}{\ignorespaces Tarea de ingeniería 3: Lógica del dado y movimiento de fichas (elaboración propia)}}{53}{table.caption.81}%
-\contentsline {table}{\numberline {2.39}{\ignorespaces Tarea de ingeniería 4: Escaleras, serpientes y gestión de turnos (elaboración propia)}}{53}{table.caption.82}%
-\contentsline {table}{\numberline {2.40}{\ignorespaces Tarea de ingeniería 5: Sistema de preguntas y evaluación de respuestas (elaboración propia)}}{54}{table.caption.83}%
-\contentsline {table}{\numberline {2.41}{\ignorespaces Tarea de ingeniería 6: Estadísticas de aprendizaje (elaboración propia)}}{54}{table.caption.84}%
-\contentsline {table}{\numberline {2.42}{\ignorespaces Tarea de ingeniería 7: Personalización de jugadores (elaboración propia)}}{55}{table.caption.85}%
-\contentsline {table}{\numberline {2.43}{\ignorespaces Tarea de ingeniería 8: Panel informativo de ODS (elaboración propia)}}{55}{table.caption.86}%
-\contentsline {table}{\numberline {2.44}{\ignorespaces Tarea de ingeniería 9: Notificaciones de turno activo (elaboración propia)}}{56}{table.caption.87}%
-\contentsline {table}{\numberline {2.45}{\ignorespaces Tarea de ingeniería 10: Inteligencia Artificial oponente (elaboración propia)}}{56}{table.caption.88}%
-\contentsline {table}{\numberline {2.46}{\ignorespaces Tarea de ingeniería 11: Exportación y optimización multiplataforma (elaboración propia)}}{57}{table.caption.89}%
-\contentsline {table}{\numberline {2.47}{\ignorespaces Tarea de ingeniería 12: Configuración de sistema y accesibilidad (elaboración propia)}}{57}{table.caption.90}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Requisitos funcionales del videojuego Go Goals! Digital (elaboración propia)}}{26}{table.2.1}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Requisitos no funcionales del videojuego Go Goals! Digital (elaboración propia)}}{28}{table.2.2}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Historia de usuario 1: Inicio de nueva partida educativa (elaboración propia)}}{29}{table.caption.30}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Historia de usuario 2: Visualización del tablero hexagonal (elaboración propia)}}{29}{table.caption.31}%
+\contentsline {table}{\numberline {2.5}{\ignorespaces Historia de usuario 3: Lanzamiento de dado virtual (elaboración propia)}}{30}{table.caption.32}%
+\contentsline {table}{\numberline {2.6}{\ignorespaces Historia de usuario 4: Movimiento animado de ficha (elaboración propia)}}{30}{table.caption.33}%
+\contentsline {table}{\numberline {2.7}{\ignorespaces Historia de usuario 5: Efecto de escalera y serpiente (elaboración propia)}}{31}{table.caption.34}%
+\contentsline {table}{\numberline {2.8}{\ignorespaces Historia de usuario 6: Preguntas educativas sobre ODS (elaboración propia)}}{31}{table.caption.35}%
+\contentsline {table}{\numberline {2.9}{\ignorespaces Historia de usuario 7: Evaluación y retroalimentación de respuestas (elaboración propia)}}{32}{table.caption.36}%
+\contentsline {table}{\numberline {2.10}{\ignorespaces Historia de usuario 8: Gestión de turnos automática (elaboración propia)}}{32}{table.caption.37}%
+\contentsline {table}{\numberline {2.11}{\ignorespaces Historia de usuario 9: Condición de victoria (elaboración propia)}}{33}{table.caption.38}%
+\contentsline {table}{\numberline {2.12}{\ignorespaces Historia de usuario 10: Estadísticas de aprendizaje (elaboración propia)}}{33}{table.caption.39}%
+\contentsline {table}{\numberline {2.13}{\ignorespaces Historia de usuario 11: Menú principal y pantalla de instrucciones (elaboración propia)}}{34}{table.caption.40}%
+\contentsline {table}{\numberline {2.14}{\ignorespaces Historia de usuario 12: Configuración de audio (elaboración propia)}}{34}{table.caption.41}%
+\contentsline {table}{\numberline {2.15}{\ignorespaces Historia de usuario 13: Personalización de jugadores (elaboración propia)}}{35}{table.caption.42}%
+\contentsline {table}{\numberline {2.16}{\ignorespaces Historia de usuario 14: Visualización de información del ODS (elaboración propia)}}{35}{table.caption.43}%
+\contentsline {table}{\numberline {2.17}{\ignorespaces Historia de usuario 15: Temporizador de respuesta (elaboración propia)}}{36}{table.caption.44}%
+\contentsline {table}{\numberline {2.18}{\ignorespaces Historia de usuario 16: Modo de un jugador (elaboración propia)}}{36}{table.caption.45}%
+\contentsline {table}{\numberline {2.19}{\ignorespaces Historia de usuario 17: Pantalla de clasificación al finalizar (elaboración propia)}}{37}{table.caption.46}%
+\contentsline {table}{\numberline {2.20}{\ignorespaces Historia de usuario 18: Notificación visual del turno activo (elaboración propia)}}{37}{table.caption.47}%
+\contentsline {table}{\numberline {2.21}{\ignorespaces Historia de usuario 19: Accesibilidad de la interfaz (elaboración propia)}}{38}{table.caption.48}%
+\contentsline {table}{\numberline {2.22}{\ignorespaces Historia de usuario 20: Pantalla de créditos (elaboración propia)}}{38}{table.caption.49}%
+\contentsline {table}{\numberline {2.23}{\ignorespaces Historia de usuario 21: Exportación multiplataforma de escritorio (elaboración propia)}}{39}{table.caption.50}%
+\contentsline {table}{\numberline {2.24}{\ignorespaces Puntos de estimación por historia de usuario (elaboración propia)}}{39}{table.2.24}%
+\contentsline {table}{\numberline {2.25}{\ignorespaces Plan de iteraciones de desarrollo (elaboración propia)}}{40}{table.2.25}%
+\contentsline {table}{\numberline {2.26}{\ignorespaces Tarjeta CRC GameData (Autoload) (elaboración propia)}}{47}{table.caption.59}%
+\contentsline {table}{\numberline {2.27}{\ignorespaces Tarjeta CRC GameEvents (Bus de Eventos) (elaboración propia)}}{47}{table.caption.60}%
+\contentsline {table}{\numberline {2.28}{\ignorespaces Tarjeta CRC GameState (elaboración propia)}}{47}{table.caption.61}%
+\contentsline {table}{\numberline {2.29}{\ignorespaces Tarjeta CRC GameManager (Controlador) (elaboración propia)}}{48}{table.caption.62}%
+\contentsline {table}{\numberline {2.30}{\ignorespaces Tarjeta CRC BoardConfig (elaboración propia)}}{48}{table.caption.63}%
+\contentsline {table}{\numberline {2.31}{\ignorespaces Tarjeta CRC Board (Entidad) (elaboración propia)}}{48}{table.caption.64}%
+\contentsline {table}{\numberline {2.32}{\ignorespaces Tarjeta CRC Tile (Entidad) (elaboración propia)}}{49}{table.caption.65}%
+\contentsline {table}{\numberline {2.33}{\ignorespaces Tarjeta CRC Player (Entidad) (elaboración propia)}}{49}{table.caption.66}%
+\contentsline {table}{\numberline {2.34}{\ignorespaces Tarjeta CRC AudioManager (Autoload) (elaboración propia)}}{49}{table.caption.67}%
+\contentsline {table}{\numberline {2.35}{\ignorespaces Tarjeta CRC RecordsManager (Autoload) (elaboración propia)}}{50}{table.caption.68}%
+\contentsline {table}{\numberline {2.36}{\ignorespaces Tarea de ingeniería 1: Diseño e implementación del tablero hexagonal (elaboración propia)}}{54}{table.caption.75}%
+\contentsline {table}{\numberline {2.37}{\ignorespaces Tarea de ingeniería 2: Implementación del menú principal (elaboración propia)}}{54}{table.caption.76}%
+\contentsline {table}{\numberline {2.38}{\ignorespaces Tarea de ingeniería 3: Lógica del dado y movimiento de fichas (elaboración propia)}}{55}{table.caption.77}%
+\contentsline {table}{\numberline {2.39}{\ignorespaces Tarea de ingeniería 4: Escaleras, serpientes y gestión de turnos (elaboración propia)}}{55}{table.caption.78}%
+\contentsline {table}{\numberline {2.40}{\ignorespaces Tarea de ingeniería 5: Sistema de preguntas y evaluación de respuestas (elaboración propia)}}{56}{table.caption.79}%
+\contentsline {table}{\numberline {2.41}{\ignorespaces Tarea de ingeniería 6: Estadísticas de aprendizaje (elaboración propia)}}{56}{table.caption.80}%
+\contentsline {table}{\numberline {2.42}{\ignorespaces Tarea de ingeniería 7: Personalización de jugadores (elaboración propia)}}{57}{table.caption.81}%
+\contentsline {table}{\numberline {2.43}{\ignorespaces Tarea de ingeniería 8: Panel informativo de ODS (elaboración propia)}}{57}{table.caption.82}%
+\contentsline {table}{\numberline {2.44}{\ignorespaces Tarea de ingeniería 9: Notificaciones de turno activo (elaboración propia)}}{58}{table.caption.83}%
+\contentsline {table}{\numberline {2.45}{\ignorespaces Tarea de ingeniería 10: Inteligencia Artificial oponente (elaboración propia)}}{58}{table.caption.84}%
+\contentsline {table}{\numberline {2.46}{\ignorespaces Tarea de ingeniería 11: Exportación y optimización multiplataforma (elaboración propia)}}{59}{table.caption.85}%
+\contentsline {table}{\numberline {2.47}{\ignorespaces Tarea de ingeniería 12: Configuración de sistema y accesibilidad (elaboración propia)}}{59}{table.caption.86}%
 \addvspace {10\p@ }
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
