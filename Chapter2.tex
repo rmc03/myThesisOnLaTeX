@@ -34,12 +34,12 @@ El público objetivo son niños y jóvenes de entre 8 y 14 años, con especial �
 
 El presente epígrafe se enfoca en la organización y gestión del proyecto siguiendo la metodología Extreme Programming (XP). La planificación en XP se centra en la flexibilidad y la colaboración continua con el cliente, utilizando iteraciones cortas para adaptarse a cambios y priorizar funcionalidades \parencite{Beck1999}. Aquí se detallan los procesos clave que guían el desarrollo de \textit{Go Goals! Digital}, desde la obtención de requisitos hasta la definición de historias de usuario, la estimación de tiempo y el plan de iteraciones.
 
-Como parte inicial de esta planificación, se realizaron sesiones de tormenta de ideas (brainstorming) para enfocar el proyecto en la arquitectura general y posteriormente reuniones que resultaron en la definición de los requisitos funcionales, no funcionales e historias de usuario \parencite{SchwaberSutherland2020}.
+Como parte inicial de esta planificación, se realizaron sesiones de tormenta de ideas (\textit{brainstorming}) con el cliente para enfocar el proyecto en la arquitectura general, y posteriormente se llevaron a cabo reuniones que resultaron en la definición de los requisitos funcionales, no funcionales e historias de usuario \parencite{SchwaberSutherland2020}.
 
 \subsection{Requisitos funcionales}
 \label{subsec:req_funcionales}
 
-Los requisitos funcionales son descripciones detalladas de las funciones, comportamientos y procesos que un sistema de software debe cumplir para satisfacer las necesidades de sus usuarios y alcanzar los objetivos del negocio. En esencia, definen ``lo que el sistema debe hacer'' al especificar, de forma clara y verificable, las entradas que recibe, las operaciones que realiza y las salidas que produce. Según \citeauthor{Pressman2021} \parencite{Pressman2021}, esta definición es esencial no solo para orientar las fases de análisis, diseño, implementación y pruebas, sino también para asegurar una comunicación efectiva entre todos los involucrados en el proyecto, evitando ambigüedades y facilitando la gestión de cambios durante el desarrollo.
+Los requisitos funcionales son descripciones detalladas de las funciones, comportamientos y procesos que un sistema de software debe cumplir para satisfacer las necesidades de sus usuarios y alcanzar los objetivos del negocio. En esencia, definen ``lo que el sistema debe hacer'' al especificar, de forma clara y verificable, las entradas que recibe, las operaciones que realiza y las salidas que produce. Según \citeauthor{Pressman2021} \parencite{Pressman2021}, esta definición es esencial no solo para orientar las fases de análisis, diseño, implementación y pruebas, sino también para asegurar una comunicación efectiva entre todos los involucrados en el proyecto, evitando ambigüedades y facilitando la gestión de cambios durante el desarrollo. Para el presente proyecto, los requisitos funcionales de software fueron recopilados mediante reuniones con el cliente.
 
 \begin{longtable}{|c|p{0.3\textwidth}|p{0.37\textwidth}|c|c|}
 \caption{Requisitos funcionales del videojuego Go Goals! Digital (elaboración propia)\label{tab:req_funcionales}} \\
@@ -98,7 +98,7 @@ Los requisitos funcionales son descripciones detalladas de las funciones, compor
 \subsection{Requisitos no funcionales}
 \label{subsec:req_no_funcionales}
 
-Los requisitos no funcionales son aquellos que especifican criterios que pueden usarse para juzgar la operación de un sistema, en lugar de sus comportamientos específicos. Estos requisitos se centran en aspectos como el rendimiento, la seguridad, la usabilidad y la fiabilidad del sistema, y son esenciales para garantizar que el software cumpla con las expectativas de calidad y satisfacción del usuario final \parencite{Pressman2021}.
+Los requisitos no funcionales de software son aquellos que especifican criterios que pueden usarse para juzgar la operación de un sistema, en lugar de sus comportamientos específicos. Estos requisitos se centran en aspectos como el rendimiento, la seguridad, la usabilidad y la fiabilidad del sistema, y son esenciales para garantizar que el software cumpla con las expectativas de calidad y satisfacción del usuario final \parencite{Pressman2021}.
 
 \begin{longtable}{|p{0.28\textwidth}|p{0.18\textwidth}|p{0.45\textwidth}|}
 \caption{Requisitos no funcionales del videojuego Go Goals! Digital (elaboración propia)\label{tab:req_no_funcionales}} \\
@@ -195,7 +195,7 @@ A continuación se presentan las historias de usuario definidas para las funcion
     \setlength\itemsep{0em}
     \item El tablero debe ser fiel al diseño oficial.
     \item Las 17 casillas temáticas deben identificarse con el ícono del ODS correspondiente.
-    \item El tablero debe ser visible sin scroll.
+    \item El tablero debe ser visible sin \textit{scroll}.
     \item Debe ser adaptable a distintas resoluciones de pantalla.
 \end{itemize}
 \vspace{-1em}
@@ -227,7 +227,7 @@ A continuación se presentan las historias de usuario definidas para las funcion
     \item Debe mostrar animación breve del dado.
     \item El resultado entre 1 y 6 debe ser pseudoaleatorio.
     \item No debe ser posible lanzar el dado más de una vez por turno.
-    \item Debe incluir feedback visual y sonoro al obtener el resultado.
+    \item Debe incluir \textit{feedback} visual y sonoro al obtener el resultado.
 \end{itemize}
 \vspace{-1em}
 } \\
@@ -927,10 +927,10 @@ El plan de iteraciones es una herramienta esencial para organizar y coordinar el
 
 El presente epígrafe constituye la transición esencial entre la planificación teórica y la implementación práctica, donde se materializan los requisitos en soluciones técnicas concretas. Este apartado se centra en tres pilares fundamentales: (1) la arquitectura del sistema, detallando cómo la estructura basada en nodos y el SceneTree de Godot permiten organizar los componentes clave del videojuego; (2) los prototipos de interfaces gráficas de usuario; y (3) las tarjetas CRC (Class-Responsibility-Collaboration) que definen la interacción entre las clases del sistema.
 
-\subsection{Arquitectura utilizada}
+\subsection{Arquitectura Jerárquica Basada en Nodos}
 \label{subsec:arquitectura}
 
-Godot Engine utiliza una arquitectura jerárquica basada en nodos, donde cada elemento del videojuego (desde una ficha hasta un efecto de sonido) es un nodo que hereda de la clase base \texttt{Node}. Según la documentación oficial \parencite{GodotDocs2023}, los nodos son bloques de construcción modulares que se combinan para formar escenas complejas. El SceneTree (árbol de escenas) es la estructura que gestiona todas las escenas y nodos en tiempo de ejecución, funcionando como un árbol de procesamiento que organiza el orden de ejecución de métodos, la jerarquía de transformaciones para establecer las posiciones de los nodos en la pantalla y la gestión de señales que comunican a los nodos entre sí.
+Godot Engine utiliza una arquitectura jerárquica basada en nodos, conocida como SceneTree (\u00e1rbol de escenas). En esta arquitectura, los \textbf{nodos} son los bloques de construcción fundamentales: cada elemento del videojuego, desde una ficha de jugador hasta un efecto de sonido, es un nodo que hereda de la clase base \texttt{Node}. Los nodos se organizan en \textbf{escenas}, que son composiciones reutilizables de nodos agrupados jerárquicamente; una escena puede representar desde un botón hasta una pantalla completa del juego. El \textbf{SceneTree} es la estructura global que gestiona todas las escenas y nodos en tiempo de ejecución, funcionando como un árbol de procesamiento que organiza el orden de ejecución de métodos, la jerarquía de transformaciones y la gestión de señales que comunican a los nodos entre sí \parencite{GodotDocs2023}.
 
 El uso del SceneTree aporta ventajas significativas para \textit{Go Goals! Digital}. En primer lugar, aumenta la modularidad al permitir tener una escena para cada funcionalidad específica, como podría ser una ficha de jugador, que puede instanciarse dentro de otra escena más grande como el tablero. De esta manera, el tablero puede contener varias fichas, cada una con sus propiedades individuales (color, posición, nombre del jugador). Al momento de necesitar cambiarlas todas, se pueden realizar modificaciones en la escena de la ficha, reflejándose automáticamente en todas las instancias. Otra ventaja es el rendimiento, que mejora debido a que evita actualizaciones innecesarias y permite operaciones masivas como llamadas de métodos en grupos de nodos. Su diseño trae un enfoque de composición sobre herencia para no depender de jerarquías rígidas de clases y posee funcionalidades para realizar cambios de escenas de forma fluida.
 
@@ -942,7 +942,7 @@ La comunicación entre estos elementos se simplifica gracias al sistema de seña
   \caption{Ejemplo de jerarquía de nodos en el SceneTree de Godot: pantalla de instrucciones del videojuego \textit{Go Goals! Digital} (elaboración propia)\label{fig:scene_tree}}
 \end{figure}
 
-El videojuego \textit{Go Goals! Digital} emplea esta arquitectura modular orientada a escenas, apoyada por servicios globales y coordinada centralmente. Este enfoque estructura el proyecto en cuatro pilares fundamentales de diseño y responsabilidad:
+El videojuego \textit{Go Goals! Digital} emplea esta Arquitectura Jerárquica Basada en Nodos, apoyada por servicios globales y coordinada centralmente. Como buena práctica de diseño, el desarrollador decidió estructurar el proyecto en cuatro pilares fundamentales de diseño y responsabilidad:
 
 \begin{itemize}
     \item \textbf{Arquitectura Orientada a Escenas}: La navegación principal y los límites de las interfaces dependen del sistema nativo de escenas de Godot. Entornos como el menú principal, la pantalla de juego interactiva y el menú de fin de partida funcionan como fronteras naturales de presentación. Dentro del juego, el nivel principal actúa como controlador de composición local (\textit{composition root}), ensamblando las dependencias y conectando la interfaz de usuario con la lógica sin mezclar directamente sus responsabilidades.

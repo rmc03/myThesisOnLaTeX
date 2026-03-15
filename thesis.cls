@@ -288,6 +288,10 @@ Ingeniero en Ciencias Informáticas }
 {
 \def\@keywords{#1}
 }
+\newcommand{\keywordsen}[1]
+{
+\def\@keywordsen{#1}
+}
 \renewcommand{\abstract}[2]
 {
 \def\@abstractes{#1}
@@ -341,7 +345,7 @@ Ingeniero en Ciencias Informáticas }
 {
 \@abstracten
 \quad\\[0.6\baselineskip]
-\noindent \textbf{Keywords:} \@keywords.
+\noindent \textbf{Keywords:} \textit{\@keywordsen}.
 }
 }
 
