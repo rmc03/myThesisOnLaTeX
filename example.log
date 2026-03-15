@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.24)  14 MAR 2026 22:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.24)  14 MAR 2026 22:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1984,6 +1984,16 @@ LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 21.
+LaTeX Info: Redefining \. on input line 681.
+LaTeX Info: Redefining \% on input line 681.
+LaTeX Info: Redefining \. on input line 682.
+LaTeX Info: Redefining \% on input line 682.
+LaTeX Info: Redefining \. on input line 683.
+LaTeX Info: Redefining \% on input line 683.
+LaTeX Info: Redefining \. on input line 684.
+LaTeX Info: Redefining \% on input line 684.
+LaTeX Info: Redefining \. on input line 685.
+LaTeX Info: Redefining \% on input line 685.
 LaTeX Info: Redefining \. on input line 686.
 LaTeX Info: Redefining \% on input line 686.
 LaTeX Info: Redefining \. on input line 687.
@@ -2026,16 +2036,6 @@ LaTeX Info: Redefining \. on input line 705.
 LaTeX Info: Redefining \% on input line 705.
 LaTeX Info: Redefining \. on input line 706.
 LaTeX Info: Redefining \% on input line 706.
-LaTeX Info: Redefining \. on input line 707.
-LaTeX Info: Redefining \% on input line 707.
-LaTeX Info: Redefining \. on input line 708.
-LaTeX Info: Redefining \% on input line 708.
-LaTeX Info: Redefining \. on input line 709.
-LaTeX Info: Redefining \% on input line 709.
-LaTeX Info: Redefining \. on input line 710.
-LaTeX Info: Redefining \% on input line 710.
-LaTeX Info: Redefining \. on input line 711.
-LaTeX Info: Redefining \% on input line 711.
 )
 \openout1 = `example.aux'.
 
@@ -2446,6 +2446,9 @@ LaTeX Info: Redefining \% on input line 91.
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \sptext on input line 19.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
 LaTeX Info: Redefining \sptext on input line 20.
 LaTeX Info: Redefining \. on input line 20.
 LaTeX Info: Redefining \% on input line 20.
@@ -2521,9 +2524,6 @@ LaTeX Info: Redefining \% on input line 43.
 LaTeX Info: Redefining \sptext on input line 44.
 LaTeX Info: Redefining \. on input line 44.
 LaTeX Info: Redefining \% on input line 44.
-LaTeX Info: Redefining \sptext on input line 45.
-LaTeX Info: Redefining \. on input line 45.
-LaTeX Info: Redefining \% on input line 45.
 )
 \tf@lof=\write9
 \openout9 = `example.lof'.
@@ -2662,7 +2662,7 @@ LaTeX Font Info:    Font shape `T1/txss/m/n' will be
 [4
 
 ]
-<Images/17 ODS.jpg, id=400, 931.98187pt x 466.74374pt>
+<Images/17 ODS.jpg, id=397, 931.98187pt x 466.74374pt>
 File: Images/17 ODS.jpg Graphic file (type jpg)
 <use Images/17 ODS.jpg>
 Package pdftex.def Info: Images/17 ODS.jpg  used on input line 26.
@@ -2709,7 +2709,7 @@ e 70.
 LaTeX Warning: Citation 'MishraKoehler2006' on page 8 undefined on input line 7
 2.
 
-<Images/Relación ABJ, TPACK y Gamificación.jpg, id=434, 1027.84pt x 561.09625
+<Images/Relación ABJ, TPACK y Gamificación.jpg, id=431, 1027.84pt x 561.09625
 pt>
 File: Images/Relación ABJ, TPACK y Gamificación.jpg Graphic file (type jpg)
 <use Images/Relación ABJ, TPACK y Gamificación.jpg>
@@ -2739,7 +2739,7 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [9 <./Images/Relación ABJ, TPACK y Gamificación.jpg>]
-<Images/Tablero del juego de mesa Go Goals!.jpg, id=449, 1284.8pt x 722.7pt>
+<Images/Tablero del juego de mesa Go Goals!.jpg, id=446, 1284.8pt x 722.7pt>
 File: Images/Tablero del juego de mesa Go Goals!.jpg Graphic file (type jpg)
 <use Images/Tablero del juego de mesa Go Goals!.jpg>
 Package pdftex.def Info: Images/Tablero del juego de mesa Go Goals!.jpg  used o
@@ -2770,7 +2770,7 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [11]
-<Images/Mario Party.png, id=471, 525.46312pt x 289.83281pt>
+<Images/Mario Party.png, id=468, 525.46312pt x 289.83281pt>
 File: Images/Mario Party.png Graphic file (type png)
 <use Images/Mario Party.png>
 Package pdftex.def Info: Images/Mario Party.png  used on input line 153.
@@ -2835,7 +2835,7 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [15]
-<Images/XP.png, id=505, 729.927pt x 414.348pt>
+<Images/XP.png, id=502, 729.927pt x 414.348pt>
 File: Images/XP.png Graphic file (type png)
 <use Images/XP.png>
 Package pdftex.def Info: Images/XP.png  used on input line 290.
@@ -3072,7 +3072,7 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [18]
-<Images/godot.png, id=538, 416.757pt x 229.45724pt>
+<Images/godot.png, id=535, 416.757pt x 229.45724pt>
 File: Images/godot.png Graphic file (type png)
 <use Images/godot.png>
 Package pdftex.def Info: Images/godot.png  used on input line 347.
@@ -3105,7 +3105,7 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [20]
-<Images/Control de versiones Git.png, id=560, 692.5875pt x 357.58594pt>
+<Images/Control de versiones Git.png, id=557, 692.5875pt x 357.58594pt>
 File: Images/Control de versiones Git.png Graphic file (type png)
 <use Images/Control de versiones Git.png>
 Package pdftex.def Info: Images/Control de versiones Git.png  used on input lin
@@ -3123,15 +3123,15 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
 [21 <./Images/Control de versiones Git.png>]
-<Images/GitHub Projects.jpg, id=571, 1139.25626pt x 931.48pt>
+<Images/GitHub Projects.jpg, id=566, 1139.25626pt x 931.48pt>
 File: Images/GitHub Projects.jpg Graphic file (type jpg)
 <use Images/GitHub Projects.jpg>
-Package pdftex.def Info: Images/GitHub Projects.jpg  used on input line 399.
+Package pdftex.def Info: Images/GitHub Projects.jpg  used on input line 397.
 (pdftex.def)             Requested size: 399.29463pt x 326.46349pt.
 
 
-LaTeX Info: Redefining \. on input line 402.
-LaTeX Info: Redefining \% on input line 402.
+LaTeX Info: Redefining \. on input line 406.
+LaTeX Info: Redefining \% on input line 406.
 
 Package fancyhdr Warning: \headheight is too small (14.05273pt): 
 (fancyhdr)                Make it at least 27.65274pt, for example:
@@ -3139,18 +3139,7 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
-[22]
-
-LaTeX Info: Redefining \. on input line 417.
-LaTeX Info: Redefining \% on input line 417.
-
-Package fancyhdr Warning: \headheight is too small (14.05273pt): 
-(fancyhdr)                Make it at least 27.65274pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.65274pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
-
-[23 <./Images/GitHub Projects.jpg>]) (Chapter2.tex
+[22 <./Images/GitHub Projects.jpg>]) (Chapter2.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -3161,14 +3150,14 @@ Package fancyhdr Warning: \headheight is too small (14.05273pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-13.6pt}.
 
-[24]
+[23]
 Cap\'{\i }tulo 2.
 
 
-[25
+[24
 
 ]
-<Images/Menú Principal.png, id=591, 822.07124pt x 461.92575pt>
+<Images/Menú Principal.png, id=583, 822.07124pt x 461.92575pt>
 File: Images/Menú Principal.png Graphic file (type png)
 <use Images/Menú Principal.png>
 Package pdftex.def Info: Images/Menú Principal.png  used on input line 23.
@@ -3177,7 +3166,7 @@ Package pdftex.def Info: Images/Menú Principal.png  used on input line 23.
 
 LaTeX Info: Redefining \. on input line 36.
 LaTeX Info: Redefining \% on input line 36.
-[26 <./Images/Menú Principal.png>]
+[25 <./Images/Menú Principal.png>]
 Overfull \hbox (19.32993pt too wide) in alignment at lines 44--49
  [] [] [] [] [] 
  []
@@ -3209,11 +3198,11 @@ Overfull \hbox (19.32993pt too wide) in alignment at lines 58--96
 
 LaTeX Info: Redefining \. on input line 96.
 LaTeX Info: Redefining \% on input line 96.
-[27]
+[26]
 
 LaTeX Info: Redefining \. on input line 102.
 LaTeX Info: Redefining \% on input line 102.
-[28]
+[27]
 Underfull \hbox (badness 1394) in paragraph at lines 118--118
 []|\T1/txr/m/n/10 Proporcionar in-ter-faz ac-ce-si-ble
  []
@@ -3222,53 +3211,53 @@ Underfull \hbox (badness 1394) in paragraph at lines 118--118
 
 LaTeX Info: Redefining \. on input line 175.
 LaTeX Info: Redefining \% on input line 175.
-[29]
+[28]
 
 LaTeX Info: Redefining \. on input line 237.
 LaTeX Info: Redefining \% on input line 237.
-[30]
+[29]
 
 LaTeX Info: Redefining \. on input line 298.
 LaTeX Info: Redefining \% on input line 298.
-[31]
+[30]
 
 LaTeX Info: Redefining \. on input line 363.
 LaTeX Info: Redefining \% on input line 363.
-[32]
+[31]
 
 LaTeX Info: Redefining \. on input line 423.
 LaTeX Info: Redefining \% on input line 423.
-[33]
+[32]
 
 LaTeX Info: Redefining \. on input line 484.
 LaTeX Info: Redefining \% on input line 484.
-[34]
+[33]
 
 LaTeX Info: Redefining \. on input line 543.
 LaTeX Info: Redefining \% on input line 543.
-[35]
+[34]
 
 LaTeX Info: Redefining \. on input line 604.
 LaTeX Info: Redefining \% on input line 604.
-[36]
+[35]
 
 LaTeX Info: Redefining \. on input line 666.
 LaTeX Info: Redefining \% on input line 666.
-[37]
+[36]
 
 LaTeX Info: Redefining \. on input line 728.
 LaTeX Info: Redefining \% on input line 728.
-[38]
+[37]
 
 LaTeX Info: Redefining \. on input line 789.
 LaTeX Info: Redefining \% on input line 789.
-[39]
+[38]
 LaTeX Info: Redefining \. on input line 855.
 LaTeX Info: Redefining \% on input line 855.
- [40]
+ [39]
 LaTeX Info: Redefining \. on input line 922.
 LaTeX Info: Redefining \% on input line 922.
- [41]
+ [40]
 LaTeX Font Info:    Trying to load font information for T1+txtt on input line 9
 33.
 
@@ -3278,8 +3267,8 @@ File: t1txtt.fd 2000/12/15 v3.1
 
 LaTeX Info: Redefining \. on input line 938.
 LaTeX Info: Redefining \% on input line 938.
-[42]
-<Images/SceeneTree.jpg, id=675, 995.72pt x 1060.96375pt>
+[41]
+<Images/SceeneTree.jpg, id=670, 995.72pt x 1060.96375pt>
 File: Images/SceeneTree.jpg Graphic file (type jpg)
 <use Images/SceeneTree.jpg>
 Package pdftex.def Info: Images/SceeneTree.jpg  used on input line 941.
@@ -3288,7 +3277,7 @@ Package pdftex.def Info: Images/SceeneTree.jpg  used on input line 941.
 
 LaTeX Info: Redefining \. on input line 951.
 LaTeX Info: Redefining \% on input line 951.
-[43 <./Images/SceeneTree.jpg>]
+[42 <./Images/SceeneTree.jpg>]
 Overfull \hbox (22.90953pt too wide) in paragraph at lines 963--964
 []\T1/txr/bx/n/10.95 autoloads/\T1/txr/m/n/10.95 : con-tie-ne los Sin-gle-tons 
 glo-ba-les del pro-yec-to (\T1/txtt/m/n/10.95 GameData\T1/txr/m/n/10.95 , \T1/t
@@ -3300,8 +3289,8 @@ xtt/m/n/10.95 AudioManager\T1/txr/m/n/10.95 , \T1/txtt/m/n/10.95 RecordsManager
 
 LaTeX Info: Redefining \. on input line 976.
 LaTeX Info: Redefining \% on input line 976.
-[44]
-<Images/GoGoals Digital.png, id=689, 1026.08344pt x 579.66562pt>
+[43]
+<Images/GoGoals Digital.png, id=685, 1026.08344pt x 579.66562pt>
 File: Images/GoGoals Digital.png Graphic file (type png)
 <use Images/GoGoals Digital.png>
 Package pdftex.def Info: Images/GoGoals Digital.png  used on input line 987.
@@ -3310,8 +3299,8 @@ Package pdftex.def Info: Images/GoGoals Digital.png  used on input line 987.
 
 LaTeX Info: Redefining \. on input line 995.
 LaTeX Info: Redefining \% on input line 995.
-[45 <./Images/GoGoals Digital.png>]
-<Images/Panel Preguntas.png, id=695, 1139.25626pt x 537.00626pt>
+[44 <./Images/GoGoals Digital.png>]
+<Images/Panel Preguntas.png, id=692, 1139.25626pt x 537.00626pt>
 File: Images/Panel Preguntas.png Graphic file (type png)
 <use Images/Panel Preguntas.png>
 Package pdftex.def Info: Images/Panel Preguntas.png  used on input line 1000.
@@ -3320,8 +3309,8 @@ Package pdftex.def Info: Images/Panel Preguntas.png  used on input line 1000.
 
 LaTeX Info: Redefining \. on input line 1010.
 LaTeX Info: Redefining \% on input line 1010.
-[46 <./Images/Panel Preguntas.png>]
-<Images/Ranking.png, id=703, 871.255pt x 935.495pt>
+[45 <./Images/Panel Preguntas.png>]
+<Images/Ranking.png, id=701, 871.255pt x 935.495pt>
 File: Images/Ranking.png Graphic file (type png)
 <use Images/Ranking.png>
 Package pdftex.def Info: Images/Ranking.png  used on input line 1013.
@@ -3330,7 +3319,7 @@ Package pdftex.def Info: Images/Ranking.png  used on input line 1013.
 
 LaTeX Info: Redefining \. on input line 1040.
 LaTeX Info: Redefining \% on input line 1040.
-[47 <./Images/Ranking.png>]
+[46 <./Images/Ranking.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1050--1051
 []|\T1/txr/m/n/10.95 - de-fi-nir las se-�a-les glo-ba-les del sis-te-ma: \T1/tx
 tt/m/n/10.95 dice_rolled\T1/txr/m/n/10.95 ,
@@ -3353,15 +3342,15 @@ a-dor ac-ti-vo
 
 LaTeX Info: Redefining \. on input line 1097.
 LaTeX Info: Redefining \% on input line 1097.
-[48]
+[47]
 
 LaTeX Info: Redefining \. on input line 1153.
 LaTeX Info: Redefining \% on input line 1153.
-[49]
+[48]
 
 LaTeX Info: Redefining \. on input line 1209.
 LaTeX Info: Redefining \% on input line 1209.
-[50]
+[49]
 Overfull \hbox (8.8571pt too wide) in paragraph at lines 1228--1230
 []\T1/txr/bx/n/10.95 Variables y fun-cio-nes\T1/txr/m/n/10.95 : sna-ke_case (ej
 em-plo: \T1/txtt/m/n/10.95 current_player\T1/txr/m/n/10.95 , \T1/txtt/m/n/10.95
@@ -3369,7 +3358,7 @@ em-plo: \T1/txtt/m/n/10.95 current_player\T1/txr/m/n/10.95 , \T1/txtt/m/n/10.95
 95 : SCREA-
  []
 
-<Images/Jerarquia.jpg, id=725, 835.12pt x 1257.69875pt>
+<Images/Jerarquia.jpg, id=724, 835.12pt x 1257.69875pt>
 File: Images/Jerarquia.jpg Graphic file (type jpg)
 <use Images/Jerarquia.jpg>
 Package pdftex.def Info: Images/Jerarquia.jpg  used on input line 1238.
@@ -3378,12 +3367,12 @@ Package pdftex.def Info: Images/Jerarquia.jpg  used on input line 1238.
 
 LaTeX Info: Redefining \. on input line 1241.
 LaTeX Info: Redefining \% on input line 1241.
-[51]
+[50]
 
 LaTeX Info: Redefining \. on input line 1256.
 LaTeX Info: Redefining \% on input line 1256.
-[52 <./Images/Jerarquia.jpg>]
-<Images/signals.png, id=741, 1413.28pt x 770.88pt>
+[51 <./Images/Jerarquia.jpg>]
+<Images/signals.png, id=742, 1413.28pt x 770.88pt>
 File: Images/signals.png Graphic file (type png)
 <use Images/signals.png>
 Package pdftex.def Info: Images/signals.png  used on input line 1284.
@@ -3392,7 +3381,7 @@ Package pdftex.def Info: Images/signals.png  used on input line 1284.
 
 LaTeX Info: Redefining \. on input line 1287.
 LaTeX Info: Redefining \% on input line 1287.
-[53]
+[52]
 Overfull \hbox (1.71078pt too wide) in paragraph at lines 1300--1321
  [][] 
  []
@@ -3401,7 +3390,7 @@ Overfull \hbox (1.71078pt too wide) in paragraph at lines 1300--1321
 
 LaTeX Info: Redefining \. on input line 1322.
 LaTeX Info: Redefining \% on input line 1322.
-[54 <./Images/signals.png>]
+[53 <./Images/signals.png>]
 Overfull \hbox (1.71078pt too wide) in paragraph at lines 1326--1347
  [][] 
  []
@@ -3415,7 +3404,7 @@ Overfull \hbox (1.71078pt too wide) in paragraph at lines 1352--1373
 
 LaTeX Info: Redefining \. on input line 1374.
 LaTeX Info: Redefining \% on input line 1374.
-[55]
+[54]
 Overfull \hbox (1.71078pt too wide) in paragraph at lines 1378--1399
  [][] 
  []
@@ -3429,7 +3418,7 @@ Overfull \hbox (1.71078pt too wide) in paragraph at lines 1404--1425
 
 LaTeX Info: Redefining \. on input line 1426.
 LaTeX Info: Redefining \% on input line 1426.
-[56]
+[55]
 Overfull \hbox (1.71078pt too wide) in paragraph at lines 1430--1451
  [][] 
  []
@@ -3443,7 +3432,7 @@ Overfull \hbox (1.71078pt too wide) in paragraph at lines 1456--1477
 
 LaTeX Info: Redefining \. on input line 1478.
 LaTeX Info: Redefining \% on input line 1478.
-[57]
+[56]
 Overfull \hbox (1.71078pt too wide) in paragraph at lines 1482--1503
  [][] 
  []
@@ -3457,7 +3446,7 @@ Overfull \hbox (1.71078pt too wide) in paragraph at lines 1508--1529
 
 LaTeX Info: Redefining \. on input line 1530.
 LaTeX Info: Redefining \% on input line 1530.
-[58]
+[57]
 Overfull \hbox (1.71078pt too wide) in paragraph at lines 1534--1555
  [][] 
  []
@@ -3471,7 +3460,7 @@ Overfull \hbox (1.71078pt too wide) in paragraph at lines 1560--1581
 
 LaTeX Info: Redefining \. on input line 1582.
 LaTeX Info: Redefining \% on input line 1582.
-[59]
+[58]
 Overfull \hbox (1.71078pt too wide) in paragraph at lines 1586--1607
  [][] 
  []
@@ -3480,19 +3469,19 @@ Overfull \hbox (1.71078pt too wide) in paragraph at lines 1586--1607
 
 LaTeX Info: Redefining \. on input line 1619.
 LaTeX Info: Redefining \% on input line 1619.
-[60]) (Chapter3.tex
+[59]) (Chapter3.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[61]
+[60]
 Cap\'{\i }tulo 3.
 ) (Conclusions.tex
 
-[62
+[61
 
 ]) (Suggestions.tex
 
-[63
+[62
 
 ]) (Appendices.tex)
 
@@ -3504,7 +3493,7 @@ No file example.gls.
 No file example.acr.
 
 
-[64
+[63
 
 ]
 LaTeX Info: Redefining \sptext on input line 40.
@@ -3545,7 +3534,7 @@ LaTeX Info: Redefining \. on input line 40.
 LaTeX Info: Redefining \% on input line 40.
 
 
-[65
+[64
 
 ]
 LaTeX Info: Redefining \sptext on input line 40.
@@ -3583,13 +3572,30 @@ ustainabledevelopment /
 
 LaTeX Info: Redefining \. on input line 40.
 LaTeX Info: Redefining \% on input line 40.
+[65]
+LaTeX Info: Redefining \sptext on input line 40.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+LaTeX Info: Redefining \sptext on input line 40.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+LaTeX Info: Redefining \sptext on input line 40.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+LaTeX Info: Redefining \sptext on input line 40.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+LaTeX Info: Redefining \sptext on input line 40.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+LaTeX Info: Redefining \sptext on input line 40.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+
+
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
 [66]
-LaTeX Info: Redefining \sptext on input line 40.
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
-LaTeX Info: Redefining \sptext on input line 40.
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
 LaTeX Info: Redefining \sptext on input line 40.
 LaTeX Info: Redefining \. on input line 40.
 LaTeX Info: Redefining \% on input line 40.
@@ -3607,23 +3613,6 @@ LaTeX Info: Redefining \% on input line 40.
 LaTeX Info: Redefining \. on input line 40.
 LaTeX Info: Redefining \% on input line 40.
 [67]
-LaTeX Info: Redefining \sptext on input line 40.
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
-LaTeX Info: Redefining \sptext on input line 40.
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
-LaTeX Info: Redefining \sptext on input line 40.
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
-LaTeX Info: Redefining \sptext on input line 40.
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
-
-
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
-[68]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -3660,20 +3649,20 @@ LaTeX Font Info:    Font shape `T1/txr/b/n' in size <24.88> not available
 (Font)              Font shape `T1/txr/bx/n' tried instead on input line 40.
 
 
-[69
+[68
 
 
 
 ]
 Ap\'{e}ndice A.
-<Anexos/BloqueCoronaReport.pdf, id=960, 614.295pt x 794.97pt>
+<Anexos/BloqueCoronaReport.pdf, id=967, 614.295pt x 794.97pt>
 File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf  used on input line 40.
 (pdftex.def)             Requested size: 276.43019pt x 357.7332pt.
 
 
-[70
+[69
 
 
  <./Anexos/BloqueCoronaReport.pdf>]
@@ -3684,20 +3673,20 @@ Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf  used on input line 40.
 (pdftex.def)             Requested size: 276.43019pt x 357.7332pt.
 
 
-[71
+[70
 
 ]
 
 LaTeX Info: Redefining \. on input line 40.
 LaTeX Info: Redefining \% on input line 40.
-[72]
+[71]
 \c@tempcnt=\count623
 \c@includepdfpage=\count624
 File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf  used on input line 40.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Anexos/BloqueCoronaReport.pdf, id=990, page=1, 614.295pt x 794.97pt>
+<Anexos/BloqueCoronaReport.pdf, id=997, page=1, 614.295pt x 794.97pt>
 File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf, page 1>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf , page1 used on input li
@@ -3725,11 +3714,11 @@ File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf , page1 used on input li
 ne 40.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[73
+[72
 
 
  <./Anexos/BloqueCoronaReport.pdf>]
-<Anexos/BloqueCoronaReport.pdf, id=1013, page=2, 614.295pt x 794.97pt>
+<Anexos/BloqueCoronaReport.pdf, id=1019, page=2, 614.295pt x 794.97pt>
 File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 <use Anexos/BloqueCoronaReport.pdf, page 2>
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf , page2 used on input li
@@ -3747,12 +3736,21 @@ File: Anexos/BloqueCoronaReport.pdf Graphic file (type pdf)
 Package pdftex.def Info: Anexos/BloqueCoronaReport.pdf , page2 used on input li
 ne 40.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[74
+[73
 
  <./Anexos/BloqueCoronaReport.pdf>] (example.aux
 LaTeX Info: Redefining \sptext on input line 21.
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
+LaTeX Info: Redefining \sptext on input line 683.
+LaTeX Info: Redefining \. on input line 683.
+LaTeX Info: Redefining \% on input line 683.
+LaTeX Info: Redefining \sptext on input line 684.
+LaTeX Info: Redefining \. on input line 684.
+LaTeX Info: Redefining \% on input line 684.
+LaTeX Info: Redefining \sptext on input line 685.
+LaTeX Info: Redefining \. on input line 685.
+LaTeX Info: Redefining \% on input line 685.
 LaTeX Info: Redefining \sptext on input line 686.
 LaTeX Info: Redefining \. on input line 686.
 LaTeX Info: Redefining \% on input line 686.
@@ -3822,15 +3820,6 @@ LaTeX Info: Redefining \% on input line 707.
 LaTeX Info: Redefining \sptext on input line 708.
 LaTeX Info: Redefining \. on input line 708.
 LaTeX Info: Redefining \% on input line 708.
-LaTeX Info: Redefining \sptext on input line 709.
-LaTeX Info: Redefining \. on input line 709.
-LaTeX Info: Redefining \% on input line 709.
-LaTeX Info: Redefining \sptext on input line 710.
-LaTeX Info: Redefining \. on input line 710.
-LaTeX Info: Redefining \% on input line 710.
-LaTeX Info: Redefining \sptext on input line 711.
-LaTeX Info: Redefining \. on input line 711.
-LaTeX Info: Redefining \% on input line 711.
 )
  ***********
 LaTeX2e <2025-06-01> patch level 1
@@ -3853,9 +3842,9 @@ Package logreq Info: Writing requests to 'example.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50353 strings out of 468081
- 977820 string characters out of 5423816
- 2006792 words of memory out of 5000000
+ 50367 strings out of 468081
+ 978035 string characters out of 5423816
+ 2006581 words of memory out of 5000000
  77840 multiletter control sequences out of 15000+600000
  712374 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3863,6 +3852,66 @@ Here is how much of TeX's memory you used:
 
 pdfTeX warning (dest): name{glo:Engine} has been referenced but does not exist,
  replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.78} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.62} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.33} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.77} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.73} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.61} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.59} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.57} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.54} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.32} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.96} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{chapter*.94} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{chapter*.92} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.90} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.31} has been referenced but does not exist
+, replaced by a fixed one
 
 <C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/public/aurical/Ja
 naSkrivanaSlant.pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/typ
@@ -3879,9 +3928,9 @@ pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 r8a.pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
 /utmr8a.pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on example.pdf (86 pages, 5975132 bytes).
+Output written on example.pdf (85 pages, 5974447 bytes).
 PDF statistics:
- 1306 PDF objects out of 1440 (max. 8388607)
- 291 named destinations out of 1000 (max. 500000)
+ 1315 PDF objects out of 1440 (max. 8388607)
+ 305 named destinations out of 1000 (max. 500000)
  553 words of extra memory for PDF output out of 10000 (max. 10000000)
 

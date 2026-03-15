@@ -7,15 +7,15 @@
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Fases de Extreme Programming aplicadas al desarrollo de \textit {Go Goals! Digital} \blx@tocontentsinit {0}\parencite {Beck1999}}}{17}{figure.caption.28}%
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Logotipo oficial de Godot Engine }}{19}{figure.caption.29}%
 \contentsline {figure}{\numberline {1.7}{\ignorespaces Manejo del historial de versiones y ramificaciones con Git (elaboración propia)}}{21}{figure.caption.30}%
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Tablero de gestión de tareas ágiles en GitHub Projects para \textit {Go Goals! Digital} (elaboración propia)}}{23}{figure.caption.31}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Tablero de gestión de tareas ágiles en GitHub Projects para \textit {Go Goals! Digital} (elaboración propia)}}{22}{figure.caption.31}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Vista general del videojuego educativo \textit {Go Goals! Digital} (elaboración propia)}}{26}{figure.caption.33}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Ejemplo de jerarquía de nodos en el SceneTree de Godot: pantalla de instrucciones del videojuego \textit {Go Goals! Digital} (elaboración propia)}}{43}{figure.caption.55}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Prototipo de la pantalla principal del tablero de juego (elaboración propia)}}{45}{figure.caption.58}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Prototipo del panel de preguntas educativas por ODS (elaboración propia)}}{46}{figure.caption.60}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Prototipo de la pantalla de estadísticas y clasificación final (elaboración propia)}}{47}{figure.caption.62}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Estructura de archivos del proyecto \textit {Go Goals! Digital} (elaboración propia)}}{52}{figure.caption.74}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Patrón Observer implementado mediante señales globales en Godot (elaboración propia)}}{54}{figure.caption.78}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Vista general del videojuego educativo \textit {Go Goals! Digital} (elaboración propia)}}{25}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Ejemplo de jerarquía de nodos en el SceneTree de Godot: pantalla de instrucciones del videojuego \textit {Go Goals! Digital} (elaboración propia)}}{42}{figure.caption.55}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Prototipo de la pantalla principal del tablero de juego (elaboración propia)}}{44}{figure.caption.58}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Prototipo del panel de preguntas educativas por ODS (elaboración propia)}}{45}{figure.caption.60}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Prototipo de la pantalla de estadísticas y clasificación final (elaboración propia)}}{46}{figure.caption.62}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Estructura de archivos del proyecto \textit {Go Goals! Digital} (elaboración propia)}}{51}{figure.caption.74}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Patrón Observer implementado mediante señales globales en Godot (elaboración propia)}}{53}{figure.caption.78}%
 \addvspace {10\p@ }
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
