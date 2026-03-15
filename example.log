@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.24)  8 MAR 2026 22:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.24)  8 MAR 2026 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3298,21 +3298,21 @@ Package pdftex.def Info: Images/GoGoals Digital.png  used on input line 987.
 LaTeX Info: Redefining \. on input line 995.
 LaTeX Info: Redefining \% on input line 995.
 [44 <./Images/GoGoals Digital.png>]
-<Images/Panel Preguntas.png, id=678, 854.44218pt x 402.75468pt>
+<Images/Panel Preguntas.png, id=678, 1139.25626pt x 537.00626pt>
 File: Images/Panel Preguntas.png Graphic file (type png)
 <use Images/Panel Preguntas.png>
 Package pdftex.def Info: Images/Panel Preguntas.png  used on input line 1000.
-(pdftex.def)             Requested size: 352.31625pt x 166.0646pt.
+(pdftex.def)             Requested size: 352.31625pt x 166.06871pt.
 
 
 LaTeX Info: Redefining \. on input line 1010.
 LaTeX Info: Redefining \% on input line 1010.
 [45 <./Images/Panel Preguntas.png>]
-<Images/Ranking.png, id=686, 1027.84pt x 1046.91125pt>
+<Images/Ranking.png, id=686, 871.255pt x 935.495pt>
 File: Images/Ranking.png Graphic file (type png)
 <use Images/Ranking.png>
 Package pdftex.def Info: Images/Ranking.png  used on input line 1013.
-(pdftex.def)             Requested size: 258.36668pt x 263.16489pt.
+(pdftex.def)             Requested size: 258.36668pt x 277.41035pt.
 
 
 LaTeX Info: Redefining \. on input line 1040.
@@ -3863,7 +3863,7 @@ pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 r8a.pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
 /utmr8a.pfb><C:/Users/Ruslan MC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on example.pdf (85 pages, 6364204 bytes).
+Output written on example.pdf (85 pages, 5967427 bytes).
 PDF statistics:
  1267 PDF objects out of 1440 (max. 8388607)
  285 named destinations out of 1000 (max. 500000)
