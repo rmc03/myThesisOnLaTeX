@@ -1,25 +1,25 @@
 \chapter{Resultados y validación}
 \label{chap:chapter3}
 
-El presente capítulo tiene como objetivo validar la solución propuesta mediante pruebas de software. Este se estructura en dos ejes principales: (1) diseño de la validación, epígrafe que describe la necesidad e importancia de las pruebas de software y los tipos de pruebas a emplear; y (2) validación, en el cual se reflejan los resultados de la aplicación de las pruebas de software al videojuego educativo \textit{Go Goals! Digital}.
+El presente capítulo valida la solución propuesta mediante pruebas de software. Se estructura en dos secciones: (1) diseño de la validación, que describe los tipos de pruebas empleados; y (2) validación, que presenta los resultados obtenidos al aplicar las pruebas al videojuego educativo \textit{Go Goals! Digital}.
 
 %---------------------------------------------------------------------------
 \section{Diseño de la validación}
 \label{sec:diseno_validacion}
 
-Este epígrafe trata la importancia vital que tienen las pruebas de software enmarcadas en la fase de refactorización y pruebas de la metodología XP, y presenta los tipos de pruebas utilizados en el ciclo de desarrollo del videojuego \textit{Go Goals! Digital}.
+Este epígrafe presenta los tipos de pruebas utilizados en el ciclo de desarrollo del videojuego \textit{Go Goals! Digital}, siguiendo la metodología XP.
 
-Las pruebas de software son el proceso sistemático mediante el cual se evalúa y verifica la calidad y correcto funcionamiento de un sistema informático, asegurando que cumpla tanto con los requerimientos técnicos como con las expectativas del usuario final. Durante este proceso se aplican diferentes técnicas, que van desde las pruebas unitarias, que se centran en validar cada componente individual del sistema, hasta las pruebas de integración y de aceptación, que confirman la correcta interacción entre módulos y la conformidad con las especificaciones del proyecto. La combinación de pruebas manuales y automatizadas permite identificar errores de forma temprana, optimizar los tiempos de corrección y garantizar la estabilidad y seguridad del software a lo largo de su ciclo de vida, lo que es especialmente fundamental en entornos de desarrollo ágil e iterativo \parencite{Pressman2021}.
+Las pruebas de software evalúan y verifican la calidad y correcto funcionamiento de un sistema informático, asegurando que cumpla con los requerimientos técnicos y las expectativas del usuario final. Se clasifican en pruebas de caja blanca, que examinan la estructura interna del código, y pruebas de caja negra, que validan el comportamiento externo sin conocer la implementación. La combinación de pruebas manuales y automatizadas permite identificar errores de forma temprana, optimizar los tiempos de corrección y garantizar la estabilidad del software, lo que es fundamental en entornos de desarrollo ágil e iterativo \parencite{Pressman2021}.
 
 \subsection{Tipos de pruebas}
 \label{subsec:tipos_pruebas}
 
-En el caso de \textit{Go Goals! Digital}, siguiendo los estándares de la metodología XP, se realizaron pruebas funcionales unitarias, de aceptación a nivel beta y de índice de aceptación. Se utilizaron las primeras para validar funcionalidades específicas de alta importancia o complejidad de forma automatizada, y las últimas para validar el producto como un todo desde el punto de vista del usuario final con una muestra de diez personas. En caso de encontrarse una no conformidad, se documenta y se trabaja en el período de refactorización entre iteraciones.
+Para \textit{Go Goals! Digital}, siguiendo los estándares de la metodología XP, se realizaron pruebas unitarias (caja blanca), pruebas de aceptación a nivel beta (caja negra) y pruebas de índice de aceptación. Las pruebas unitarias validaron funcionalidades específicas de alta complejidad de forma automatizada, mientras que las pruebas de aceptación validaron el producto completo desde la perspectiva del usuario final con una muestra de diez personas. Las no conformidades detectadas se documentaron y corrigieron en el período de refactorización entre iteraciones.
 
 \subsubsection{Pruebas unitarias}
 \label{subsubsec:pruebas_unitarias}
 
-Las pruebas unitarias son una metodología de verificación esencial en el desarrollo de software, orientada a evaluar de forma aislada la funcionalidad de la unidad mínima de código, ya sea una función, método o módulo. Este proceso, que se inscribe dentro de las pruebas de caja blanca, consiste en ejecutar el código con conjuntos específicos de entradas y comparar las salidas reales con las esperadas, lo que permite identificar y corregir errores en etapas tempranas del ciclo de desarrollo. Además, al utilizar dobles de prueba para aislar la unidad bajo pruebas de las dependencias externas, las pruebas unitarias promueven la modularidad, facilitan el mantenimiento del sistema y contribuyen a garantizar la calidad global del software, especialmente en entornos de integración continua y metodologías ágiles \parencite{Pressman2021}.
+Las pruebas unitarias evalúan de forma aislada la funcionalidad de la unidad mínima de código (función, método o módulo). Como pruebas de caja blanca, examinan la estructura interna del código ejecutándolo con entradas específicas y comparando las salidas reales con las esperadas, lo que permite identificar y corregir errores en etapas tempranas del desarrollo. Al utilizar dobles de prueba para aislar la unidad bajo prueba de las dependencias externas, las pruebas unitarias promueven la modularidad y facilitan el mantenimiento del sistema \parencite{Pressman2021}.
 
 Para \textit{Go Goals! Digital}, las pruebas unitarias se enfocaron en validar las funcionalidades críticas del sistema, tales como:
 
@@ -35,18 +35,18 @@ Para \textit{Go Goals! Digital}, las pruebas unitarias se enfocaron en validar l
 \subsubsection{Pruebas de aceptación}
 \label{subsubsec:pruebas_aceptacion}
 
-Las pruebas de software de aceptación son una fase crítica del proceso de validación en la que se verifica que el sistema cumple con los requerimientos y expectativas definidos por el cliente o usuario final. Conocidas también como UAT (\textit{User Acceptance Testing}), estas pruebas se llevan a cabo en entornos que emulan condiciones reales de uso, permitiendo a los propios usuarios o a sus representantes confirmar que la aplicación es funcional, usable y responde a las necesidades del negocio. Durante este proceso se identifican posibles discrepancias o defectos que, pese a haber sido corregidos en etapas previas, podrían afectar la experiencia final, asegurando así que el producto cumple tanto con las especificaciones técnicas como con los criterios de aceptación acordados contractualmente. Este enfoque centrado en el usuario garantiza que el software no solo sea técnicamente robusto, sino también alineado con las expectativas del mercado y de sus usuarios, consolidando la confianza tanto en el producto como en el proceso de desarrollo \parencite{Pressman2021}.
+Las pruebas de aceptación verifican que el sistema cumple con los requerimientos y expectativas del cliente o usuario final. Conocidas como UAT (\textit{User Acceptance Testing}), estas pruebas de caja negra se realizan en entornos que emulan condiciones reales de uso, permitiendo a los usuarios confirmar que la aplicación es funcional, usable y responde a las necesidades del negocio. Este enfoque valida el comportamiento externo del sistema sin examinar su implementación interna, asegurando que el software cumpla tanto con las especificaciones técnicas como con los criterios de aceptación acordados \parencite{Pressman2021}.
 
 \subsubsection{Pruebas de índice de aceptación}
 \label{subsubsec:pruebas_indice_aceptacion}
 
-El índice de satisfacción es una métrica que cuantifica la percepción que tienen los usuarios o clientes sobre la calidad y desempeño de un producto, servicio o experiencia. Esta evaluación se realiza generalmente mediante encuestas basadas en escalas tipo Likert, en las que se pide a los usuarios que califiquen diferentes aspectos (por ejemplo, usabilidad, desempeño, contenido, atención al cliente) en una escala numérica. Uno de los indicadores comunes derivados de este proceso es el \textit{Customer Satisfaction Score} (CSAT), el cual se calcula como el porcentaje de respuestas positivas (normalmente aquellas valoradas con 4 o 5 en una escala de 1 a 5) respecto al total de respuestas. Este índice posibilita el monitoreo de la experiencia del usuario en tiempo real, convirtiéndose en un elemento clave para la toma de decisiones estratégicas orientadas a la mejora continua del producto o servicio \parencite{Pressman2021}.
+El índice de satisfacción cuantifica la percepción de los usuarios sobre la calidad y desempeño de un producto. Se evalúa mediante encuestas basadas en escalas tipo Likert, donde los usuarios califican diferentes aspectos en una escala numérica. El \textit{Customer Satisfaction Score} (CSAT) se calcula como el porcentaje de respuestas positivas (valoradas con 4 o 5 en una escala de 1 a 5) respecto al total de respuestas, convirtiéndose en un elemento clave para la toma de decisiones orientadas a la mejora continua del producto \parencite{Pressman2021}.
 
 %---------------------------------------------------------------------------
 \section{Validación}
 \label{sec:validacion}
 
-En este epígrafe se describe la aplicación de las pruebas de software a nivel unitario, de aceptación y de índice de aceptación, además de los resultados de cada una de estas y cómo se trataron para garantizar la validación de las funcionalidades de la propuesta de solución.
+Este epígrafe describe la aplicación de las pruebas de software y los resultados obtenidos para validar las funcionalidades de la propuesta de solución.
 
 \subsection{Aplicación de pruebas unitarias}
 \label{subsec:aplicacion_pruebas_unitarias}
