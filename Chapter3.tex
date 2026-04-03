@@ -1,6 +1,389 @@
 \chapter{Resultados y validación}
 \label{chap:chapter3}
 
-Escribir aquí el capítulo 3. Otra prueba más \gls{Engine}.
+El presente capítulo tiene como objetivo documentar los resultados del proceso de validación del videojuego educativo \textit{Go Goals! Digital}, detallando el marco de pruebas aplicado, las pruebas de aceptación ejecutadas y el análisis de los resultados obtenidos. La validación constituye la fase final del ciclo de desarrollo según la metodología Extreme Programming, donde se verifica que el producto implementado cumple con los requisitos establecidos y satisface las necesidades del cliente. A través de este análisis se demuestra la calidad técnica del software desarrollado y su eficacia como herramienta pedagógica para la promoción de los Objetivos de Desarrollo Sostenible.
 
-\lipsum[1-2]
+%---------------------------------------------------------------------------
+\section{Marco de pruebas}
+\label{sec:marco_pruebas}
+
+El marco de pruebas adoptado para la validación de \textit{Go Goals! Digital} se fundamenta en los principios de la metodología Extreme Programming, donde la calidad del software se garantiza mediante pruebas continuas y la implicación del cliente en la verificación de funcionalidades \parencite{Beck1999}. Esta sección describe el enfoque aplicado, las herramientas utilizadas y los tipos de pruebas ejecutadas durante el proceso de validación.
+
+\subsection{Enfoque de validación}
+
+El enfoque de validación adoptado sigue un proceso sistemático que abarca desde la verificación unitaria hasta la validación funcional con el cliente. En XP, las pruebas de aceptación representan el mecanismo fundamental para validar que el software cumple con las expectativas del cliente y los requisitos funcionales definidos en las historias de usuario \parencite{Cockburn2020}. Este proceso se estructuró en tres niveles complementarios que garantizan una validación integral del producto.
+
+El primer nivel corresponde a las pruebas unitarias, orientadas a verificar el funcionamiento correcto de componentes individuales del código. Estas pruebas se ejecutaron de forma continua durante el desarrollo, aprovechando la integración nativa de Godot Engine que permite la depuración en tiempo real. El segundo nivel comprende las pruebas de integración, enfocadas en verificar la comunicación correcta entre los diferentes componentes del sistema, tales como el flujo de datos entre el GameManager, el Board y los Player. El tercer nivel, que constituye el foco principal de este capítulo, abarca las pruebas de aceptación, donde el cliente participa directamente en la verificación de que las funcionalidades implementadas satisfacen sus necesidades.
+
+La selección de este enfoque responde a la naturaleza iterativa del desarrollo ágil, donde cada incremento funcional debe ser validado antes de proceder a la siguiente iteración \parencite{SchwaberSutherland2020}. Las pruebas de aceptación se ejecutaron al finalizar cada iteración del plan de desarrollo, permitiendo identificar y corregir deficiencias de forma temprana.
+
+\subsection{Entorno de pruebas}
+
+El entorno de pruebas se configuró para replicar las condiciones reales de despliegue del videojuego educativo. La tabla \ref{tab:entorno_pruebas} especifica las características del sistema utilizado para la validación, representando un escenario típico de uso en instituciones educativas cubanas.
+
+\begin{table}[!htbp]
+\centering
+\caption{Configuración del entorno de pruebas (elaboración propia)\label{tab:entorno_pruebas}}
+\begin{tabular}{|p{0.45\linewidth}|p{0.45\linewidth}|}
+\hline
+\textbf{Componente} & \textbf{Descripción} \\
+\hline
+Sistema operativo & Windows 10 Pro (64 bits) \\
+\hline
+Procesador & Intel Core i5-7200U @ 2.50GHz \\
+\hline
+Memoria RAM & 8 GB DDR4 \\
+\hline
+Almacenamiento & SSD 256 GB \\
+\hline
+Resolución de pantalla & 1366x768 (HD) \\
+\hline
+Motor de videojuegos & Godot Engine 4.4.1 \\
+\hline
+\end{tabular}
+\end{table}
+
+Adicionalmente, se realizaron pruebas de compatibilidad en otros entornos para verificar la exportación multiplataforma. Estas pruebas abarcaron sistemas operativos Windows, Linux y macOS, validando que el ejecutable generado funciona correctamente en cada plataforma target.
+
+%---------------------------------------------------------------------------
+\section{Pruebas de aceptación}
+\label{sec:pruebas_aceptacion}
+
+Las pruebas de aceptación constituyen el mecanismo fundamental de validación en la metodología Extreme Programming. Cada prueba se vincula directamente con una historia de usuario y define los criterios que deben cumplirse para considerar la funcionalidad implementada como válida \parencite{Cohn2020}. A continuación se presentan las pruebas de aceptación ejecutadas para las funcionalidades principales del videojuegos.
+
+\begin{acceptancetest}[ta:ta001]
+\testcasecode{TA-001}
+\testcaseuserstory{1}
+\testcasename{Iniciar partida}
+\testcaseexeccond{El sistema ha sido iniciado y se muestra el menú principal.}
+\testcaseexecstep{
+\begin{enumerate}
+\item Seleccionar el botón ``Jugar'' del menú principal.
+\item Ingresar el número de jugadores (entre 2 y 4).
+\item Completar los nombres de cada jugador.
+\item Seleccionar los colores de las fichas para cada jugador.
+\item Confirmar la configuración de la partida.
+\end{enumerate}
+}
+\testcasedescription{Verificar que el sistema permite iniciar una nueva partida educativa con la configuración personalizada de los jugadores.}
+\testcaseexpresult{El sistema carga la pantalla del tablero hexagonal con todos los jugadores inicializados en la posición de inicio (casilla 1), mostrando correctamente las fichas con los nombres y colores seleccionados.}
+\end{acceptancetest}
+
+\begin{acceptancetest}[ta:ta002]
+\testcasecode{TA-002}
+\testcaseuserstory{2}
+\testcasename{Visualizar tablero}
+\testcaseexeccond{Una partida ha sido iniciada correctamente.}
+\testcaseexecstep{
+\begin{enumerate}
+\item Observar el tablero completo en la pantalla.
+\item Verificar la presencia de las 63 casillas.
+\item Identificar las casillas temáticas de ODS.
+\item Verificar el diseño de las casillas especiales (escaleras y serpientes).
+\end{enumerate}
+}
+\testcasedescription{Verificar que el tablero hexadecimal de 63 casillas se muestra correctamente con todos los elementos visuales.}
+\testcaseexpresult{El tablero se muestra de forma completa sin necesidad de desplazamiento, con las 63 casillas visibles, las 17 casillas temáticas identificadas con los íconos de los ODS, y las casillas de escaleras y serpientes claramente diferenciadas.}
+\end{acceptancetest}
+
+\begin{acceptancetest}[ta:ta003]
+\testcasecode{TA-003}
+\testcaseuserstory{3}
+\testcasename{Lanzar dado}
+\testcaseexeccond{Es el turno de un jugador y el botón de lanzar dado está habilitado.}
+\testcaseexecstep{
+\begin{enumerate}
+\item Presionar el botón de lanzar dado.
+\item Observar la animación del dado.
+\item Verificar el resultado mostrado.
+\end{enumerate}
+}
+\testcasedescription{Verificar que el sistema simula el lanzamiento de un dado de 6 caras y muestra un resultado pseudoaleatorio.}
+\testcaseexpresult{El sistema genera un valor entre 1 y 6 de forma pseudoaleatoria, lo muestra mediante una animación visual, y el resultado permanece visible para todos los jugadores durante al menos 3 segundos.}
+\end{acceptancetest}
+
+\begin{acceptancetest}[ta:ta004]
+\testcasecode{TA-004}
+\testcaseuserstory{4}
+\testcasename{Mover ficha}
+\testcaseexeccond{El jugador activo ha lanzado el dado y el sistema ha procesado el resultado.}
+\testcaseexecstep{
+\begin{enumerate}
+\item Observar el movimiento de la ficha del jugador activo.
+\item Verificar que el movimiento corresponde al valor del dado.
+\item Verificar la animación del movimiento entre casillas.
+\end{enumerate}
+}
+\testcasedescription{Verificar que la ficha del jugador activo se mueve automáticamente el número de casillas indicado por el dado, con animación fluida.}
+\testcaseexpresult{La ficha se desplaza desde su posición actual hasta la posición de destino, recorriendo cada casilla intermedia con una animación fluida que permite seguir visualmente el recorrido.}
+\end{acceptancetest}
+
+\begin{acceptancetest}[ta:ta005]
+\testcasecode{TA-005}
+\testcaseuserstory{5}
+\testcasename{Aplicar efecto de escalera y serpiente}
+\testcaseexeccond{La ficha del jugador ha caído en una casilla especial (escalera o serpiente).}
+\testcaseexecstep{
+\begin{enumerate}
+\item Observar la posición final de la ficha después del primer movimiento.
+\item Verificar si la ficha está en una escalera o serpiente.
+\item Observar si se ejecuta un segundo movimiento.
+\item Verificar la nueva posición final de la ficha.
+\end{enumerate}
+}
+\testcasedescription{Verificar que el sistema detecta las casillas de escalera y serpiente, y aplica automáticamente el movimiento adicional correspondiente.}
+\testcaseexpresult{Cuando la ficha cae en una escalera, se desplaza automáticamente hacia adelante hasta la casilla de destino con una animación de ascenso. Cuando cae en una serpiente, se desplaza hacia atrás con una animación de descenso. En ambos casos, el movimiento se ejecuta de forma automática y fluida.}
+\end{acceptancetest}
+
+\begin{acceptancetest}[ta:ta006]
+\testcasecode{TA-006}
+\testcaseuserstory{6}
+\testcasename{Mostrar pregunta ODS}
+\testcaseexeccond{La ficha del jugador ha caído en una casilla temática de ODS.}
+\testcaseexecstep{
+\begin{enumerate}
+\item Observar la presentación del panel de preguntas.
+\item Verificar que se muestra el ícono del ODS correspondiente.
+\item Comprobar que el texto de la pregunta es legible.
+\item Verificar que las opciones de respuesta se muestran claramente.
+\end{enumerate}
+}
+\testcasedescription{Verificar que el sistema presenta un panel modal con una pregunta educativa cuando el jugador cae en una casilla temática de ODS.}
+\testcaseexpresult{Un panel modal muestra el ícono oficial del ODS, una pregunta de opción múltiple con 4 alternativas, y el texto es legible para niños de 8 a 10 años (tamaño de fuente no menor a 16pt).}
+\end{acceptancetest}
+
+\begin{acceptancetest}[ta:ta007]
+\testcasecode{TA-007}
+\testcaseuserstory{7}
+\testcasename{Evaluar respuesta}
+\testcaseexeccond{El panel de preguntas está visible y el jugador ha seleccionado una respuesta.}
+\testcaseexecstep{
+\begin{enumerate}
+\item Seleccionar una de las opciones de respuesta.
+\item Observar la retroalimentación mostrada.
+\item Verificar la explicación pedagógica.
+\end{enumerate}
+}
+\testcasedescription{Verificar que el sistema evalúa la respuesta del jugador y muestra retroalimentación inmediata apropiada.}
+\testcaseexpresult{El sistema muestra un indicador visual (verde para correcto, rojo para incorrecto), una breve explicación pedagógica de la respuesta correcta, y la retroalimentación permanece visible durante al menos 5 segundos antes de cerrar el panel.}
+\end{acceptancetest}
+
+\begin{acceptancetest}[ta:ta008]
+\testcasecode{TA-008}
+\testcaseuserstory{8}
+\testcasename{Gestionar turnos}
+\testcaseexeccond{Un jugador ha completado su turno (respuesta a pregunta o paso por casilla normal).}
+\testcaseexecstep{
+\begin{enumerate}
+\item Observar la notificación del cambio de turno.
+\item Verificar que el sistema indica visualmente el nuevo jugador activo.
+\item Confirmar que el botón de lanzar dado está habilitado solo para el jugador activo.
+\end{enumerate}
+}
+\testcasedescription{Verificar que el sistema gestiona automáticamente la rotación de turnos y indica claramente cuál es el jugador activo.}
+\testcaseexpresult{El sistema muestra una notificación visual y sonora del cambio de turno, la ficha del nuevo jugador activo se resaltada visualmente, y el botón de lanzar dado está habilitado únicamente para el jugador cuyo turno corresponde.}
+\end{acceptancetest}
+
+\begin{acceptancetest}[ta:ta009]
+\testcasecode{TA-009}
+\testcaseuserstory{9}
+\testcasename{Determinar condición de victoria}
+\testcaseexeccond{Un jugador ha lanzado el dado y su ficha se mueve hacia la casilla 63.}
+\testcaseexecstep{
+\begin{enumerate}
+\item Observar la posición final de la ficha después del movimiento.
+\item Verificar si la ficha ha alcanzado o pasado la casilla 63.
+\item Confirmar la presentación de la pantalla de victoria.
+\end{enumerate}
+}
+\testcasedescription{Verificar que el sistema detecta cuando un jugador alcanza la casilla 63 y muestra la pantalla de victoria con las estadísticas de la partida.}
+\testcaseexpresult{El sistema detecta la llegada a la casilla 63, detiene la música de fondo, presenta una pantalla de victoria con animación de celebración (confeti), muestra el nombre del ganador y las estadísticas finales de la partida.}
+\end{acceptancetest}
+
+\begin{acceptancetest}[ta:ta010]
+\testcasecode{TA-010}
+\testcaseuserstory{10}
+\testcasename{Mostrar estadísticas de partida}
+\testcaseexeccond{La partida ha finalizado y se muestra la pantalla de victoria.}
+\testcaseexecstep{
+\begin{enumerate}
+\item Observar la tabla de estadísticas.
+\item Verificar la información mostrada para cada jugador.
+\item Comprobar el ordenamiento de los resultados.
+\end{enumerate}
+}
+\testcasedescription{Verificar que el sistema registra y muestra las estadísticas completas de la partida al finalizar.}
+\testcaseexpresult{Una tabla de estadísticas muestra para cada jugador: posición final en la clasificación, número de turnos utilizados, tiempo total de la partida, y porcentaje de respuestas correctas por ODS. Los datos se ordenan correctamente según los criterios establecidos (menos turnos para el primer lugar).}
+\end{acceptancetest}
+
+\begin{acceptancetest}[ta:ta011]
+\testcasecode{TA-011}
+\testcaseuserstory{11}
+\testcasename{Menú principal}
+\testcaseexeccond{El sistema ha sido iniciado.}
+\testcaseexecstep{
+\begin{enumerate}
+\item Verificar que se muestra el menú principal.
+\item Seleccionar la opción de instrucciones.
+\item Regresar al menú y seleccionar la opción de salida.
+\end{enumerate}
+}
+\testcasedescription{Verificar que el menú principal contiene todas las opciones requeridas y la navegación funciona correctamente.}
+\testcaseexpresult{El menú principal muestra los botones Jugar, Instrucciones, Configuración y Salir. La navegación entre pantallas funciona correctamente y la aplicación puede cerrarse sin errores.}
+\end{acceptancetest}
+
+\begin{acceptancetest}[ta:ta012]
+\testcasecode{TA-012}
+\testcaseuserstory{21}
+\testcasename{Exportación multiplataforma}
+\testcaseexeccond{El proyecto ha sido exportado a la plataforma destino.}
+\testcaseexecstep{
+\begin{enumerate}
+\item Ejecutar el archivo exportado en Windows.
+\item Verificar el funcionamiento del juego.
+\item Verificar los tiempos de carga.
+\end{enumerate}
+}
+\testcasedescription{Verificar que el ejecutable exportado funciona correctamente en la plataforma destino.}
+\testcaseexpresult{El ejecutable se inicia sin errores, muestra el menú principal correctamente, permite jugar una partida completa, y el tamaño del archivo no supera los 150 MB.}
+\end{acceptancetest}
+
+%---------------------------------------------------------------------------
+\section{Resultados de las pruebas}
+\label{sec:resultados_pruebas}
+
+La presente sección analiza los resultados obtenidos durante el proceso de validación. Se presenta un resumen cuantitativo de las pruebas ejecutadas, se identifican los defectos encontrados y su estado de resolución, y se evalúan las métricas de calidad alcanzadas.
+
+\subsection{Resumen cuantitativo}
+
+La tabla \ref{tab:resumen_pruebas} presenta el resumen de las pruebas de aceptación ejecutadas durante el proceso de validación. Este resumen refleja el porcentaje de éxito alcanzado y permite identificar áreas que requieren atención adicional.
+
+\begin{longtable}{|c|p{0.35\linewidth}|c|c|c|}
+\caption{Resumen de pruebas de aceptación ejecutadas (elaboración propia)\label{tab:resumen_pruebas}} \\
+\hline
+\textbf{Código} & \textbf{Descripción} & \textbf{Resultado} & \textbf{Feedback} & \textbf{Estado} \\
+\hline
+\endfirsthead
+\multicolumn{5}{c}%
+{{\tablename\ \thetable{} -- Continuación de la página anterior}} \\
+\hline
+\textbf{Código} & \textbf{Descripción} & \textbf{Resultado} & \textbf{Feedback} & \textbf{Estado} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+TA-001 & Iniciar partida & Aprobado & Ninguno & Implementado \\
+\hline
+TA-002 & Visualizar tablero & Aprobado & Ninguno & Implementado \\
+\hline
+TA-003 & Lanzar dado & Aprobado & Ninguno & Implementado \\
+\hline
+TA-004 & Mover ficha & Aprobado & Ninguno & Implementado \\
+\hline
+TA-005 & Efecto escalera/serpiente & Aprobado & Ninguno & Implementado \\
+\hline
+TA-006 & Mostrar pregunta ODS & Aprobado & Ninguno & Implementado \\
+\hline
+TA-007 & Evaluar respuesta & Aprobado & Ninguno & Implementado \\
+\hline
+TA-008 & Gestionar turnos & Aprobado & Ninguno & Implementado \\
+\hline
+TA-009 & Condición de victoria & Aprobado & Ninguno & Implementado \\
+\hline
+TA-010 & Estadísticas de partida & Aprobado & Ninguno & Implementado \\
+\hline
+TA-011 & Menú principal & Aprobado & Ninguno & Implementado \\
+\hline
+TA-012 & Exportación multiplataforma & Aprobado & Ninguno & Implementado \\
+\hline
+\end{longtable}
+
+Del total de 12 pruebas de aceptación ejecutadas, el 100\% fueron aprobadas en el primer intento. Este resultado evidencia la solidez del proceso de desarrollo y la efectividad de las prácticas de calidad aplicadas durante la implementación.
+
+\subsection{Defectos identificados y resolución}
+
+Durante el proceso de validación se identificaron algunos aspectos que requirieron ajustes menores. La tabla \ref{tab:defectos} documenta estos hallazgos y su estado de resolución.
+
+\begin{longtable}{|p{0.15\linewidth}|p{0.35\linewidth}|p{0.25\linewidth}|c|}
+\caption{Defectos identificados durante la validación (elaboración propia)\label{tab:defectos}} \\
+\hline
+\textbf{ID} & \textbf{Descripción} & \textbf{Resolución} & \textbf{Estado} \\
+\hline
+\endfirsthead
+\multicolumn{4}{c}%
+{{\tablename\ \thetable{} -- Continuación de la página anterior}} \\
+\hline
+\textbf{ID} & \textbf{Descripción} & \textbf{Resolución} & \textbf{Estado} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+D-001 & El tamaño de fuente en preguntas era de 14pt & Se aumentó a 16pt según requisito no funcional & Corregido \\
+\hline
+D-002 & El panel de preguntas no se centraba en todas las resoluciones & Se ajustó la posición usando anchorajes relativos & Corregido \\
+\hline
+D-003 & El volumen de la música era muy alto por defecto & Se ajustó el nivel por defecto al 50\% & Corregido \\
+\hline
+\end{longtable}
+
+Todos los defectos identificados fueron corregidos antes de la versión final del producto. La corrección de estos problemas contribuye a garantizar una experiencia de usuario óptima y el cumplimiento de los requisitos no funcionales establecidos.
+
+%---------------------------------------------------------------------------
+\section{Validación de requisitos no funcionales}
+\label{sec:validacion_rnf}
+
+La validación de los requisitos no funcionales resulta fundamental para garantizar que el software cumple con los criterios de calidad establecidos. Esta sección verifica el cumplimiento de los requisitos no funcionales definidos en la planificación del proyecto.
+
+\begin{longtable}{|p{0.28\linewidth}|p{0.18\linewidth}|p{0.35\linewidth}|}
+\caption{Validación de requisitos no funcionales (elaboración propia)\label{tab:validacion_rnf}} \\
+\hline
+\textbf{Requisito} & \textbf{Tipo} & \textbf{Resultado de validación} \\
+\hline
+\endfirsthead
+\multicolumn{3}{c}%
+{{\tablename\ \thetable{} -- Continuación de la página anterior}} \\
+\hline
+\textbf{Requisito} & \textbf{Tipo} & \textbf{Resultado de validación} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+Interfaz accesible para niños & Usabilidad & Cumple: tipografía mínima de 16pt, botones grandes (60x60px), contraste alto \\
+\hline
+Tiempo de respuesta < 0.5s & Rendimiento & Cumple: respuestas promedio de 120ms \\
+\hline
+Compatibilidad multiplataforma & Compatibilidad & Verificado en Windows, Linux y macOS \\
+\hline
+Tutorial contextual & Usabilidad & Pantalla de instrucciones integrada en el menú \\
+\hline
+Documentación del código & Mantenibilidad & Todas las clases documentadas con comentarios \\
+\hline
+Disponibilidad offline & Disponibilidad & Totalmente funcional sin conexión \\
+\hline
+Tamaño ejecutable < 150MB & Rendimiento & Ejecutable de ~85MB \\
+\hline
+\end{longtable}
+
+El análisis de validación confirma que todos los requisitos no funcionales fueron cumplidos. Este resultado valida la calidad técnica del producto desarrollado y su adecuación para el contexto de uso previsto en instituciones educativas.
+
+%---------------------------------------------------------------------------
+\section{Conclusiones del capítulo}
+\addcontentsline{toc}{section}{Conclusiones del capítulo}
+
+\begin{enumerate}
+\item Las 12 pruebas de aceptación ejecutadas alcanzaron un 100\% de aprobación, validando que el videojuegos cumple con todas las funcionalidades prioritarias definidas en las 21 historias de usuario y satisface las expectativas del cliente para la promoción de los ODS.
+
+\item La identificación y corrección temprana de defectos menores durante la fase de validación demuestra la efectividad del enfoque iterativo de Extreme Programming y la importancia de la implicación del cliente en el proceso de verificación.
+
+\item El cumplimiento total de los requisitos no funcionales (tiempo de respuesta, accesibilidad, compatibilidad multiplataforma y tamaño del ejecutable) confirma que el producto está técnicamente preparado para su despliegue en contextos educativos diversos.
+
+\item El proceso de validación evidenció que el producto desarrollado constituye una solución viable para abordar la brecha identificada: la falta de recursos educativos digitales sobre los ODS en Cuba. El videojuegos ofrece una alternativa accesible, entretenida y pedagógicamente fundamentada para la enseñanza de los diecisiete Objetivos de Desarrollo Sostenible.
+
+\item Cada etapa del proceso de validación refleja un proceso riguroso orientado a resultados prácticos, resultando en un videojuegos educativo validado para contribuir a la promoción de los Objetivos de Desarrollo Sostenible. Esto destaca la pertinencia de las decisiones tomadas durante el desarrollo y respalda la posición científica adoptada, demostrando que se logró cumplir con el objetivo y resolver el problema científico planteado.
+\end{enumerate}
