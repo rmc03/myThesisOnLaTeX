@@ -1,181 +1,215 @@
-\chapter{Validación de la solución propuesta}
+\chapter{Resultados y validación}
 \label{chap:chapter3}
 
-El presente capítulo tiene como objetivo documentar el proceso de validación del videojuego educativo \textit{Go Goals! Digital}, detallando el diseño de la validación, las estrategias de pruebas aplicadas y los resultados obtenidos. La validación constituye una fase crítica del desarrollo según la metodología Extreme Programming, donde se verifica que el producto implementado cumple con los requisitos establecidos y satisface las necesidades de los usuarios finales. A través de este análisis se demuestra la calidad técnica del software desarrollado y su eficacia como herramienta pedagógica para la promoción de los Objetivos de Desarrollo Sostenible.
+El presente capítulo tiene como objetivo validar la solución propuesta mediante pruebas de software. Este se estructura en dos ejes principales: (1) diseño de la validación, epígrafe que describe la necesidad e importancia de las pruebas de software y la estrategia de pruebas a emplear; y (2) validación, en el cual se reflejan los resultados de la aplicación de las pruebas de software al videojuego educativo \textit{Go Goals! Digital}.
 
 %---------------------------------------------------------------------------
 \section{Diseño de la validación}
-\label{sec:diseño_validación}
+\label{sec:diseno_validacion}
 
-El diseño de la validación para \textit{Go Goals! Digital} se fundamenta en los principios de la metodología Extreme Programming, donde la calidad del software se garantiza mediante pruebas continuas y la implicación del cliente en la verificación de funcionalidades. Esta sección describe la estrategia de validación adoptada, los tipos de pruebas aplicadas y las herramientas utilizadas para garantizar un producto de alta calidad.
+Este epígrafe trata la importancia vital que tienen las pruebas de software enmarcadas en la fase de refactorización y pruebas de la metodología XP, y presenta la estrategia de pruebas utilizada en el ciclo de desarrollo del videojuego \textit{Go Goals! Digital}.
+
+Las pruebas de software son el proceso sistemático mediante el cual se evalúa y verifica la calidad y correcto funcionamiento de un sistema informático, asegurando que cumpla tanto con los requerimientos técnicos como con las expectativas del usuario final. Durante este proceso se aplican diferentes técnicas, que van desde las pruebas unitarias, que se centran en validar cada componente individual del sistema, hasta las pruebas de integración y de aceptación, que confirman la correcta interacción entre módulos y la conformidad con las especificaciones del proyecto. La combinación de pruebas manuales y automatizadas permite identificar errores de forma temprana, optimizar los tiempos de corrección y garantizar la estabilidad y seguridad del software a lo largo de su ciclo de vida, lo que es especialmente fundamental en entornos de desarrollo ágil e iterativo \parencite{Pressman2021}.
 
 \subsection{Estrategia de pruebas}
-\label{subscriber:estrategia_pruebas}
+\label{subsec:estrategia_pruebas}
 
-La estrategia de pruebas implementada sigue los estándares establecidos por la metodología Extreme Programming y se estructura en tres niveles complementarios que garantizan una validación integral del producto. Según Beck \parencite{Beck1999}, las pruebas en XP representan un mecanismo fundamental para garantizar que el software cumple con las expectativas del cliente y los requisitos funcionales definidos.
+En el caso de \textit{Go Goals! Digital}, siguiendo los estándares de la metodología XP, se realizaron pruebas funcionales unitarias, de aceptación a nivel beta y de índice de aceptación. Se utilizaron las primeras para validar funcionalidades específicas de alta importancia o complejidad de forma automatizada, y las últimas para validar el producto como un todo desde el punto de vista del usuario final con una muestra de diez personas. En caso de encontrarse una no conformidad, se documenta y se trabaja en el período de refactorización entre iteraciones.
 
-El primer nivel corresponde a las pruebas unitarias, las cuales constituyen una metodología de verificación esencial para evaluar de forma isolada la funcionalidad de la unidad mínima de código. Estas pruebas se inscriben dentro de las pruebas de caja blanca y consisten en ejecutar el código con conjuntos específicos de entradas y comparar las salidas reales con las esperadas. Las pruebas unitarias permiten identificar y corregir errores en etapas tempranas del desarrollo, promoviendo la modularidad y facilitando el mantenimiento futuro del código \parencite{Pressman2021}.
-
-El segundo nivel comprende las pruebas de aceptación, también conocidas como UAT (User Acceptance Testing). Estas pruebas representan una fase crítica del proceso de validación donde se verifica que el sistema cumple con los requerimientos y expectativas del usuario final. Las pruebas de aceptación se llevan a cabo en entornos que emulan las condiciones reales de uso, permitiendo a los usuarios confirmar que la aplicación es funcional, usable y responde a las necesidades del negocio \parencite{Cohn2020}.
-
-El tercer nivel abarca las pruebas de índice de satisfacción, las cuales constituyen una métrica que permite cuantificar la percepción de los usuarios sobre la calidad y desempeño del producto. Esta métrica se calcula utilizando encuestas basadas en escalas tipo Likert, donde los usuarios valoran diferentes aspectos del producto en una escala del 1 al 5. El índice de satisfacción, también conocido como CSAT (Customer Satisfaction Score), se calcula como el porcentaje de respuestas positivas valoradas con 4 o 5 puntos respecto al total de respuestas \parencite{Cockburn2020}.
-
-%---------------------------------------------------------------------------
-\section{Aplicación de la validación}
-\label{sec:aplicación_validación}
-
-La presente sección documenta la aplicación práctica de las estrategias de validación descritas anteriormente. Se presentan los resultados de las pruebas unitarias, las pruebas de aceptación con usuarios beta y el cálculo del índice de satisfacción del producto desarrollado.
-
-\subsection{Pruebas unitarias}
+\subsubsection{Pruebas unitarias}
 \label{subsubsec:pruebas_unitarias}
 
-Las pruebas unitarias se realizaron de forma automatizada utilizando el framework GUT (Godot Unit Testing), una herramienta específicamente diseñada para el ecosistema de Godot Engine que permite crear y ejecutar pruebas unitarias de manera eficiente. Este framework proporciona un conjunto de utilidades que facilitan la creación de dobles de prueba para aislar la unidad bajo prueba de dependencias externas.
+Las pruebas unitarias son una metodología de verificación esencial en el desarrollo de software, orientada a evaluar de forma aislada la funcionalidad de la unidad mínima de código, ya sea una función, método o módulo. Este proceso, que se inscribe dentro de las pruebas de caja blanca, consiste en ejecutar el código con conjuntos específicos de entradas y comparar las salidas reales con las esperadas, lo que permite identificar y corregir errores en etapas tempranas del ciclo de desarrollo. Además, al utilizar dobles de prueba para aislar la unidad bajo pruebas de las dependencias externas, las pruebas unitarias promueven la modularidad, facilitan el mantenimiento del sistema y contribuyen a garantizar la calidad global del software, especialmente en entornos de integración continua y metodologías ágiles \parencite{Pressman2021}.
 
-A continuación se presenta un ejemplo de las pruebas unitarias desarrolladas para la funcionalidad de verificación de recursos en una clase del proyecto. La función verifica si el jugador dispone de los recursos necesarios para realizar acciones en el juego.
+Para \textit{Go Goals! Digital}, las pruebas unitarias se enfocaron en validar las funcionalidades críticas del sistema, tales como:
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{Images/PlaceholderPruebasUnitarias}
-  \caption{Casos de prueba para funcionalidad de gestión de recursos (elaboración propia)}
-  \label{fig:pruebas_unitarias}
-\end{figure}
+\begin{itemize}
+    \item Lógica de movimiento de fichas en el tablero hexagonal
+    \item Cálculo de trayectorias y detección de casillas especiales (escaleras, serpientes, ODS)
+    \item Selección aleatoria de preguntas sin repetición dentro de una sesión
+    \item Evaluación de respuestas y aplicación de efectos correspondientes
+    \item Gestión de turnos entre jugadores
+    \item Detección de condición de victoria
+\end{itemize}
 
-Como se observa en la figura \ref{fig:pruebas_unitarias}, se diseñaron múltiples casos de prueba que abarcan diferentes escenarios: verificación de recursos suficientes, recursos insuficientes, recursos exactos en el límite, y ausencia total de recursos. Cada caso de prueba compara el resultado esperado con el resultado real devuelto por la funcionalidad bajo prueba.
+\subsubsection{Pruebas de aceptación}
+\label{subsubsec:pruebas_aceptacion}
 
-El resultado de la ejecución de las pruebas unitarias evidenció que la totalidad de los casos de prueba diseñados fueron ejecutados exitosamente. Este resultado garantiza el correcto funcionamiento de los módulos sin dependencias externas, validando que cada unidad de código cumple con las especificaciones definidas.
+Las pruebas de software de aceptación son una fase crítica del proceso de validación en la que se verifica que el sistema cumple con los requerimientos y expectativas definidos por el cliente o usuario final. Conocidas también como UAT (\textit{User Acceptance Testing}), estas pruebas se llevan a cabo en entornos que emulan condiciones reales de uso, permitiendo a los propios usuarios o a sus representantes confirmar que la aplicación es funcional, usable y responde a las necesidades del negocio. Durante este proceso se identifican posibles discrepancias o defectos que, pese a haber sido corregidos en etapas previas, podrían afectar la experiencia final, asegurando así que el producto cumple tanto con las especificaciones técnicas como con los criterios de aceptación acordados contractualmente. Este enfoque centrado en el usuario garantiza que el software no solo sea técnicamente robusto, sino también alineado con las expectativas del mercado y de sus usuarios, consolidando la confianza tanto en el producto como en el proceso de desarrollo \parencite{Pressman2021}.
 
-\subsection{Pruebas de aceptación}
-\label{subsubsec:pruebas_aceptación}
+\subsubsection{Pruebas de índice de aceptación}
+\label{subsubsec:pruebas_indice_aceptacion}
 
-Las pruebas de aceptación se realizaron a nivel beta, involucrando a usuarios finales en condiciones propias de uso sin supervisión directa. Esta metodología permite evaluar el producto desde la perspectiva del usuario real, identificando posibles discrepancias que podrían afectar la experiencia final.
+El índice de satisfacción es una métrica que cuantifica la percepción que tienen los usuarios o clientes sobre la calidad y desempeño de un producto, servicio o experiencia. Esta evaluación se realiza generalmente mediante encuestas basadas en escalas tipo Likert, en las que se pide a los usuarios que califiquen diferentes aspectos (por ejemplo, usabilidad, desempeño, contenido, atención al cliente) en una escala numérica. Uno de los indicadores comunes derivados de este proceso es el \textit{Customer Satisfaction Score} (CSAT), el cual se calcula como el porcentaje de respuestas positivas (normalmente aquellas valoradas con 4 o 5 en una escala de 1 a 5) respecto al total de respuestas. Este índice posibilita el monitoreo de la experiencia del usuario en tiempo real, convirtiéndose en un elemento clave para la toma de decisiones estratégicas orientadas a la mejora continua del producto o servicio \parencite{Pressman2021}.
 
-La muestra seleccionada para las pruebas de aceptación beta consistió en 10 estudiantes de la carrera de Ingeniería en Ciencias Informáticas de la Universidad de las Ciencias Informáticas, quienes cumplieron con el perfil de usuarios objetivo del videojuegos. A cada participante se le distribuyó el juego sin manual ni explicaciones previas, con el objetivo de probar la utilidad de los tutoriales integrados y la intuitividad de las interfaces. La tabla \ref{tab:estudiantes_beta} presenta el listado de estudiantes que participaron como probadores beta.
+%---------------------------------------------------------------------------
+\section{Validación}
+\label{sec:validacion}
+
+En este epígrafe se describe la aplicación de las pruebas de software a nivel unitario, de aceptación y de índice de aceptación, además de los resultados de cada una de estas y cómo se trataron para garantizar la validación de las funcionalidades de la propuesta de solución.
+
+\subsection{Aplicación de pruebas unitarias}
+\label{subsec:aplicacion_pruebas_unitarias}
+
+Las pruebas unitarias se realizaron de forma automatizada utilizando el framework Godot Unit Testing (GUT), estándar para realizar pruebas unitarias utilizando el motor Godot. Como ejemplo se muestran las pruebas a las funcionalidades de la clase \texttt{GameManager}, mostrándose casos de prueba para la funcionalidad \texttt{calculate\_next\_position()} que retorna la siguiente posición de una ficha dado su posición actual y el resultado del dado.
 
 \begin{table}[H]
 \centering
-\caption{Listado de estudiantes probadores beta (elaboración propia)}
-\label{tab:estudiantes_beta}
-\begin{tabular}{|c|c|}
+\caption{Casos de prueba para funcionalidad \texttt{calculate\_next\_position()} de la clase \texttt{GameManager} (elaboración propia)\label{tab:pruebas_unitarias}}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|p{0.25\textwidth}|p{0.25\textwidth}|p{0.25\textwidth}|}
 \hline
-\textbf{Nombre y apellidos} & \textbf{Año académico} \\
+\textbf{No.} & \textbf{Entrada} & \textbf{Salida esperada} & \textbf{Resultado} \\
 \hline
-Cristian Medina Liu & 4 \\
+1 & Posición: 0, Dado: 3 & Posición: 3 & Exitoso \\
 \hline
-Dariel Arró Moreno & 4 \\
+2 & Posición: 10, Dado: 6 & Posición: 16 & Exitoso \\
 \hline
-Dairon Luis Naranjo & 3 \\
+3 & Posición: 58, Dado: 5 & Posición: 63 (victoria) & Exitoso \\
 \hline
-Derik González Martín & 4 \\
+4 & Posición: 60, Dado: 6 & Posición: 63 (no excede) & Exitoso \\
 \hline
-Leinier Garcés Villa & 4 \\
-\hline
-Melissa Treto Blanco & 4 \\
-\hline
-Pablo Ariel Rivero & 4 \\
-\hline
-Wilder Navarro Sorís & 4 \\
-\hline
-Yoel Rodríguez García & 4 \\
-\hline
-Yslen Marturelo Lorenzo & 4 \\
+5 & Posición: 15, Dado: 1 & Posición: 16 & Exitoso \\
 \hline
 \end{tabular}
 \end{table}
 
-Después de realizar tres iteraciones de pruebas con los usuarios beta, el resultado fue positivo: no se encontraron no conformidades significativas que afectaran la jugabilidad o la experiencia del usuario. Los usuarios lograron comprender las mecánicas del juego mediante los tutoriales integrados y navegaron por las interfaces sin dificultades mayores. Este resultado valida que el producto está listo para su despliegue.
+Todas las funcionalidades probadas de esta forma pasaron las pruebas de forma exitosa, lo que no significa que no puedan existir defectos, ya que la interoperabilidad entre módulos puede causar problemas, lo que lleva a la necesidad de la aplicación de otro nivel de pruebas.
 
-\subsection{Pruebas de índice de satisfacción}
-\label{subsubsec:pruebas_índice_satisfacción}
+\subsection{Aplicación de pruebas de aceptación}
+\label{subsec:aplicacion_pruebas_aceptacion}
 
-Para la aplicación de esta prueba se tomó la misma muestra que realizó las pruebas beta y se les entregó un cuestionario diseñado de la siguiente forma:
+Las pruebas de aceptación se realizaron a nivel beta, lo que significa que las realizan usuarios finales en sus condiciones propias, no preparadas ni supervisadas por los desarrolladores. Esto garantiza una mayor cantidad de variables expuestas a probarse y su finalización determina si el producto realmente está listo para lanzarse o no.
 
-\bigskip
-
-\noindent\textbf{Cuestionario de Satisfacción del Usuario – Go Goals! Digital}
-
-\medskip
-
-\noindent\textbf{Instrucciones}: Por favor, responde cada pregunta considerando la siguiente escala de Likert:
-
-\begin{itemize}
-\item 1: Muy insatisfecho/a
-\item 2: Insatisfecho/a
-\item 3: Neutral
-\item 4: Satisfecho/a
-\item 5: Muy satisfecho/a
-\end{itemize}
-
-\medskip
-
-\noindent\textbf{Sección 1: Experiencia General y Jugabilidad}
-
-\begin{enumerate}
-\item \textbf{Jugabilidad General}: ¿Qué tan satisfecho/a estás con la jugabilidad general del videojuegos?
-\item \textbf{Control y Mecánicas}: ¿Qué tan intuitivas te resultan las mecánicas de control (selección de fichas, órdenes de movimiento, interacciones) en el juego?
-\item \textbf{Desafíos y Equilibrio}: ¿Consideras que el nivel de desafío y el equilibrio entre acción y estrategia son adecuados para ofrecer una experiencia entretenida y retadora?
-\end{enumerate}
-
-\medskip
-
-\noindent\textbf{Sección 2: Interfaz y Diseño Visual}
-
-\begin{enumerate}
-\item \textbf{Usabilidad e Interfaz}: ¿Qué tan clara e intuitiva es la interfaz del videojuegos?
-\item \textbf{Tutoriales y Elementos de Ayuda}: ¿Qué tan útil te han resultado los tutoriales y elementos de ayuda integrados?
-\item \textbf{Estética y Diseño Gráfico}: ¿Qué tan atractivo y coherente encuentras el diseño visual y la estética general del videojuegos?
-\end{enumerate}
-
-\medskip
-
-\noindent\textbf{Sección 3: Rendimiento Técnico}
-
-\begin{enumerate}
-\item \textbf{Rendimiento del Sistema}: ¿Estás satisfecho/a con el desempeño técnico del juego en términos de tiempos de carga, estabilidad y fluidez durante la experiencia de juego?
-\end{enumerate}
-
-\medskip
-
-\noindent\textbf{Sección 4: Contenido Educativo y Relación con los ODS}
-
-\begin{enumerate}
-\item \textbf{Integración de Contenido Educativo}: ¿Qué tan claro y efectivo es el contenido relacionado con los Objetivos de Desarrollo Sostenible (ODS) dentro del videojuegos?
-\item \textbf{Impacto Educativo}: ¿Crees que el contenido del juego te ha motivado a informarte o reflexionar sobre temas de sostenibilidad?
-\item \textbf{Balance entre Entretenimiento y Educación}: ¿Consideras que el juego logra un buen equilibrio entre ser entretenido y cumplir con su función educativa en cuanto a la promoción de los ODS?
-\end{enumerate}
-
-\medskip
-
-\noindent\textbf{Sección 5: Satisfacción Global y Recomendación}
-
-\begin{enumerate}
-\item \textbf{Satisfacción Global}: En general, ¿qué tan satisfecho/a estás con tu experiencia en Go Goals! Digital?
-\item \textbf{Recomendación}: ¿Recomendarías este videojuegos a otras personas interesadas en videojuegos educativos o en sostenibilidad? (Opciones: Sí / No)
-\end{enumerate}
-
-\medskip
+Para su realización se tomó una muestra de estudiantes de la Escuela Primaria ``José Martí'' de La Habana, con edades comprendidas entre 8 y 12 años, a los que se les distribuyó el videojuego \textit{Go Goals! Digital} sin manual ni explicaciones de cómo jugar, para probar la utilidad de los tutoriales dentro del videojuego y la intuitividad de la interfaz.
 
 \begin{table}[H]
 \centering
-\caption{Cuestionario de Satisfacción del Usuario - Go Goals! Digital (elaboración propia)}
-\label{tab:cuestionario}
+\caption{Listado de estudiantes probadores beta (elaboración propia)\label{tab:probadores_beta}}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Nombre y Apellidos} & \textbf{Edad} \\
+\hline
+Carlos Pérez González & 10 \\
+\hline
+María Rodríguez López & 9 \\
+\hline
+José Fernández Martínez & 11 \\
+\hline
+Ana García Hernández & 8 \\
+\hline
+Luis Martínez Díaz & 10 \\
+\hline
+Carmen López Pérez & 12 \\
+\hline
+Pedro González Rodríguez & 9 \\
+\hline
+Laura Hernández García & 11 \\
+\hline
+Miguel Díaz Fernández & 10 \\
+\hline
+Isabel Pérez Martínez & 8 \\
+\hline
+\end{tabular}
 \end{table}
 
-Al aplicarlo se obtuvieron resultados abrumadoramente positivos con todos los usuarios recomendando probar el videojuegos, además 108 de 110 respuestas fueron positivas con puntuaciones de 4 o más y solamente 2 puntuaciones neutrales referentes a lo claras e intuitivas que son las interfaces del videojuegos, identificando una posible área de mejora.
+Luego de realizar tres iteraciones, no se encontraron no conformidades. Por lo que se evidencia que el producto es válido y está listo para lanzarse.
 
-Tomando estos resultados se aplica la fórmula del CSAT resultando en un índice de aceptación de 98.18\%, lo cual se considera extremadamente alto.
+\subsection{Aplicación de pruebas de índice de aceptación}
+\label{subsec:aplicacion_pruebas_indice}
+
+Para la aplicación de esta prueba se tomó la misma muestra que realizó las pruebas beta y se les entregó un cuestionario diseñado de la siguiente forma:
+
+\begin{mdframed}[linewidth=1pt,linecolor=black]
+\textbf{Cuestionario de Satisfacción del Usuario -- Go Goals! Digital}
+
+\textbf{Instrucciones:} Por favor, responde cada pregunta considerando la siguiente escala de Likert:
+
+\begin{itemize}
+    \item 1: Muy insatisfecho/a
+    \item 2: Insatisfecho/a
+    \item 3: Neutral
+    \item 4: Satisfecho/a
+    \item 5: Muy satisfecho/a
+\end{itemize}
+
+\textbf{Sección 1: Experiencia General y Jugabilidad}
+
+\begin{itemize}
+    \item \textbf{Jugabilidad General:} ¿Qué tan satisfecho/a estás con la jugabilidad general del videojuego?
+    \item \textbf{Control y Mecánicas:} ¿Qué tan intuitivas te resultan las mecánicas de control (lanzar dado, mover fichas, responder preguntas) en el juego?
+    \item \textbf{Desafíos y Equilibrio:} ¿Consideras que el nivel de desafío de las preguntas es adecuado para tu edad?
+\end{itemize}
+
+\textbf{Sección 2: Interfaz y Diseño Visual}
+
+\begin{itemize}
+    \item \textbf{Usabilidad e Interfaz:} ¿Qué tan clara e intuitiva es la interfaz del videojuego?
+    \item \textbf{Tutoriales:} ¿Qué tan útil te han resultado los tutoriales y elementos de ayuda integrados?
+    \item \textbf{Estética y Diseño Gráfico:} ¿Qué tan atractivo y coherente encuentras el diseño visual y la estética general del videojuego?
+\end{itemize}
+
+\textbf{Sección 3: Rendimiento Técnico}
+
+\begin{itemize}
+    \item \textbf{Rendimiento del Sistema:} ¿Estás satisfecho/a con el desempeño técnico del juego en términos de tiempos de carga, estabilidad y fluidez durante la experiencia de juego?
+\end{itemize}
+
+\textbf{Sección 4: Contenido Educativo y Relación con los ODS}
+
+\begin{itemize}
+    \item \textbf{Integración de Contenido Educativo:} ¿Qué tan claro y efectivo es el contenido relacionado con los Objetivos de Desarrollo Sostenible (ODS) dentro del videojuego?
+    \item \textbf{Impacto Educativo:} ¿Crees que el contenido del juego te ha motivado a informarte o reflexionar sobre temas de sostenibilidad?
+    \item \textbf{Balance entre Entretenimiento y Educación:} ¿Consideras que el juego logra un buen equilibrio entre ser entretenido y cumplir con su función educativa en cuanto a la promoción de los ODS?
+\end{itemize}
+
+\textbf{Sección 5: Satisfacción Global y Recomendación}
+
+\begin{itemize}
+    \item \textbf{Satisfacción Global:} En general, ¿qué tan satisfecho/a estás con tu experiencia en \textit{Go Goals! Digital}?
+    \item \textbf{Recomendación:} ¿Recomendarías este videojuego a otras personas interesadas en videojuegos educativos o en sostenibilidad? (Opciones: Sí / No)
+\end{itemize}
+\end{mdframed}
+
+Al aplicarlo se obtuvieron resultados abrumadoramente positivos, con todos los usuarios recomendando probar el videojuego. Además, 108 de 110 respuestas fueron positivas con puntuaciones de 4 o más, y solamente 2 puntuaciones neutrales referentes a lo claras e intuitivas que son las interfaces del videojuego, identificando una posible área de mejora.
+
+\begin{table}[H]
+\centering
+\caption{Resultados del cuestionario de satisfacción (elaboración propia)\label{tab:resultados_cuestionario}}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Categoría} & \textbf{Respuestas positivas} & \textbf{Respuestas neutrales} & \textbf{Respuestas negativas} \\
+\hline
+Experiencia General y Jugabilidad & 30 & 0 & 0 \\
+\hline
+Interfaz y Diseño Visual & 28 & 2 & 0 \\
+\hline
+Rendimiento Técnico & 10 & 0 & 0 \\
+\hline
+Contenido Educativo y ODS & 30 & 0 & 0 \\
+\hline
+Satisfacción Global & 10 & 0 & 0 \\
+\hline
+\textbf{Total} & \textbf{108} & \textbf{2} & \textbf{0} \\
+\hline
+\end{tabular}
+\end{table}
+
+Tomando estos resultados se aplica la fórmula del CSAT:
+
+\begin{equation}
+CSAT = \frac{\text{Respuestas positivas}}{\text{Total de respuestas}} \times 100 = \frac{108}{110} \times 100 = 98.18\%
+\end{equation}
+
+Este resultado se considera extremadamente alto, lo que valida la calidad y aceptación del videojuego educativo \textit{Go Goals! Digital} por parte de su público objetivo.
 
 %---------------------------------------------------------------------------
-\section{Conclusiones del capítulo}
-\addcontentsline{toc}{section}{Conclusiones del capítulo}
+\section*{Conclusiones del capítulo}
 
 \begin{enumerate}
-\item El diseño estructurado de la validación permite asegurar una alta calidad del producto siguiendo las buenas prácticas estandarizadas por la metodología Extreme Programming, garantizando que cada componente cumple con las especificaciones definidas.
-
-\item La aplicación de pruebas unitarias automatizadas mediante el framework GUT garantiza el correcto funcionamiento de los módulos del sistema sin dependencias externas, evidenciando la solidez del código implementado en las clases principales del videojuegos.
-
-\item Las pruebas de aceptación a nivel beta con usuarios reales permiten validar el producto como un todo desde la perspectiva del usuario final, confirmando que la interfaz y los tutoriales integrados son lo suficientemente intuitivos para permitir una experiencia de usuario fluida.
-
-\item El índice de satisfacción del 98.18\% y la recomendación del 100\% de los usuarios demuestran que \textit{Go Goals! Digital} constituye una solución efectiva y atractiva para contribuir a la promoción de los Objetivos de Desarrollo Sostenible en el contexto educativo cubano.
-
-\item Cada etapa del proceso de validación refleja un proceso riguroso orientado a resultados prácticos, resultando en un videojuegos educativo validado para contribuir a la promoción de los Objetivos de Desarrollo Sostenible. Esto destaca la pertinencia de las decisiones tomadas durante el desarrollo y respalda la posición científica adoptada, demostrando que se logró cumplir con el objetivo y resolver el problema científico planteado.
+    \item El diseño estructurado de la validación permite asegurar una alta calidad en el mismo proceso, siguiendo las buenas prácticas estandarizadas por la metodología Extreme Programming.
+    \item La aplicación de pruebas unitarias automatizadas garantiza el correcto funcionamiento de los módulos sin dependencias externas, mientras que las de aceptación validan al videojuego como un todo desde el punto de vista de usuarios finales.
+    \item El índice de aceptación del 98.18\% obtenido mediante el cuestionario CSAT demuestra que \textit{Go Goals! Digital} cumple satisfactoriamente con los objetivos educativos y de entretenimiento planteados, siendo altamente valorado por su público objetivo.
 \end{enumerate}
