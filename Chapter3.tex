@@ -51,28 +51,25 @@ En este epígrafe se describe la aplicación de las pruebas de software a nivel 
 \subsection{Aplicación de pruebas unitarias}
 \label{subsec:aplicacion_pruebas_unitarias}
 
-Las pruebas unitarias se realizaron de forma automatizada utilizando el framework Godot Unit Testing (GUT), estándar para realizar pruebas unitarias utilizando el motor Godot. Como ejemplo se muestran las pruebas a las funcionalidades de la clase \texttt{GameManager}, mostrándose casos de prueba para la funcionalidad \texttt{calculate\_next\_position()} que retorna la siguiente posición de una ficha dado su posición actual y el resultado del dado.
+Las pruebas unitarias se realizaron de forma automatizada utilizando el \textit{framework Godot Unit Testing} (GUT), estándar para realizar pruebas unitarias utilizando el motor Godot. Como ejemplo se muestran las pruebas a las funcionalidades de la clase \texttt{Player}, mostrándose casos de prueba para la funcionalidad \texttt{hasEnoughResources()} que retorna verdadero si el jugador tiene los recursos suficientes para soportar una producción con los recursos pasados por parámetro (créditos, provisiones y electricidad en ese orden). Obteniéndose resultados exitosos en las 8 pruebas diseñadas para esta funcionalidad.
 
-\begin{table}[H]
-\centering
-\caption{Casos de prueba para funcionalidad \texttt{calculate\_next\_position()} de la clase \texttt{GameManager} (elaboración propia)\label{tab:pruebas_unitarias}}
-\renewcommand{\arraystretch}{1.3}
-\begin{tabular}{|c|p{0.25\textwidth}|p{0.25\textwidth}|p{0.25\textwidth}|}
-\hline
-\textbf{No.} & \textbf{Entrada} & \textbf{Salida esperada} & \textbf{Resultado} \\
-\hline
-1 & Posición: 0, Dado: 3 & Posición: 3 & Exitoso \\
-\hline
-2 & Posición: 10, Dado: 6 & Posición: 16 & Exitoso \\
-\hline
-3 & Posición: 58, Dado: 5 & Posición: 63 (victoria) & Exitoso \\
-\hline
-4 & Posición: 60, Dado: 6 & Posición: 63 (no excede) & Exitoso \\
-\hline
-5 & Posición: 15, Dado: 1 & Posición: 16 & Exitoso \\
-\hline
-\end{tabular}
-\end{table}
+% TODO: Insertar aquí la imagen de los casos de prueba (código de las pruebas unitarias)
+% Figura XX: Casos de prueba para funcionalidad hasEnoughResources() de la clase Player [Elaboración propia]
+
+\begin{figure}[H]
+  \centering
+  \fbox{\parbox{0.9\textwidth}{\centering\vspace{3cm}[ESPACIO PARA IMAGEN: Casos de prueba - Código de pruebas unitarias]\vspace{3cm}}}
+  \caption{Casos de prueba para funcionalidad \texttt{hasEnoughResources()} de la clase \texttt{Player} (elaboración propia)\label{fig:casos_prueba_unitarias}}
+\end{figure}
+
+% TODO: Insertar aquí la imagen de los resultados de las pruebas
+% Figura XX: Resultado de pruebas para la clase Player [Elaboración propia]
+
+\begin{figure}[H]
+  \centering
+  \fbox{\parbox{0.9\textwidth}{\centering\vspace{3cm}[ESPACIO PARA IMAGEN: Resultado de pruebas unitarias - Terminal GUT]\vspace{3cm}}}
+  \caption{Resultado de pruebas para la clase \texttt{Player} (elaboración propia)\label{fig:resultado_pruebas_unitarias}}
+\end{figure}
 
 Todas las funcionalidades probadas de esta forma pasaron las pruebas de forma exitosa, lo que no significa que no puedan existir defectos, ya que la interoperabilidad entre módulos puede causar problemas, lo que lleva a la necesidad de la aplicación de otro nivel de pruebas.
 
@@ -121,56 +118,91 @@ Luego de realizar tres iteraciones, no se encontraron no conformidades. Por lo q
 
 Para la aplicación de esta prueba se tomó la misma muestra que realizó las pruebas beta y se les entregó un cuestionario diseñado de la siguiente forma:
 
-\begin{mdframed}[linewidth=1pt,linecolor=black]
-\textbf{Cuestionario de Satisfacción del Usuario -- Go Goals! Digital}
+\begin{longtable}{|p{0.95\textwidth}|}
+\caption{Cuestionario de Satisfacción del Usuario -- Go Goals! Digital (elaboración propia)\label{tab:cuestionario_satisfaccion}} \\
+\hline
+\multicolumn{1}{|c|}{\textbf{Cuestionario de Satisfacción del Usuario -- Go Goals! Digital}} \\
+\hline
+\endfirsthead
+\multicolumn{1}{c}
+{{ \tablename\ \thetable{} -- Continuación de la página anterior}} \\
+\hline
+\multicolumn{1}{|c|}{\textbf{Cuestionario de Satisfacción del Usuario -- Go Goals! Digital}} \\
+\hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
 
 \textbf{Instrucciones:} Por favor, responde cada pregunta considerando la siguiente escala de Likert:
 
-\begin{itemize}
-    \item 1: Muy insatisfecho/a
-    \item 2: Insatisfecho/a
-    \item 3: Neutral
-    \item 4: Satisfecho/a
-    \item 5: Muy satisfecho/a
-\end{itemize}
+1: Muy insatisfecho/a
 
-\textbf{Sección 1: Experiencia General y Jugabilidad}
+2: Insatisfecho/a
 
-\begin{itemize}
-    \item \textbf{Jugabilidad General:} ¿Qué tan satisfecho/a estás con la jugabilidad general del videojuego?
-    \item \textbf{Control y Mecánicas:} ¿Qué tan intuitivas te resultan las mecánicas de control (lanzar dado, mover fichas, responder preguntas) en el juego?
-    \item \textbf{Desafíos y Equilibrio:} ¿Consideras que el nivel de desafío de las preguntas es adecuado para tu edad?
-\end{itemize}
+3: Neutral
 
-\textbf{Sección 2: Interfaz y Diseño Visual}
+4: Satisfecho/a
 
-\begin{itemize}
-    \item \textbf{Usabilidad e Interfaz:} ¿Qué tan clara e intuitiva es la interfaz del videojuego?
-    \item \textbf{Tutoriales:} ¿Qué tan útil te han resultado los tutoriales y elementos de ayuda integrados?
-    \item \textbf{Estética y Diseño Gráfico:} ¿Qué tan atractivo y coherente encuentras el diseño visual y la estética general del videojuego?
-\end{itemize}
+5: Muy satisfecho/a \\
+\hline
+\multicolumn{1}{|c|}{\textbf{Sección 1: Experiencia General y Jugabilidad}} \\
+\hline
+\textbf{Jugabilidad General:}
 
-\textbf{Sección 3: Rendimiento Técnico}
+¿Qué tan satisfecho/a estás con la jugabilidad general del videojuego? \\
+\hline
+\textbf{Control y Mecánicas:}
 
-\begin{itemize}
-    \item \textbf{Rendimiento del Sistema:} ¿Estás satisfecho/a con el desempeño técnico del juego en términos de tiempos de carga, estabilidad y fluidez durante la experiencia de juego?
-\end{itemize}
+¿Qué tan intuitivas te resultan las mecánicas de control (lanzar dado, mover fichas, responder preguntas) en el juego? \\
+\hline
+\textbf{Desafíos y Equilibrio:}
 
-\textbf{Sección 4: Contenido Educativo y Relación con los ODS}
+¿Consideras que el nivel de desafío de las preguntas es adecuado para tu edad? \\
+\hline
+\multicolumn{1}{|c|}{\textbf{Sección 2: Interfaz y Diseño Visual}} \\
+\hline
+\textbf{Usabilidad e Interfaz:}
 
-\begin{itemize}
-    \item \textbf{Integración de Contenido Educativo:} ¿Qué tan claro y efectivo es el contenido relacionado con los Objetivos de Desarrollo Sostenible (ODS) dentro del videojuego?
-    \item \textbf{Impacto Educativo:} ¿Crees que el contenido del juego te ha motivado a informarte o reflexionar sobre temas de sostenibilidad?
-    \item \textbf{Balance entre Entretenimiento y Educación:} ¿Consideras que el juego logra un buen equilibrio entre ser entretenido y cumplir con su función educativa en cuanto a la promoción de los ODS?
-\end{itemize}
+¿Qué tan clara e intuitiva es la interfaz del videojuego?
 
-\textbf{Sección 5: Satisfacción Global y Recomendación}
+¿Qué tan útil te han resultado los tutoriales y elementos de ayuda integrados? \\
+\hline
+\textbf{Estética y Diseño Gráfico:}
 
-\begin{itemize}
-    \item \textbf{Satisfacción Global:} En general, ¿qué tan satisfecho/a estás con tu experiencia en \textit{Go Goals! Digital}?
-    \item \textbf{Recomendación:} ¿Recomendarías este videojuego a otras personas interesadas en videojuegos educativos o en sostenibilidad? (Opciones: Sí / No)
-\end{itemize}
-\end{mdframed}
+¿Qué tan atractivo y coherente encuentras el diseño visual y la estética general del videojuego? \\
+\hline
+\multicolumn{1}{|c|}{\textbf{Sección 3: Rendimiento Técnico}} \\
+\hline
+\textbf{Rendimiento del Sistema:}
+
+¿Estás satisfecho/a con el desempeño técnico del juego en términos de tiempos de carga, estabilidad y fluidez durante la experiencia de juego? \\
+\hline
+\multicolumn{1}{|c|}{\textbf{Sección 4: Contenido Educativo y Relación con los ODS}} \\
+\hline
+\textbf{Integración de Contenido Educativo:}
+
+¿Qué tan claro y efectivo es el contenido relacionado con los Objetivos de Desarrollo Sostenible (ODS) dentro del videojuego? \\
+\hline
+\textbf{Impacto Educativo:}
+
+¿Crees que el contenido del juego te ha motivado a informarte o reflexionar sobre temas de sostenibilidad? \\
+\hline
+\textbf{Balance entre Entretenimiento y Educación:}
+
+¿Consideras que el juego logra un buen equilibrio entre ser entretenido y cumplir con su función educativa en cuanto a la promoción de los ODS? \\
+\hline
+\multicolumn{1}{|c|}{\textbf{Sección 5: Satisfacción Global y Recomendación}} \\
+\hline
+\textbf{Satisfacción Global:}
+
+En general, ¿qué tan satisfecho/a estás con tu experiencia en \textit{Go Goals! Digital}? \\
+\hline
+\textbf{Recomendación:}
+
+¿Recomendarías este videojuego a otras personas interesadas en videojuegos educativos o en sostenibilidad? (Opciones: Sí / No) \\
+\hline
+\end{longtable}
 
 Al aplicarlo se obtuvieron resultados abrumadoramente positivos, con todos los usuarios recomendando probar el videojuego. Además, 108 de 110 respuestas fueron positivas con puntuaciones de 4 o más, y solamente 2 puntuaciones neutrales referentes a lo claras e intuitivas que son las interfaces del videojuego, identificando una posible área de mejora.
 
