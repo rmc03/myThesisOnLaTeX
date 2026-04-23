@@ -1,0 +1,44 @@
+# Archivos de compilación de LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.run.xml
+*.toc
+*.out
+*.lof
+*.lot
+*.acn
+*.acr
+*.glo
+*.gls
+*.ist
+*.loa
+*.lol
+*.tdo
+*.synctex.gz
+*.dvi
+*.ps
+
+# Archivos PDF generados por la compilación (evitar subir PDFs pesados generados)
+# Si deseas trackear algún PDF en particular, hazle "git add -f nombre.pdf"
+example.pdf
+thesis.pdf
+Latex*.pdf
+TD_Oscar*.pdf
+*.docx
+
+# Archivos temporales o extraídos
+extracted_*.txt
+temp_*.txt
+captions_to_fix.txt
+longtables.log
+git_history.txt
+
+# Carpetas de configuraciones locales o de editores
+.vscode/
+
+# Ignorar si hay archivos temporales del sistema
+.DS_Store
+Thumbs.db

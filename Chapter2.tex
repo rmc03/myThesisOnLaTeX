@@ -7,7 +7,7 @@ El presente capítulo tiene como objetivo presentar el proceso de análisis, dis
 \section{Descripción de la propuesta de solución}
 \label{sec:descripcion_propuesta}
 
-\textit{Go Goals! Digital} es un videojuego educativo basado en la adaptación digital del juego de mesa oficial \textit{Go Goals!} de las Naciones Unidas \parencite{GoGoals2020}. En su formato digital, los jugadores (de 1 a 6) controlan fichas en un tablero hexagonal de 63 casillas que metaforiza el recorrido colectivo hacia el año 2030, horizonte establecido por la Agenda 2030 para el Desarrollo Sostenible \parencite{NacionesUnidas2015}. El avance se determina mediante un dado virtual, y al caer en una de las 17 casillas temáticas (una por ODS), el jugador debe responder una pregunta de opción múltiple sobre el objetivo correspondiente. Las respuestas correctas activan el efecto de escalera (avance positivo), mientras que las incorrectas activan el efecto de serpiente (retroceso correctivo), preservando la mecánica pedagógica central del juego original.
+\textit{Go Goals! Digital} es un videojuego educativo basado en la adaptación digital del juego de mesa oficial \textit{Go Goals!} de las Naciones Unidas \parencite{GoGoals2020}. En su formato digital, los jugadores (de 1 a 4) controlan fichas en un tablero hexagonal de 63 casillas que metaforiza el recorrido colectivo hacia el año 2030, horizonte establecido por la Agenda 2030 para el Desarrollo Sostenible \parencite{NacionesUnidas2015}. El avance se determina mediante un dado virtual, y al caer en una de las 17 casillas temáticas (una por ODS), el jugador debe responder una pregunta de opción múltiple sobre el objetivo correspondiente. Las respuestas correctas activan el efecto de escalera (avance positivo), mientras que las incorrectas activan el efecto de serpiente (retroceso correctivo), preservando la mecánica pedagógica central del juego original.
 
 Las principales mejoras que introduce la versión digital respecto al formato físico son:
 \begin{itemize}
@@ -163,7 +163,7 @@ A continuación se presentan las historias de usuario definidas para las funcion
 \begin{itemize}
     \setlength\itemsep{0em}
     \item Debe incluir botón para iniciar partida.
-    \item Permite configurar número de jugadores (1--6).
+    \item Permite configurar número de jugadores (1--4).
     \item Carga el tablero y realiza transición a la primera ronda.
     \item Se inicializan estadísticas en cero.
 \end{itemize}
@@ -267,28 +267,27 @@ A continuación se presentan las historias de usuario definidas para las funcion
 
 \begin{table}[H]
 \centering
-\caption{Historia de usuario 5: Aplicar efecto de escalera y serpiente (elaboración propia)\label{tab:hu5}}
+\caption{Historia de usuario 5: Aplicar efecto de escalera (elaboración propia)\label{tab:hu5}}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
 \hline
-\textbf{Número:} 5 & \textbf{Nombre:} Aplicar efecto de escalera y serpiente \\
+\textbf{Número:} 5 & \textbf{Nombre:} Aplicar efecto de escalera \\
 \hline
 \textbf{Prioridad:} Alta & \textbf{Riesgo:} Medio \\
 \hline
-\textbf{Puntos de estimación:} 3.0 & \textbf{Iteración asignada:} 2 \\
+\textbf{Puntos de estimación:} 1.5 & \textbf{Iteración asignada:} 2 \\
 \hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero que el juego aplique el efecto de escalera o serpiente cuando corresponda para experimentar la mecánica original del juego.} \\
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero que mi ficha avance automáticamente por una escalera al caer en su base para ser recompensado por mi progreso.} \\
 \hline
 \multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
 \vspace{-0.5em}
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item El sistema debe detectar la casilla final.
-    \item En casilla de escalera la ficha debe avanzar a la casilla destino con animación de subida.
-    \item En casilla de serpiente la ficha retrocede con animación descendente.
-    \item Debe incluir \textit{feedback} sonoro diferenciado.
+    \item El sistema debe detectar si la casilla final es la base de una escalera.
+    \item La ficha debe avanzar a la casilla destino con animación de subida.
+    \item Debe incluir \textit{feedback} sonoro positivo.
 \end{itemize}
 \vspace{-1em}
 } \\
@@ -298,13 +297,43 @@ A continuación se presentan las historias de usuario definidas para las funcion
 
 \begin{table}[H]
 \centering
-\caption{Historia de usuario 6: Mostrar pregunta ODS (elaboración propia)\label{tab:hu6}}
+\caption{Historia de usuario 6: Aplicar efecto de serpiente (elaboración propia)\label{tab:hu6}}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
 \hline
-\textbf{Número:} 6 & \textbf{Nombre:} Mostrar pregunta ODS \\
+\textbf{Número:} 6 & \textbf{Nombre:} Aplicar efecto de serpiente \\
+\hline
+\textbf{Prioridad:} Alta & \textbf{Riesgo:} Medio \\
+\hline
+\textbf{Puntos de estimación:} 1.5 & \textbf{Iteración asignada:} 2 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero que mi ficha retroceda automáticamente al caer en la cabeza de una serpiente para aplicar la penalización del juego clásico.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item El sistema debe detectar si la casilla final es la cabeza de una serpiente.
+    \item La ficha retrocede a la casilla destino con animación descendente.
+    \item Debe incluir \textit{feedback} sonoro negativo.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Historia de usuario 7: Mostrar pregunta ODS (elaboración propia)\label{tab:hu7}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 7 & \textbf{Nombre:} Mostrar pregunta ODS \\
 \hline
 \textbf{Prioridad:} Alta & \textbf{Riesgo:} Alto \\
 \hline
@@ -316,12 +345,9 @@ A continuación se presentan las historias de usuario definidas para las funcion
 \vspace{-0.5em}
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item El juego debe pausar el turno al caer en casilla ODS.
+    \item El juego debe pausar el turno al caer en casilla temática.
     \item Se debe mostrar un panel modal con el ícono del ODS, el texto de la pregunta y las opciones de respuesta.
-    \item El texto debe ser legible para niños de 8--10 años.
-    \item Los botones deben ser de tamaño grande.
     \item Se selecciona una pregunta aleatoria sin repetir dentro de la sesión.
-    \item Puede activarse límite de tiempo opcional.
 \end{itemize}
 \vspace{-1em}
 } \\
@@ -331,13 +357,13 @@ A continuación se presentan las historias de usuario definidas para las funcion
 
 \begin{table}[H]
 \centering
-\caption{Historia de usuario 7: Evaluar respuesta (elaboración propia)\label{tab:hu7}}
+\caption{Historia de usuario 8: Evaluar respuesta (elaboración propia)\label{tab:hu8}}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
 \hline
-\textbf{Número:} 7 & \textbf{Nombre:} Evaluar respuesta \\
+\textbf{Número:} 8 & \textbf{Nombre:} Evaluar respuesta \\
 \hline
 \textbf{Prioridad:} Alta & \textbf{Riesgo:} Medio \\
 \hline
@@ -351,9 +377,7 @@ A continuación se presentan las historias de usuario definidas para las funcion
     \setlength\itemsep{0em}
     \item El sistema debe mostrar un indicador visual de resultado (verde/rojo).
     \item Debe mostrar un mensaje explicativo breve de la respuesta correcta.
-    \item La duración del \textit{feedback} debe ser de aproximadamente 5 segundos.
-    \item Si la respuesta es correcta se mantiene la posición o se avanza por escalera.
-    \item Si es incorrecta se aplica el retroceso.
+    \item Si es correcta, se mantiene la posición o se avanza por escalera. Si es incorrecta, retrocede por serpiente.
 \end{itemize}
 \vspace{-1em}
 } \\
@@ -363,27 +387,26 @@ A continuación se presentan las historias de usuario definidas para las funcion
 
 \begin{table}[H]
 \centering
-\caption{Historia de usuario 8: Gestionar turnos (elaboración propia)\label{tab:hu8}}
+\caption{Historia de usuario 9: Gestionar turnos (elaboración propia)\label{tab:hu9}}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
 \hline
-\textbf{Número:} 8 & \textbf{Nombre:} Gestionar turnos \\
+\textbf{Número:} 9 & \textbf{Nombre:} Gestionar turnos \\
 \hline
 \textbf{Prioridad:} Alta & \textbf{Riesgo:} Baja \\
 \hline
 \textbf{Puntos de estimación:} 2.0 & \textbf{Iteración asignada:} 2 \\
 \hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero que el sistema gestione los turnos automáticamente para que el juego fluya sin interrupciones.} \\
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero que el sistema gestione los turnos automáticamente y muestre quién es el jugador activo para que el juego fluya.} \\
 \hline
 \multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
 \vspace{-0.5em}
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item El sistema debe indicar visualmente el jugador activo.
+    \item El sistema debe indicar visualmente el jugador activo resaltando su ficha.
     \item Al finalizar el turno debe pasar automáticamente al siguiente jugador en orden.
-    \item En modo de un jugador contra la IA, el turno de la IA debe ejecutarse automáticamente.
 \end{itemize}
 \vspace{-1em}
 } \\
@@ -393,27 +416,26 @@ A continuación se presentan las historias de usuario definidas para las funcion
 
 \begin{table}[H]
 \centering
-\caption{Historia de usuario 9: Determinar condición de victoria (elaboración propia)\label{tab:hu9}}
+\caption{Historia de usuario 10: Determinar condición de victoria (elaboración propia)\label{tab:hu10}}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
 \hline
-\textbf{Número:} 9 & \textbf{Nombre:} Determinar condición de victoria \\
+\textbf{Número:} 10 & \textbf{Nombre:} Determinar condición de victoria \\
 \hline
 \textbf{Prioridad:} Alta & \textbf{Riesgo:} Baja \\
 \hline
 \textbf{Puntos de estimación:} 1.5 & \textbf{Iteración asignada:} 3 \\
 \hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero que el juego detecte cuando llegue a la casilla 63 para saber que gané.} \\
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero que el juego detecte cuando alguien llegue a la casilla 63 para mostrar la pantalla de victoria.} \\
 \hline
 \multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
 \vspace{-0.5em}
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item El sistema debe detectar la llegada a la casilla final.
+    \item El sistema debe detectar la llegada exacta a la casilla final.
     \item Debe mostrar una pantalla de victoria con animación de confeti y el nombre del ganador.
-    \item Debe ofrecer opciones de jugar de nuevo o volver al menú principal.
 \end{itemize}
 \vspace{-1em}
 } \\
@@ -423,19 +445,19 @@ A continuación se presentan las historias de usuario definidas para las funcion
 
 \begin{table}[H]
 \centering
-\caption{Historia de usuario 10: Mostrar estadísticas de partida (elaboración propia)\label{tab:hu10}}
+\caption{Historia de usuario 11: Mostrar estadísticas de partida (elaboración propia)\label{tab:hu11}}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
 \hline
-\textbf{Número:} 10 & \textbf{Nombre:} Mostrar estadísticas de partida \\
+\textbf{Número:} 11 & \textbf{Nombre:} Mostrar estadísticas de partida \\
 \hline
 \textbf{Prioridad:} Media & \textbf{Riesgo:} Medio \\
 \hline
 \textbf{Puntos de estimación:} 4.0 & \textbf{Iteración asignada:} 3 \\
 \hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como educador quiero visualizar las estadísticas de respuestas por jugador y por ODS para evaluar el aprendizaje.} \\
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como educador quiero visualizar las estadísticas de respuestas por jugador y por ODS al final de la partida para evaluar el aprendizaje.} \\
 \hline
 \multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
 \vspace{-0.5em}
@@ -444,7 +466,6 @@ A continuación se presentan las historias de usuario definidas para las funcion
     \item Al finalizar la partida se debe mostrar una pantalla de estadísticas.
     \item Debe incluir el porcentaje de respuestas correctas por jugador.
     \item Debe identificar los ODS con menor porcentaje de aciertos para cada jugador.
-    \item Las estadísticas deben poder consultarse durante la partida mediante un botón de pausa.
 \end{itemize}
 \vspace{-1em}
 } \\
@@ -454,27 +475,25 @@ A continuación se presentan las historias de usuario definidas para las funcion
 
 \begin{table}[H]
 \centering
-\caption{Historia de usuario 11: Mostrar menú principal y pantalla de instrucciones (elaboración propia)\label{tab:hu11}}
+\caption{Historia de usuario 12: Mostrar menú principal (elaboración propia)\label{tab:hu12}}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
 \hline
-\textbf{Número:} 11 & \textbf{Nombre:} Mostrar menú principal y pantalla de instrucciones \\
+\textbf{Número:} 12 & \textbf{Nombre:} Mostrar menú principal \\
 \hline
 \textbf{Prioridad:} Alta & \textbf{Riesgo:} Baja \\
 \hline
-\textbf{Puntos de estimación:} 2.0 & \textbf{Iteración asignada:} 1 \\
+\textbf{Puntos de estimación:} 1.0 & \textbf{Iteración asignada:} 1 \\
 \hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero acceder a un menú principal intuitivo y a las instrucciones del juego para aprender a jugarlo fácilmente.} \\
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como usuario quiero acceder a un menú principal intuitivo para navegar por las opciones principales del juego.} \\
 \hline
 \multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
 \vspace{-0.5em}
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item El menú principal debe incluir botones: Jugar, Instrucciones, Configuración y Salir.
-    \item La pantalla de instrucciones debe explicar la mecánica de forma visual.
-    \item Debe incluir referencias a los 17 ODS con sus colores e íconos oficiales.
+    \item El menú principal debe incluir botones: Iniciar Partida, Instrucciones y Salir.
 \end{itemize}
 \vspace{-1em}
 } \\
@@ -484,25 +503,54 @@ A continuación se presentan las historias de usuario definidas para las funcion
 
 \begin{table}[H]
 \centering
-\caption{Historia de usuario 12: Configuración de audio (elaboración propia)\label{tab:hu12}}
+\caption{Historia de usuario 13: Mostrar pantalla de instrucciones (elaboración propia)\label{tab:hu13}}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
 \hline
-\textbf{Número:} 12 & \textbf{Nombre:} Configuración de audio \\
+\textbf{Número:} 13 & \textbf{Nombre:} Mostrar pantalla de instrucciones \\
+\hline
+\textbf{Prioridad:} Media & \textbf{Riesgo:} Baja \\
+\hline
+\textbf{Puntos de estimación:} 1.0 & \textbf{Iteración asignada:} 1 \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero leer las instrucciones del juego para aprender a jugarlo correctamente.} \\
+\hline
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item La pantalla debe explicar las reglas de avance, escalera, serpiente y preguntas ODS de forma visual.
+    \item Debe ser accesible desde el menú principal.
+\end{itemize}
+\vspace{-1em}
+} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Historia de usuario 14: Configurar audio (elaboración propia)\label{tab:hu14}}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
+\hline
+\textbf{Número:} 14 & \textbf{Nombre:} Configurar audio \\
 \hline
 \textbf{Prioridad:} Baja & \textbf{Riesgo:} Baja \\
 \hline
 \textbf{Puntos de estimación:} 2.5 & \textbf{Iteración asignada:} 4 \\
 \hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero configurar el audio para personalizar mi experiencia durante la partida.} \\
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero poder activar o desactivar la música y los efectos de sonido para personalizar mi partida.} \\
 \hline
 \multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
 \vspace{-0.5em}
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item Debe incluir controles deslizantes para el volumen de música y de los efectos de sonido.
+    \item Debe incluir controles para el volumen global, música y efectos sonoros.
 \end{itemize}
 \vspace{-1em}
 } \\
@@ -512,28 +560,26 @@ A continuación se presentan las historias de usuario definidas para las funcion
 
 \begin{table}[H]
 \centering
-\caption{Historia de usuario 13: Personalización de jugadores (elaboración propia)\label{tab:hu13}}
+\caption{Historia de usuario 15: Pausar partida (elaboración propia)\label{tab:hu15}}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
 \hline
-\textbf{Número:} 13 & \textbf{Nombre:} Personalización de jugadores \\
+\textbf{Número:} 15 & \textbf{Nombre:} Pausar partida \\
 \hline
-\textbf{Prioridad:} Alta & \textbf{Riesgo:} Bajo \\
+\textbf{Prioridad:} Media & \textbf{Riesgo:} Baja \\
 \hline
-\textbf{Puntos de estimación:} 1.5 & \textbf{Iteración asignada:} 1 \\
+\textbf{Puntos de estimación:} 1.0 & \textbf{Iteración asignada:} 3 \\
 \hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero ingresar mi nombre y seleccionar el color de mi ficha para identificarme durante la partida.} \\
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero pausar la partida en cualquier momento para atender interrupciones sin perder el progreso.} \\
 \hline
 \multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
 \vspace{-0.5em}
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item Debe incluir un campo de texto para el nombre de cada jugador.
-    \item Debe ofrecer al menos 6 opciones de color para la ficha.
-    \item Los datos ingresados deben persistir durante toda la sesión.
-    \item El color seleccionado no debe estar disponible para los demás jugadores.
+    \item Debe existir un panel de pausa que detenga todo el flujo y las animaciones.
+    \item Debe permitir reanudar desde el estado exacto en que se pausó.
 \end{itemize}
 \vspace{-1em}
 } \\
@@ -543,27 +589,26 @@ A continuación se presentan las historias de usuario definidas para las funcion
 
 \begin{table}[H]
 \centering
-\caption{Historia de usuario 14: Visualización de información del ODS (elaboración propia)\label{tab:hu14}}
+\caption{Historia de usuario 16: Reiniciar partida (elaboración propia)\label{tab:hu16}}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
 \hline
-\textbf{Número:} 14 & \textbf{Nombre:} Visualización de información del ODS \\
+\textbf{Número:} 16 & \textbf{Nombre:} Reiniciar partida \\
 \hline
-\textbf{Prioridad:} Alta & \textbf{Riesgo:} Bajo \\
+\textbf{Prioridad:} Media & \textbf{Riesgo:} Baja \\
 \hline
-\textbf{Puntos de estimación:} 2.0 & \textbf{Iteración asignada:} 2 \\
+\textbf{Puntos de estimación:} 1.0 & \textbf{Iteración asignada:} 3 \\
 \hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero ver una breve descripción del ODS al aterrizar en su casilla para contextualizarme antes de responder la pregunta.} \\
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero poder reiniciar la partida actual desde cero sin tener que volver a configurar el número de jugadores.} \\
 \hline
 \multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
 \vspace{-0.5em}
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item Al caer en casilla temática debe mostrarse el ícono oficial del ODS, su número, nombre y una descripción breve de no más de dos oraciones.
-    \item La información debe mostrarse antes de presentar la pregunta.
-    \item El diseño debe respetar los colores oficiales de cada ODS.
+    \item Accesible desde el menú de pausa o de victoria.
+    \item Debe restaurar las posiciones y vaciar las estadísticas de la sesión actual.
 \end{itemize}
 \vspace{-1em}
 } \\
@@ -573,28 +618,26 @@ A continuación se presentan las historias de usuario definidas para las funcion
 
 \begin{table}[H]
 \centering
-\caption{Historia de usuario 15: Configurar temporizador de respuesta (elaboración propia)\label{tab:hu15}}
+\caption{Historia de usuario 17: Configurar temporizador de respuesta (elaboración propia)\label{tab:hu17}}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
 \hline
-\textbf{Número:} 15 & \textbf{Nombre:} Configurar temporizador de respuesta \\
+\textbf{Número:} 17 & \textbf{Nombre:} Configurar temporizador de respuesta \\
 \hline
 \textbf{Prioridad:} Baja & \textbf{Riesgo:} Medio \\
 \hline
 \textbf{Puntos de estimación:} 2.0 & \textbf{Iteración asignada:} 3 \\
 \hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como educador quiero activar un temporizador opcional para que los jugadores respondan dentro de un límite de tiempo y agregar dinamismo a la partida.} \\
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como educador quiero activar un temporizador opcional para las respuestas, de manera que agregue nivel de dificultad.} \\
 \hline
 \multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
 \vspace{-0.5em}
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item El temporizador debe ser configurable antes de iniciar la partida (30, 60 o 90 segundos).
-    \item Al agotar el tiempo sin respuesta se debe contabilizar como respuesta incorrecta.
-    \item El temporizador debe mostrarse visualmente con cambio de color al llegar al 25\% del tiempo restante.
-    \item Su activación debe ser opcional.
+    \item El temporizador es configurable antes de iniciar (ej. 30 o 60 segundos).
+    \item Agotar el tiempo se evalúa automáticamente como respuesta incorrecta.
 \end{itemize}
 \vspace{-1em}
 } \\
@@ -604,182 +647,26 @@ A continuación se presentan las historias de usuario definidas para las funcion
 
 \begin{table}[H]
 \centering
-\caption{Historia de usuario 16: Habilitar modo un jugador (elaboración propia)\label{tab:hu16}}
+\caption{Historia de usuario 18: Habilitar modo un jugador (elaboración propia)\label{tab:hu18}}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
 \hline
-\textbf{Número:} 16 & \textbf{Nombre:} Habilitar modo un jugador \\
+\textbf{Número:} 18 & \textbf{Nombre:} Habilitar modo un jugador \\
 \hline
 \textbf{Prioridad:} Media & \textbf{Riesgo:} Alto \\
 \hline
 \textbf{Puntos de estimación:} 5.0 & \textbf{Iteración asignada:} 4 \\
 \hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero poder jugar en solitario contra un oponente controlado por el sistema para practicar los ODS.} \\
+\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero poder jugar contra la inteligencia artificial cuando no tenga compañeros disponibles.} \\
 \hline
 \multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
 \vspace{-0.5em}
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item El modo un jugador debe ofrecer un oponente automático.
-    \item El oponente debe simular una velocidad de juego normal.
-    \item Las respuestas del oponente pueden ser correctas en un porcentaje configurable para ajustar la dificultad.
-    \item Debe diferenciarse visualmente el turno del jugador y el del sistema.
-\end{itemize}
-\vspace{-1em}
-} \\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Historia de usuario 17: Pantalla de clasificación al finalizar (elaboración propia)\label{tab:hu17}}
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
-\hline
-\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
-\hline
-\textbf{Número:} 17 & \textbf{Nombre:} Pantalla de clasificación al finalizar \\
-\hline
-\textbf{Prioridad:} Media & \textbf{Riesgo:} Bajo \\
-\hline
-\textbf{Puntos de estimación:} 1.5 & \textbf{Iteración asignada:} 3 \\
-\hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero ver una tabla clasificatoria al final de la partida para conocer el desempeño de todos los jugadores.} \\
-\hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
-\vspace{-0.5em}
-\begin{itemize}
-    \setlength\itemsep{0em}
-    \item La pantalla de clasificación debe mostrar el puesto, nombre y porcentaje de respuestas correctas de cada jugador.
-    \item Debe destacar al ganador.
-    \item Debe incluir un botón de jugar de nuevo y uno de volver al menú principal.
-    \item Deve mostrarse animación de confeti para el primer lugar.
-\end{itemize}
-\vspace{-1em}
-} \\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Historia de usuario 18: Notificación visual del turno activo (elaboración propia)\label{tab:hu18}}
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
-\hline
-\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
-\hline
-\textbf{Número:} 18 & \textbf{Nombre:} Notificación visual del turno activo \\
-\hline
-\textbf{Prioridad:} Alta & \textbf{Riesgo:} Bajo \\
-\hline
-\textbf{Puntos de estimación:} 1.0 & \textbf{Iteración asignada:} 2 \\
-\hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero recibir una notificación visual y sonora de cuándo es mi turno para estar atento al juego.} \\
-\hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
-\vspace{-0.5em}
-\begin{itemize}
-    \setlength\itemsep{0em}
-    \item Debe mostrarse un mensaje de ``¡Es tu turno, [nombre]!'' con animación de entrada.
-    \item La ficha del jugador activo debe resaltarse visualmente en el tablero.
-    \item Debe reproducirse un efecto de sonido al inicio de cada turno.
-    \item El botón de lanzar dado solo debe estar activo en el turno del jugador correspondiente.
-\end{itemize}
-\vspace{-1em}
-} \\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Historia de usuario 19: Accesibilidad de la interfaz (elaboración propia)\label{tab:hu19}}
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
-\hline
-\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
-\hline
-\textbf{Número:} 19 & \textbf{Nombre:} Accesibilidad de la interfaz \\
-\hline
-\textbf{Prioridad:} Media & \textbf{Riesgo:} Bajo \\
-\hline
-\textbf{Puntos de estimación:} 2.0 & \textbf{Iteración asignada:} 5 \\
-\hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero que la interfaz sea accesible y legible para poder disfrutar el juego sin dificultades visuales.} \\
-\hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
-\vspace{-0.5em}
-\begin{itemize}
-    \setlength\itemsep{0em}
-    \item El tamaño de fuente en todos los textos del juego no debe ser inferior a 16pt.
-    \item Los botones deben tener un tamaño mínimo de 60x60 píxeles.
-    \item Las preguntas deben poder leerse sin necesidad de \textit{scroll}.
-    \item La aplicación debe funcionar correctamente en resoluciones de 1024x768 o superiores.
-\end{itemize}
-\vspace{-1em}
-} \\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Historia de usuario 20: Pantalla de créditos (elaboración propia)\label{tab:hu20}}
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
-\hline
-\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
-\hline
-\textbf{Número:} 20 & \textbf{Nombre:} Pantalla de créditos \\
-\hline
-\textbf{Prioridad:} Baja & \textbf{Riesgo:} Bajo \\
-\hline
-\textbf{Puntos de estimación:} 0.5 & \textbf{Iteración asignada:} 5 \\
-\hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como jugador quiero acceder a una pantalla de créditos para conocer quiénes desarrollaron el juego.} \\
-\hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
-\vspace{-0.5em}
-\begin{itemize}
-    \setlength\itemsep{0em}
-    \item La pantalla de créditos debe ser accesible desde el menú principal.
-    \item Debe mostrar el nombre del desarrollador, la institución y el año.
-    \item Debe incluir referencias a Go Goals! de las Naciones Unidas y a Godot Engine.
-\end{itemize}
-\vspace{-1em}
-} \\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Historia de usuario 21: Exportación multiplataforma de escritorio (elaboración propia)\label{tab:hu21}}
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
-\hline
-\multicolumn{2}{|l|}{\textbf{Historia de Usuario}} \\
-\hline
-\textbf{Número:} 21 & \textbf{Nombre:} Exportación multiplataforma de escritorio \\
-\hline
-\textbf{Prioridad:} Alta & \textbf{Riesgo:} Medio \\
-\hline
-\textbf{Puntos de estimación:} 3.0 & \textbf{Iteración asignada:} 5 \\
-\hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Descripción:} Como educador quiero que el videojuego esté disponible en diversos sistemas operativos de escritorio para usarlo en cualquier aula sin restricciones de plataforma.} \\
-\hline
-\multicolumn{2}{|p{0.945\textwidth}|}{\textbf{Observaciones:}
-\vspace{-0.5em}
-\begin{itemize}
-    \setlength\itemsep{0em}
-    \item El videojuego debe exportarse correctamente a ejecutables nativos mediante Godot.
-    \item Debe funcionar en Windows, Linux y macOS.
-    \item Los requisitos de hardware deben ser mínimos para funcionar en equipos antiguos.
-    \item El ejecutable debe ser fácilmente distribuible mediante memorias USB u otros medios locales.
+    \item La IA debe simular lanzamientos de dados y elecciones de respuestas basadas en un porcentaje configurable de acierto.
+    \item El turno de la IA se ejecuta automáticamente informando sus acciones.
 \end{itemize}
 \vspace{-1em}
 } \\
@@ -808,49 +695,43 @@ Los puntos de estimación en el desarrollo ágil se utilizan para medir el esfue
 \endfoot
 \hline
 \endlastfoot
-1. & Inicio de nueva partida educativa & 2.0 \\
+1. & Iniciar partida & 2.0 \\
 \hline
-2. & Visualización del tablero hexagonal & 5.0 \\
+2. & Visualizar tablero & 5.0 \\
 \hline
-3. & Lanzamiento de dado virtual & 1.5 \\
+3. & Lanzar dado & 1.5 \\
 \hline
-4. & Movimiento animado de ficha & 4.0 \\
+4. & Mover ficha & 4.0 \\
 \hline
-5. & Efecto de escalera y serpiente & 3.0 \\
+5. & Aplicar efecto de escalera & 1.5 \\
 \hline
-6. & Preguntas educativas sobre ODS & 5.0 \\
+6. & Aplicar efecto de serpiente & 1.5 \\
 \hline
-7. & Evaluación y retroalimentación de respuestas & 3.0 \\
+7. & Mostrar pregunta ODS & 5.0 \\
 \hline
-8. & Gestión de turnos automática & 2.0 \\
+8. & Evaluar respuesta & 3.0 \\
 \hline
-9. & Condición de victoria & 1.5 \\
+9. & Gestionar turnos & 2.0 \\
 \hline
-10. & Estadísticas de aprendizaje & 4.0 \\
+10. & Determinar condición de victoria & 1.5 \\
 \hline
-11. & Menú principal y pantalla de instrucciones & 2.0 \\
+11. & Mostrar estadísticas de partida & 4.0 \\
 \hline
-12. & Configuración de audio & 2.5 \\
+12. & Mostrar menú principal & 1.0 \\
 \hline
-13. & Personalización de jugadores & 1.5 \\
+13. & Mostrar pantalla de instrucciones & 1.0 \\
 \hline
-14. & Visualización de información del ODS & 2.0 \\
+14. & Configurar audio & 2.5 \\
 \hline
-15. & Temporizador de respuesta & 2.0 \\
+15. & Pausar partida & 1.0 \\
 \hline
-16. & Modo de un jugador & 5.0 \\
+16. & Reiniciar partida & 1.0 \\
 \hline
-17. & Pantalla de clasificación al finalizar & 1.5 \\
+17. & Configurar temporizador de respuesta & 2.0 \\
 \hline
-18. & Notificación visual del turno activo & 1.0 \\
+18. & Habilitar modo un jugador & 5.0 \\
 \hline
-19. & Accesibilidad de la interfaz & 2.0 \\
-\hline
-20. & Pantalla de créditos & 0.5 \\
-\hline
-21. & Exportación multiplataforma de escritorio & 3.0 \\
-\hline
-\multicolumn{2}{|r|}{\textbf{Total}} & \textbf{53.5} \\
+\multicolumn{2}{|r|}{\textbf{Total}} & \textbf{44.5} \\
 \hline
 \end{longtable}
 
@@ -875,49 +756,43 @@ El plan de iteraciones es una herramienta esencial para organizar y coordinar el
 \endfoot
 \hline
 \endlastfoot
-\multirow{4}{*}{1} & 1 & Iniciar partida & \multirow{4}{*}{10.5} \\
+\multirow{4}{*}{1} & 1 & Iniciar partida & \multirow{4}{*}{9.0} \\
 \cline{2-3}
  & 2 & Visualizar tablero & \\
 \cline{2-3}
- & 11 & Mostrar menú principal y pantalla de instrucciones & \\
+ & 12 & Mostrar menú principal & \\
 \cline{2-3}
- & 13 & Personalización de jugadores & \\
+ & 13 & Mostrar pantalla de instrucciones & \\
 \hline
-\multirow{4}{*}{2} & 3 & Lanzar dado & \multirow{4}{*}{12.5} \\
+\multirow{4}{*}{2} & 3 & Lanzar dado & \multirow{4}{*}{8.5} \\
 \cline{2-3}
  & 4 & Mover ficha & \\
 \cline{2-3}
- & 14 & Visualización de información del ODS & \\
+ & 5 & Aplicar efecto de escalera & \\
 \cline{2-3}
- & 18 & Notificación visual del turno activo & \\
+ & 6 & Aplicar efecto de serpiente & \\
 \hline
-\multirow{4}{*}{3} & 5 & Aplicar efecto de escalera y serpiente & \multirow{4}{*}{11.5} \\
+\multirow{3}{*}{3} & 7 & Mostrar pregunta ODS & \multirow{3}{*}{10.0} \\
 \cline{2-3}
- & 8 & Gestionar turnos & \\
+ & 8 & Evaluar respuesta & \\
 \cline{2-3}
- & 9 & Determinar condición de victoria & \\
-\cline{2-3}
- & 10 & Mostrar estadísticas de partida & \\
+ & 9 & Gestionar turnos & \\
 \hline
-\multirow{3}{*}{4} & 6 & Mostrar pregunta ODS & \multirow{3}{*}{10.0} \\
+\multirow{5}{*}{4} & 10 & Determinar condición de victoria & \multirow{5}{*}{10.0} \\
 \cline{2-3}
- & 7 & Evaluar respuesta & \\
+ & 11 & Mostrar estadísticas de partida & \\
 \cline{2-3}
- & 15 & Configurar temporizador de respuesta & \\
+ & 14 & Configurar audio & \\
+\cline{2-3}
+ & 15 & Pausar partida & \\
+\cline{2-3}
+ & 16 & Reiniciar partida & \\
 \hline
-\multirow{6}{*}{5} & 12 & Configuración de audio & \multirow{6}{*}{9.0} \\
+\multirow{2}{*}{5} & 17 & Configurar temporizador de respuesta & \multirow{2}{*}{7.0} \\
 \cline{2-3}
- & 16 & Habilitar modo un jugador & \\
-\cline{2-3}
- & 17 & Pantalla de clasificación al finalizar & \\
-\cline{2-3}
- & 19 & Accesibilidad de la interfaz & \\
-\cline{2-3}
- & 20 & Pantalla de créditos & \\
-\cline{2-3}
- & 21 & Exportación multiplataforma de escritorio & \\
+ & 18 & Habilitar modo un jugador & \\
 \hline
-\multicolumn{3}{|r|}{\textbf{Total}} & \textbf{53.5} \\
+\multicolumn{3}{|r|}{\textbf{Total}} & \textbf{44.5} \\
 \hline
 \end{longtable}
 
@@ -1226,7 +1101,7 @@ Para el desarrollo en GDScript se aplicaron los siguientes estándares de nomenc
 \begin{itemize}
     \item \textbf{Clases}: PascalCase (ejemplo: \texttt{GameManager}, \texttt{QuestionManager}).
     \item \textbf{Variables y funciones}: snake\_case (ejemplo: \texttt{current\_player}, \texttt{roll\_dice()}).
-    \textbf{Constantes}: SCREAMING\_SNAKE\_CASE (ejemplo: \texttt{MAX\_PLAYERS}, \texttt{BOARD\_SIZE}).
+    \item \textbf{Constantes}: SCREAMING\_SNAKE\_CASE (ejemplo: \texttt{MAX\_PLAYERS}, \texttt{BOARD\_SIZE}).
     \item \textbf{Señales}: snake\_case prefijadas con el evento (ejemplo: \texttt{dice\_rolled}, \texttt{answer\_checked}).
     \item \textbf{Escenas}: PascalCase coincidiendo con el nombre de su script raíz (ejemplo: \texttt{GameBoard.tscn}).
 \end{itemize}
@@ -1296,52 +1171,52 @@ Las tareas de ingeniería son los componentes técnicos específicos derivados d
 
 \begin{table}[H]
 \centering
-\caption{Tarea de ingeniería 1: Diseño e implementación del tablero hexagonal (elaboración propia)\label{tab:ti1}}
+\caption{Tarea de ingeniería 1: Visualización e inicio de partida (elaboración propia)\label{tab:ti1}}
 \begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
 \hline
 \textbf{Campo} & \textbf{Descripción} \\
 \hline
 Tarea \# & 1 \\
 \hline
-HU relacionada & HU \#2 - Visualización del tablero hexagonal \\
+HU relacionada & HU \#1, HU \#2 \\
 \hline
-Nombre & Diseño e implementación del tablero hexagonal \\
+Nombre & Visualización e inicio de partida \\
 \hline
 Tipo & Desarrollo \\
 \hline
-Puntos estimados & 3.0 días \\
+Puntos estimados & 7.0 días \\
 \hline
 Iteración & 1 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Se diseña el tablero en Inkscape con las 63 casillas hexagonales siguiendo la distribución oficial. Se implementa en Godot como TileMap y se configuran las propiedades de cada casilla (tipo, destino). \\
+Descripción & Se diseña e implementa el tablero hexagonal en Godot con sus 63 casillas. Asimismo, entra en funcionamiento la interfaz de inicialización de partida, donde el jugador selecciona el número de participantes antes de aparecer en la casilla de salida. \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[H]
 \centering
-\caption{Tarea de ingeniería 2: Implementación del menú principal (elaboración propia)\label{tab:ti2}}
+\caption{Tarea de ingeniería 2: Implementación del menú y pantalla de instrucciones (elaboración propia)\label{tab:ti2}}
 \begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
 \hline
 \textbf{Campo} & \textbf{Descripción} \\
 \hline
 Tarea \# & 2 \\
 \hline
-HU relacionada & HU \#11 - Menú principal y pantalla de instrucciones \\
+HU relacionada & HU \#12, HU \#13 \\
 \hline
 Nombre & Implementación del menú principal y pantalla de instrucciones \\
 \hline
 Tipo & Desarrollo \\
 \hline
-Puntos estimados & 1.5 días \\
+Puntos estimados & 2.0 días \\
 \hline
 Iteración & 1 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Se diseña la escena del menú principal con los botones Jugar, Instrucciones, Configuración y Salir. Se implementa la pantalla de instrucciones con la explicación visual de la mecánica del juego. \\
+Descripción & Se diseña la escena del menú principal con los botones necesarios y el fondo temático. Además, se implementa la pantalla de instrucciones proporcionando una explicación en formato de texto y elementos gráficos para educar al usuario antes de iniciar. \\
 \hline
 \end{tabular}
 \end{table}
@@ -1357,7 +1232,7 @@ Tarea \# & 3 \\
 \hline
 HU relacionada & HU \#3, HU \#4 \\
 \hline
-Nombre & Implementación de la lógica del dado y movimiento animado de fichas \\
+Nombre & Implementación de la lógica del dado y movimiento animado \\
 \hline
 Tipo & Desarrollo \\
 \hline
@@ -1367,33 +1242,33 @@ Iteración & 2 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Se implementa el \texttt{DiceController} con generación pseudoaleatoria y animación del dado. Se implementa el \texttt{PieceController} con movimiento casilla por casilla mediante \texttt{Tween} de Godot. \\
+Descripción & Se codifica el componente generador pseudoaleatorio para simular el dado y actualizar la interfaz. Conjuntamente, se implementa el controlador de fichas para generar movimientos animados de las piezas recorriendo las posiciones casillas por casilla. \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[H]
 \centering
-\caption{Tarea de ingeniería 4: Escaleras, serpientes y gestión de turnos (elaboración propia)\label{tab:ti4}}
+\caption{Tarea de ingeniería 4: Lógica de efectos de casillas especiales (elaboración propia)\label{tab:ti4}}
 \begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
 \hline
 \textbf{Campo} & \textbf{Descripción} \\
 \hline
 Tarea \# & 4 \\
 \hline
-HU relacionada & HU \#5, HU \#8, HU \#9 \\
+HU relacionada & HU \#5, HU \#6 \\
 \hline
-Nombre & Implementación de efectos especiales y gestión de turnos \\
+Nombre & Lógica de efectos de casillas especiales \\
 \hline
 Tipo & Desarrollo \\
 \hline
-Puntos estimados & 6.5 días \\
+Puntos estimados & 3.0 días \\
 \hline
-Iteración & 3 \\
+Iteración & 2 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Se implementa la detección de casillas de escalera y serpiente en el \texttt{BoardManager}. Se implementa el \texttt{TurnManager} con la lógica de rotación de turnos y la condición de victoria al alcanzar la casilla 63. \\
+Descripción & Se desarrolla la funcionalidad para evaluar el tipo de casilla de aterrizaje. Aplicación de animaciones especiales de transición directa cuando el usuario cae sobre una escalera (desplazamiento positivo) o una serpiente (desplazamiento negativo). \\
 \hline
 \end{tabular}
 \end{table}
@@ -1407,123 +1282,123 @@ Descripción & Se implementa la detección de casillas de escalera y serpiente e
 \hline
 Tarea \# & 5 \\
 \hline
-HU relacionada & HU \#6, HU \#7 \\
+HU relacionada & HU \#7, HU \#8 \\
 \hline
-Nombre & Implementación del sistema de preguntas educativas y retroalimentación \\
+Nombre & Implementación del sistema de preguntas y retroalimentación \\
 \hline
 Tipo & Desarrollo \\
 \hline
 Puntos estimados & 8.0 días \\
 \hline
-Iteración & 4 \\
+Iteración & 3 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Se implementa el \texttt{QuestionManager} con carga de preguntas desde JSON y selección aleatoria sin repetición. Se diseña el panel de preguntas en Godot con el ícono ODS, el texto de la pregunta y los botones de respuesta. Se implementa la retroalimentación visual y sonora y la generación de efectos de partículas para respuestas correctas. \\
+Descripción & Integración del archivo JSON que acapara las preguntas por ODS e implementación del algoritmo sin repetición en el \texttt{QuestionManager}. Maquetación de la pantalla modal interactiva de evaluación junto a los indicadores visuales y sonoros de acierto o error. \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[H]
 \centering
-\caption{Tarea de ingeniería 6: Estadísticas de aprendizaje (elaboración propia)\label{tab:ti6}}
+\caption{Tarea de ingeniería 6: Gestión de turnos del juego (elaboración propia)\label{tab:ti6}}
 \begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
 \hline
 \textbf{Campo} & \textbf{Descripción} \\
 \hline
 Tarea \# & 6 \\
 \hline
-HU relacionada & HU \#10 \\
+HU relacionada & HU \#9 \\
 \hline
-Nombre & Implementación del sistema de estadísticas de aprendizaje \\
+Nombre & Gestión de turnos del juego \\
 \hline
 Tipo & Desarrollo \\
 \hline
-Puntos estimados & 6.5 días \\
+Puntos estimados & 2.0 días \\
 \hline
-Iteración & 5 \\
+Iteración & 3 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Se implementa el \texttt{StatsManager} como autoload para registrar respuestas durante la sesión. Se diseña la pantalla de estadísticas con visualización por jugador y por ODS. \\
+Descripción & Estructuración del ciclo central de turno, validando que componentes como el dado o las preguntas queden bloqueadas hasta el final de la ejecución, y notificando proactivamente en pantalla a quién le corresponde el próximo movimiento. \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[H]
 \centering
-\caption{Tarea de ingeniería 7: Personalización de jugadores (elaboración propia)\label{tab:ti7}}
+\caption{Tarea de ingeniería 7: Estadísticas de aprendizaje y victoria (elaboración propia)\label{tab:ti7}}
 \begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
 \hline
 \textbf{Campo} & \textbf{Descripción} \\
 \hline
 Tarea \# & 7 \\
 \hline
-HU relacionada & HU \#13 \\
+HU relacionada & HU \#10, HU \#11 \\
 \hline
-Nombre & Sistema de personalización de perfiles de jugador \\
+Nombre & Implementación de condición matemática de victoria y podio \\
 \hline
 Tipo & Desarrollo \\
 \hline
-Puntos estimados & 1.5 días \\
+Puntos estimados & 5.5 días \\
 \hline
-Iteración & 1 \\
+Iteración & 4 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Diferenciación visual de fichas. Implementación de la persistencia de nombres y colores seleccionados a través de \texttt{GameData}. Validación de colores para evitar duplicados. \\
+Descripción & Se evalúa la meta de la ronda al pisar la casilla 63. Una vez alcanzada, emerge el panel dinámico que enlista y clasifica a los usuarios basándose en su puntaje, orden de llegada y respuestas correctas logradas a traves del \texttt{StatsManager}. \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[H]
 \centering
-\caption{Tarea de ingeniería 8: Panel informativo de ODS (elaboración propia)\label{tab:ti8}}
+\caption{Tarea de ingeniería 8: Configuración de controles de partida y audio (elaboración propia)\label{tab:ti8}}
 \begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
 \hline
 \textbf{Campo} & \textbf{Descripción} \\
 \hline
 Tarea \# & 8 \\
 \hline
-HU relacionada & HU \#14 \\
+HU relacionada & HU \#14, HU \#15, HU \#16 \\
 \hline
-Nombre & Implementación del panel informativo previo a preguntas \\
+Nombre & Configuración de controles de partida y audio \\
 \hline
 Tipo & Desarrollo \\
 \hline
-Puntos estimados & 2.0 días \\
+Puntos estimados & 4.5 días \\
 \hline
-Iteración & 2 \\
+Iteración & 4 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Creación de interfaz informativa que muestra íconos y objetivos específicos antes de la fase de evaluación. Sincronización con el Bus de Eventos para pausar el flujo de juego. \\
+Descripción & Ensamble del menú contextual en el juego para pausar transiciones. Desde esta pantalla modal, permitir alterar el volumen maestro directamente o ejecutar una rutina de reinicio rotundo de partida desde cero borrando el historial temporal. \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[H]
 \centering
-\caption{Tarea de ingeniería 9: Notificaciones de turno activo (elaboración propia)\label{tab:ti9}}
+\caption{Tarea de ingeniería 9: Temporizador de respuesta (elaboración propia)\label{tab:ti9}}
 \begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
 \hline
 \textbf{Campo} & \textbf{Descripción} \\
 \hline
 Tarea \# & 9 \\
 \hline
-HU relacionada & HU \#18 \\
+HU relacionada & HU \#17 \\
 \hline
-Nombre & Sistema de resaltado y notificación de turno \\
+Nombre & Implementación del temporizador opcional de respuesta \\
 \hline
 Tipo & Desarrollo \\
 \hline
-Puntos estimados & 1.0 días \\
+Puntos estimados & 2.0 días \\
 \hline
-Iteración & 2 \\
+Iteración & 5 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Implementación de efectos de brillo (glow) sobre la ficha del jugador activo y banners animados de entrada de turno. Integración con se\~nales de \texttt{GameState}. \\
+Descripción & Se interviene la pantalla del Quiz añadiendo un contador decreciente manipulable en opciones. Cuando el tiempo se agota y transita a ceros, se fuerza un fallo, induciendo un efecto pedagógico que motiva decisiones veloces e instintivas. \\
 \hline
 \end{tabular}
 \end{table}
@@ -1537,9 +1412,9 @@ Descripción & Implementación de efectos de brillo (glow) sobre la ficha del ju
 \hline
 Tarea \# & 10 \\
 \hline
-HU relacionada & HU \#16 \\
+HU relacionada & HU \#18 \\
 \hline
-Nombre & Implementación de lógica para oponente virtual (IA) \\
+Nombre & Inteligencia artificial y modo solitario \\
 \hline
 Tipo & Desarrollo \\
 \hline
@@ -1549,59 +1424,7 @@ Iteración & 5 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Desarrollo de un autómata que simula la toma de decisiones y el lanzamiento de dados. Configuración de probabilidades de acierto para ajustar la dificultad del juego. \\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Tarea de ingeniería 11: Exportación y optimización multiplataforma (elaboración propia)\label{tab:ti11}}
-\begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{Campo} & \textbf{Descripción} \\
-\hline
-Tarea \# & 11 \\
-\hline
-HU relacionada & HU \#21 \\
-\hline
-Nombre & Optimización y despliegue multiplataforma (HTML5) \\
-\hline
-Tipo & Desarrollo \\
-\hline
-Puntos estimados & 3.0 días \\
-\hline
-Iteración & 5 \\
-\hline
-Programador & Ruslan Alexei Martinez Campos \\
-\hline
-Descripción & Configuración de perfiles de exportación en Godot para Windows, Linux y macOS. Optimización de assets para reducir el peso final de los instaladores. Verificación de compatibilidad en diferentes resoluciones de pantalla nativas. \\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Tarea de ingeniería 12: Configuración de sistema y accesibilidad (elaboración propia)\label{tab:ti12}}
-\begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
-\hline
-\textbf{Campo} & \textbf{Descripción} \\
-\hline
-Tarea \# & 12 \\
-\hline
-HU relacionada & HU \#12, HU \#19 \\
-\hline
-Nombre & Ajustes de audio y parámetros de legibilidad visual \\
-\hline
-Tipo & Desarrollo \\
-\hline
-Puntos estimados & 4.5 días \\
-\hline
-Iteración & 5 \\
-\hline
-Programador & Ruslan Alexei Martinez Campos \\
-\hline
-Descripción & Implementación de buses de audio centralizados y paneles de configuración. Ajuste dinámico de escala de fuentes y tamaños de botones para garantizar accesibilidad. \\
+Descripción & Desarrollo de un autómata que se vincula al grupo de jugadores como ente independiente realizando tiradas automáticas bajo intervalos precisos, incluyendo toma de decisiones simuladas parametrizables que imitan el porcentaje de conocimiento probabilístico. \\
 \hline
 \end{tabular}
 \end{table}
@@ -1611,11 +1434,11 @@ Descripción & Implementación de buses de audio centralizados y paneles de conf
 \addcontentsline{toc}{section}{Conclusiones del capítulo}
 
 \begin{enumerate}
-    \item La planificación mediante 21 historias de usuario distribuidas en 5 iteraciones y 53.5 días de desarrollo evidencia la eficiencia de la metodología Extreme Programming aplicada, priorizando funcionalidades esenciales y garantizando entregas incrementales que responden a las necesidades pedagógicas identificadas.
+    \item La planificación mediante 18 historias de usuario distribuidas en 5 iteraciones y 44.5 días de desarrollo evidencia la eficiencia de la metodología Extreme Programming aplicada, priorizando funcionalidades esenciales y garantizando entregas incrementales que responden a las necesidades pedagógicas identificadas.
 
     \item La arquitectura modular en cuatro capas, los prototipos de interfaces accesibles para niños de 8 a 14 años y las 10 tarjetas CRC que documentan responsabilidades entre clases, garantizan un sistema escalable y mantenible que prioriza tanto la calidad técnica como la experiencia del usuario final.
 
-    \item El uso de estándares de codificación GDScript y la aplicación de patrones GRASP y Gang of Four (Singleton, Observer, State), junto con la separación de contenido educativo mediante JSON y la implementación de 12 tareas de ingeniería, aseguran un producto de alta calidad técnica y pedagógica con capacidad de exportación multiplataforma.
+    \item El uso de estándares de codificación GDScript y la aplicación de patrones GRASP y Gang of Four (Singleton, Observer, State), junto con la separación de contenido educativo mediante JSON y la implementación de 10 tareas de ingeniería, aseguran un producto de alta calidad técnica y pedagógica con capacidad de exportación multiplataforma.
 
     \item Cada etapa refleja un proceso meticuloso y orientado a resultados prácticos resultando en un videojuego educativo para contribuir a la promoción de los Objetivos de Desarrollo Sostenible. Esto destaca la pertinencia de las decisiones tomadas durante el proceso de desarrollo y respalda la posición científica adoptada, mostrando que se logró cumplir con el objetivo y resolver el problema científico planteado.
 \end{enumerate}

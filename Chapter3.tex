@@ -51,20 +51,20 @@ Este epígrafe describe la aplicación de las pruebas de software y los resultad
 \subsection{Aplicación de pruebas unitarias}
 \label{subsec:aplicacion_pruebas_unitarias}
 
-Las pruebas unitarias se realizaron de forma automatizada utilizando el \textit{framework Godot Unit Testing} (GUT), estándar para realizar pruebas unitarias utilizando el motor Godot. Como ejemplo se muestran las pruebas a las funcionalidades de la clase \texttt{Player}, mostrándose casos de prueba para la funcionalidad \texttt{has\-Enough\-Resources()} que retorna verdadero si el jugador tiene los recursos suficientes para soportar una producción con los recursos pasados por parámetro (créditos, provisiones y electricidad en ese orden). Obteniéndose resultados exitosos en las 8 pruebas diseñadas para esta funcionalidad.
+Las pruebas unitarias se realizaron de forma automatizada utilizando el \textit{framework Godot Unit Testing} (GUT), estándar para realizar pruebas unitarias con el motor Godot. Como ejemplo se muestran las pruebas a las funcionalidades de la clase \texttt{GameData}, específicamente sobre la funcionalidad \texttt{get\_question\_for\_ods()}, encargada de recuperar una pregunta del ODS solicitado y evitar repeticiones dentro de una misma sesión. Se obtuvieron resultados exitosos en las 8 pruebas diseñadas para verificar este comportamiento.
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.9\textwidth]{Images/Caso de Prueba.png}
-  \caption{Casos de prueba para funcionalidad \texttt{has\-Enough\-Resources()} de la clase \texttt{Player} (elaboración propia)\label{fig:casos_prueba_unitarias}}
+  \caption{Casos de prueba para la funcionalidad \texttt{get\_question\_for\_ods()} de la clase \texttt{GameData} (elaboración propia)\label{fig:casos_prueba_unitarias}}
 \end{figure}
 
-La figura anterior muestra la implementación de los casos de prueba utilizando el framework GUT, donde se definen ocho escenarios diferentes que evalúan el comportamiento de la funcionalidad \texttt{has\-Enough\-Resources()} bajo distintas condiciones de disponibilidad de recursos. La ejecución automatizada de estas pruebas permite verificar que la lógica implementada responde correctamente ante cada uno de los casos planteados, tal como se evidencia en los resultados presentados a continuación.
+La figura anterior muestra la implementación de los casos de prueba utilizando el framework GUT, donde se definen ocho escenarios diferentes que evalúan si el sistema devuelve preguntas del ODS solicitado, evita repeticiones mientras existan preguntas disponibles y reinicia correctamente el ciclo cuando se agota el conjunto cargado desde el banco en formato JSON. La ejecución automatizada de estas pruebas permite verificar que la lógica implementada responde correctamente ante cada uno de los casos planteados, tal como se evidencia en los resultados presentados a continuación.
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.6\textwidth]{Images/Resultado de Prueba.png}
-  \caption{Resultado de pruebas para la clase \texttt{Player} (elaboración propia)\label{fig:resultado_pruebas_unitarias}}
+  \caption{Resultado de pruebas para la clase \texttt{GameData} (elaboración propia)\label{fig:resultado_pruebas_unitarias}}
 \end{figure}
 
 Todas las funcionalidades probadas de esta forma pasaron las pruebas de forma exitosa, lo que no significa que no puedan existir defectos, ya que la interoperabilidad entre módulos puede causar problemas, lo que lleva a la necesidad de la aplicación de otro nivel de pruebas.
@@ -74,7 +74,7 @@ Todas las funcionalidades probadas de esta forma pasaron las pruebas de forma ex
 
 Las pruebas de aceptación se realizaron a nivel beta, lo que significa que las realizan usuarios finales en sus condiciones propias, no preparadas ni supervisadas por los desarrolladores. Esto garantiza una mayor cantidad de variables expuestas a probarse y su finalización determina si el producto realmente está listo para lanzarse o no.
 
-Para su realización se tomó una muestra de estudiantes de la Escuela Primaria ``José Martí'' de La Habana, con edades comprendidas entre 8 y 12 años, a los que se les distribuyó el videojuego \textit{Go Goals! Digital} sin manual ni explicaciones de cómo jugar, para probar la utilidad de los tutoriales dentro del videojuego y la intuitividad de la interfaz.
+Para su realización se tomó una muestra de estudiantes de la Escuela Primaria ``José Martí'' de La Habana, con edades comprendidas entre 8 y 10 años, a los que se les distribuyó el videojuego \textit{Go Goals! Digital} sin manual ni explicaciones de cómo jugar, para probar la utilidad de los tutoriales dentro del videojuego y la intuitividad de la interfaz.
 
 \begin{table}[htbp]
 \centering
@@ -84,25 +84,25 @@ Para su realización se tomó una muestra de estudiantes de la Escuela Primaria 
 \hline
 \textbf{Nombre y Apellidos} & \textbf{Edad} \\
 \hline
-José Miguel Martín Monzón & 11 \\
+José Miguel Martín Monzón & 10 \\
 \hline
 Oscar Raúl García Almestro & 10 \\
 \hline
 Royciel Chavez Garcés & 9 \\
 \hline
-Javier Ernesto Perdomo Batista & 12 \\
+Javier Ernesto Perdomo Batista & 10 \\
 \hline
 Yslen Marturelo Lorenzo & 8 \\
 \hline
 Janys Lourdes Cañizares de la Rosa & 10 \\
 \hline
-Oscar de Jesús Pacheco del Pino & 9 \\
+Pedro Luis Hernández Soto & 9 \\
 \hline
-Sofía Martínez Delgado & 12 \\
+Sofía Martínez Delgado & 10 \\
 \hline
 Carlos Alberto Ramos Pérez & 8 \\
 \hline
-Daniela Fernández Suárez & 11 \\
+Daniela Fernández Suárez & 9 \\
 \hline
 \end{tabular}
 \end{table}
