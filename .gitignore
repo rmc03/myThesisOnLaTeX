@@ -42,3 +42,11 @@ git_history.txt
 # Ignorar si hay archivos temporales del sistema
 .DS_Store
 Thumbs.db
+
+# Ignorar archivos irrelevantes adicionales
+.kilo/
+$null
+/*.py
+/*.png
+README.txt
+tesis_capitulos*.pdf
