@@ -846,11 +846,9 @@ La organización del código fuente sigue una estructura jerárquica por respons
 \subsubsection{Flujo de ejecución del ciclo de juego}
 \label{subsubsec:flujo_ejecucion}
 
-El desarrollo de una partida completa atraviesa varias etapas claramente diferenciadas, todas coordinadas por el componente central \texttt{GameManager}. Al iniciar el juego, este componente carga la configuración del tablero y prepara tanto el tablero como los jugadores en sus posiciones iniciales. Cuando un jugador lanza el dado, el sistema genera un número aleatorio entre 1 y 6, notifica este evento al resto de componentes y actualiza la interfaz para mostrar el resultado obtenido.
+El flujo de la partida es coordinado secuencialmente por el \texttt{GameManager}. Al inicio, se procesa la configuración de la partida y se instancian los jugadores en la posición cero. Un turno arranca cuando el jugador activo detona el lanzamiento del dado (1 a 6), desplazando su ficha hacia el destino mediante una animación interpolada fluida.
 
-A continuación, el sistema calcula la casilla de destino y desplaza la ficha del jugador mediante una animación fluida que recorre cada casilla intermedia, acompañada de efectos sonoros que refuerzan la experiencia visual. Una vez que la ficha alcanza su destino, el juego evalúa el tipo de casilla en la que ha caído el jugador. Si se trata de una casilla común, simplemente se pasa el turno al siguiente jugador. En cambio, si la ficha cae en una escalera o serpiente, se ejecuta automáticamente un segundo movimiento animado hacia la casilla correspondiente, ya sea avanzando o retrocediendo según el caso.
-
-Cuando la ficha aterriza en una casilla temática de ODS, el sistema pausa el flujo normal del juego y presenta al jugador un panel modal con una pregunta educativa relacionada con ese objetivo específico. Este panel permanece visible hasta que el jugador selecciona una respuesta, momento en el cual se evalúa su corrección y se muestra la retroalimentación correspondiente antes de continuar con el siguiente turno. Finalmente, si un jugador alcanza la casilla 63, el sistema detecta esta condición de victoria, detiene la música de fondo y presenta la pantalla de finalización con las estadísticas de la partida.
+Al ubicarse en el destino final, el sistema evalúa la naturaleza de la casilla. Las casillas comunes ceden el turno directamente; las escaleras o serpientes resuelven inmediatamente un movimiento de arrastre reactivo hacia plataformas aledañas. Por otro lado, al aterrizar en una casilla temática ODS, el motor suspende la progresión temporal y presenta el panel de evaluación pedagógica. Tras recoger y calificar la respuesta del estudiante, el turno concluye. Este bucle iterativo perdura hasta alcanzar la casilla 63, instante en el que se ejecuta la condición de victoria, deteniendo la partida y tabulando los marcadores.
 
 \subsection{Prototipos de interfaces gráficas}
 \label{subsec:prototipos}
@@ -1110,7 +1108,7 @@ La estructura de archivos del proyecto sigue una organización jerárquica por f
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.4\textwidth]{Images/Jerarquia}
+  \includegraphics[width=0.3\textwidth]{Images/Jerarquia}
   \caption{Estructura de archivos del proyecto \textit{Go Goals! Digital} (elaboración propia)\label{fig:estructura_archivos}}
 \end{figure}
 
