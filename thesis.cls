@@ -847,7 +847,7 @@ showstringspaces=false,      % Leerzeichen in Strings anzeigen ?
 }
 \end{tabular}
 \vfill
-{\bfseries La Habana, Marzo de 2026} \\
+{\bfseries La Habana, Mayo de 2026} \\
 {\small Año del Centenario del Comandante en Jefe Fidel Castro Ruz} \\
 \end{center}
 \egroup

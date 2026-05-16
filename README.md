@@ -10,7 +10,7 @@ Repositorio que contiene el código fuente en LaTeX del trabajo de diploma (tesi
 
 El desconocimiento generalizado sobre los Objetivos de Desarrollo Sostenible (ODS) de las Naciones Unidas dificulta la participación activa en la Agenda 2030 y limita la toma de decisiones informadas. Promover un conocimiento profundo de estos 17 objetivos es crucial para mejorar la calidad de vida y fomentar el desarrollo equitativo. 
 
-En este contexto, este trabajo de diploma expone el proceso metodológico e ingenieril utilizado para la construcción de una solución digital gamificada apoyada en el motor gráfico **Godot Engine**. Haciendo uso de la metodología ágil **Extreme Programming (XP)**, la arquitectura de software propuesta provee una plataforma interactiva que facilita el Aprendizaje Basado en Juegos (ABJ) para niños y jóvenes con alta fiabilidad, escalabilidad teórica y robustez.
+En este contexto, este trabajo de diploma expone el proceso metodológico e ingenieril utilizado para la construcción de una solución digital gamificada apoyada en el motor gráfico **Godot Engine**. Haciendo uso de la metodología ágil **Extreme Programming (XP)**, la arquitectura de software propuesta provee una plataforma interactiva que facilita el Aprendizaje Basado en Juegos (ABJ) para usuarios de todas las edades con alta fiabilidad, escalabilidad teórica y robustez.
 
 ## 📂 Estructura del Repositorio
 

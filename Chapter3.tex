@@ -4,7 +4,7 @@
 El presente capítulo aborda la validación del videojuego educativo \textit{Go Goals! Digital} mediante la aplicación sistemática de pruebas de software, así como su posterior despliegue. La estructura del capítulo se organiza en dos secciones principales: la primera describe el diseño metodológico de la validación, especificando los tipos de pruebas empleados conforme a los estándares de la metodología Extreme Programming; la segunda presenta los resultados obtenidos tras la ejecución de dichas pruebas, evidenciando el cumplimiento de los requerimientos funcionales y no funcionales establecidos para el sistema.
 
 %---------------------------------------------------------------------------
-\section{Fase de implementación}
+\section{Fase de planificación}
 \label{sec:diseno_validacion}
 
 Este epígrafe presenta los tipos de pruebas utilizados en el ciclo de desarrollo del videojuego \textit{Go Goals! Digital}, siguiendo la metodología XP.
@@ -56,7 +56,7 @@ Las pruebas unitarias se realizaron de forma automatizada utilizando el \textit{
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.9\textwidth]{Images/Caso de Prueba.png}
-  \caption{Casos de prueba para la funcionalidad \texttt{get\_question\_for\_ods()} de la clase \texttt{GameData} (elaboración propia)\label{fig:casos_prueba_unitarias}}
+  \caption{Casos de prueba para la funcionalidad \texttt{get\_question\_for\_ods()} de la clase \texttt{GameData} (elaboración propia).\label{fig:casos_prueba_unitarias}}
 \end{figure}
 
 La figura anterior muestra la implementación de los casos de prueba utilizando el framework GUT, donde se definen ocho escenarios diferentes que evalúan si el sistema devuelve preguntas del ODS solicitado, evita repeticiones mientras existan preguntas disponibles y reinicia correctamente el ciclo cuando se agota el conjunto cargado desde el banco en formato JSON. La ejecución automatizada de estas pruebas permite verificar que la lógica implementada responde correctamente ante cada uno de los casos planteados, tal como se evidencia en los resultados presentados a continuación.
@@ -64,7 +64,7 @@ La figura anterior muestra la implementación de los casos de prueba utilizando 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.6\textwidth]{Images/Resultado de Prueba.png}
-  \caption{Resultado de pruebas para la clase \texttt{GameData} (elaboración propia)\label{fig:resultado_pruebas_unitarias}}
+  \caption{Resultado de pruebas para la clase \texttt{GameData} (elaboración propia).\label{fig:resultado_pruebas_unitarias}}
 \end{figure}
 
 Todas las funcionalidades probadas de esta forma pasaron las pruebas de forma exitosa, lo que no significa que no puedan existir defectos, ya que la interoperabilidad entre módulos puede causar problemas, lo que lleva a la necesidad de la aplicación de otro nivel de pruebas.
@@ -74,35 +74,35 @@ Todas las funcionalidades probadas de esta forma pasaron las pruebas de forma ex
 
 Las pruebas de aceptación se realizaron a nivel beta, lo que significa que las realizan usuarios finales en sus condiciones propias, no preparadas ni supervisadas por los desarrolladores. Esto garantiza una mayor cantidad de variables expuestas a probarse y su finalización determina si el producto realmente está listo para lanzarse o no.
 
-Para su realización se tomó una muestra de estudiantes de la Escuela Primaria ``José Martí'' de La Habana, con edades comprendidas entre 8 y 10 años, a los que se les distribuyó el videojuego \textit{Go Goals! Digital} sin manual ni explicaciones de cómo jugar, para probar la utilidad de los tutoriales dentro del videojuego y la intuitividad de la interfaz.
+Para su realización se tomó una muestra de jóvenes estudiantes de La Habana, con edades comprendidas entre 15 y 25 años, a los que se les distribuyó el videojuego \textit{Go Goals! Digital} sin manual ni explicaciones de cómo jugar, para probar la utilidad de los tutoriales dentro del videojuego y la intuitividad de la interfaz.
 
 \begin{table}[htbp]
 \centering
-\caption{Listado de estudiantes probadores beta (elaboración propia)\label{tab:probadores_beta}}
+\caption{Listado de estudiantes probadores beta (elaboración propia).\label{tab:probadores_beta}}
 \renewcommand{\arraystretch}{1.3}
 \begin{tabular}{|l|c|}
 \hline
 \textbf{Nombre y Apellidos} & \textbf{Edad} \\
 \hline
-José Miguel Martín Monzón & 10 \\
+José Miguel Martín Monzón & 18 \\
 \hline
-Oscar Raúl García Almestro & 10 \\
+Oscar Raúl García Almestro & 22 \\
 \hline
-Royciel Chavez Garcés & 9 \\
+Royciel Chavez Garcés & 19 \\
 \hline
-Javier Ernesto Perdomo Batista & 10 \\
+Javier Ernesto Perdomo Batista & 24 \\
 \hline
-Yslen Marturelo Lorenzo & 8 \\
+Yslen Marturelo Lorenzo & 16 \\
 \hline
-Janys Lourdes Cañizares de la Rosa & 10 \\
+Janys Lourdes Cañizares de la Rosa & 21 \\
 \hline
-Pedro Luis Hernández Soto & 9 \\
+Pedro Luis Hernández Soto & 17 \\
 \hline
-Sofía Martínez Delgado & 10 \\
+Sofía Martínez Delgado & 25 \\
 \hline
-Carlos Alberto Ramos Pérez & 8 \\
+Carlos Alberto Ramos Pérez & 15 \\
 \hline
-Daniela Fernández Suárez & 9 \\
+Daniela Fernández Suárez & 20 \\
 \hline
 \end{tabular}
 \end{table}
@@ -112,10 +112,10 @@ Luego de realizar tres iteraciones, no se encontraron no conformidades. Por lo q
 \subsection{Aplicación de pruebas de índice de aceptación}
 \label{subsec:aplicacion_pruebas_indice}
 
-Para la aplicación de esta prueba se tomó la misma muestra que realizó las pruebas beta y se les entregó un cuestionario diseñado de la siguiente forma:
+Para la aplicación de esta prueba se contó con la misma muestra de participantes que intervino en las pruebas beta. A dicha muestra se le administró un cuestionario estructurado, elaborado y diseñado específicamente para evaluar los criterios de aceptación, el cual presentó la siguiente estructura:
 
 \begin{longtable}{|p{0.95\textwidth}|}
-\caption{Cuestionario de Satisfacción del Usuario -- Go Goals! Digital (elaboración propia)\label{tab:cuestionario_satisfaccion}} \\
+\caption{Cuestionario de Satisfacción del Usuario -- Go Goals! Digital (elaboración propia).\label{tab:cuestionario_satisfaccion}} \\
 \hline
 \multicolumn{1}{|c|}{\textbf{Cuestionario de Satisfacción del Usuario -- Go Goals! Digital}} \\
 \hline
@@ -204,7 +204,7 @@ Al aplicarlo se obtuvieron resultados abrumadoramente positivos, con todos los u
 
 \begin{table}[H]
 \centering
-\caption{Resultados del cuestionario de satisfacción (elaboración propia)\label{tab:resultados_cuestionario}}
+\caption{Resultados del cuestionario de satisfacción (elaboración propia).\label{tab:resultados_cuestionario}}
 \renewcommand{\arraystretch}{1.3}
 \begin{tabular}{|l|c|c|c|}
 \hline

@@ -1,0 +1,166 @@
+\begin{table}[H]
+\centering
+\caption{Tarjeta CRC GameData (Autoload) (elaboración propia).\label{tab:crc_gamedata}}
+\begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Tarjeta CRC}} \\
+\hline
+\textbf{Clase:} & GameData \\
+\hline
+\textbf{Responsabilidades} & - mantener la configuración de la partida (número de jugadores) \\
+& - cargar y servir el banco de preguntas desde \texttt{questions.json} \\
+& - proveer preguntas aleatorias por ODS sin repetición \\
+\hline
+\textbf{Clases relacionadas} & GameManager \\
+& BoardConfig \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Tarjeta CRC GameEvents (Bus de Eventos) (elaboración propia).\label{tab:crc_gameevents}}
+\begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Tarjeta CRC}} \\
+\hline
+\textbf{Clase:} & GameEvents \\
+\hline
+\textbf{Responsabilidades} & - definir las se\~nales globales del sistema: \texttt{dice\_rolled}, \texttt{player\_moving}, \texttt{quiz\_started}, \texttt{quiz\_requested(ods\_id)}, \texttt{game\_won} \\
+& - actuar como canal de comunicación desacoplado entre lógica y UI \\
+\hline
+\textbf{Clases relacionadas} & GameManager \\
+& Scripts de UI \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Tarjeta CRC GameState (elaboración propia).\label{tab:crc_gamestate}}
+\begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Tarjeta CRC}} \\
+\hline
+\textbf{Clase:} & GameState \\
+\hline
+\textbf{Responsabilidades} & - gestionar la fase activa del juego mediante enumeración (MENU, PLAYING, PAUSED, GAME\_OVER) \\
+& - almacenar el estado de la partida en curso: jugador activo (\texttt{active\_player\_index}), posiciones y conteo de turnos \\
+\hline
+\textbf{Clases relacionadas} & GameManager \\
+& Player \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Tarjeta CRC BoardConfig (elaboración propia).\label{tab:crc_boardconfig}}
+\begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Tarjeta CRC}} \\
+\hline
+\textbf{Clase:} & BoardConfig \\
+\hline
+\textbf{Responsabilidades} & - definir la configuración estática del tablero: posiciones de escaleras, toboganes y casillas de pregunta por ODS \\
+& - proveer información de tipo y destino de cada casilla \\
+\hline
+\textbf{Clases relacionadas} & GameManager \\
+& Board \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Tarjeta CRC Board (Entidad) (elaboración propia).\label{tab:crc_board}}
+\begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Tarjeta CRC}} \\
+\hline
+\textbf{Clase:} & Board \\
+\hline
+\textbf{Responsabilidades} & - representar el estado visual y lógico del tablero de 63 casillas \\
+& - exponer métodos de acceso a posiciones específicas \\
+\hline
+\textbf{Clases relacionadas} & GameManager \\
+& Tile \\
+& BoardConfig \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Tarjeta CRC Tile (Entidad) (elaboración propia).\label{tab:crc_tile}}
+\begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Tarjeta CRC}} \\
+\hline
+\textbf{Clase:} & Tile \\
+\hline
+\textbf{Responsabilidades} & - mantener el tipo de casilla (normal, escalera, tobogán, quiz, meta) \\
+& - almacenar el destino de traslado en caso de casilla especial \\
+& - almacenar el identificador ODS en caso de casilla de pregunta \\
+\hline
+\textbf{Clases relacionadas} & Board \\
+& GameManager \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Tarjeta CRC Player (Entidad) (elaboración propia).\label{tab:crc_player}}
+\begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Tarjeta CRC}} \\
+\hline
+\textbf{Clase:} & Player \\
+\hline
+\textbf{Responsabilidades} & - mantener la posición actual y el historial de turnos del jugador \\
+& - almacenar nombre e identificador de color de ficha \\
+& - registrar estadísticas de respuestas \\
+\hline
+\textbf{Clases relacionadas} & GameState \\
+& GameManager \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Tarjeta CRC AudioManager (Autoload) (elaboración propia).\label{tab:crc_audiomanager}}
+\begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Tarjeta CRC}} \\
+\hline
+\textbf{Clase:} & AudioManager \\
+\hline
+\textbf{Responsabilidades} & - centralizar la reproducción de música de fondo y efectos de sonido \\
+& - controlar el volumen global \\
+& - liberar a los nodos de juego de gestionar \texttt{AudioStreamPlayer} locales \\
+\hline
+\textbf{Clases relacionadas} & GameManager \\
+& Scripts de UI \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Tarjeta CRC RecordsManager (Autoload) (elaboración propia).\label{tab:crc_recordsmanager}}
+\begin{tabular}{|p{0.25\textwidth}|p{0.64\textwidth}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Tarjeta CRC}} \\
+\hline
+\textbf{Clase:} & RecordsManager \\
+\hline
+\textbf{Responsabilidades} & - gestionar la persistencia de puntuaciones y logros entre sesiones \\
+& - proveer datos históricos para la pantalla de estadísticas \\
+\hline
+\textbf{Clases relacionadas} & GameManager \\
+& Player \\
+\hline
+\end{tabular}
+\end{table}
