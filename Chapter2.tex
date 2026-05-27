@@ -26,7 +26,7 @@ Las principales mejoras que introduce la versión digital respecto al formato f�
 
 Dentro del ecosistema de recursos educativos digitales sobre desarrollo sostenible, \textit{Go Goals! Digital} ocupa un nicho específico: es el único videojuego desarrollado en Cuba que adapta fielmente la mecánica del juego de mesa oficial de las Naciones Unidas a un entorno digital interactivo. A diferencia de otras iniciativas educativas basadas en vídeos o materiales estáticos, este videojuego integra la competencia entre varios jugadores, el azar controlado y la evaluación del conocimiento en una sola experiencia lúdica. La plataforma Godot Engine, elegida por su licencia libre MIT y su capacidad de exportación multiplataforma, garantiza la ejecución nativa en sistemas operativos de escritorio tales como Windows, Linux y macOS sin requerir configuraciones complejas, lo que resulta especialmente relevante en contextos educativos con recursos tecnológicos limitados.
 
-El público objetivo abarca usuarios de todas las edades, con especial énfasis en el contexto escolar cubano, donde la disponibilidad de materiales didácticos digitales actualizados sobre los ODS es aún escasa. El diseño del videojuego respeta los colores, íconos y denominaciones oficiales de cada ODS, lo que refuerza la identificación visual del contenido educativo y facilita su uso como complemento de programas curriculares relacionados con la sostenibilidad.
+El diseño del videojuego respeta los colores, íconos y denominaciones oficiales de cada ODS, lo que refuerza la identificación visual del contenido educativo y facilita su uso como complemento de programas curriculares relacionados con la sostenibilidad.
 
 %---------------------------------------------------------------------------
 \section{Planificación}
@@ -39,7 +39,7 @@ Como parte inicial de esta planificación, se realizaron sesiones de tormenta de
 \subsection{Requisitos funcionales}
 \label{subsec:req_funcionales}
 
-Los requisitos funcionales son descripciones detalladas de las funciones, comportamientos y procesos que un sistema de software debe cumplir para satisfacer las necesidades de sus usuarios y alcanzar los objetivos del negocio. En esencia, definen ``lo que el sistema debe hacer'' al especificar, de forma clara y verificable, las entradas que recibe, las operaciones que realiza y las salidas que produce. Para el presente proyecto, los requisitos fueron recopilados mediante reuniones con el cliente.
+Los requisitos funcionales constituyen el conjunto de capacidades, comportamientos y procesos que un sistema debe implementar para satisfacer las necesidades de sus usuarios. Definen de manera precisa y verificable qué debe hacer el sistema: las entradas que procesa, las transformaciones que aplica y las salidas que produce \parencite{Sommerville2021, Pressman2019}. Para \textit{Go Goals! Digital}, los requisitos se obtuvieron mediante sesiones de trabajo con el cliente y el análisis de las mecánicas del juego de mesa original, priorizando las funcionalidades esenciales para la experiencia educativa.
 
 \begin{longtable}{|c|p{0.3\textwidth}|p{0.37\textwidth}|c|c|}
 \caption{Requisitos funcionales del videojuego Go Goals! Digital (elaboración propia).\label{tab:req_funcionales}} \\
@@ -237,7 +237,9 @@ Los puntos de estimación en el desarrollo ágil se utilizan para medir el esfue
 \subsection{Plan de iteraciones}
 \label{subsec:plan_iteraciones}
 
-El plan de iteraciones es una herramienta esencial para organizar y coordinar el trabajo del equipo de desarrollo. Cada iteración suele durar entre una y tres semanas, y comienza con una reunión de planificación en la que el cliente presenta las historias de usuario priorizadas, y el equipo de desarrollo estima y se compromete a completar las tareas necesarias \parencite{Cohn2005}. Este enfoque permite entregar incrementos funcionales del software de manera continua, asegurando que el producto evolucione de acuerdo con las necesidades cambiantes del cliente.
+El plan de iteraciones es una herramienta esencial para organizar y coordinar el trabajo del equipo de desarrollo siguiendo la metodología Extreme Programming. Cada iteración se planifica con una duración de una a tres semanas y comienza con una reunión de planificación en la que el cliente presenta las historias de usuario priorizadas, y el equipo de desarrollo estima y se compromete a completar las tareas necesarias \parencite{Cohn2005}. Al finalizar cada iteración, se entrega un incremento funcional del software que puede ser evaluado por el cliente, cerrando el ciclo de retroalimentación y permitiendo ajustar las prioridades para la iteración siguiente \parencite{Beck2004}.
+
+Para \textit{Go Goals! Digital}, el desarrollo se organizó en cinco iteraciones que siguen una progresión lógica: las dos primeras sientan las bases del proyecto; la tercera integra el núcleo pedagógico; la cuarta incorpora funcionalidades de cierre y configuración; y la quinta agrega características complementarias que mejoran la experiencia de usuario. Esta estructura permite validar tempranamente las funcionalidades de mayor riesgo técnico, como la visualización del tablero hexagonal y el motor de preguntas, antes de proceder con los componentes de menor complejidad.
 
 \begin{longtable}{|c|c|p{0.45\textwidth}|c|}
 \caption{Plan de iteraciones de desarrollo (elaboración propia).\label{tab:plan_iteraciones}} \\
@@ -316,7 +318,7 @@ La comunicación entre estos elementos se simplifica gracias al sistema de seña
   \caption{Ejemplo de jerarquía de nodos en el SceneTree de Godot: pantalla de instrucciones del videojuego \textit{Go Goals! Digital} (elaboración propia).\label{fig:scene_tree}}
 \end{figure}
 
-El videojuego \textit{Go Goals! Digital} emplea esta Arquitectura Jerárquica Basada en Nodos, apoyada por servicios globales y coordinada centralmente. Esta elección arquitectural no es arbitraria: frente a alternativas como un patrón \textit{Model-View-Controller} clásico o una separación por capas estricta, la composición de nodos de Godot resulta superior para este proyecto por razones concretas de extensibilidad y mantenibilidad. Un MVC rígido tendería a concentrar en el controlador una cantidad creciente de lógica de presentación a medida que se incorporen nuevas mecánicas, como nuevos tipos de casillas o modos de juego, generando un acoplamiento progresivo entre la vista y el controlador. La composición orientada a nodos, en cambio, permite agregar una nueva funcionalidad como un nodo hijo con su propio script, sin tocar el controlador principal. Esto favorece directamente la extensibilidad, la testabilidad de componentes aislados de interfaz, y reduce el riesgo de regresiones al modificar el sistema. Como buena práctica de diseño, se estructuró el proyecto en cuatro pilares fundamentales de responsabilidad:
+El videojuego \textit{Go Goals! Digital} emplea esta Arquitectura Jerárquica Basada en Nodos, apoyada por servicios globales y coordinada centralmente. Esta elección arquitectural no es arbitraria: frente a alternativas como un patrón \textit{Model-View-Controller} clásico o una separación por capas estricta, la composición de nodos de Godot resulta superior para este proyecto por razones concretas de extensibilidad y mantenibilidad. Un MVC rígido tendería a concentrar en el controlador una cantidad creciente de lógica de presentación a medida que se incorporen nuevas mecánicas, como nuevos tipos de casillas o modos de juego, generando un acoplamiento progresivo entre la vista y el controlador. La composición orientada a nodos, en cambio, permite agregar una nueva funcionalidad como un nodo hijo con su propio script, sin tocar el controlador principal. Esto favorece directamente la extensibilidad y reduce el riesgo de regresiones al modificar el sistema. Como buena práctica de diseño, se estructuró el proyecto en cuatro pilares fundamentales de responsabilidad:
 
 \begin{itemize}
     \item \textbf{Arquitectura Orientada a Escenas}: La navegación principal y los límites de las interfaces dependen del sistema nativo de escenas de Godot. Entornos como el menú principal, la pantalla de juego interactiva y el menú de fin de partida funcionan como fronteras naturales de presentación. Dentro del juego, el nivel principal actúa como controlador de composición local, ensamblando las dependencias y conectando la interfaz de usuario con la lógica sin mezclar directamente sus responsabilidades.
@@ -342,13 +344,6 @@ La organización del código fuente sigue una estructura jerárquica por respons
     \item \textbf{scripts/UI/}: contiene los scripts de la capa de presentación, incluyendo los paneles del tablero, el panel de preguntas, el menú de pausa y la pantalla de estadísticas.
 \end{itemize}
 
-\subsubsection{Flujo de ejecución del ciclo de juego}
-\label{subsubsec:flujo_ejecucion}
-
-El flujo de la partida es coordinado secuencialmente por el \texttt{GameManager}. Al inicio, se procesa la configuración de la partida y se instancian los jugadores en la posición cero. Un turno arranca cuando el jugador activo detona el lanzamiento del dado obteniendo un valor de uno a seis, desplazando su ficha hacia el destino mediante una animación interpolada fluida.
-
-Al ubicarse en el destino final, el sistema evalúa la naturaleza de la casilla. Las casillas comunes ceden el turno directamente; las escaleras o serpientes resuelven inmediatamente un movimiento de arrastre reactivo hacia plataformas aledañas. Por otro lado, al aterrizar en una casilla temática ODS, el motor suspende la progresión temporal y presenta el panel de evaluación pedagógica. Tras recoger y calificar la respuesta del estudiante, el turno concluye. Este bucle iterativo perdura hasta alcanzar la casilla 63, instante en el que se ejecuta la condición de victoria, deteniendo la partida y tabulando los marcadores.
-
 \subsection{Prototipos de interfaces gráficas}
 \label{subsec:prototipos}
 
@@ -356,7 +351,7 @@ En el presente epígrafe se presentan las principales interfaces gráficas del v
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.85\textwidth]{Images/GoGoals Digital}
+  \includegraphics[width=0.7\textwidth]{Images/GoGoals Digital}
   \caption{Prototipo de la pantalla principal del tablero de juego (elaboración propia).\label{fig:prototipo_tablero}}
 \end{figure}
 
@@ -365,7 +360,7 @@ En el presente epígrafe se presentan las principales interfaces gráficas del v
 
 El panel de preguntas constituye el componente central de la experiencia educativa del videojuego, ya que es el espacio donde se materializa la evaluación del conocimiento sobre los ODS. Este elemento funciona como una interfaz modal que se superpone al tablero durante las casillas temáticas, pausando temporalmente el flujo del juego para concentrar la atención del jugador en el contenido pedagógico. Su diseño responde a la necesidad de crear un momento de reflexión y aprendizaje dentro de la dinámica lúdica, equilibrando la competencia con la adquisición de conocimientos.
 
-El diseño visual del panel prioriza la legibilidad mediante una tipografía de tamaño adecuado (no menor a 16pt), contraste cromático alto entre texto y fondo, y espaciado generoso entre elementos interactivos. Tras la selección de una respuesta, el panel transita a un estado de retroalimentación que muestra un indicador visual claro (verde para correcto, rojo para incorrecto) acompañado de una breve explicación pedagógica que refuerza el aprendizaje. Esta retroalimentación permanece visible durante aproximadamente 5 segundos antes de cerrar el panel y continuar el turno, permitiendo que el jugador asimile la información sin interrumpir excesivamente el ritmo del juego.
+Tras la selección de una respuesta, el panel transita a un estado de retroalimentación que muestra un indicador visual claro (verde para correcto, rojo para incorrecto) acompañado de una breve explicación pedagógica que refuerza el aprendizaje. Esta retroalimentación permanece visible durante aproximadamente 5 segundos antes de cerrar el panel y continuar el turno, permitiendo que el jugador asimile la información sin interrumpir excesivamente el ritmo del juego.
 
 \begin{figure}[H]
   \centering
@@ -503,7 +498,7 @@ Permite a un objeto alterar su comportamiento cuando su estado interno cambia. L
 
 La arquitectura del videojuego exige un manejo robusto de los datos, separando la configuración persistente del estado efímero de la partida. Para ello, el Singleton \texttt{GameData} actúa como repositorio en memoria, mientras que \texttt{RecordsManager} se encarga de serializar y almacenar localmente las estadísticas de los jugadores en el sistema de archivos del usuario. El contenido pedagógico, que incluye el banco de preguntas por cada ODS, se almacena externamente en formato JSON, permitiendo actualizar el cuestionario sin necesidad de recompilar el proyecto.
 
-Para garantizar la integridad del sistema frente a errores, se implementó una estrategia de resiliencia estructurada: si el sistema detecta que falta el archivo JSON de preguntas en la ruta esperada, emite una advertencia en la consola de depuración y automáticamente carga un conjunto de preguntas de respaldo codificadas internamente, asegurando que el ciclo de juego no se interrumpa. De igual forma, al procesar el JSON, el \texttt{QuestionManager} valida la estructura de cada diccionario entrante; si una entrada está malformada, por ejemplo al carecer de la clave obligatoria \texttt{answer} u \texttt{options}, el sistema descarta esa pregunta específica de la cola de selección aleatoria y registra un error de validación, previniendo excepciones fatales durante el turno del jugador y manteniendo la fluidez de la partida incluso ante datos corruptos. Finalmente, la separación del \texttt{GameState} garantiza que, ante una interrupción abrupta de la partida, las estadísticas temporales no contaminen los registros históricos de victorias.
+El sistema implementa manejo de excepciones en los puntos críticos de entrada de datos. Ante la ausencia o invalidez sintáctica del archivo \texttt{questions.json}, se interrumpe la ejecución y se despliega una alerta: \textit{«Questions file not found or invalid. Please verify that \texttt{questions.json} exists in the data directory.»} Esta detención es intencional: el núcleo pedagógico del videojuego depende del banco de preguntas, por lo que carece de sentido continuar sin él. La validación semántica de cada pregunta se delega al redactor del archivo JSON, no al motor de juego, dado que el banco está diseñado para ser editado por educadores sin intervención del compilador.
 
 \subsection{Tareas de ingeniería}
 \label{subsec:tareas_ingenieria}
