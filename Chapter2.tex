@@ -32,7 +32,7 @@ El público objetivo abarca usuarios de todas las edades, con especial énfasis 
 \section{Planificación}
 \label{sec:planificacion}
 
-El presente epígrafe se enfoca en la organización y gestión del proyecto siguiendo la metodología Extreme Programming (XP). La planificación en XP se centra en la flexibilidad y la colaboración continua con el cliente, utilizando iteraciones cortas para adaptarse a cambios y priorizar funcionalidades \parencite{Beck1999}. Aquí se detallan los procesos clave que guían el desarrollo de \textit{Go Goals! Digital}, desde la obtención de requisitos hasta la definición de historias de usuario, la estimación de tiempo y el plan de iteraciones.
+El presente epígrafe se enfoca en la organización y gestión del proyecto siguiendo la metodología Extreme Programming (XP). La planificación en XP se centra en la flexibilidad y la colaboración continua con el cliente, utilizando iteraciones cortas para adaptarse a cambios y priorizar funcionalidades \parencite{Beck2004}. Aquí se detallan los procesos clave que guían el desarrollo de \textit{Go Goals! Digital}, desde la obtención de requisitos hasta la definición de historias de usuario, la estimación de tiempo y el plan de iteraciones.
 
 Como parte inicial de esta planificación, se realizaron sesiones de tormenta de ideas con el cliente para enfocar el proyecto en la arquitectura general, y posteriormente se llevaron a cabo reuniones que resultaron en la definición de los requisitos funcionales, no funcionales e historias de usuario.
 
@@ -96,7 +96,7 @@ RF-18 & Habilitar modo de práctica & El sistema debe permitir al usuario jugar 
 \subsection{Requisitos no funcionales}
 \label{subsec:req_no_funcionales}
 
-Los requisitos no funcionales son aquellas especificaciones que describen cómo debe ser un sistema en términos de atributos de calidad, como rendimiento, seguridad, usabilidad y escalabilidad, en lugar de simplemente describir sus funciones. Estos requisitos se centran en aspectos como la eficiencia, confiabilidad y facilidad de mantenimiento del sistema, que son fundamentales para garantizar su éxito y aceptación por parte de los usuarios. Al considerar los requisitos no funcionales desde las etapas iniciales del desarrollo de software, se puede diseñar un sistema que cumpla con las expectativas de los usuarios en términos de calidad y experiencia de uso \parencite{Pressman2021}.
+Los requisitos no funcionales son aquellas especificaciones que describen cómo debe ser un sistema en términos de atributos de calidad, como rendimiento, seguridad, usabilidad y escalabilidad, en lugar de simplemente describir sus funciones. Estos requisitos se centran en aspectos como la eficiencia, confiabilidad y facilidad de mantenimiento del sistema, que son fundamentales para garantizar su éxito y aceptación por parte de los usuarios. Al considerar los requisitos no funcionales desde las etapas iniciales del desarrollo de software, se puede diseñar un sistema que cumpla con las expectativas de los usuarios en términos de calidad y experiencia de uso \parencite{Pressman2019}.
 
 \textbf{Requisitos no funcionales de Usabilidad}
 
@@ -135,7 +135,7 @@ RNF-13: Se debe disponer de al menos 300~MB de espacio libre en la unidad de alm
 \subsection{Historias de usuario}
 \label{subsec:historias_usuario}
 
-Las historias de usuario son una técnica fundamental en metodologías ágiles como Extreme Programming (XP), utilizadas para capturar requisitos desde la perspectiva del usuario final. Según \citeauthor{Cohn2020} \parencite{Cohn2020}, una historia de usuario es ``una descripción breve y simple de una funcionalidad deseada, expresada en lenguaje cotidiano y centrada en el valor que aporta al usuario''. A diferencia de los documentos de requisitos tradicionales, las historias de usuario son más flexibles, pero siguen el formato estandarizado:
+Las historias de usuario son una técnica fundamental en metodologías ágiles como Extreme Programming (XP), utilizadas para capturar requisitos desde la perspectiva del usuario final. Según \citeauthor{Cohn2005} \parencite{Cohn2005}, una historia de usuario es ``una descripción breve y simple de una funcionalidad deseada, expresada en lenguaje cotidiano y centrada en el valor que aporta al usuario''. A diferencia de los documentos de requisitos tradicionales, las historias de usuario son más flexibles, pero siguen el formato estandarizado:
 
 \begin{center}
 \textit{``Como [rol], quiero [acción], para [beneficio]''}
@@ -176,7 +176,7 @@ A continuación se presenta, a modo representativo, la historia de usuario más 
 \subsection{Estimación de tiempo de desarrollo}
 \label{subsec:estimacion}
 
-Los puntos de estimación en el desarrollo ágil se utilizan para medir el esfuerzo relativo requerido para completar una historia de usuario, en lugar de estimar el tiempo exacto. Esto sirve para evaluar su complejidad, comparar historias de usuario y planificar las iteraciones \parencite{Cohn2020}.
+Los puntos de estimación en el desarrollo ágil se utilizan para medir el esfuerzo relativo requerido para completar una historia de usuario, en lugar de estimar el tiempo exacto. Esto sirve para evaluar su complejidad, comparar historias de usuario y planificar las iteraciones \parencite{Cohn2005}.
 
 \begin{longtable}{|c|p{0.45\textwidth}|c|}
 \caption{Puntos de estimación por historia de usuario (elaboración propia).\label{tab:estimacion}} \\
@@ -237,7 +237,7 @@ Los puntos de estimación en el desarrollo ágil se utilizan para medir el esfue
 \subsection{Plan de iteraciones}
 \label{subsec:plan_iteraciones}
 
-El plan de iteraciones es una herramienta esencial para organizar y coordinar el trabajo del equipo de desarrollo. Cada iteración suele durar entre una y tres semanas, y comienza con una reunión de planificación en la que el cliente presenta las historias de usuario priorizadas, y el equipo de desarrollo estima y se compromete a completar las tareas necesarias \parencite{Cohn2020}. Este enfoque permite entregar incrementos funcionales del software de manera continua, asegurando que el producto evolucione de acuerdo con las necesidades cambiantes del cliente.
+El plan de iteraciones es una herramienta esencial para organizar y coordinar el trabajo del equipo de desarrollo. Cada iteración suele durar entre una y tres semanas, y comienza con una reunión de planificación en la que el cliente presenta las historias de usuario priorizadas, y el equipo de desarrollo estima y se compromete a completar las tareas necesarias \parencite{Cohn2005}. Este enfoque permite entregar incrementos funcionales del software de manera continua, asegurando que el producto evolucione de acuerdo con las necesidades cambiantes del cliente.
 
 \begin{longtable}{|c|c|p{0.45\textwidth}|c|}
 \caption{Plan de iteraciones de desarrollo (elaboración propia).\label{tab:plan_iteraciones}} \\
@@ -304,7 +304,7 @@ El presente epígrafe constituye la transición esencial entre la planificación
 \subsection{Arquitectura Jerárquica Basada en Nodos}
 \label{subsec:arquitectura}
 
-Godot Engine utiliza una arquitectura jerárquica basada en nodos, la cual es identificada como el árbol de escenas. En esta arquitectura, los \textbf{nodos} son los bloques de construcción fundamentales: cada elemento del videojuego, desde una ficha de jugador hasta un efecto de sonido, es un nodo que hereda de la clase base \texttt{Node}. Los nodos se organizan en \textbf{escenas}, que son composiciones reutilizables de nodos agrupados jerárquicamente; una escena puede representar desde un botón hasta una pantalla completa del juego. El \textbf{SceneTree} es la estructura global que gestiona todas las escenas y nodos en tiempo de ejecución, funcionando como un árbol de procesamiento que organiza el orden de ejecución de métodos, la jerarquía de transformaciones y la gestión de señales que comunican a los nodos entre sí \parencite{GodotDocs2023}.
+Godot Engine utiliza una arquitectura jerárquica basada en nodos, la cual es identificada como el árbol de escenas. En esta arquitectura, los \textbf{nodos} son los bloques de construcción fundamentales: cada elemento del videojuego, desde una ficha de jugador hasta un efecto de sonido, es un nodo que hereda de la clase base \texttt{Node}. Los nodos se organizan en \textbf{escenas}, que son composiciones reutilizables de nodos agrupados jerárquicamente; una escena puede representar desde un botón hasta una pantalla completa del juego. El \textbf{SceneTree} es la estructura global que gestiona todas las escenas y nodos en tiempo de ejecución, funcionando como un árbol de procesamiento que organiza el orden de ejecución de métodos, la jerarquía de transformaciones y la gestión de señales que comunican a los nodos entre sí \parencite{GodotDocs2026}.
 
 El uso del SceneTree aporta ventajas significativas para \textit{Go Goals! Digital}. En primer lugar, aumenta la modularidad al permitir tener una escena para cada funcionalidad específica, como podría ser una ficha de jugador, que puede instanciarse dentro de otra escena más grande como el tablero. De esta manera, el tablero puede contener varias fichas, cada una con sus propiedades individuales (color, posición, nombre del jugador). Al momento de necesitar cambiarlas todas, se pueden realizar modificaciones en la escena de la ficha, reflejándose automáticamente en todas las instancias. Otra ventaja es el rendimiento, que mejora debido a que evita actualizaciones innecesarias y permite operaciones masivas como llamadas de métodos en grupos de nodos. Su diseño trae un enfoque de composición sobre herencia para no depender de jerarquías rígidas de clases y posee funcionalidades para realizar cambios de escenas de forma fluida.
 
@@ -331,7 +331,7 @@ El videojuego \textit{Go Goals! Digital} emplea esta Arquitectura Jerárquica Ba
 \subsubsection{Estructura de directorios del proyecto}
 \label{subsubsec:capas}
 
-La organización del código fuente sigue una estructura jerárquica por responsabilidad funcional, coherente con los principios de alta cohesión y bajo acoplamiento \parencite{Pressman2021}:
+La organización del código fuente sigue una estructura jerárquica por responsabilidad funcional, coherente con los principios de alta cohesión y bajo acoplamiento \parencite{Pressman2019}:
 
 \begin{itemize}
     \item \textbf{autoloads/}: contiene los Singletons globales del proyecto (\texttt{GameData}, \texttt{AudioManager}, \texttt{RecordsManager}).
@@ -430,7 +430,7 @@ Los estándares de codificación son un conjunto de convenciones y reglas que gu
 \subsubsection{Nomenclatura y estructura de archivos}
 \label{subsubsec:nomenclatura}
 
-Para el desarrollo en GDScript se aplicaron los siguientes estándares de nomenclatura, coherentes con las convenciones oficiales de la documentación de Godot \parencite{GodotDocs2023}. Estas convenciones facilitan la legibilidad del código y permiten que cualquier desarrollador familiarizado con Godot pueda comprender rápidamente la estructura del proyecto:
+Para el desarrollo en GDScript se aplicaron los siguientes estándares de nomenclatura, coherentes con las convenciones oficiales de la documentación de Godot \parencite{GodotDocs2026}. Estas convenciones facilitan la legibilidad del código y permiten que cualquier desarrollador familiarizado con Godot pueda comprender rápidamente la estructura del proyecto:
 
 \begin{itemize}
     \item \textbf{Clases}: PascalCase, por ejemplo \texttt{GameManager} y \texttt{QuestionManager}.
@@ -451,17 +451,17 @@ La arquitectura de directorios del proyecto obedece a una distribución basada e
 \subsubsection{Documentación del código}
 \label{subsubsec:documentacion_codigo}
 
-Cada clase implementada en GDScript incluye comentarios de documentación al inicio del archivo describiendo su propósito, y comentarios de bloque en funciones de lógica compleja. Esta práctica facilita el mantenimiento futuro del código y permite la incorporación de nuevos desarrolladores al proyecto \parencite{GodotDocs2023}.
+Cada clase implementada en GDScript incluye comentarios de documentación al inicio del archivo describiendo su propósito, y comentarios de bloque en funciones de lógica compleja. Esta práctica facilita el mantenimiento futuro del código y permite la incorporación de nuevos desarrolladores al proyecto \parencite{GodotDocs2026}.
 
 \subsection{Patrones de diseño utilizados}
 \label{subsec:patrones}
 
-Los patrones de diseño son soluciones reutilizables a problemas recurrentes en el desarrollo de software. Estos patrones proporcionan una manera estandarizada de abordar tareas de diseño recurrentes, mejorando la eficiencia y la coherencia del código. Al emplear patrones de diseño, los desarrolladores pueden beneficiarse de soluciones probadas que facilitan la comunicación, el mantenimiento y la extensibilidad del software \parencite{Pressman2021}. \textit{Go Goals! Digital} aplica los siguientes patrones de diseño, reflejados directamente en la estructura del código fuente.
+Los patrones de diseño son soluciones reutilizables a problemas recurrentes en el desarrollo de software. Estos patrones proporcionan una manera estandarizada de abordar tareas de diseño recurrentes, mejorando la eficiencia y la coherencia del código. Al emplear patrones de diseño, los desarrolladores pueden beneficiarse de soluciones probadas que facilitan la comunicación, el mantenimiento y la extensibilidad del software \parencite{Pressman2019}. \textit{Go Goals! Digital} aplica los siguientes patrones de diseño, reflejados directamente en la estructura del código fuente.
 
 \subsubsection{Patrones GRASP}
 \label{subsubsec:patrones_grasp}
 
-Son un conjunto de principios para asignar responsabilidades y funciones en el diseño de software orientado a objetos. Estos patrones ayudan a los desarrolladores a tomar decisiones coherentes sobre dónde ubicar la funcionalidad dentro del sistema. Al aplicar estos principios, se puede lograr un diseño de software más modular, flexible y fácil de mantener \parencite{Pressman2021}.
+Son un conjunto de principios para asignar responsabilidades y funciones en el diseño de software orientado a objetos. Estos patrones ayudan a los desarrolladores a tomar decisiones coherentes sobre dónde ubicar la funcionalidad dentro del sistema. Al aplicar estos principios, se puede lograr un diseño de software más modular, flexible y fácil de mantener \parencite{Pressman2019}.
 
 \textbf{Controlador de Fachada}
 
@@ -482,7 +482,7 @@ Los patrones de diseño GOF (Gang of Four) actúan como directrices estructurada
 
 \textbf{Singleton}
 
-Garantiza que una clase tenga una única instancia y proporciona un punto de acceso global a ella. Godot implementa este patrón de forma nativa mediante el mecanismo de Autoloads. Los Autoloads del proyecto son \texttt{GameData} (repositorio central), \texttt{AudioManager} (gestión de sonido global) y \texttt{RecordsManager} (persistencia de datos), permitiendo que cualquier nodo acceda a estos servicios sin dependencias cruzadas \parencite{GodotDocs2023}.
+Garantiza que una clase tenga una única instancia y proporciona un punto de acceso global a ella. Godot implementa este patrón de forma nativa mediante el mecanismo de Autoloads. Los Autoloads del proyecto son \texttt{GameData} (repositorio central), \texttt{AudioManager} (gestión de sonido global) y \texttt{RecordsManager} (persistencia de datos), permitiendo que cualquier nodo acceda a estos servicios sin dependencias cruzadas \parencite{GodotDocs2026}.
 
 \textbf{Observer (Bus de Eventos)}
 
