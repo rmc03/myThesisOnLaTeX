@@ -1,19 +1,19 @@
-\chapter{Diseño e implementación}
+\chapter{Propuesta de solución}
 \label{chap:chapter2}
 
-El presente capítulo tiene como objetivo presentar el proceso de análisis, diseño e implementación del videojuego educativo \textit{Go Goals! Digital}, detallando las decisiones técnicas y metodológicas que sustentan su desarrollo. Este se estructura en la descripción de la propuesta de solución y tres ejes principales guiados por la metodología XP: (1) planificación, donde se definen los requisitos y la organización del proyecto; (2) diseño, que abarca la arquitectura del sistema, los prototipos de interfaces y las tarjetas CRC; y (3) implementación, que describe los estándares de codificación, los patrones de diseño y las tareas de ingeniería. A través de este análisis, se busca proporcionar una visión clara y sistemática de cómo se materializó el proyecto, desde la obtención de requisitos hasta la implementación final, respaldado por tablas, modelos y diagramas que garantizan la calidad del producto.
+El presente capítulo expone la propuesta de solución del videojuego educativo \textit{Go Goals! Digital}, detallando las decisiones técnicas y metodológicas que sustentan su concepción e implementación. Se estructura en tres ejes principales guiados por la metodología Extreme Programming. El primero es la planificación, donde se definen los requisitos y la organización iterativa del proyecto. El segundo es el diseño, que abarca la arquitectura del sistema, los prototipos de interfaces y las tarjetas CRC. El tercero es la implementación, que describe los estándares de codificación, los patrones de diseño aplicados y las tareas de ingeniería ejecutadas. A través de este recorrido, se proporciona una visión sistemática de cómo se materializó la solución, respaldada por tablas, modelos y diagramas que garantizan la calidad y coherencia del producto.
 
 %---------------------------------------------------------------------------
 \section{Descripción de la propuesta de solución}
 \label{sec:descripcion_propuesta}
 
-\textit{Go Goals! Digital} es un videojuego educativo basado en la adaptación digital del juego de mesa oficial \textit{Go Goals!} de las Naciones Unidas \parencite{GoGoals2020}. En su formato digital, los jugadores (de 1 a 4) controlan fichas en un tablero hexagonal de 63 casillas que metaforiza el recorrido colectivo hacia el año 2030, horizonte establecido por la Agenda 2030 para el Desarrollo Sostenible \parencite{NacionesUnidas2015}. El avance se determina mediante un dado virtual, y al caer en una de las 17 casillas temáticas (una por ODS), el jugador debe responder una pregunta de opción múltiple sobre el objetivo correspondiente. Las respuestas correctas activan el efecto de escalera (avance positivo), mientras que las incorrectas activan el efecto de serpiente (retroceso correctivo), preservando la mecánica pedagógica central del juego original.
+\textit{Go Goals! Digital} es un videojuego educativo basado en la adaptación digital del juego de mesa oficial \textit{Go Goals!} de las Naciones Unidas \parencite{GoGoals2020}. En su formato digital, los jugadores, de uno a cuatro participantes, controlan fichas en un tablero hexagonal de 63 casillas que metaforiza el recorrido colectivo hacia el año 2030, horizonte establecido por la Agenda 2030 para el Desarrollo Sostenible \parencite{NacionesUnidas2015}. El avance se determina mediante un dado virtual, y al caer en una de las 17 casillas temáticas, distribuidas equitativamente una por cada ODS, el jugador debe responder una pregunta de opción múltiple sobre el objetivo correspondiente. Las respuestas correctas activan el efecto de escalera para un avance positivo, mientras que las incorrectas activan el efecto de serpiente para un retroceso correctivo, preservando la mecánica pedagógica central del juego original.
 
 Las principales mejoras que introduce la versión digital respecto al formato físico son:
 \begin{itemize}
-    \item \textbf{Accesibilidad universal}: exportación nativa a plataformas de escritorio (Windows, Linux y macOS), sin necesidad de materiales físicos ni impresión.
+    \item \textbf{Accesibilidad universal}: exportación nativa a plataformas de escritorio como Windows, Linux y macOS, sin necesidad de materiales físicos ni impresión.
     \item \textbf{Contenido dinámico}: banco de preguntas ampliable en formato JSON, editable por educadores sin conocimientos de programación.
-    \item \textbf{Retroalimentación enriquecida}: animaciones de fichas, efectos de sonido, \textit{feedback} visual inmediato (colores, partículas) al responder.
+    \item \textbf{Retroalimentación enriquecida}: animaciones de fichas, efectos de sonido y retroalimentación visual inmediata a través de colores y partículas al responder.
     \item \textbf{Seguimiento del aprendizaje}: registro automático de respuestas correctas e incorrectas por jugador y por ODS.
     \item \textbf{Rejugabilidad}: selección aleatoria y sin repetición de preguntas dentro de cada sesión, evitando la memorización.
 \end{itemize}
@@ -24,9 +24,9 @@ Las principales mejoras que introduce la versión digital respecto al formato f�
   \caption{Vista general del videojuego educativo \textit{Go Goals! Digital} (elaboración propia).\label{fig:propuesta_solucion}}
 \end{figure}
 
-Dentro del ecosistema de recursos educativos digitales sobre desarrollo sostenible, \textit{Go Goals! Digital} ocupa un nicho específico: es el único videojuego desarrollado en Cuba que adapta fielmente la mecánica del juego de mesa oficial de las Naciones Unidas a un entorno digital interactivo. A diferencia de otras iniciativas educativas basadas en vídeos o materiales estáticos, este videojuego integra la competencia entre varios jugadores, el azar controlado y la evaluación del conocimiento en una sola experiencia lúdica. La plataforma Godot Engine, elegida por su licencia libre (MIT) y su capacidad de exportación multiplataforma, garantiza que el juego pueda ejecutarse de manera nativa en diversos sistemas operativos de escritorio (Windows, Linux y macOS), sin requerir configuraciones complejas adicionalmente, lo que es especialmente relevante en contextos educativos con recursos tecnológicos limitados \parencite{GodotEngine2023}.
+Dentro del ecosistema de recursos educativos digitales sobre desarrollo sostenible, \textit{Go Goals! Digital} ocupa un nicho específico: es el único videojuego desarrollado en Cuba que adapta fielmente la mecánica del juego de mesa oficial de las Naciones Unidas a un entorno digital interactivo. A diferencia de otras iniciativas educativas basadas en vídeos o materiales estáticos, este videojuego integra la competencia entre varios jugadores, el azar controlado y la evaluación del conocimiento en una sola experiencia lúdica. La plataforma Godot Engine, elegida por su licencia libre MIT y su capacidad de exportación multiplataforma, garantiza la ejecución nativa en sistemas operativos de escritorio tales como Windows, Linux y macOS sin requerir configuraciones complejas, lo que resulta especialmente relevante en contextos educativos con recursos tecnológicos limitados.
 
-El público objetivo abarca a usuarios de todas las edades, con intención de proveer accesibilidad a todo aquel interesado en la temática, con especial énfasis en el contexto escolar cubano, donde la disponibilidad de materiales didácticos digitales actualizados sobre los ODS es aún escasa \parencite{InformeVoluntarioCuba2021}. El diseño del videojuego respeta los colores, íconos y denominaciones oficiales de cada ODS definidos por las Naciones Unidas, lo que refuerza la identificación visual del contenido educativo y facilita su uso como complemento de programas curriculares relacionados con la sostenibilidad.
+El público objetivo abarca usuarios de todas las edades, con especial énfasis en el contexto escolar cubano, donde la disponibilidad de materiales didácticos digitales actualizados sobre los ODS es aún escasa. El diseño del videojuego respeta los colores, íconos y denominaciones oficiales de cada ODS, lo que refuerza la identificación visual del contenido educativo y facilita su uso como complemento de programas curriculares relacionados con la sostenibilidad.
 
 %---------------------------------------------------------------------------
 \section{Planificación}
@@ -34,61 +34,61 @@ El público objetivo abarca a usuarios de todas las edades, con intención de pr
 
 El presente epígrafe se enfoca en la organización y gestión del proyecto siguiendo la metodología Extreme Programming (XP). La planificación en XP se centra en la flexibilidad y la colaboración continua con el cliente, utilizando iteraciones cortas para adaptarse a cambios y priorizar funcionalidades \parencite{Beck1999}. Aquí se detallan los procesos clave que guían el desarrollo de \textit{Go Goals! Digital}, desde la obtención de requisitos hasta la definición de historias de usuario, la estimación de tiempo y el plan de iteraciones.
 
-Como parte inicial de esta planificación, se realizaron sesiones de tormenta de ideas (\textit{brainstorming}) con el cliente para enfocar el proyecto en la arquitectura general, y posteriormente se llevaron a cabo reuniones que resultaron en la definición de los requisitos funcionales, no funcionales e historias de usuario \parencite{SchwaberSutherland2020}.
+Como parte inicial de esta planificación, se realizaron sesiones de tormenta de ideas con el cliente para enfocar el proyecto en la arquitectura general, y posteriormente se llevaron a cabo reuniones que resultaron en la definición de los requisitos funcionales, no funcionales e historias de usuario.
 
 \subsection{Requisitos funcionales}
 \label{subsec:req_funcionales}
 
-Los requisitos funcionales son descripciones detalladas de las funciones, comportamientos y procesos que un sistema de software debe cumplir para satisfacer las necesidades de sus usuarios y alcanzar los objetivos del negocio. En esencia, definen ``lo que el sistema debe hacer'' al especificar, de forma clara y verificable, las entradas que recibe, las operaciones que realiza y las salidas que produce. Según \citeauthor{Pressman2021} \parencite{Pressman2021}, esta definición es esencial no solo para orientar las fases de análisis, diseño, implementación y pruebas, sino también para asegurar una comunicación efectiva entre todos los involucrados en el proyecto, evitando ambigüedades y facilitando la gestión de cambios durante el desarrollo. Para el presente proyecto, los requisitos funcionales de software fueron recopilados mediante reuniones con el cliente.
+Los requisitos funcionales son descripciones detalladas de las funciones, comportamientos y procesos que un sistema de software debe cumplir para satisfacer las necesidades de sus usuarios y alcanzar los objetivos del negocio. En esencia, definen ``lo que el sistema debe hacer'' al especificar, de forma clara y verificable, las entradas que recibe, las operaciones que realiza y las salidas que produce. Para el presente proyecto, los requisitos fueron recopilados mediante reuniones con el cliente.
 
 \begin{longtable}{|c|p{0.3\textwidth}|p{0.37\textwidth}|c|c|}
 \caption{Requisitos funcionales del videojuego Go Goals! Digital (elaboración propia).\label{tab:req_funcionales}} \\
 \hline
-\textbf{No.} & \textbf{Nombre} & \textbf{Descripción} & \textbf{Prioridad} & \textbf{Complejidad} \\
+\textbf{ID} & \textbf{Nombre} & \textbf{Descripción} & \textbf{Prioridad} & \textbf{Complejidad} \\
 \hline
 \endfirsthead
 \multicolumn{5}{c}
 {{ \tablename\ \thetable{} -- Continuación de la página anterior}} \\
 \hline
-\textbf{No.} & \textbf{Nombre} & \textbf{Descripción} & \textbf{Prioridad} & \textbf{Complejidad} \\
+\textbf{ID} & \textbf{Nombre} & \textbf{Descripción} & \textbf{Prioridad} & \textbf{Complejidad} \\
 \hline
 \endhead
 \hline
-1. & Mostrar menú principal & El sistema debe contar con un menú principal con opciones de iniciar partida, ver instrucciones y salir. & Alta & Baja \\
+RF-01 & Mostrar menú principal & El sistema debe contar con un menú principal con opciones de iniciar partida, ver instrucciones y salir. & Alta & Baja \\
 \hline
-2. & Mostrar pantalla de instrucciones & El sistema debe mostrar las reglas del juego de manera clara y accesible. & Media & Baja \\
+RF-02 & Mostrar pantalla de instrucciones & El sistema debe mostrar las reglas del juego de manera clara y accesible. & Media & Baja \\
 \hline
-3. & Iniciar partida & El sistema debe permitir al usuario iniciar una nueva partida configurando el número de jugadores hasta 4. & Alta & Baja \\
+RF-03 & Iniciar partida & El sistema debe permitir al usuario iniciar una nueva partida configurando el número de jugadores hasta 4. & Alta & Baja \\
 \hline
-4. & Visualizar tablero & El sistema debe mostrar el tablero hexagonal completo con las 63 casillas correctamente identificadas. & Alta & Media \\
+RF-04 & Visualizar tablero & El sistema debe mostrar el tablero hexagonal completo con las 63 casillas correctamente identificadas. & Alta & Media \\
 \hline
-5. & Lanzar dado & El sistema debe simular el lanzamiento de un dado de 6 caras con resultado pseudoaleatorio. & Alta & Baja \\
+RF-05 & Lanzar dado & El sistema debe simular el lanzamiento de un dado de 6 caras con resultado pseudoaleatorio. & Alta & Baja \\
 \hline
-6. & Mover ficha & El sistema debe mover la ficha del jugador activo la cantidad de casillas indicada por el dado con animación. & Alta & Media \\
+RF-06 & Mover ficha & El sistema debe mover la ficha del jugador activo la cantidad de casillas indicada por el dado con animación. & Alta & Media \\
 \hline
-7. & Aplicar efecto de escalera & El sistema debe detectar casillas de escalera y aplicar el avance correspondiente con animación. & Alta & Media \\
+RF-07 & Aplicar efecto de escalera & El sistema debe detectar casillas de escalera y aplicar el avance correspondiente con animación. & Alta & Media \\
 \hline
-8. & Aplicar efecto de serpiente & El sistema debe detectar casillas de serpiente y aplicar el retroceso correspondiente con animación. & Alta & Media \\
+RF-08 & Aplicar efecto de serpiente & El sistema debe detectar casillas de serpiente y aplicar el retroceso correspondiente con animación. & Alta & Media \\
 \hline
-9. & Mostrar pregunta ODS & El sistema debe mostrar una pregunta aleatoria del banco cuando una ficha cae en casilla temática. & Alta & Alta \\
+RF-09 & Mostrar pregunta ODS & El sistema debe mostrar una pregunta aleatoria del banco cuando una ficha cae en casilla temática. & Alta & Alta \\
 \hline
-10. & Evaluar respuesta & El sistema debe evaluar la respuesta del jugador, mostrar retroalimentación y aplicar el efecto correspondiente. & Alta & Media \\
+RF-10 & Evaluar respuesta & El sistema debe evaluar la respuesta del jugador, mostrar retroalimentación y aplicar el efecto correspondiente. & Alta & Media \\
 \hline
-11. & Gestionar turnos & El sistema debe gestionar el turno de cada jugador de forma automática y mostrar el jugador activo. & Alta & Media \\
+RF-11 & Gestionar turnos & El sistema debe gestionar el turno de cada jugador de forma automática y mostrar el jugador activo. & Alta & Media \\
 \hline
-12. & Determinar condición de victoria & El sistema debe detectar cuando un jugador llega a la casilla 63 y mostrar la pantalla de victoria. & Alta & Baja \\
+RF-12 & Determinar condición de victoria & El sistema debe detectar cuando un jugador llega a la casilla 63 y mostrar la pantalla de victoria. & Alta & Baja \\
 \hline
-13. & Mostrar estadísticas de partida & El sistema debe registrar y mostrar las respuestas correctas e incorrectas por jugador y por ODS. & Media & Alta \\
+RF-13 & Mostrar estadísticas de partida & El sistema debe registrar y mostrar las respuestas correctas e incorrectas por jugador y por ODS. & Media & Alta \\
 \hline
-14. & Configurar audio & El sistema debe permitir activar o desactivar música y efectos de sonido. & Baja & Baja \\
+RF-14 & Configurar audio & El sistema debe permitir activar o desactivar música y efectos de sonido. & Baja & Baja \\
 \hline
-15. & Pausar partida & El sistema debe permitir pausar la partida en cualquier momento y reanudarla desde el mismo estado. & Media & Baja \\
+RF-15 & Pausar partida & El sistema debe permitir pausar la partida en cualquier momento y reanudarla desde el mismo estado. & Media & Baja \\
 \hline
-16. & Reiniciar partida & El sistema debe permitir reiniciar la partida actual desde el inicio sin volver al menú principal. & Media & Baja \\
+RF-16 & Reiniciar partida & El sistema debe permitir reiniciar la partida actual desde el inicio sin volver al menú principal. & Media & Baja \\
 \hline
-17. & Habilitar cámara de seguimiento & El sistema debe incluir una cámara dinámica que enfoque automáticamente al jugador activo durante su turno. & Baja & Media \\
+RF-17 & Habilitar cámara de seguimiento & El sistema debe incluir una cámara dinámica que enfoque automáticamente al jugador activo durante su turno. & Baja & Media \\
 \hline
-18. & Habilitar modo de práctica & El sistema debe permitir al usuario jugar en solitario para recorrer el tablero, practicar y familiarizarse con el juego. & Media & Baja \\
+RF-18 & Habilitar modo de práctica & El sistema debe permitir al usuario jugar en solitario para recorrer el tablero, practicar y familiarizarse con el juego. & Media & Baja \\
 \hline
 \hline
 \end{longtable}
@@ -96,38 +96,41 @@ Los requisitos funcionales son descripciones detalladas de las funciones, compor
 \subsection{Requisitos no funcionales}
 \label{subsec:req_no_funcionales}
 
-Los requisitos no funcionales de software son aquellos que especifican criterios que pueden usarse para juzgar la operación de un sistema, en lugar de sus comportamientos específicos. Estos requisitos se centran en aspectos como el rendimiento, la seguridad, la usabilidad y la fiabilidad del sistema, y son esenciales para garantizar que el software cumpla con las expectativas de calidad y satisfacción del usuario final \parencite{Pressman2021}.
+Los requisitos no funcionales son aquellas especificaciones que describen cómo debe ser un sistema en términos de atributos de calidad, como rendimiento, seguridad, usabilidad y escalabilidad, en lugar de simplemente describir sus funciones. Estos requisitos se centran en aspectos como la eficiencia, confiabilidad y facilidad de mantenimiento del sistema, que son fundamentales para garantizar su éxito y aceptación por parte de los usuarios. Al considerar los requisitos no funcionales desde las etapas iniciales del desarrollo de software, se puede diseñar un sistema que cumpla con las expectativas de los usuarios en términos de calidad y experiencia de uso \parencite{Pressman2021}.
 
-\begin{longtable}{|p{0.28\textwidth}|p{0.18\textwidth}|p{0.45\textwidth}|}
-\caption{Requisitos no funcionales del videojuego Go Goals! Digital (elaboración propia).\label{tab:req_no_funcionales}} \\
-\hline
-\textbf{Nombre} & \textbf{Tipo} & \textbf{Descripción} \\
-\hline
-\endfirsthead
-\multicolumn{3}{c}
-{{ \tablename\ \thetable{} -- Continuación de la página anterior}} \\
-\hline
-\textbf{Nombre} & \textbf{Tipo} & \textbf{Descripción} \\
-\hline
-\endhead
+\textbf{Requisitos no funcionales de Usabilidad}
 
-\endfoot
-\endlastfoot
-Proporcionar interfaz accesible e intuitiva & Usabilidad & La interfaz gráfica debe emplear tipografía de tamaño no menor a 16pt, botones grandes y contraste alto, adecuados para usuarios de un amplio rango de edades. \\
-\hline
-Garantizar tiempo de respuesta & Rendimiento & El sistema debe responder a las acciones del usuario (lanzar dado, seleccionar respuesta) en menos de 0,5 segundos. \\
-\hline
-Asegurar compatibilidad multiplataforma & Compatibilidad & El videojuego debe ser compatible con la última versión estable de los sistemas operativos Windows 10+, Linux y macOS. \\
-\hline
-Incluir tutorial contextual & Usabilidad & Al presentarse una funcionalidad nueva, el sistema debe mostrar un tutorial o indicación breve. \\
-\hline
-Mantener documentación interna del código & Mantenibilidad & El código GDScript debe generar documentación interna mediante comentarios de documentación accesibles para futuras iteraciones. \\
-\hline
-Garantizar disponibilidad offline & Disponibilidad & La versión de escritorio debe funcionar completamente sin conexión a internet. \\
-\hline
-Limitar tamaño del ejecutable & Rendimiento & El ejecutable para Windows no debe superar 150 MB para facilitar su distribución en contextos con ancho de banda limitado. \\
-\hline
-\end{longtable}
+RNF-01: El sistema debe ser intuitivo y de fácil comprensión para usuarios de todas las edades.
+
+RNF-02: Todos los textos de la interfaz deben renderizarse con una tipografía de tamaño igual o superior a 16pt para garantizar legibilidad.
+
+RNF-03: Los botones interactivos principales deben poseer un área de colisión amplia y holgada para facilitar la interacción en pantallas táctiles y el acceso motriz.
+
+RNF-04: La paleta de colores debe mantener un contraste alto entre el texto y el fondo, respetando los colores e íconos oficiales de los 17 ODS de las Naciones Unidas.
+
+RNF-05: Al presentarse una funcionalidad nueva en la partida, el sistema debe mostrar una indicación o tutorial contextual breve.
+
+\textbf{Requisitos no funcionales de Rendimiento}
+
+RNF-06: El sistema debe responder a acciones del usuario, tales como lanzar el dado o seleccionar una respuesta, en menos de 0{,}5 segundos en hardware de gama media.
+
+RNF-07: El ejecutable para Windows no debe superar los 150~MB para facilitar su distribución en contextos con ancho de banda limitado.
+
+\textbf{Requisitos no funcionales de Software}
+
+RNF-08: El videojuego debe ser compatible con Windows 10+, Linux (Ubuntu 20.04+) y macOS 11+.
+
+RNF-09: La versión de escritorio debe funcionar completamente sin conexión a internet (disponibilidad offline).
+
+RNF-10: El código GDScript debe mantener comentarios de documentación internos en todas las clases para garantizar la mantenibilidad.
+
+\textbf{Requisitos no funcionales de Hardware}
+
+RNF-11: El dispositivo debe poseer un procesador de doble núcleo a 1{,}5~GHz o superior.
+
+RNF-12: El sistema debe contar con al menos 512~MB de memoria RAM disponible para la ejecución del videojuego.
+
+RNF-13: Se debe disponer de al menos 300~MB de espacio libre en la unidad de almacenamiento para la instalación del ejecutable y sus archivos de datos.
 
 \subsection{Historias de usuario}
 \label{subsec:historias_usuario}
@@ -296,12 +299,12 @@ El plan de iteraciones es una herramienta esencial para organizar y coordinar el
 \section{Diseño}
 \label{sec:diseno}
 
-El presente epígrafe constituye la transición esencial entre la planificación teórica y la implementación práctica, donde se materializan los requisitos en soluciones técnicas concretas. Este apartado se centra en tres pilares fundamentales: (1) la arquitectura del sistema, detallando cómo la estructura basada en nodos y el SceneTree de Godot permiten organizar los componentes clave del videojuego; (2) los prototipos de interfaces gráficas de usuario; y (3) las tarjetas CRC (Class-Responsibility-Collaboration) que definen la interacción entre las clases del sistema.
+El presente epígrafe constituye la transición esencial entre la planificación teórica y la implementación práctica, donde se materializan los requisitos en soluciones técnicas concretas. Este apartado se centra en tres pilares fundamentales: la arquitectura del sistema, que detalla cómo la estructura basada en nodos y el SceneTree de Godot permiten organizar los componentes clave del videojuego; los prototipos de interfaces gráficas de usuario; y las tarjetas CRC que definen la interacción entre las clases del sistema.
 
 \subsection{Arquitectura Jerárquica Basada en Nodos}
 \label{subsec:arquitectura}
 
-Godot Engine utiliza una arquitectura jerárquica basada en nodos, conocida como SceneTree (árbol de escenas). En esta arquitectura, los \textbf{nodos} son los bloques de construcción fundamentales: cada elemento del videojuego, desde una ficha de jugador hasta un efecto de sonido, es un nodo que hereda de la clase base \texttt{Node}. Los nodos se organizan en \textbf{escenas}, que son composiciones reutilizables de nodos agrupados jerárquicamente; una escena puede representar desde un botón hasta una pantalla completa del juego. El \textbf{SceneTree} es la estructura global que gestiona todas las escenas y nodos en tiempo de ejecución, funcionando como un árbol de procesamiento que organiza el orden de ejecución de métodos, la jerarquía de transformaciones y la gestión de señales que comunican a los nodos entre sí \parencite{GodotDocs2023}.
+Godot Engine utiliza una arquitectura jerárquica basada en nodos, la cual es identificada como el árbol de escenas. En esta arquitectura, los \textbf{nodos} son los bloques de construcción fundamentales: cada elemento del videojuego, desde una ficha de jugador hasta un efecto de sonido, es un nodo que hereda de la clase base \texttt{Node}. Los nodos se organizan en \textbf{escenas}, que son composiciones reutilizables de nodos agrupados jerárquicamente; una escena puede representar desde un botón hasta una pantalla completa del juego. El \textbf{SceneTree} es la estructura global que gestiona todas las escenas y nodos en tiempo de ejecución, funcionando como un árbol de procesamiento que organiza el orden de ejecución de métodos, la jerarquía de transformaciones y la gestión de señales que comunican a los nodos entre sí \parencite{GodotDocs2023}.
 
 El uso del SceneTree aporta ventajas significativas para \textit{Go Goals! Digital}. En primer lugar, aumenta la modularidad al permitir tener una escena para cada funcionalidad específica, como podría ser una ficha de jugador, que puede instanciarse dentro de otra escena más grande como el tablero. De esta manera, el tablero puede contener varias fichas, cada una con sus propiedades individuales (color, posición, nombre del jugador). Al momento de necesitar cambiarlas todas, se pueden realizar modificaciones en la escena de la ficha, reflejándose automáticamente en todas las instancias. Otra ventaja es el rendimiento, que mejora debido a que evita actualizaciones innecesarias y permite operaciones masivas como llamadas de métodos en grupos de nodos. Su diseño trae un enfoque de composición sobre herencia para no depender de jerarquías rígidas de clases y posee funcionalidades para realizar cambios de escenas de forma fluida.
 
@@ -313,16 +316,16 @@ La comunicación entre estos elementos se simplifica gracias al sistema de seña
   \caption{Ejemplo de jerarquía de nodos en el SceneTree de Godot: pantalla de instrucciones del videojuego \textit{Go Goals! Digital} (elaboración propia).\label{fig:scene_tree}}
 \end{figure}
 
-El videojuego \textit{Go Goals! Digital} emplea esta Arquitectura Jerárquica Basada en Nodos, apoyada por servicios globales y coordinada centralmente. Como buena práctica de diseño, se estructuró el proyecto en cuatro pilares fundamentales de diseño y responsabilidad:
+El videojuego \textit{Go Goals! Digital} emplea esta Arquitectura Jerárquica Basada en Nodos, apoyada por servicios globales y coordinada centralmente. Esta elección arquitectural no es arbitraria: frente a alternativas como un patrón \textit{Model-View-Controller} clásico o una separación por capas estricta, la composición de nodos de Godot resulta superior para este proyecto por razones concretas de extensibilidad y mantenibilidad. Un MVC rígido tendería a concentrar en el controlador una cantidad creciente de lógica de presentación a medida que se incorporen nuevas mecánicas, como nuevos tipos de casillas o modos de juego, generando un acoplamiento progresivo entre la vista y el controlador. La composición orientada a nodos, en cambio, permite agregar una nueva funcionalidad como un nodo hijo con su propio script, sin tocar el controlador principal. Esto favorece directamente la extensibilidad, la testabilidad de componentes aislados de interfaz, y reduce el riesgo de regresiones al modificar el sistema. Como buena práctica de diseño, se estructuró el proyecto en cuatro pilares fundamentales de responsabilidad:
 
 \begin{itemize}
-    \item \textbf{Arquitectura Orientada a Escenas}: La navegación principal y los límites de las interfaces dependen del sistema nativo de escenas de Godot. Entornos como el menú principal, la pantalla de juego interactiva y el menú de fin de partida funcionan como fronteras naturales de presentación. Dentro del juego, el nivel principal actúa como controlador de composición local (\textit{composition root}), ensamblando las dependencias y conectando la interfaz de usuario con la lógica sin mezclar directamente sus responsabilidades.
+    \item \textbf{Arquitectura Orientada a Escenas}: La navegación principal y los límites de las interfaces dependen del sistema nativo de escenas de Godot. Entornos como el menú principal, la pantalla de juego interactiva y el menú de fin de partida funcionan como fronteras naturales de presentación. Dentro del juego, el nivel principal actúa como controlador de composición local, ensamblando las dependencias y conectando la interfaz de usuario con la lógica sin mezclar directamente sus responsabilidades.
     
-    \item \textbf{Servicios Globales y Autoloads}: Godot facilita el patrón Singleton a través de nodos que se registran globalmente, permitiendo el acceso a funcionalidades transversales desde cualquier escena. El proyecto emplea la clase \texttt{GameData} para mantener la configuración de la partida y cargar el banco de preguntas; \texttt{AudioManager} para centralizar la reproducción de música y efectos de sonido; y \texttt{RecordsManager} para gestionar la persistencia local de las puntuaciones de forma estructurada e independiente \parencite{GodotDocs2023}.
+    \item \textbf{Servicios Globales y Autoloads}: Godot facilita el patrón Singleton a través de nodos que se registran globalmente, permitiendo el acceso a funcionalidades transversales desde cualquier escena. El proyecto emplea la clase \texttt{GameData} para mantener la configuración de la partida y cargar el banco de preguntas; \texttt{AudioManager} para centralizar la reproducción de música y efectos de sonido; y \texttt{RecordsManager} para gestionar la persistencia local de las puntuaciones de forma estructurada e independiente.
     
-    \item \textbf{Coordinación Central y Comunicación por Eventos}: En lugar de un patrón \textit{Model-View-Controller} estricto, el flujo del juego es orquestado por un coordinador central de aplicación (\texttt{GameManager}). Este componente concentra los casos de uso principales: control de turnos, movimiento, preguntas y victoria. Para lograr un bajo acoplamiento, la comunicación hacia la interfaz gráfica se rige por el uso de señales o \textit{Event Bus}. Así, interfaces como el panel de preguntas reaccionan de manera independiente a la aparición de eventos sin depender en código de la lógica del coordinador.
+    \item \textbf{Coordinación Central y Comunicación por Eventos}: El flujo del juego es orquestado por el coordinador central \texttt{GameManager}. Este componente concentra los casos de uso principales, como el control de turnos, el movimiento, las preguntas y la victoria. La comunicación hacia la interfaz gráfica no se realiza mediante referencias directas entre escenas invocando \texttt{get\_node()}, ya que ello generaría un acoplamiento temporal rígido: si la escena destino aún no está cargada, el sistema colapsaría. En su lugar, se emplea un bus de señales globales implementado en \texttt{GameEvents}, de modo que componentes como el panel de preguntas reaccionan de manera completamente independiente a los eventos emitidos, sin conocer ni depender del código del coordinador. Esto desacopla emisor y receptor, facilita la escalabilidad y permite añadir nuevos suscriptores sin modificar el núcleo lógico.
     
-    \item \textbf{Modelo de Estado Separado y Entidades Ligeras}: El estado mutable de la partida (fase del juego, turno actual, cantidad de tiradas) se aísla en un modelo de estado explícito (\texttt{GameState}), lo cual facilita administrar pausas o finalizaciones. Adicionalmente, el dominio se representa a través de entidades interactivas ligeras (elementos lógicos de tablero, casillas y fichas) que encapsulan su comportamiento particular, pero que delegan el control de flujo global al coordinador de la partida.
+    \item \textbf{Modelo de Estado Separado y Entidades Ligeras}: El estado mutable de la partida, que incluye la fase del juego, el turno actual y la cantidad de tiradas, se aísla en un modelo de estado explícito programado en \texttt{GameState}, lo cual facilita administrar pausas o finalizaciones. Adicionalmente, el dominio se representa a través de entidades interactivas ligeras que encapsulan su comportamiento particular, pero que delegan el control de flujo global al coordinador de la partida.
 \end{itemize}
 
 \subsubsection{Estructura de directorios del proyecto}
@@ -332,9 +335,9 @@ La organización del código fuente sigue una estructura jerárquica por respons
 
 \begin{itemize}
     \item \textbf{autoloads/}: contiene los Singletons globales del proyecto (\texttt{GameData}, \texttt{AudioManager}, \texttt{RecordsManager}).
-    \item \textbf{scripts/Core/}: contiene los archivos de infraestructura del ciclo de vida del juego (\texttt{Events.gd} --- Bus de Eventos ---, \texttt{GameState.gd} --- M\'aquina de Estados).
-    \item \textbf{scripts/Data/}: contiene los archivos de configuración estática del tablero (\texttt{BoardConfig.gd}), donde se definen todas las casillas de escaleras, toboganes y preguntas con sus posiciones de origen y destino.
-    \item \textbf{scripts/Entities/}: contiene los objetos del dominio del juego (\texttt{Board.gd}, \texttt{Player.gd}, \texttt{Tile.gd}), que encapsulan propiedades pero no decisiones.
+    \item \textbf{scripts/Core/}: contiene los archivos de infraestructura del ciclo de vida del juego, como el bus de eventos en \texttt{Events.gd} y la m\'aquina de estados en \texttt{GameState.gd}.
+    \item \textbf{scripts/Data/}: contiene el archivo de configuración estática del tablero en \texttt{BoardConfig.gd}, donde se definen todas las casillas de escaleras, toboganes y preguntas con sus posiciones de origen y destino.
+    \item \textbf{scripts/Entities/}: contiene los objetos del dominio del juego, específicamente \texttt{Board.gd}, \texttt{Player.gd} y \texttt{Tile.gd}, que encapsulan propiedades pero no decisiones.
     \item \textbf{scripts/Managers/}: contiene el \texttt{GameManager.gd}, controlador central que orquesta el ciclo de la partida.
     \item \textbf{scripts/UI/}: contiene los scripts de la capa de presentación, incluyendo los paneles del tablero, el panel de preguntas, el menú de pausa y la pantalla de estadísticas.
 \end{itemize}
@@ -342,7 +345,7 @@ La organización del código fuente sigue una estructura jerárquica por respons
 \subsubsection{Flujo de ejecución del ciclo de juego}
 \label{subsubsec:flujo_ejecucion}
 
-El flujo de la partida es coordinado secuencialmente por el \texttt{GameManager}. Al inicio, se procesa la configuración de la partida y se instancian los jugadores en la posición cero. Un turno arranca cuando el jugador activo detona el lanzamiento del dado (1 a 6), desplazando su ficha hacia el destino mediante una animación interpolada fluida.
+El flujo de la partida es coordinado secuencialmente por el \texttt{GameManager}. Al inicio, se procesa la configuración de la partida y se instancian los jugadores en la posición cero. Un turno arranca cuando el jugador activo detona el lanzamiento del dado obteniendo un valor de uno a seis, desplazando su ficha hacia el destino mediante una animación interpolada fluida.
 
 Al ubicarse en el destino final, el sistema evalúa la naturaleza de la casilla. Las casillas comunes ceden el turno directamente; las escaleras o serpientes resuelven inmediatamente un movimiento de arrastre reactivo hacia plataformas aledañas. Por otro lado, al aterrizar en una casilla temática ODS, el motor suspende la progresión temporal y presenta el panel de evaluación pedagógica. Tras recoger y calificar la respuesta del estudiante, el turno concluye. Este bucle iterativo perdura hasta alcanzar la casilla 63, instante en el que se ejecuta la condición de victoria, deteniendo la partida y tabulando los marcadores.
 
@@ -386,7 +389,7 @@ El criterio principal de ordenamiento es el número de turnos, considerando que 
 \subsection{Tarjetas CRC}
 \label{subsec:tarjetas_crc}
 
-Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica fundamental en el diseño ágil, particularmente relevante en la metodología Extreme Programming. Son una herramienta efectiva para la conceptualización y diseño de sistemas orientados a objetos, que facilita la identificación de las clases, sus responsabilidades y las colaboraciones necesarias entre ellas \parencite{Sommerville2021}. A continuación se presenta, a modo ilustrativo, la tarjeta CRC del controlador principal del juego (\texttt{GameManager}) (Tabla \ref{tab:crc_gamemanager}). El conjunto completo de las diez tarjetas CRC con el detalle arquitectónico restante se encuentra listado en el Anexo \ref{anx:tarjetas_crc}.
+Las tarjetas de clase, responsabilidad y colaboración constituyen una técnica fundamental en el diseño ágil, particularmente relevante en la metodología Extreme Programming. Son una herramienta efectiva para la conceptualización y diseño de sistemas orientados a objetos, que facilita la identificación de las clases, sus responsabilidades y las colaboraciones necesarias entre ellas \parencite{Sommerville2021}. A continuación se presenta, a modo ilustrativo, la tarjeta CRC del controlador principal del juego representado por la clase \texttt{GameManager} en la Tabla \ref{tab:crc_gamemanager}. El conjunto completo de las diez tarjetas CRC con el detalle arquitectónico restante se encuentra listado en el Anexo \ref{anx:tarjetas_crc}.
 
 \begin{table}[H]
 \centering
@@ -409,6 +412,8 @@ Las tarjetas CRC (Class-Responsibility-Collaboration) constituyen una técnica f
 \end{tabular}
 \end{table}
 
+La separación de responsabilidades reflejada en la tarjeta CRC de \texttt{GameManager} responde a una decisión concreta de diseño: centralizar el flujo evita que la lógica del turno quede dispersa en múltiples nodos de la interfaz, lo que generaría un acoplamiento implícito difícil de rastrear. Al delegar en \texttt{GameEvents} la notificación de cambios a la UI y en \texttt{GameState} la gestión del estado, el \texttt{GameManager} se mantiene cohesivo y reemplazable: cualquier componente de la interfaz que deba reaccionar a un evento de juego lo hace suscribiéndose a una se\~nal global, sin crear una dependencia directa con el controlador. Esta arquitectura elimina el acoplamiento temporal entre la lógica y la presentación, y simplifica las pruebas al poder invocar el controlador sin necesidad de instanciar la interfaz completa.
+
 
 
 %---------------------------------------------------------------------------
@@ -428,11 +433,11 @@ Los estándares de codificación son un conjunto de convenciones y reglas que gu
 Para el desarrollo en GDScript se aplicaron los siguientes estándares de nomenclatura, coherentes con las convenciones oficiales de la documentación de Godot \parencite{GodotDocs2023}. Estas convenciones facilitan la legibilidad del código y permiten que cualquier desarrollador familiarizado con Godot pueda comprender rápidamente la estructura del proyecto:
 
 \begin{itemize}
-    \item \textbf{Clases}: PascalCase (ejemplo: \texttt{GameManager}, \texttt{QuestionManager}).
-    \item \textbf{Variables y funciones}: snake\_case (ejemplo: \texttt{current\_player}, \texttt{roll\_dice()}).
-    \item \textbf{Constantes}: SCREAMING\_SNAKE\_CASE (ejemplo: \texttt{MAX\_PLAYERS}, \texttt{BOARD\_SIZE}).
-    \item \textbf{Señales}: snake\_case prefijadas con el evento (ejemplo: \texttt{dice\_rolled}, \texttt{answer\_checked}).
-    \item \textbf{Escenas}: PascalCase coincidiendo con el nombre de su script raíz (ejemplo: \texttt{GameBoard.tscn}).
+    \item \textbf{Clases}: PascalCase, por ejemplo \texttt{GameManager} y \texttt{QuestionManager}.
+    \item \textbf{Variables y funciones}: snake\_case, como \texttt{current\_player} y \texttt{roll\_dice()}.
+    \item \textbf{Constantes}: SCREAMING\_SNAKE\_CASE, tales como \texttt{MAX\_PLAYERS} y \texttt{BOARD\_SIZE}.
+    \item \textbf{Señales}: snake\_case prefijadas con el evento, por ejemplo \texttt{dice\_rolled} y \texttt{answer\_checked}.
+    \item \textbf{Escenas}: PascalCase coincidiendo con el nombre de su script raíz, como \texttt{GameBoard.tscn}.
 \end{itemize}
 
 La arquitectura de directorios del proyecto obedece a una distribución basada en características funcionales, enfoque metodológico que agrupa componentes afines en espacios de trabajo claramente delimitados. En lugar de consolidar archivos únicamente por su formato u origen, el árbol segmenta los recursos en tres ramas principales. Primeramente, el directorio \texttt{assets} se encarga de aislar la multimedia estática transversal, albergando módulos de audio, fuentes tipográficas y elementos gráficos del tablero tales como los tokens o los tipos de hexágonos. Seguidamente, el bloque de \texttt{escenas} aloja las vistas empaquetadas instanciables, ilustradas por pantallas clave estilo \texttt{GameBoard} o \texttt{QuizView}. Por último, el núcleo lógico se aísla en la rama \texttt{scripts}, subdividida internamente en \texttt{clases} de entidad y componentes \texttt{singletons} de acceso global. Esta estricta separación semántica mitiga los tiempos de búsqueda, protege frente a la ruptura conflictiva de referencias internas propias del motor, y facilita que la escalabilidad a largo plazo del código base se sostenga de forma limpia y disciplinada:
@@ -464,7 +469,7 @@ Tiene como objetivo asignar la responsabilidad de manejar las solicitudes del us
 
 \textbf{Experto en información}
 
-Se centra en asignar responsabilidades a la clase que posee la mayor cantidad de información necesaria para cumplir con dicha responsabilidad. Los modelos del proyecto (\texttt{Board.gd}, \texttt{Player.gd} y \texttt{Tile.gd}) encapsulan sus propias propiedades y aplican este principio, asegurando que cada entidad gestione únicamente sus propios datos.
+Se centra en asignar responsabilidades a la clase que posee la mayor cantidad de información necesaria para cumplir con dicha responsabilidad. Los modelos del proyecto, específicamente \texttt{Board.gd}, \texttt{Player.gd} y \texttt{Tile.gd}, encapsulan sus propias propiedades y aplican este principio, asegurando que cada entidad gestione únicamente sus propios datos.
 
 \textbf{Bajo acoplamiento}
 
@@ -481,7 +486,7 @@ Garantiza que una clase tenga una única instancia y proporciona un punto de acc
 
 \textbf{Observer (Bus de Eventos)}
 
-Define una dependencia de uno-a-muchos entre objetos. El archivo \texttt{GameEvents} implementa una variante de este patrón a nivel de bus de eventos global. En lugar de conectar directamente un emisor con sus suscriptores, define se\~nales globales (\texttt{dice\_rolled}, \texttt{quiz\_requested}) que cualquier componente emite o escucha de forma independiente, eliminando el acoplamiento entre el controlador y los componentes de la interfaz gráfica de usuario (UI).
+Define una dependencia de uno-a-muchos entre objetos. El archivo \texttt{GameEvents} implementa una variante de este patrón a nivel de bus de eventos global. En lugar de conectar directamente un emisor con sus suscriptores, define se\~nales globales como \texttt{dice\_rolled} y \texttt{quiz\_requested} que cualquier componente emite o escucha de forma independiente, eliminando el acoplamiento entre el controlador y los componentes de la interfaz gráfica de usuario.
 
 \begin{figure}[H]
   \centering
@@ -491,12 +496,19 @@ Define una dependencia de uno-a-muchos entre objetos. El archivo \texttt{GameEve
 
 \textbf{State (Máquina de Estados)}
 
-Permite a un objeto alterar su comportamiento cuando su estado interno cambia. El estado de la partida se gestiona de forma explícita y centralizada en \texttt{GameState.gd}, mediante una enumeración de fases (\texttt{MENU}, \texttt{PLAYING}, \texttt{PAUSED}, \texttt{GAME\_OVER}). Esta separación delega las decisiones de transición a una entidad especializada y facilita las operaciones de guardado y restauración del estado.
+Permite a un objeto alterar su comportamiento cuando su estado interno cambia. La alternativa más simple habría sido gestionar el estado de la partida mediante variables booleanas independientes, como \texttt{is\_paused}, \texttt{is\_rolling} e \texttt{is\_answering}. Sin embargo, este enfoque introduce de inmediato un problema estructural: las combinaciones de banderas pueden coexistir en estados inválidos, por ejemplo permitiendo que \texttt{is\_rolling = true} e \texttt{is\_answering = true} ocurran simultáneamente, generando condiciones de carrera y sentencias \texttt{if/else} anidadas que se vuelven inmanejables a medida que crece el sistema. El patrón \textit{State}, implementado en \texttt{GameState.gd} mediante una enumeración explícita de fases que abarca \texttt{MENU}, \texttt{PLAYING}, \texttt{PAUSED} y \texttt{GAME\_OVER}, garantiza que el sistema se encuentre en un único estado válido en cada instante. Las transiciones son atómicas y verificables, lo que simplifica la depuración, facilita las operaciones de guardado y restauración de estado y hace que el comportamiento del sistema sea predecible ante cualquier secuencia de eventos.
+
+\subsubsection{Manejo de datos y persistencia}
+\label{subsubsec:manejo_datos}
+
+La arquitectura del videojuego exige un manejo robusto de los datos, separando la configuración persistente del estado efímero de la partida. Para ello, el Singleton \texttt{GameData} actúa como repositorio en memoria, mientras que \texttt{RecordsManager} se encarga de serializar y almacenar localmente las estadísticas de los jugadores en el sistema de archivos del usuario. El contenido pedagógico, que incluye el banco de preguntas por cada ODS, se almacena externamente en formato JSON, permitiendo actualizar el cuestionario sin necesidad de recompilar el proyecto.
+
+Para garantizar la integridad del sistema frente a errores, se implementó una estrategia de resiliencia estructurada: si el sistema detecta que falta el archivo JSON de preguntas en la ruta esperada, emite una advertencia en la consola de depuración y automáticamente carga un conjunto de preguntas de respaldo codificadas internamente, asegurando que el ciclo de juego no se interrumpa. De igual forma, al procesar el JSON, el \texttt{QuestionManager} valida la estructura de cada diccionario entrante; si una entrada está malformada, por ejemplo al carecer de la clave obligatoria \texttt{answer} u \texttt{options}, el sistema descarta esa pregunta específica de la cola de selección aleatoria y registra un error de validación, previniendo excepciones fatales durante el turno del jugador y manteniendo la fluidez de la partida incluso ante datos corruptos. Finalmente, la separación del \texttt{GameState} garantiza que, ante una interrupción abrupta de la partida, las estadísticas temporales no contaminen los registros históricos de victorias.
 
 \subsection{Tareas de ingeniería}
 \label{subsec:tareas_ingenieria}
 
-Las tareas de ingeniería son los componentes técnicos específicos derivados de las historias de usuario. Representan el trabajo concreto que debe realizarse para implementar cada funcionalidad. A continuación se expone de manera representativa la tarea de ingeniería responsable del manejo interactivo de los ODS (vinculada a la HU7 explicada anteriormente) (Tabla \ref{tab:ti5}). El conjunto completo con las diez tareas de ingeniería organizadas por iteración se encuentra disponible en el Anexo \ref{anx:tareas_ingenieria}.
+Las tareas de ingeniería son los componentes técnicos específicos derivados de las historias de usuario. Representan el trabajo concreto que debe realizarse para implementar cada funcionalidad. A continuación se expone de manera representativa, en la Tabla \ref{tab:ti5}, la tarea de ingeniería responsable del manejo interactivo de los ODS, vinculada a la HU7 explicada anteriormente. El conjunto completo con las diez tareas de ingeniería organizadas por iteración se encuentra disponible en el Anexo \ref{anx:tareas_ingenieria}.
 
 \begin{table}[H]
 \centering
@@ -519,7 +531,7 @@ Iteración & 3 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Integración del archivo JSON que acapara las preguntas por ODS e implementación del algoritmo sin repetición en el \texttt{QuestionManager}. Maquetación de la pantalla modal interactiva de evaluación junto a los indicadores visuales y sonoros de acierto o error. \\
+Descripción & Se integra el motor de lectura JSON para cargar preguntas ODS y se programa el panel modal interactivo para evaluar y retroalimentar al jugador. \\
 \hline
 \end{tabular}
 \end{table}
@@ -530,13 +542,9 @@ Descripción & Integración del archivo JSON que acapara las preguntas por ODS e
 \section*{Conclusiones del capítulo}
 \addcontentsline{toc}{section}{Conclusiones del capítulo}
 
-\begin{enumerate}
-    \item La planificación mediante 18 historias de usuario distribuidas en 5 iteraciones y 44.5 días de desarrollo evidencia la eficiencia de la metodología Extreme Programming aplicada, priorizando funcionalidades esenciales y garantizando entregas incrementales que responden a las necesidades pedagógicas identificadas.
+El diseño del sistema a partir de los requisitos funcionales y no funcionales, plasmados en 18 historias de usuario y organizados en 5 iteraciones ágiles, confirmó la pertinencia de la metodología Extreme Programming para proyectos de software educativo de pequeña escala, al garantizar entregas incrementales y adaptación continua a las prioridades del cliente.
 
-    \item La arquitectura modular en cuatro capas, los prototipos de interfaces accesibles para todo público y las 10 tarjetas CRC que documentan responsabilidades entre clases, garantizan un sistema escalable y mantenible que prioriza tanto la calidad técnica como la experiencia del usuario final.
+La arquitectura jerárquica basada en nodos de Godot, coordinada mediante servicios globales y un bus de eventos desacoplado, resultó la elección más adecuada para el proyecto por favorecer la extensibilidad de mecánicas y la mantenibilidad del código, al tiempo que la aplicación de los patrones GRASP y GoF (Singleton, Observer y State) aportó soluciones técnicas probadas a los problemas de gestión de estado, comunicación entre componentes y persistencia de datos.
 
-    \item El uso de estándares de codificación GDScript y la aplicación de patrones GRASP y Gang of Four (Singleton, Observer, State), junto con la separación de contenido educativo mediante JSON y la implementación de 10 tareas de ingeniería, aseguran un producto de alta calidad técnica y pedagógica con capacidad de exportación multiplataforma.
-
-    \item Cada etapa refleja un proceso meticuloso y orientado a resultados prácticos resultando en un videojuego educativo para contribuir a la promoción de los Objetivos de Desarrollo Sostenible. Esto destaca la pertinencia de las decisiones tomadas durante el proceso de desarrollo y respalda la posición científica adoptada, mostrando que se logró cumplir con el objetivo y resolver el problema científico planteado.
-\end{enumerate}
+La implementación de las diez tareas de ingeniería, bajo los estándares de codificación GDScript y con contenido educativo externalizado en formato JSON con validación de integridad, produjo un videojuego educativo funcional, de bajo peso, multiplataforma y con mecanismos de robustez ante errores en los datos, cumpliendo así con el objetivo propuesto en la investigación.
 

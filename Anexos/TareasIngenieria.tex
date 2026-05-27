@@ -19,7 +19,7 @@ Iteración & 1 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Se diseña la escena del menú principal con los botones necesarios y el fondo temático. Además, se implementa la pantalla de instrucciones proporcionando una explicación en formato de texto y elementos gráficos para educar al usuario antes de iniciar. \\
+Descripción & Se diseñan las interfaces gráficas del menú principal y la pantalla de instrucciones en Godot, incluyendo navegación y elementos educativos. \\
 \hline
 \end{tabular}
 \end{table}
@@ -45,7 +45,7 @@ Iteración & 1 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Se diseña e implementa el tablero hexagonal en Godot con sus 63 casillas. Asimismo, entra en funcionamiento la interfaz de inicialización de partida, donde el jugador selecciona el número de participantes antes de aparecer en la casilla de salida. \\
+Descripción & Se modela el tablero hexagonal de 63 casillas y se implementa la interfaz de configuración de partida para instanciar a los jugadores. \\
 \hline
 \end{tabular}
 \end{table}
@@ -71,7 +71,7 @@ Iteración & 2 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Se codifica el componente generador pseudoaleatorio para simular el dado y actualizar la interfaz. Conjuntamente, se implementa el controlador de fichas para generar movimientos animados de las piezas recorriendo las posiciones casillas por casilla. \\
+Descripción & Se programa la lógica pseudoaleatoria del dado y se implementa el controlador para animar el recorrido de las fichas casilla a casilla. \\
 \hline
 \end{tabular}
 \end{table}
@@ -97,7 +97,7 @@ Iteración & 2 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Se desarrolla la funcionalidad para evaluar el tipo de casilla de aterrizaje. Aplicación de animaciones especiales de transición directa cuando el usuario cae sobre una escalera (desplazamiento positivo) o una serpiente (desplazamiento negativo). \\
+Descripción & Se desarrolla la lógica de aterrizaje para aplicar desplazamientos dinámicos al detectar colisiones con casillas de tipo escalera o serpiente. \\
 \hline
 \end{tabular}
 \end{table}
@@ -123,7 +123,7 @@ Iteración & 3 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Implementación del motor de preguntas ODS asociado al banco de datos JSON, instanciando un panel modal interactivo. Incluye la recepción de la respuesta del usuario, la retroalimentación inmediata (positiva o negativa) y la emisión de efectos que dictan el progreso. \\
+Descripción & Se integra el motor de lectura JSON para cargar preguntas ODS y se programa el panel modal interactivo para evaluar y retroalimentar al jugador. \\
 \hline
 \end{tabular}
 \end{table}
@@ -149,7 +149,7 @@ Iteración & 3 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Estructuración del ciclo central de turno, validando que componentes como el dado o las preguntas queden bloqueadas hasta el final de la ejecución, y notificando proactivamente en pantalla a quién le corresponde el próximo movimiento. \\
+Descripción & Se programa el bucle principal de juego en GameManager para orquestar la concurrencia de turnos y bloquear interacciones asíncronas. \\
 \hline
 \end{tabular}
 \end{table}
@@ -175,7 +175,7 @@ Iteración & 4 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Se evalúa la meta de la ronda al pisar la casilla 63, mostrando el panel de victoria. Paralelamente, se desarrolla una interfaz transversal que permite visualizar las estadísticas e historial de aciertos de los usuarios en tiempo real administradas por el \texttt{StatsManager}. \\
+Descripción & Se programa la condición de victoria en la casilla 63 y se implementa el gestor de puntuaciones para generar la pantalla de estadísticas finales. \\
 \hline
 \end{tabular}
 \end{table}
@@ -201,7 +201,7 @@ Iteración & 4 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Ensamble del menú contextual en el juego para pausar transiciones. Desde esta pantalla modal, permitir alterar el volumen maestro directamente o ejecutar una rutina de reinicio rotundo de partida desde cero borrando el historial temporal. \\
+Descripción & Se ensambla el menú de pausa in-game conectando los controladores globales de volumen de audio y la lógica de reinicio de estado de la partida. \\
 \hline
 \end{tabular}
 \end{table}
@@ -227,7 +227,7 @@ Iteración & 5 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Se desarrolla e integra una cámara dinámica (\texttt{Camera2D}) controlada por el \texttt{GameManager}. Dicha cámara deberá interpolar su posición automáticamente hacia el jugador activo al inicio de su turno, y seguir en tiempo real la trayectoria de la ficha durante su desplazamiento para fortalecer la inmersión. \\
+Descripción & Se instancia una Camera2D controlada mediante interpolación para seguir dinámicamente la trayectoria de la ficha del jugador activo. \\
 \hline
 \end{tabular}
 \end{table}
@@ -253,7 +253,7 @@ Iteración & 5 \\
 \hline
 Programador & Ruslan Alexei Martinez Campos \\
 \hline
-Descripción & Reestructuración en el \texttt{GameManager} para desactivar las validaciones u obligaciones de espera si se detecta que hay un único jugador activo desde el panel de inicio. Permite que el ciclo de partida (dado, movimiento, casilla y pregunta) recicle el turno inmediatamente hacia el mismo jugador sin integraciones de agentes externos. \\
+Descripción & Se adapta el controlador de turnos para omitir restricciones de cambio de jugador cuando se inicializa la partida en modo de práctica solitario. \\
 \hline
 \end{tabular}
 \end{table}

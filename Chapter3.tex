@@ -1,10 +1,10 @@
-\chapter{Pruebas y despliegue}
+\chapter{Validación}
 \label{chap:chapter3}
 
 El presente capítulo aborda la validación del videojuego educativo \textit{Go Goals! Digital} mediante la aplicación sistemática de pruebas de software, así como su posterior despliegue. La estructura del capítulo se organiza en dos secciones principales: la primera describe el diseño metodológico de la validación, especificando los tipos de pruebas empleados conforme a los estándares de la metodología Extreme Programming; la segunda presenta los resultados obtenidos tras la ejecución de dichas pruebas, evidenciando el cumplimiento de los requerimientos funcionales y no funcionales establecidos para el sistema.
 
 %---------------------------------------------------------------------------
-\section{Fase de planificación}
+\section{Proceso de pruebas de software}
 \label{sec:diseno_validacion}
 
 Este epígrafe presenta los tipos de pruebas utilizados en el ciclo de desarrollo del videojuego \textit{Go Goals! Digital}, siguiendo la metodología XP.
@@ -43,10 +43,10 @@ Las pruebas de aceptación verifican que el sistema cumple con los requerimiento
 El índice de satisfacción cuantifica la percepción de los usuarios sobre la calidad y desempeño de un producto. Se evalúa mediante encuestas basadas en escalas tipo Likert, donde los usuarios califican diferentes aspectos en una escala numérica. El \textit{Customer Satisfaction Score} (CSAT) se calcula como el porcentaje de respuestas positivas (valoradas con 4 o 5 en una escala de 1 a 5) respecto al total de respuestas, convirtiéndose en un elemento clave para la toma de decisiones orientadas a la mejora continua del producto \parencite{Pressman2021}.
 
 %---------------------------------------------------------------------------
-\section{Fase de pruebas}
+\section{Resultados de la validación}
 \label{sec:validacion}
 
-Este epígrafe describe la aplicación de las pruebas de software y los resultados obtenidos para validar las funcionalidades de la propuesta de solución.
+La ejecución de los instrumentos definidos en la estrategia metodológica genera un conjunto de métricas objetivas que permiten constatar la fiabilidad del código y la pertinencia de la interfaz gráfica. En consecuencia, el presente epígrafe describe detalladamente la aplicación progresiva de las pruebas de software, transitando desde la validación atómica de los componentes internos hasta la evaluación del índice de aceptación final por parte de los usuarios, sustentando así las afirmaciones sobre la calidad técnica de la propuesta de solución.
 
 \subsection{Aplicación de pruebas unitarias}
 \label{subsec:aplicacion_pruebas_unitarias}
@@ -225,15 +225,9 @@ Satisfacción Global & 10 & 0 & 0 \\
 \end{tabular}
 \end{table}
 
-Tomando estos resultados se aplica la fórmula del CSAT, donde se divide el número de respuestas positivas entre el total de respuestas y se multiplica por 100. Al aplicar esta fórmula se obtiene: 108 respuestas positivas divididas entre 110 respuestas totales, multiplicado por 100, lo que resulta en un índice de satisfacción del 98.18\%.
-
-Este resultado se considera extremadamente alto, lo que valida la calidad y aceptación del videojuego educativo \textit{Go Goals! Digital} por parte de su público objetivo.
+Tomando estos resultados se aplica la fórmula del índice de satisfacción del cliente (CSAT, por sus siglas en inglés), donde se divide el número de respuestas positivas entre el total de respuestas y se multiplica por 100. Al aplicar esta métrica se obtiene un cociente de 108 respuestas positivas divididas entre 110 respuestas totales que, al ser multiplicado por 100, resulta en un índice de satisfacción del 98.18\%; un valor que se considera extremadamente alto y que valida objetivamente la calidad técnica, el diseño instruccional y la aceptación del videojuego educativo \textit{Go Goals! Digital} por parte de su público objetivo.
 
 %---------------------------------------------------------------------------
 \section*{Conclusiones del capítulo}
 
-\begin{enumerate}
-    \item El diseño estructurado de la validación permite asegurar una alta calidad en el mismo proceso, siguiendo las buenas prácticas estandarizadas por la metodología Extreme Programming.
-    \item La aplicación de pruebas unitarias automatizadas garantiza el correcto funcionamiento de los módulos sin dependencias externas, mientras que las de aceptación validan al videojuego como un todo desde el punto de vista de usuarios finales.
-    \item El índice de aceptación del 98.18\% obtenido mediante el cuestionario CSAT demuestra que \textit{Go Goals! Digital} cumple satisfactoriamente con los objetivos educativos y de entretenimiento planteados, siendo altamente valorado por su público objetivo.
-\end{enumerate}
+El diseño estructurado de la validación permitió asegurar una alta calidad en el proceso evaluativo, adhiriéndose a las buenas prácticas estandarizadas por la metodología Extreme Programming. A través de la aplicación de pruebas unitarias automatizadas se garantizó el correcto funcionamiento de los módulos lógicos internos sin dependencias externas, previniendo defectos de integración. Por su parte, la ejecución de las pruebas de aceptación con una muestra representativa validó al videojuego en su totalidad desde la perspectiva pragmática de los usuarios finales. Finalmente, el índice de aceptación del 98.18\% documentado mediante el instrumento CSAT constata de manera fehaciente que \textit{Go Goals! Digital} cumple satisfactoriamente con los objetivos pedagógicos y lúdicos planteados, resultando en un producto tecnológico altamente valorado por su público objetivo.
