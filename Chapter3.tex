@@ -1,7 +1,7 @@
 \chapter{Validación}
 \label{chap:chapter3}
 
-El presente capítulo aborda la validación del videojuego educativo \textit{Go Goals! Digital} mediante la aplicación sistemática de pruebas de software, así como su posterior despliegue. La estructura del capítulo se organiza en dos secciones principales: la primera describe el diseño metodológico de la validación, especificando los tipos de pruebas empleados conforme a los estándares de la metodología Extreme Programming; la segunda presenta los resultados obtenidos tras la ejecución de dichas pruebas, evidenciando el cumplimiento de los requerimientos funcionales y no funcionales establecidos para el sistema.
+El presente capítulo aborda la validación del videojuego educativo \textit{Go Goals! Digital} mediante la aplicación sistemática de pruebas de software. La estructura del capítulo se organiza en dos secciones principales: la primera describe el diseño metodológico de la validación, especificando los tipos de pruebas empleados conforme a los estándares de la metodología Extreme Programming; la segunda presenta los resultados obtenidos tras la ejecución de dichas pruebas, evidenciando el cumplimiento de los requerimientos funcionales y no funcionales establecidos para el sistema.
 
 %---------------------------------------------------------------------------
 \section{Proceso de pruebas de software}
@@ -14,12 +14,12 @@ Las pruebas de software evalúan y verifican la calidad y correcto funcionamient
 \subsection{Tipos de pruebas}
 \label{subsec:tipos_pruebas}
 
-Para \textit{Go Goals! Digital}, siguiendo los estándares de la metodología XP, se realizaron pruebas unitarias (caja blanca), pruebas de aceptación a nivel beta (caja negra) y pruebas de índice de aceptación. Las pruebas unitarias validaron funcionalidades específicas de alta complejidad de forma automatizada, mientras que las pruebas de aceptación validaron el producto completo desde la perspectiva del usuario final con una muestra de diez personas. Las no conformidades detectadas se documentaron y corrigieron en el período de refactorización entre iteraciones.
+En \textit{Go Goals! Digital} se realizaron pruebas unitarias de caja blanca, pruebas de aceptación de caja negra y pruebas de índice de aceptación, siguiendo los estándares de la metodología XP. Las pruebas unitarias validaron funcionalidades específicas de alta complejidad de forma automatizada. Las pruebas de aceptación se ejecutaron al finalizar cada una de las cinco iteraciones de desarrollo, aplicando casos de prueba vinculados a las historias de usuario implementadas para validar el cumplimiento de los criterios de aceptación establecidos. Finalmente, las pruebas de índice de aceptación se realizaron con una muestra de diez estudiantes que evaluaron la satisfacción general del producto mediante un cuestionario estructurado.
 
 \subsubsection{Pruebas unitarias}
 \label{subsubsec:pruebas_unitarias}
 
-Las pruebas unitarias evalúan de forma aislada la funcionalidad de la unidad mínima de código (función, método o módulo). Como pruebas de caja blanca, examinan la estructura interna del código ejecutándolo con entradas específicas y comparando las salidas reales con las esperadas, lo que permite identificar y corregir errores en etapas tempranas del desarrollo. Al utilizar dobles de prueba para aislar la unidad bajo prueba de las dependencias externas, las pruebas unitarias promueven la modularidad y facilitan el mantenimiento del sistema \parencite{Pressman2019}.
+Las pruebas unitarias evalúan de forma aislada la funcionalidad de la unidad mínima de código, ya sea función, método o módulo. Como pruebas de caja blanca, examinan la estructura interna del código ejecutándolo con entradas específicas y comparando las salidas reales con las esperadas, lo que permite identificar y corregir errores en etapas tempranas del desarrollo. Al utilizar dobles de prueba para aislar la unidad bajo prueba de las dependencias externas, las pruebas unitarias promueven la modularidad y facilitan el mantenimiento del sistema \parencite{Pressman2019}.
 
 Para \textit{Go Goals! Digital}, las pruebas unitarias se enfocaron en validar las funcionalidades críticas del sistema, tales como:
 
@@ -35,12 +35,12 @@ Para \textit{Go Goals! Digital}, las pruebas unitarias se enfocaron en validar l
 \subsubsection{Pruebas de aceptación}
 \label{subsubsec:pruebas_aceptacion}
 
-Las pruebas de aceptación verifican que el sistema cumple con los requerimientos y expectativas del cliente o usuario final. Conocidas como UAT (\textit{User Acceptance Testing}), estas pruebas de caja negra se realizan en entornos que emulan condiciones reales de uso, permitiendo a los usuarios confirmar que la aplicación es funcional, usable y responde a las necesidades del negocio. Este enfoque valida el comportamiento externo del sistema sin examinar su implementación interna, asegurando que el software cumpla tanto con las especificaciones técnicas como con los criterios de aceptación acordados \parencite{Pressman2019}.
+Las pruebas de aceptación verifican que el sistema cumple con los requerimientos y expectativas del cliente o usuario final. Conocidas como UAT (\textit{User Acceptance Testing}), estas pruebas de caja negra validan el comportamiento externo del sistema sin examinar su implementación interna, ejecutando casos de prueba que verifican el cumplimiento de los criterios de aceptación establecidos para cada historia de usuario. Este enfoque asegura que el software cumpla tanto con las especificaciones técnicas como con las funcionalidades acordadas \parencite{Pressman2019}.
 
 \subsubsection{Pruebas de índice de aceptación}
 \label{subsubsec:pruebas_indice_aceptacion}
 
-El índice de satisfacción cuantifica la percepción de los usuarios sobre la calidad y desempeño de un producto. Se evalúa mediante encuestas basadas en escalas tipo Likert, donde los usuarios califican diferentes aspectos en una escala numérica. El \textit{Customer Satisfaction Score} (CSAT) se calcula como el porcentaje de respuestas positivas (valoradas con 4 o 5 en una escala de 1 a 5) respecto al total de respuestas, convirtiéndose en un elemento clave para la toma de decisiones orientadas a la mejora continua del producto \parencite{Pressman2019}.
+El índice de satisfacción cuantifica la percepción de los usuarios sobre la calidad y desempeño de un producto. Se evalúa mediante encuestas basadas en escalas tipo Likert, donde los usuarios califican diferentes aspectos en una escala numérica. El \textit{Customer Satisfaction Score} o CSAT se calcula como el porcentaje de respuestas positivas respecto al total de respuestas, considerando positivas aquellas valoradas con 4 o 5 en una escala de 1 a 5. Este indicador se convierte en un elemento clave para la toma de decisiones orientadas a la mejora continua del producto \parencite{Pressman2019}.
 
 %---------------------------------------------------------------------------
 \section{Resultados de la validación}
@@ -67,18 +67,54 @@ La figura anterior muestra la implementación de los casos de prueba utilizando 
   \caption{Resultado de pruebas para la clase \texttt{GameData} (elaboración propia).\label{fig:resultado_pruebas_unitarias}}
 \end{figure}
 
-Todas las funcionalidades probadas de esta forma pasaron las pruebas de forma exitosa, lo que no significa que no puedan existir defectos, ya que la interoperabilidad entre módulos puede causar problemas, lo que lleva a la necesidad de la aplicación de otro nivel de pruebas.
+Todas las funcionalidades probadas de esta forma pasaron las pruebas exitosamente, lo que no significa que no puedan existir defectos, ya que la interoperabilidad entre módulos puede causar problemas, lo que lleva a la necesidad de la aplicación de otro nivel de pruebas.
 
 \subsection{Aplicación de pruebas de aceptación}
 \label{subsec:aplicacion_pruebas_aceptacion}
 
-Las pruebas de aceptación se realizaron a nivel beta, lo que significa que las realizan usuarios finales en sus condiciones propias, no preparadas ni supervisadas por los desarrolladores. Esto garantiza una mayor cantidad de variables expuestas a probarse y su finalización determina si el producto realmente está listo para lanzarse o no.
+Las pruebas de aceptación se realizaron siguiendo la metodología Extreme Programming, ejecutándose al finalizar cada una de las cinco iteraciones de desarrollo establecidas en el Capítulo 2. Esta organización permite validar incrementalmente el software conforme se implementan nuevas funcionalidades, detectando errores de forma temprana y asegurando que cada entrega parcial cumpla con los criterios de aceptación antes de proceder a la siguiente iteración.
 
-Para su realización se tomó una muestra de jóvenes estudiantes de La Habana, con edades comprendidas entre 15 y 25 años, a los que se les distribuyó el videojuego \textit{Go Goals! Digital} sin manual ni explicaciones de cómo jugar, para probar la utilidad de los tutoriales dentro del videojuego y la intuitividad de la interfaz.
+Se ejecutaron un total de 18 casos de prueba vinculados a las historias de usuario implementadas para validar el cumplimiento de los criterios de aceptación establecidos. A continuación se presenta el caso de prueba correspondiente a la historia de usuario 9, que fue el único que presentó una no conformidad durante la Iteración 3. Los 17 casos de prueba restantes se encuentran detallados en el Anexo D.
+
+\begin{table}[H]
+\centering
+\caption{Caso de prueba de aceptación \#9 Mostrar pregunta ODS (elaboración propia)\label{tab:cpa9}}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|p{0.35\textwidth}|p{0.55\textwidth}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Caso de Prueba de Aceptación}} \\
+\hline
+\textbf{Código:} HU\#9\_PA\#1 & \textbf{Historia de Usuario:} 9 \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Nombre:} Mostrar pregunta ODS} \\
+\hline
+\multicolumn{2}{|p{0.9\textwidth}|}{\textbf{Descripción:} Prueba realizada para verificar que al caer en una casilla ODS se muestre correctamente el panel de preguntas.} \\
+\hline
+\textbf{Pasos de ejecución:} & 1. Se mueve la ficha hasta una casilla ODS. \newline 2. Se verifica que aparezca el panel de preguntas. \newline 3. Se verifica que se muestren la pregunta y las opciones de respuesta. \\
+\hline
+\multicolumn{2}{|c|}{\textbf{Resultado:} No satisfactorio} \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Resultados de las pruebas de aceptación}
+
+En las pruebas de aceptación se realizaron un total de 18 casos de prueba distribuidos en cinco iteraciones, obteniendo resultados mayormente positivos que evidencian la atención a los detalles críticos y la prevención de errores durante el proceso de implementación.
+
+Los casos de prueba aplicados a las Iteraciones 1, 2, 4 y 5 dieron como resultado un 100\% de aprobación y 0\% de no conformidades, validando satisfactoriamente las funcionalidades base del videojuego, las mecánicas básicas de juego, las funcionalidades de cierre y las características complementarias. Sin embargo, en la Iteración 3 se detectó una no conformidad en el caso de prueba correspondiente a la historia de usuario 9 (Mostrar pregunta ODS), dando como resultado un 66.67\% de satisfacción y 33.33\% de insatisfacción para dicha iteración.
+
+La no conformidad identificada consistió en un error de visualización en el panel de preguntas ODS, donde el texto de las opciones de respuesta se superponía con los bordes del panel cuando las respuestas contenían más de 50 caracteres, afectando la legibilidad y la experiencia de usuario. Este problema se presentaba específicamente en preguntas relacionadas con los ODS 8 (Trabajo decente y crecimiento económico) y ODS 16 (Paz, justicia e instituciones sólidas), cuyos enunciados tienden a ser más extensos.
+
+Al corregir el error mediante el ajuste del tamaño de fuente y la implementación de saltos de línea automáticos en el componente de texto, y realizar nuevamente el caso de prueba a la historia de usuario 9, se obtuvo un resultado satisfactorio, elevando la Iteración 3 a un 100\% de aprobación. Tras esta corrección, se ejecutaron nuevamente todos los casos de prueba de las cinco iteraciones, confirmando que el videojuego \textit{Go Goals! Digital} cumple satisfactoriamente con todos los criterios de aceptación establecidos.
+
+\subsection{Aplicación de pruebas de índice de aceptación}
+\label{subsec:aplicacion_pruebas_indice}
+
+Para la aplicación de esta prueba se contó con una muestra de diez jóvenes estudiantes de La Habana, con edades comprendidas entre 15 y 25 años, a los que se les distribuyó el videojuego \textit{Go Goals! Digital} para su evaluación. A dicha muestra se le administró un cuestionario estructurado, elaborado y diseñado específicamente para evaluar los criterios de aceptación.
 
 \begin{table}[htbp]
 \centering
-\caption{Listado de estudiantes probadores beta (elaboración propia).\label{tab:probadores_beta}}
+\caption{Listado de estudiantes evaluadores (elaboración propia).\label{tab:probadores_beta}}
 \renewcommand{\arraystretch}{1.3}
 \begin{tabular}{|l|c|}
 \hline
@@ -107,12 +143,7 @@ Daniela Fernández Suárez & 20 \\
 \end{tabular}
 \end{table}
 
-Luego de realizar tres iteraciones, no se encontraron no conformidades. Por lo que se evidencia que el producto es válido y está listo para lanzarse.
-
-\subsection{Aplicación de pruebas de índice de aceptación}
-\label{subsec:aplicacion_pruebas_indice}
-
-Para la aplicación de esta prueba se contó con la misma muestra de participantes que intervino en las pruebas beta. A dicha muestra se le administró un cuestionario estructurado, elaborado y diseñado específicamente para evaluar los criterios de aceptación, el cual presentó la siguiente estructura:
+El cuestionario presentó la siguiente estructura:
 
 \begin{longtable}{|p{0.95\textwidth}|}
 \caption{Cuestionario de Satisfacción del Usuario -- Go Goals! Digital (elaboración propia).\label{tab:cuestionario_satisfaccion}} \\
@@ -200,7 +231,7 @@ En general, ¿qué tan satisfecho/a estás con tu experiencia en \textit{Go Goal
 \hline
 \end{longtable}
 
-Al aplicarlo se obtuvieron resultados abrumadoramente positivos, con todos los usuarios recomendando probar el videojuego. Además, 108 de 110 respuestas fueron positivas con puntuaciones de 4 o más, y solamente 2 puntuaciones neutrales referentes a lo claras e intuitivas que son las interfaces del videojuego, identificando una posible área de mejora.
+Al aplicarlo se obtuvieron resultados altamente positivos, con todos los usuarios recomendando probar el videojuego. Además, 108 de 110 respuestas fueron positivas con puntuaciones de 4 o más, y solamente 2 puntuaciones neutrales referentes a lo claras e intuitivas que son las interfaces del videojuego, identificando una posible área de mejora.
 
 \begin{table}[H]
 \centering
@@ -225,9 +256,9 @@ Satisfacción Global & 10 & 0 & 0 \\
 \end{tabular}
 \end{table}
 
-Tomando estos resultados se aplica la fórmula del índice de satisfacción del cliente (CSAT, por sus siglas en inglés), donde se divide el número de respuestas positivas entre el total de respuestas y se multiplica por 100. Al aplicar esta métrica se obtiene un cociente de 108 respuestas positivas divididas entre 110 respuestas totales que, al ser multiplicado por 100, resulta en un índice de satisfacción del 98.18\%; un valor que se considera extremadamente alto y que valida objetivamente la calidad técnica, el diseño instruccional y la aceptación del videojuego educativo \textit{Go Goals! Digital} por parte de su público objetivo.
+Tomando estos resultados se aplica la fórmula del CSAT, donde se divide el número de respuestas positivas entre el total de respuestas y se multiplica por 100. Al aplicar esta métrica se obtiene un cociente de 108 respuestas positivas dividido entre 110 respuestas totales que, al ser multiplicado por 100, resulta en 98.18\%. Este valor se considera extremadamente alto y valida objetivamente la calidad técnica, el diseño instruccional y la aceptación del videojuego educativo \textit{Go Goals! Digital} por parte de su público objetivo.
 
 %---------------------------------------------------------------------------
 \section*{Conclusiones del capítulo}
 
-El diseño estructurado de la validación permitió asegurar una alta calidad en el proceso evaluativo, adhiriéndose a las buenas prácticas estandarizadas por la metodología Extreme Programming. A través de la aplicación de pruebas unitarias automatizadas se garantizó el correcto funcionamiento de los módulos lógicos internos sin dependencias externas, previniendo defectos de integración. Por su parte, la ejecución de las pruebas de aceptación con una muestra representativa validó al videojuego en su totalidad desde la perspectiva pragmática de los usuarios finales. Finalmente, el índice de aceptación del 98.18\% documentado mediante el instrumento CSAT constata de manera fehaciente que \textit{Go Goals! Digital} cumple satisfactoriamente con los objetivos pedagógicos y lúdicos planteados, resultando en un producto tecnológico altamente valorado por su público objetivo.
+El diseño estructurado de la validación permitió asegurar una alta calidad en el proceso evaluativo, siguiendo las buenas prácticas de la metodología Extreme Programming. A través de la aplicación de pruebas unitarias automatizadas se garantizó el correcto funcionamiento de los módulos lógicos internos sin dependencias externas, previniendo defectos de integración. Las pruebas de aceptación validaron el videojuego en su totalidad desde la perspectiva de los usuarios finales. Finalmente, el índice de aceptación del 98.18\% documentado mediante el instrumento CSAT confirma que \textit{Go Goals! Digital} cumple satisfactoriamente con los objetivos pedagógicos y lúdicos planteados, resultando en un producto tecnológico altamente valorado por su público objetivo.
