@@ -446,6 +446,11 @@ Ingeniero en Ciencias Informáticas }
 \csuse{charge#1}
 }
 
+\newcommand\getsignimage[1]
+{%
+\csuse{signimage#1}
+}
+
 \newcounter{cntsign}
 \setcounter{cntsign}{0}
 \newcommand{\addsign}[2][]
@@ -453,6 +458,11 @@ Ingeniero en Ciencias Informáticas }
 \stepcounter{cntsign}%
 \csdef{sign\thecntsign}{#2}
 \csdef{charge\thecntsign}{#1}
+\csdef{signimage\thecntsign}{}
+}
+
+\newcommand{\setsignimage}[2]{%
+\csdef{signimage#1}{#2}%
 }
 
 \newcounter{cnt}
@@ -890,7 +900,7 @@ sortlocale=es_ES]{biblatex}[2014/06/25]
 
 \hypersetup
 {
-    unicode=false,                %non-Latin characters in Acrobat?s bookmarks
+    unicode=true,                 %non-Latin characters in Acrobat's bookmarks
     pdftitle={\@title},           %title
     pdfauthor={\@author  \@authornd},         %author
     pdfsubject={\@doctype},       %subject of the document
@@ -954,64 +964,21 @@ hidelinks
 
 Declaramos ser autores de la presente tesis y reconocemos a la Universidad de las Ciencias Informáticas los derechos patrimoniales sobre esta, con carácter exclusivo.\\
 
-Para que así conste firmamos la presente a los \underline{\hspace{0.7cm}} días del mes de \underline{\hspace{1.7cm}} del año \underline{\hspace{1.3cm}}.
+Para que así conste firmamos la presente a los 28 días del mes de mayo del año 2026.
 
-\newcounter{itemscnt}
-\setcounter{itemscnt}{0}
-\newcounter{itemOnLeft}
-\setcounter{itemOnLeft}{2}
-\newcounter{itemOnRight}
-\setcounter{itemOnRight}{3}
-\newcounter{maxcnt}
-\setcounter{maxcnt}{\thecntsign}
 \vfill
 \begin{center}
-\ifnumodd{\value{cntsign}}
-{
-\ifthenelse{\equal{\@ashippage}{ltd}} % Last tutor down
-{
-\setcounter{maxcnt}{\thecntsign-1}
-\setcounter{itemOnLeft}{1}
-\setcounter{itemOnRight}{2}
-}
-{ % First author up
+% Autor
 \begin{tabular}{c}
-\rule{\widthof{\getsign{1}\hskip 2ex}}{1pt}\\
-\getsign{1}\\
-\getcharge{1}
+\ifcsdef{signimage1}{\includegraphics[width=5cm]{\csuse{signimage1}}}{}
 \end{tabular}\\[\signaturespacing]
-\stepcounter{itemscnt}
-}
-}
-{
-\setcounter{itemOnLeft}{1}
-\setcounter{itemOnRight}{2}
-    }
-    % below, the general approach for placing signatures side by side
-    \begin{tabular}{cp{0.15\textwidth}c}
-    \whileboolexpr{test{\ifnumcomp{\value{itemscnt}}{<}{\themaxcnt}}}%
-    {
-      \rule{\widthof{\getsign{\theitemOnLeft}\hskip 2ex}}{1pt}
-      &&\rule{\widthof{\getsign{\theitemOnRight}\hskip 2ex}}{1pt}\\
-      \getsign{\theitemOnLeft}&&\getsign{\theitemOnRight}\\
-    \getcharge{\theitemOnLeft}&&\getcharge{\theitemOnRight}\\[\signaturespacing]
-    \setcounter{itemscnt}{\theitemscnt+2}
-    \setcounter{itemOnLeft}{\theitemOnLeft+2}
-    \setcounter{itemOnRight}{\theitemOnRight+2}
-    \hskip -2ex % Only God knows why do I need to set this value here. If not, the signature rule shifts to right
-    }
-    \end{tabular}\\[\signaturespacing]
-    \ifnumodd{\value{cntsign}}
-     {
-\ifthenelse{\equal{\@ashippage}{ltd}}
-{
-\begin{tabular}{c}
-\rule{\widthof{\getsign{\thecntsign}\hskip 2ex}}{1pt}\\
-\getsign{\thecntsign}\\
-\getcharge{\thecntsign}
-\end{tabular}\\[\signaturespacing]
-}{}
-  }{}
+
+% Tutores lado a lado
+\begin{tabular}{cp{0.15\textwidth}c}
+\ifcsdef{signimage2}{\includegraphics[width=7cm]{\csuse{signimage2}}}{}
+&&
+\ifcsdef{signimage3}{\includegraphics[width=6cm]{\csuse{signimage3}}}{}
+\end{tabular}
 \end{center}
 \vfill
 }
