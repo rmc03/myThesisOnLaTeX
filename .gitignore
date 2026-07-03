@@ -20,6 +20,13 @@
 *.synctex.gz
 *.dvi
 *.ps
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm
+*.vrb
+*.brf
+texput.log
 
 # Archivos PDF generados por la compilación (evitar subir PDFs pesados generados)
 # Si deseas trackear algún PDF en particular, hazle "git add -f nombre.pdf"
@@ -27,26 +34,60 @@ example.pdf
 thesis.pdf
 Latex*.pdf
 TD_Oscar*.pdf
+tesis_capitulos*.pdf
 *.docx
 
 # Archivos temporales o extraídos
 extracted_*.txt
 temp_*.txt
+temp_conclusions.txt
 captions_to_fix.txt
 longtables.log
 git_history.txt
 
+# Scripts de procesamiento (no parte de la tesis)
+extract_*.py
+fix_*.py
+convert_tables.py
+
 # Carpetas de configuraciones locales o de editores
 .vscode/
+
+# Carpetas ocultas de herramientas externas
+.kilo/
+.kimchi/
+.mimocode/
 
 # Ignorar si hay archivos temporales del sistema
 .DS_Store
 Thumbs.db
 
 # Ignorar archivos irrelevantes adicionales
-.kilo/
 $null
 /*.py
 /*.png
 README.txt
-tesis_capitulos*.pdf
+godot_*.png
+TD_Oscar_Pacheco*
+
+# Artefactos de compilación sueltos en la raíz
+articulo.aux
+articulo.bbl
+articulo.blg
+articulo.log
+articulo.out
+example.acn
+example.aux
+example.bbl
+example.bcf
+example.blg
+example.glo
+example.ist
+example.loa
+example.lof
+example.log
+example.lol
+example.lot
+example.run.xml
+example.tdo
+example.toc
